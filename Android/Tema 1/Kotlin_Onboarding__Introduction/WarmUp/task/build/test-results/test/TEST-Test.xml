@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-09-12T17:31:48" hostname="DESKTOP-TI3ADFC" time="0.315">
+  <properties/>
+  <testcase name="smokeTest()" classname="Test" time="0.029"/>
+  <testcase name="testCountPartialMatchesFunction()" classname="Test" time="0.228"/>
+  <testcase name="testSolution()" classname="Test" time="0.006"/>
+  <testcase name="testCountGenerateSecretFunction()" classname="Test" time="0.001"/>
+  <testcase name="testCountExactMatchesFunction()" classname="Test" time="0.001"/>
+  <testcase name="testPlayGameFunction()" classname="Test" time="0.001"/>
+  <testcase name="testGetGameRulesFunction()" classname="Test" time="0.001"/>
+  <testcase name="testIsCompleteFunction()" classname="Test" time="0.001"/>
+  <testcase name="[1] ACEB, BCDF, false" classname="Test" time="0.021"/>
+  <testcase name="[2] ACEB, ACEB, true" classname="Test" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

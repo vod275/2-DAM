@@ -1,0 +1,14 @@
+type: edu
+custom_name: Chat - Ask First Question
+files:
+  - name: src/main/kotlin/jetbrains/kotlin/course/chat/Main.kt
+    visible: true
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 12 Sep 2024 15:58:44 UTC"
+record: 12
