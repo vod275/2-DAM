@@ -1,0 +1,9 @@
+
+public class Clase_6 {
+
+	public static void main(String[] args) {
+		// muestra numeros del 1 al 100 primos
+
+	}
+
+}

@@ -1,0 +1,14 @@
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\bin\Debug\net8.0\Ejercicio9.exe
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\bin\Debug\net8.0\Ejercicio9.deps.json
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\bin\Debug\net8.0\Ejercicio9.runtimeconfig.json
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\bin\Debug\net8.0\Ejercicio9.dll
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\bin\Debug\net8.0\Ejercicio9.pdb
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\obj\Debug\net8.0\Ejercicio9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\obj\Debug\net8.0\Ejercicio9.AssemblyInfoInputs.cache
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\obj\Debug\net8.0\Ejercicio9.AssemblyInfo.cs
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\obj\Debug\net8.0\Ejercicio9.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\obj\Debug\net8.0\Ejercicio9.dll
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\obj\Debug\net8.0\refint\Ejercicio9.dll
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\obj\Debug\net8.0\Ejercicio9.pdb
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\obj\Debug\net8.0\Ejercicio9.genruntimeconfig.cache
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio9\obj\Debug\net8.0\ref\Ejercicio9.dll

@@ -1,0 +1,9 @@
+
+public class Clase_12 {
+
+	public static void main(String[] args) {
+		// muestra los numeros del 1 al 100 ambos incluidos divisibles entre 2 y 3, el bucle que desees
+
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class PilaDinamica<T> {
+	
+	private Nodo<T> top;
+	private int tamanio;
+	
+
+}

@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+
+import java.util.Scanner;
+
+/**
+ * 
+ */
+public class Clase_1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		double area = 0;
+		System.out.println("Introduce el radio");
+		Scanner radio = new Scanner(System.in);
+		Double Radio = radio.nextDouble();
+		
+		//Utilizar el metodo pow de Math (constante pi utilizala)
+		
+		System.out.println("El area es: " + area);
+		
+		
+	}
+
+}

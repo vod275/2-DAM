@@ -1,0 +1,14 @@
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\bin\Debug\net8.0\Diseño_Interfaces.exe
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\bin\Debug\net8.0\Diseño_Interfaces.deps.json
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\bin\Debug\net8.0\Diseño_Interfaces.runtimeconfig.json
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\bin\Debug\net8.0\Diseño_Interfaces.dll
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\bin\Debug\net8.0\Diseño_Interfaces.pdb
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\obj\Debug\net8.0\Diseño_Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\obj\Debug\net8.0\Diseño_Interfaces.AssemblyInfoInputs.cache
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\obj\Debug\net8.0\Diseño_Interfaces.AssemblyInfo.cs
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\obj\Debug\net8.0\Diseño_Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\obj\Debug\net8.0\Diseño_Interfaces.dll
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\obj\Debug\net8.0\refint\Diseño_Interfaces.dll
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\obj\Debug\net8.0\Diseño_Interfaces.pdb
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\obj\Debug\net8.0\Diseño_Interfaces.genruntimeconfig.cache
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Diseño_Interfaces\obj\Debug\net8.0\ref\Diseño_Interfaces.dll

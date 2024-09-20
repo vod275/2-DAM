@@ -1,0 +1,14 @@
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\obj\Debug\net8.0\Ejercicio11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\obj\Debug\net8.0\Ejercicio11.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\obj\Debug\net8.0\Ejercicio11.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\obj\Debug\net8.0\Ejercicio11.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\bin\Debug\net8.0\Ejercicio11.exe
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\bin\Debug\net8.0\Ejercicio11.deps.json
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\bin\Debug\net8.0\Ejercicio11.runtimeconfig.json
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\bin\Debug\net8.0\Ejercicio11.dll
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\bin\Debug\net8.0\Ejercicio11.pdb
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\obj\Debug\net8.0\Ejercicio11.dll
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\obj\Debug\net8.0\refint\Ejercicio11.dll
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\obj\Debug\net8.0\Ejercicio11.pdb
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\obj\Debug\net8.0\Ejercicio11.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\ConsoleApp1\obj\Debug\net8.0\ref\Ejercicio11.dll

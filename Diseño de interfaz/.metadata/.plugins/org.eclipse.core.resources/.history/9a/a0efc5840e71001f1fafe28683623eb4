@@ -1,0 +1,22 @@
+
+public class PilaDinamica<T> {
+	
+	private Nodo<T> top;
+	private int tamanio;
+	
+
+	public PilaDinamica() {
+		top = null;
+		this.tamanio = 0;
+		
+	}
+	
+	
+	public boolean isEmpty() {
+		
+		return top == null;
+		
+	}
+	
+	
+}

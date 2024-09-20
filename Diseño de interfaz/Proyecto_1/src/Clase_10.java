@@ -1,0 +1,14 @@
+
+public class Clase_10 {
+
+	public static void main(String[] args) {
+		// aplicacion que nos calcule una ecuacion de segundoo grado, debes pedir las variables a y b 
+		// comprobar antes que el discriminante (operacion en la raiz cuadrada) para la raiz cuadrada usa el metodo 
+		// sqlrt de Math( usa mensajes de traza.
+
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class Clase_9 {
+
+	public static void main(String[] args) {
+		// realiza una aplicacion que nos pida un numero de ventas a introducir,
+		//despues nos pedira tantas ventas por teclado, como numero de ventas se hayan indicado.
+		// al final mostrara la suma de todas las ventas, piensa que es lo que se repite y que es lo que no.
+
+	}
+
+}

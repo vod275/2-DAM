@@ -1,0 +1,11 @@
+
+public class Clase_5 {
+
+	public static void main(String[] args) {
+		// lee un numero por teclado que pida el precio de un producto, y calcule el precio final con IVA 21%
+		
+		
+
+	}
+
+}

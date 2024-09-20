@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.lang.model.element.Element;
+
+public class Classe {
+
+	public static void main(String[] args) {
+		// repasar push pop que es
+		// enlace youtube pila https://www.youtube.com/watch?v=xPjdXbrdVhk
+		// importar lista y probar a crear un metodo y que lo busque
+		
+		ArrayList<String> colors = new ArrayList<>();
+        colors.add("blue");
+        colors.add("red");
+        colors.add("green");
+        System.out.println("ArrayList: " + colors);
+				
+		
+		
+		
+	}
+
+}

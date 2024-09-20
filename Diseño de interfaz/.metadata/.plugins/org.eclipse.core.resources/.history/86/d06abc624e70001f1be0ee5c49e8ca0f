@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+import java.util.Scanner;
+/**
+ * 
+ */
+public class Clase_4 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// lo mismo que el anterior pero hay que meter un caracter char
+
+
+
+	}
+
+}

@@ -1,0 +1,14 @@
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\obj\Debug\net8.0\Ejercicio7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\obj\Debug\net8.0\Ejercicio7.AssemblyInfoInputs.cache
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\obj\Debug\net8.0\Ejercicio7.AssemblyInfo.cs
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\obj\Debug\net8.0\Ejercicio7.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\bin\Debug\net8.0\Ejercicio7.exe
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\bin\Debug\net8.0\Ejercicio7.deps.json
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\bin\Debug\net8.0\Ejercicio7.runtimeconfig.json
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\bin\Debug\net8.0\Ejercicio7.dll
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\bin\Debug\net8.0\Ejercicio7.pdb
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\obj\Debug\net8.0\Ejercicio7.dll
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\obj\Debug\net8.0\refint\Ejercicio7.dll
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\obj\Debug\net8.0\Ejercicio7.pdb
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\obj\Debug\net8.0\Ejercicio7.genruntimeconfig.cache
+C:\Users\Alumno\source\repos\Diseño_Interfaces\Ejercicio7\obj\Debug\net8.0\ref\Ejercicio7.dll
