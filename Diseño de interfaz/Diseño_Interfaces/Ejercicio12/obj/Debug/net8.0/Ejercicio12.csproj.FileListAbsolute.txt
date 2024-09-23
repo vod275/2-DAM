@@ -1,0 +1,15 @@
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\bin\Debug\net8.0\Ejercicio12.exe
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\bin\Debug\net8.0\Ejercicio12.deps.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\bin\Debug\net8.0\Ejercicio12.runtimeconfig.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\bin\Debug\net8.0\Ejercicio12.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\bin\Debug\net8.0\Ejercicio12.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\Ejercicio12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\Ejercicio12.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\Ejercicio12.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\Ejercicio12.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\Ejercicio12.sourcelink.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\Ejercicio12.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\refint\Ejercicio12.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\Ejercicio12.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\Ejercicio12.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio12\obj\Debug\net8.0\ref\Ejercicio12.dll

@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37CF6758-94A9-46A7-9C6E-1B99FAFD9D5A}|Ejercicio12\\Ejercicio12.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio12\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37CF6758-94A9-46A7-9C6E-1B99FAFD9D5A}|Ejercicio12\\Ejercicio12.csproj|solutionrelative:ejercicio12\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9929D476-58E6-4114-87B9-3560350122AA}|ConsoleApp1\\Ejercicio11.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\consoleapp1\\tablerodejuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9929D476-58E6-4114-87B9-3560350122AA}|ConsoleApp1\\Ejercicio11.csproj|solutionrelative:consoleapp1\\tablerodejuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TableroDeJuego.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ConsoleApp1\\TableroDeJuego.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\TableroDeJuego.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ConsoleApp1\\TableroDeJuego.cs",
+              "RelativeToolTip": "ConsoleApp1\\TableroDeJuego.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T18:34:35.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio12\\Class1.cs",
+              "RelativeDocumentMoniker": "Ejercicio12\\Class1.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio12\\Class1.cs",
+              "RelativeToolTip": "Ejercicio12\\Class1.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAUwE0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T18:34:27.987Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
