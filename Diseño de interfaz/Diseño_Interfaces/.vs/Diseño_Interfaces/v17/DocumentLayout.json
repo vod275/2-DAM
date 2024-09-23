@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
+  "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9929D476-58E6-4114-87B9-3560350122AA}|ConsoleApp1\\Ejercicio11.csproj|c:\\users\\alumno\\desktop\\victor oliver donoso\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\consoleapp1\\tablerodejuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9929D476-58E6-4114-87B9-3560350122AA}|ConsoleApp1\\Ejercicio11.csproj|solutionrelative:consoleapp1\\tablerodejuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ConsoleApp1\\TableroDeJuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConsoleApp1\\TableroDeJuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53A53ED0-705A-4064-BE17-98A5F9336A2A}|Ejercicio10\\Ejercicio10.csproj|c:\\users\\alumno\\desktop\\victor oliver donoso\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio10\\juegoadivinar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53A53ED0-705A-4064-BE17-98A5F9336A2A}|Ejercicio10\\Ejercicio10.csproj|solutionrelative:ejercicio10\\juegoadivinar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio7\\multiplicacionDel1al9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ejercicio7\\multiplicacionDel1al9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{722CA052-3638-4E3F-A6E2-BB9E5A6DCB0E}|Ejercicio7\\Ejercicio07.csproj|c:\\users\\alumno\\desktop\\victor oliver donoso\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio7\\multiplicaciondel1al9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{722CA052-3638-4E3F-A6E2-BB9E5A6DCB0E}|Ejercicio7\\Ejercicio07.csproj|solutionrelative:ejercicio7\\multiplicaciondel1al9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio10\\JuegoAdivinar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ejercicio10\\JuegoAdivinar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,37 +26,35 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "multiplicacionDel1al9.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio7\\multiplicacionDel1al9.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio7\\multiplicacionDel1al9.cs",
               "RelativeDocumentMoniker": "Ejercicio7\\multiplicacionDel1al9.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio7\\multiplicacionDel1al9.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio7\\multiplicacionDel1al9.cs",
               "RelativeToolTip": "Ejercicio7\\multiplicacionDel1al9.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T17:28:41.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T17:28:41.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "JuegoAdivinar.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio10\\JuegoAdivinar.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio10\\JuegoAdivinar.cs",
               "RelativeDocumentMoniker": "Ejercicio10\\JuegoAdivinar.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio10\\JuegoAdivinar.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio10\\JuegoAdivinar.cs",
               "RelativeToolTip": "Ejercicio10\\JuegoAdivinar.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T17:25:28.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T17:25:28.136Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TableroDeJuego.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ConsoleApp1\\TableroDeJuego.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ConsoleApp1\\TableroDeJuego.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\TableroDeJuego.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ConsoleApp1\\TableroDeJuego.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ConsoleApp1\\TableroDeJuego.cs",
               "RelativeToolTip": "ConsoleApp1\\TableroDeJuego.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAkwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
