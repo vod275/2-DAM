@@ -12,75 +12,75 @@ public class Ejercicio1 {
 	public static void main(String[] args) throws IOException {
 		  Scanner scanner = new Scanner(System.in);
 		 
-		  System.out.println("\n--- Menú de opciones ---");
-          System.out.println("1. Crear un fichero");
-          System.out.println("2. Insertar un Registro");
-          System.out.println("3. Visualizar Registro");
-          System.out.println("4. Modificar Registro");
-          System.out.println("5. Borrar Registro");
-          System.out.println("6. Salir");
-          System.out.print("Seleccione una opción: ");
-          int opcion = scanner.nextInt();
-          
-         
+		 
+		  
+
 		
-		
-		
-		
-		switch (opcion) {
-			case 1: {
-			
-				crearFichero();
-				break;
-			
-			}
-			
-			case 2: {
-				insertarRegistro();
-				break;
-			}
-			case 3: {
-				visualizaRegistro();;
-				break;
-			}
-		
-			case 4: {
-				int COD_DEP = pedirdepartamento();
-				if (consultaRegistro(COD_DEP)) {
-					try {
-						System.out.println(" Teclea la localidad: ");
-						String LOCALIDAD = scanner.nextLine();
-						System.out.println(" Teclea la media de salario del departamento: ");
-						float MEDIA_SALARIO_DEP = scanner.nextFloat();
-						scanner.nextLine();
-						modificarRegistro(COD_DEP, LOCALIDAD, MEDIA_SALARIO_DEP);
-					} catch (InputMismatchException e) {
-						System.out.println("ERROR. EL SALARIO DEBE SER NUMERICO.\n ");
-					} 
-				}
-				break;
-			}
-		
-			case 5: {
-				    int numDep = pedirdepartamento();
-					if (consultaRegistro(numDep)) {
-						borrarRegistro(numDep);
+		int opcion;
+		do {
+			  dibujaMenu(); // Muestra el menú al usuario
+			    System.out.print("Seleccione una opción: ");
+
+			    opcion = scanner.nextInt(); // Lee la opción
+			    scanner.nextLine(); // Limpiar el buffer
+
+			    switch (opcion) {
+			        case 1: {
+			            crearFichero();
+			            break;
 			        }
-			}
+			        case 2: {
+			            insertarRegistro();
+			            break;
+			        }
+			        case 3: {
+			            visualizaRegistro();
+			            break;
+			        }
+			        case 4: {
+			            int COD_DEP = pedirdepartamento();
+			            if (consultaRegistro(COD_DEP)) {
+			                System.out.print("Teclea la localidad: ");
+			                String LOCALIDAD = scanner.nextLine(); // Cambié a nextLine
+			                System.out.print("Teclea la media de salario del departamento: ");
+			                float MEDIA_SALARIO_DEP = scanner.nextFloat();
+			                scanner.nextLine(); // Limpiar el buffer
+			                modificarRegistro(COD_DEP, LOCALIDAD, MEDIA_SALARIO_DEP);
+			            }
+			            break;
+			        }
+			        case 5: {
+			            int numDep = pedirdepartamento();
+			            if (consultaRegistro(numDep)) {
+			                borrarRegistro(numDep);
+			            }
+			            break;
+			        }
+			        case 6: {
+			            System.out.println("Saliendo del programa...");
+			            break;
+			        }
+			        default: {
+			            System.out.println("Opción no válida. Por favor, seleccione de nuevo.");
+			            break; // Importante para evitar que se ejecute el siguiente caso por accidente
+			        }
+			    }
+
 		
-			case 6: {
-				System.out.println("Saliendo del programa...");
-				break;
-			}
-
-
-
-		}
-		
+		} while(opcion  != 6);
 	}
 	
 	
 	
+	private static void dibujaMenu() {
+		 System.out.println("\n--- Menú de opciones ---");
+         System.out.println("1. Crear un fichero");
+         System.out.println("2. Insertar un Registro");
+         System.out.println("3. Visualizar Registro");
+         System.out.println("4. Modificar Registro");
+         System.out.println("5. Borrar Registro");
+         System.out.println("6. Salir");
+	}
 	
 	
 	public static void crearFichero()  throws IOException {
@@ -124,7 +124,7 @@ public class Ejercicio1 {
 	 		   		file.close();  //cerrar fichero  
 	 		   
 
-	            System.out.println("Registro agregado correctamente.");
+	            System.out.println("Fichero agregado correctamente.");
 
 	        } catch (IOException e) {
 	            System.out.println("Ocurrió un error al escribir en el archivo.");
@@ -146,43 +146,48 @@ public class Ejercicio1 {
 		 File fichero = new File("C:\\Users\\Alumno\\eclipse-workspace\\holaBuenas.dat"); 
 
 	        // Verificar si el archivo existe
-	        if (!fichero.exists()) {
-	        	 System.out.println("DEPARTAMENTO NO EXISTE");
-	            return false;
-	        }
-	        else
-	        {
-	        	 System.out.println("DEPARTAMENTO SÍ EXISTE");
+		 if (!fichero.exists()) {
+		        System.out.println("DEPARTAMENTO NO EXISTE");
+		        return false;
+		 }
+		 else
+			 
+	     {
 		        RandomAccessFile file = new RandomAccessFile(fichero, "r");
 
 		     
 		    
 		  
 		    
-		    // Calcular el tamaño del registro y la posición
-		    int tamRegistro = 4 + (15 * 2) + (15 * 2) + 4 + 8 + 4; // tamaño de cada registro en bytes
-		    long pos = (COD_DEP - 1) * tamRegistro; // posición del registro a consultar
-
-		   
-		    // Verificar si la posición del registro es válida dentro del archivo
-	        if (pos >= file.length()) {
-	            file.close();
-	            return false;
-	        }
-
-	        // Posicionar el puntero en el archivo
-	        file.seek(pos);
-
-	        // Leer el código de departamento
-	        int ID = file.readInt();
-	        file.close();
-
-	        // Si el ID es 0, significa que el registro es un hueco
-	        return ID != 0;
-	        	
-	        }
-
+			    // Calcular el tamaño del registro y la posición
+			    int tamRegistro = 4 + (15 * 2) + (15 * 2) + 4 + 8 + 4; // tamaño de cada registro en bytes
+			    long pos = (COD_DEP - 1) * tamRegistro; // posición del registro a consultar
+	
+			   
+			    // Verificar si la posición del registro es válida dentro del archivo
+		        if (pos >= file.length()) {
+		            file.close();
+		            return false;
+		        }
+	
+		        // Posicionar el puntero en el archivo
+		        file.seek(pos);
+	
+		        // Leer el código de departamento
+		        int ID = file.readInt();
+		        file.close();
+	
+		        // Verificar si el ID leído coincide con el COD_DEP
+		        if (ID == COD_DEP) {
+		            System.out.println("DEPARTAMENTO SÍ EXISTE");
+		            return true;
+		        } else {
+		            System.out.println("DEPARTAMENTO NO EXISTE");
+		            return false;
+		        }
 	        
+	       }
+
 
 
 	}
@@ -248,7 +253,7 @@ public class Ejercicio1 {
 	            File fichero = new File("C:\\Users\\Alumno\\eclipse-workspace\\holaBuenas.dat");
 	            RandomAccessFile file = new RandomAccessFile(fichero, "r");
 
-	            // Calcular el tamaño del registro y la posición
+	            // Calcular el tamaño del registro y la posición en su lugar
 	            int tamRegistro = 4 + (15 * 2) + (15 * 2) + 4 + 8 + 4;
 	            long pos = (numd - 1) * tamRegistro;
 
@@ -284,10 +289,7 @@ public class Ejercicio1 {
 	            // Cerrar el archivo
 	            file.close();
 	            
-	        } else {
-	            System.out.println("DEPARTAMENTO NO EXISTE");
-	        }
-
+	        } 
 	        scanner.close();
     }
 
@@ -297,22 +299,33 @@ public class Ejercicio1 {
 	
 	public static void modificarRegistro(int COD_DEP, String LOCALIDAD, float MEDIA_SALARIO_DEP) throws IOException { 
 		 
-		File fichero = new File("C:\\Users\\Alumno\\eclipse-workspace\\holaBuenas.dat");
-		RandomAccessFile file = new RandomAccessFile(fichero, "rw");
-		StringBuffer buffer = null;
-		int pos;
-		int tamRegistro = 4 + (15 * 2) + (15 * 2) + 4 + 8 + 4;
-		pos=(COD_DEP-1)*tamRegistro;   
-		file.seek(pos);  
-		buffer = new StringBuffer(LOCALIDAD);
-		buffer.setLength(15);
-		file.writeChars(buffer.toString());
-		pos=pos+34;
-		file.seek(pos);  
-		file.writeFloat(MEDIA_SALARIO_DEP);
-		System.out.println("---------------------------------------------------------");
-		System.out.println("------------ DEPARTAMENTO MODIFICADO  " + COD_DEP + " -----------------");
-	    file.close();		
+		 File fichero = new File("C:\\Users\\Alumno\\eclipse-workspace\\holaBuenas.dat");
+		    RandomAccessFile file = new RandomAccessFile(fichero, "rw");
+		    
+		    int tamRegistro = 4 + (15 * 2) + (15 * 2) + 4 + 8 + 4; 
+		    long pos = (COD_DEP - 1) * tamRegistro; 
+		    file.seek(pos);
+  
+		    file.readInt();
+		    
+		    for (int i = 0; i < 15; i++) {
+		        file.readChar();
+		    }
+		    
+		    // Escribir la nueva localidad
+		    StringBuffer buffer = new StringBuffer(LOCALIDAD);
+		    buffer.setLength(15); // Asegurarse de que tiene 15 caracteres
+		    file.writeChars(buffer.toString());
+		    
+		    // Saltar el departamento (4 bytes)
+		    file.readInt();
+		    
+		    // Escribir la nueva media salarial
+		    file.writeDouble(MEDIA_SALARIO_DEP);
+		    
+		    System.out.println("---------------------------------------------------------");
+		    System.out.println("------------ DEPARTAMENTO MODIFICADO  " + COD_DEP + " -----------------");
+		    file.close();
 	   	 
 	}
 		
