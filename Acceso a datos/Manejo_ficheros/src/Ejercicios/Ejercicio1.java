@@ -1,8 +1,10 @@
 package Ejercicios;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio1 {
@@ -12,12 +14,11 @@ public class Ejercicio1 {
 		 
 		  System.out.println("\n--- Menú de opciones ---");
           System.out.println("1. Crear un fichero");
-          System.out.println("2. Consultar un registro");
-          System.out.println("3. Insertar un Registro");
-          System.out.println("4. Visualizar Registro");
-          System.out.println("5. Modificar Registro");
-          System.out.println("6. Borrar Registro");
-          System.out.println("7. Salir");
+          System.out.println("2. Insertar un Registro");
+          System.out.println("3. Visualizar Registro");
+          System.out.println("4. Modificar Registro");
+          System.out.println("5. Borrar Registro");
+          System.out.println("6. Salir");
           System.out.print("Seleccione una opción: ");
           int opcion = scanner.nextInt();
           
@@ -33,31 +34,41 @@ public class Ejercicio1 {
 				break;
 			
 			}
-			case 2: {
-				consultaRegistro(8);
-				break;
-			}
 			
-			case 3: {
+			case 2: {
 				insertarRegistro();
 				break;
 			}
-			case 4: {
+			case 3: {
 				visualizaRegistro();;
 				break;
 			}
 		
-			case 5: {
-				modificarRegistro();
+			case 4: {
+				int COD_DEP = pedirdepartamento();
+				if (consultaRegistro(COD_DEP)) {
+					try {
+						System.out.println(" Teclea la localidad: ");
+						String LOCALIDAD = scanner.nextLine();
+						System.out.println(" Teclea la media de salario del departamento: ");
+						float MEDIA_SALARIO_DEP = scanner.nextFloat();
+						scanner.nextLine();
+						modificarRegistro(COD_DEP, LOCALIDAD, MEDIA_SALARIO_DEP);
+					} catch (InputMismatchException e) {
+						System.out.println("ERROR. EL SALARIO DEBE SER NUMERICO.\n ");
+					} 
+				}
 				break;
+			}
+		
+			case 5: {
+				    int numDep = pedirdepartamento();
+					if (consultaRegistro(numDep)) {
+						borrarRegistro(numDep);
+			        }
 			}
 		
 			case 6: {
-				borrarRegistro();
-				break;
-			}
-		
-			case 7: {
 				System.out.println("Saliendo del programa...");
 				break;
 			}
@@ -129,7 +140,7 @@ public class Ejercicio1 {
 	
 	
 	
-	public static boolean consultaRegistro(int numd) throws IOException { 
+	public static boolean consultaRegistro(int COD_DEP) throws IOException { 
 		  
 	    
 		 File fichero = new File("C:\\Users\\Alumno\\eclipse-workspace\\holaBuenas.dat"); 
@@ -150,7 +161,7 @@ public class Ejercicio1 {
 		    
 		    // Calcular el tamaño del registro y la posición
 		    int tamRegistro = 4 + (15 * 2) + (15 * 2) + 4 + 8 + 4; // tamaño de cada registro en bytes
-		    long pos = (numd - 1) * tamRegistro; // posición del registro a consultar
+		    long pos = (COD_DEP - 1) * tamRegistro; // posición del registro a consultar
 
 		   
 		    // Verificar si la posición del registro es válida dentro del archivo
@@ -238,7 +249,7 @@ public class Ejercicio1 {
 	            RandomAccessFile file = new RandomAccessFile(fichero, "r");
 
 	            // Calcular el tamaño del registro y la posición
-	            int tamRegistro = 72;
+	            int tamRegistro = 4 + (15 * 2) + (15 * 2) + 4 + 8 + 4;
 	            long pos = (numd - 1) * tamRegistro;
 
 	            // Posicionar el puntero en el archivo
@@ -284,22 +295,84 @@ public class Ejercicio1 {
 	
 	
 	
-	public static void modificarRegistro() throws IOException { 
+	public static void modificarRegistro(int COD_DEP, String LOCALIDAD, float MEDIA_SALARIO_DEP) throws IOException { 
 		 
+		File fichero = new File("C:\\Users\\Alumno\\eclipse-workspace\\holaBuenas.dat");
+		RandomAccessFile file = new RandomAccessFile(fichero, "rw");
+		StringBuffer buffer = null;
+		int pos;
+		int tamRegistro = 4 + (15 * 2) + (15 * 2) + 4 + 8 + 4;
+		pos=(COD_DEP-1)*tamRegistro;   
+		file.seek(pos);  
+		buffer = new StringBuffer(LOCALIDAD);
+		buffer.setLength(15);
+		file.writeChars(buffer.toString());
+		pos=pos+34;
+		file.seek(pos);  
+		file.writeFloat(MEDIA_SALARIO_DEP);
+		System.out.println("---------------------------------------------------------");
+		System.out.println("------------ DEPARTAMENTO MODIFICADO  " + COD_DEP + " -----------------");
+	    file.close();		
+	   	 
+	}
 		
+		
+
+	
+	
+	
+	public static void borrarRegistro(int COD_DEP) throws IOException { 
+		 
+		File fichero = new File("C:\\Users\\Alumno\\eclipse-workspace\\holaBuenas.dat");
+		RandomAccessFile file;
+		
+		try {
+			file = new RandomAccessFile(fichero, "rw");
+			int tamRegistro = 4 + (15 * 2) + (15 * 2) + 4 + 8 + 4;
+			int pos;
+			pos=(COD_DEP-1)*tamRegistro;
+			file.seek(pos);
+			file.writeInt(0);
+			String nombreD = "               ";
+			StringBuffer buffer = new StringBuffer(nombreD);
+			buffer.setLength(15);
+			file.writeChars(buffer.toString());
+			String localidadD = "               ";
+			buffer = new StringBuffer(localidadD);
+			buffer.setLength(15);
+			file.writeChars(buffer.toString());
+			file.writeInt(0);
+			file.writeFloat(0f);
+			System.out.println("---------------------------------------------------------");
+			System.out.println("------------ DEPARTAMENTO BORRADO  " + COD_DEP + " -----------------");
+			file.close();
+		} catch (FileNotFoundException e) {
+			System.out.println(" ERROR NO ENCONTRADO EL FICHERO. ");
+		} catch (IOException e) {
+			System.out.println("ERROR DE E/S ");
+		}
 		
 		
 
 	}
 	
 	
-	public static void borrarRegistro() throws IOException { 
-		 
-		
-		
-		
+	public static int pedirdepartamento() throws IOException {
+		Scanner scanner = new Scanner(System.in);
+		int numeroD;
+		do {
+			System.out.println(" Teclea el numero de departamento (entre 1 y 100): ");
+			try {
+				numeroD = scanner.nextInt();
+			} catch (InputMismatchException e) {
+				numeroD = -1;
+				System.out.println("El departamento debe ser numerico.\n ");
+			}
+			scanner.nextLine();
+		} while ((numeroD > 100) || (numeroD < 1));
 
-	}
+		return numeroD;
+	}// fin pedirdepartamento
 	
 	
 	
