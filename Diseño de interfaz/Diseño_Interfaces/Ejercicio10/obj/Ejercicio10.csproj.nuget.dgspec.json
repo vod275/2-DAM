@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\Ejercicio10.csproj": {}
+    "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\Ejercicio10.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\Ejercicio10.csproj": {
+    "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\Ejercicio10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\Ejercicio10.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\Ejercicio10.csproj",
         "projectName": "Ejercicio10",
-        "projectPath": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\Ejercicio10.csproj",
+        "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\Ejercicio10.csproj",
         "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\Desktop\\Victor Oliver Donoso\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\obj\\",
+        "outputPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\Ejercicio10\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

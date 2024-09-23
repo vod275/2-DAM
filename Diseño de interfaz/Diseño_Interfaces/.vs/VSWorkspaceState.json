@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ConsoleApp1"
+    "\\ConsoleApp1",
+    "\\Ejercicio10",
+    "\\Ejercicio7"
   ],
-  "SelectedNode": "\\ConsoleApp1\\TableroDeJuego.cs",
+  "SelectedNode": "\\Ejercicio10\\JuegoAdivinar.cs",
   "PreviewInSolutionExplorer": false
 }
