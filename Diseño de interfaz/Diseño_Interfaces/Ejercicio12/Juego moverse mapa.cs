@@ -1,43 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ejercicio12
 {
     internal class Class1
     {
-        //Tiene que que hacer que en la fila 0 columna 0 se dibujeun circulo y luego viendo las variables
-        // ir moviendo ese cero y que se imprima otra vez las x pero en la fila que antes habia un 0 ahora una x y asi 
-        // dependendo de donde nos queramos mover con el 0
-
         static void Main(String[] args)
         {
             int size = 4;
-            int posX = 0; // Posición inicial del círculo
+            int posX = 0; 
             int posY = 0;
-            string w;
-            string a;
-            string s;
-            string d;
 
-            char[,] matriz = new char[4, 4];
-            for (int i = 0; i < size;  i++)
+            // Inicializar la matriz
+            char[,] matriz = new char[size, size];
+
+            for (int i = 0; i < size; i++)
             {
-                
                 for (int j = 0; j < size; j++)
                 {
-
-                    Console.Write(" X ");
-                    
-                   
+                    matriz[i, j] = 'X'; // Llenar la matriz con 'X'
                 }
-                Console.Write("|");
-                Console.WriteLine();
             }
-            matriz[0, 0] = 'O';
+
+            matriz[posX, posY] = 'O'; // Colocar 'O' en la posición inicial
 
             while (true)
             {
@@ -49,28 +33,31 @@ namespace Ejercicio12
                 Console.WriteLine("S = Abajo");
                 Console.WriteLine("Esc = Salir");
 
-                var key = Console.ReadKey(true).Key; 
+                var key = Console.ReadKey(true).Key;
+
+                //guardamos la pesicion de la x
                 matriz[posX, posY] = 'X';
 
                 switch (key)
                 {
                     case ConsoleKey.W:
-                        if (posX > 0) posX--; 
+                        if (posX > 0) posX--;
                         break;
                     case ConsoleKey.A:
-                        if (posY > 0) posY--; 
+                        if (posY > 0) posY--;
                         break;
                     case ConsoleKey.D:
-                        if (posY < size - 1) posY++; 
+                        if (posY < size - 1) posY++;
                         break;
                     case ConsoleKey.S:
                         if (posX < size - 1) posX++;
                         break;
                     case ConsoleKey.Escape:
-                        return; 
+                        return;
                 }
 
-                matriz[posX, posY] = 'O'; // Colocar el círculo en la nueva posición
+                // O en la nueva posicion
+                matriz[posX, posY] = 'O';
             }
         }
 
@@ -85,6 +72,5 @@ namespace Ejercicio12
                 Console.WriteLine();
             }
         }
-
     }
 }
