@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37CF6758-94A9-46A7-9C6E-1B99FAFD9D5A}|Ejercicio12\\Ejercicio12.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio12\\juego moverse mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37CF6758-94A9-46A7-9C6E-1B99FAFD9D5A}|Ejercicio12\\Ejercicio12.csproj|solutionrelative:ejercicio12\\juego moverse mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\proyecto01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|solutionrelative:proyecto01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\proyecto01\\pinocho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|solutionrelative:proyecto01\\pinocho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CF6758-94A9-46A7-9C6E-1B99FAFD9D5A}|Ejercicio12\\Ejercicio12.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio12\\juego moverse mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37CF6758-94A9-46A7-9C6E-1B99FAFD9D5A}|Ejercicio12\\Ejercicio12.csproj|solutionrelative:ejercicio12\\juego moverse mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\Program.cs",
               "RelativeDocumentMoniker": "Proyecto01\\Program.cs",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Rio.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\Rio.cs",
               "RelativeDocumentMoniker": "Proyecto01\\Rio.cs",
@@ -55,12 +55,11 @@
               "RelativeToolTip": "Proyecto01\\Rio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:04:34.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T19:04:34.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Pinocho.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\Pinocho.cs",
               "RelativeDocumentMoniker": "Proyecto01\\Pinocho.cs",
@@ -68,12 +67,11 @@
               "RelativeToolTip": "Proyecto01\\Pinocho.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:06:11.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T19:06:11.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ObjetoRio.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\ObjetoRio.cs",
               "RelativeDocumentMoniker": "Proyecto01\\ObjetoRio.cs",
@@ -81,18 +79,17 @@
               "RelativeToolTip": "Proyecto01\\ObjetoRio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:05:07.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T19:05:07.039Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Juego moverse mapa.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio12\\Juego moverse mapa.cs",
               "RelativeDocumentMoniker": "Ejercicio12\\Juego moverse mapa.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio12\\Juego moverse mapa.cs",
               "RelativeToolTip": "Ejercicio12\\Juego moverse mapa.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBMAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T18:28:21.823Z",
               "EditorCaption": ""
