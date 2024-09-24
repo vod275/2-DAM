@@ -2,7 +2,7 @@ package Tema1;
 
 import java.util.Arrays;
 import java.io.IOException;
-public class Ejercicio1 {
+public class Ejercicio01 {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
