@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Proyecto01
 {
-    internal class ObjetoRio
-    {
+    public enum ObjetoRío
+    { 
+        Agua = 'A',
+        RPiedra = 'R',
+        Pez = 'P',      
+        ÑPiraña = 'Ñ'
     }
+
 }

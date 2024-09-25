@@ -1,0 +1,15 @@
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\bin\Debug\net8.0\Proyecto01.exe
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\bin\Debug\net8.0\Proyecto01.deps.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\bin\Debug\net8.0\Proyecto01.runtimeconfig.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\bin\Debug\net8.0\Proyecto01.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\bin\Debug\net8.0\Proyecto01.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\Proyecto01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\Proyecto01.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\Proyecto01.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\Proyecto01.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\Proyecto01.sourcelink.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\Proyecto01.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\refint\Proyecto01.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\Proyecto01.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\Proyecto01.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Proyecto01\obj\Debug\net8.0\ref\Proyecto01.dll
