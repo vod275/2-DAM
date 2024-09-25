@@ -11,6 +11,7 @@ public class InfoProcessRuntime {
 
 		Process process1 = Runtime.getRuntime().exec(EDGE);
 		Process process2 = Runtime.getRuntime().exec(CMD);
+		Thread.sleep(6000);
 		
 		System.out.println("El estado del proceso " + process1.pid() + " es: " + process1.isAlive());
 		System.out.println("La información del proceso " + process2.pid() + " es: " + process2.info());

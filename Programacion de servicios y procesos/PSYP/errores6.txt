@@ -1,0 +1,9 @@
+dam2 : El t‚rmino 'dam2' no se reconoce como nombre de un cmdlet, funci¢n, archivo de script o programa ejecutable. 
+Compruebe si escribi¢ correctamente el nombre o, si incluy¢ una ruta de acceso, compruebe que dicha ruta es correcta e 
+int‚ntelo de nuevo.
+En l¡nea: 1 Car cter: 2
++  dam2
++  ~~~~
+    + CategoryInfo          : ObjectNotFound: (dam2:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
