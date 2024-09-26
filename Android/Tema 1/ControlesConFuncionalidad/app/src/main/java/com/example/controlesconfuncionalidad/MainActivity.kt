@@ -1,9 +1,11 @@
 package com.example.controlesconfuncionalidad
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,15 +26,13 @@ class MainActivity : AppCompatActivity() {
         val btAceptar = findViewById<Button>(R.id.btAceptar)
         val btBorrar = findViewById<Button>(R.id.btBorrar)
 
-        
-
-
-
-
-
-
-
-
-
+        btAceptar.setOnClickListener{
+            println(ptNombre.text.toString())
+            Log.i("Victor,", "Hola ${ptNombre.text}")
+            Toast.makeText(this, "Hola ${ptNombre.text}", Toast.LENGTH_SHORT).show()
+        }
+        btBorrar.setOnClickListener{
+            ptNombre.text.clear()
+        }
     }
 }
