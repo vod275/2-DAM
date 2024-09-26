@@ -26,15 +26,21 @@ namespace Proyecto01
 
             Posición = (x, y);
 
-            ObjetoRío objeto = rio.ObtenerElemento(x, y);
+            ObjetoRio objeto = rio.ObtenerElemento(x, y);
 
             switch (objeto)
             {
-                case ObjetoRío.Pez:
+                case ObjetoRio.Pez:
                     Peces++;
+                    rio.MarcarVisitado(x, y);
                     break;
-                case ObjetoRío.ÑPiraña:
-                    Peces = 0; 
+                case ObjetoRio.RPiraña:
+                    Peces = 0;
+                    rio.MarcarVisitado(x, y);
+                    break;
+                case ObjetoRio.Agua:
+                case ObjetoRio.XPiedra:
+                    rio.MarcarVisitado(x, y);
                     break;
             }
 

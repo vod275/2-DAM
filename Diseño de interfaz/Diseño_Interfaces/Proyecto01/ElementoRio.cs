@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Proyecto01
 {
-    public enum ObjetoRío
+    public enum ObjetoRio
     { 
         Agua = 'A',
-        RPiedra = 'R',
+        XPiedra = 'X',
         Pez = 'P',      
-        ÑPiraña = 'Ñ'
+        RPiraña = 'R'
     }
 
 }

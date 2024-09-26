@@ -1,86 +1,103 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Proyecto01;
 
-namespace Proyecto01
+public class Rio
 {
+    private ObjetoRio[,] matriz;
+    private bool[,] revelado; // Matriz de revelado para controlar qué se muestra
+    private int size;
+    private Random random;
 
-    public class Rio
+    public Rio(int size)
     {
-        private ObjetoRío[,] matriz;
-        private bool[,] revelado;
-        private Random random;
+        this.size = size;
+        matriz = new ObjetoRio[size, size];
+        revelado = new bool[size, size];
+        random = new Random();
+        GenerarRío();
+    }
 
-        public Rio(int size)
+    // Método para generar el río
+    private void GenerarRío()
+    {
+        for (int i = 0; i < size; i++)
         {
-            
-            matriz = new ObjetoRío[size, size];
-            revelado = new bool[size, size];
-            random = new Random();
-            GenerarRío();
-        }
-
-        private void GenerarRío()
-        {
-            for (int i = 0; i < 5; i++)
+            for (int j = 0; j < size; j++)
             {
-                for (int j = 0; j < 5; j++)
-                {
-                    matriz[i, j] = ObtenerElementoAleatorio();
-                    revelado[i, j] = false;
-                }
-            }
-        }
+                int prob = random.Next(100);
+                if (prob < 50)
+                    matriz[i, j] = ObjetoRio.Pez;
+                else if (prob < 70)
+                    matriz[i, j] = ObjetoRio.Agua;
+                else if (prob < 80)
+                    matriz[i, j] = ObjetoRio.XPiedra;
+                else
+                    matriz[i, j] = ObjetoRio.RPiraña;
 
-        private ObjetoRío ObtenerElementoAleatorio()
-        {
-            int valorAleatorio = random.Next(100);
-            if (valorAleatorio < 50)
-                return ObjetoRío.Pez; // 50% 
-            else if (valorAleatorio < 75)
-                return ObjetoRío.Agua; // 25% 
-            else if (valorAleatorio < 93) 
-                return ObjetoRío.RPiedra; // 18% 
-            else
-                return ObjetoRío.ÑPiraña; // 7% s
-        }
-
-        public ObjetoRío ObtenerElemento(int x, int y)
-        {
-            if (x < 0 || x >= 5 || y < 0 || y >= 5)
-            {
-                throw new IndexOutOfRangeException($"Te sales del 5 X 5");
-            }
-            revelado[x, y] = true;
-            return matriz[x, y];
-            
-        }
-
-        public void Reiniciar()
-        {
-            GenerarRío();
-        }
-
-        public void ImprimirRío()
-        {
-            for (int i = 0; i < 5; i++)
-            {
-                for (int j = 0; j < 5; j++)
-                {
-                    if (revelado[i, j])
-                    {
-                       
-                        Console.Write($" {matriz[i, j].ToString()[0]} ");
-                    }
-                    else
-                    {
-                        Console.Write(" ? "); 
-                    }
-                }
-                Console.WriteLine();
+                revelado[i, j] = false; // Inicialmente todas las casillas están ocultas
             }
         }
     }
+
+    //este metodo hace que cuando pasas por un espacio, lo convierta en agua para que no puntue doble
+    //Tambien cambia la letra de P a A para saber cuantos peces llevas hay que mirar el contador de abajo
+    public void MarcarVisitado(int x, int y)
+    {
+        revelado[x, y] = true; // Marcar la celda como revelada
+    }
+
+    // Obtener el elemento en la posición dada
+    public ObjetoRio ObtenerElemento(int x, int y)
+    {
+        return matriz[x, y];
+    }
+
+    // Verificar si una celda ha sido revelada
+    public bool EsRevelado(int x, int y)
+    {
+        return revelado[x, y];
+    }
+
+    // Método para imprimir el estado del río
+    public void ImprimirRio(int posX, int posY)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            for (int j = 0; j < size; j++)
+            {
+                if (i == posX && j == posY)
+                {
+                    Console.Write(" O "); 
+                }
+                else if (revelado[i, j])
+                {
+                    Console.Write($" {ObtenerObjeto(matriz[i, j])} ");
+                }
+                else
+                {
+                    Console.Write(" ? "); 
+                }
+            }
+            Console.WriteLine();
+        }
+    }
+
+    private char ObtenerObjeto(ObjetoRio objeto)
+    {
+        switch (objeto)
+        {
+            case ObjetoRio.Agua:
+                return 'A';
+            case ObjetoRio.XPiedra:
+                return 'X';
+            case ObjetoRio.Pez:
+                return 'P'; 
+            case ObjetoRio.RPiraña:
+                return 'R'; 
+            default:
+                return '?';
+        }
+    }
 }
+
+
+

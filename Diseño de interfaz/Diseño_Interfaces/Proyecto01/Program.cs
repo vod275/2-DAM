@@ -18,16 +18,17 @@ namespace Proyecto01
             while(pinocho.Peces < 10)
             {
                 Console.Clear();
-                rio.ImprimirRío();
+                rio.ImprimirRio(size, size);
                 Console.WriteLine($"Contador de peces: {pinocho.Peces}");
 
-                ObjetoRío objetoActual = rio.ObtenerElemento(pinocho.Posición.x, pinocho.Posición.y);
+                ObjetoRio objetoActual = rio.ObtenerElemento(pinocho.Posición.x, pinocho.Posición.y);
                 Console.WriteLine($"El objeto es: {objetoActual}");
 
                 Console.WriteLine("W = Arriba");
                 Console.WriteLine("A = Izquierda");
                 Console.WriteLine("D = Derecha");
                 Console.WriteLine("S = Abajo");
+                Console.WriteLine("Reiniciar el juego");
                 Console.WriteLine("Esc = Salir");
                 var key = Console.ReadKey(true).Key;
 
@@ -61,7 +62,6 @@ namespace Proyecto01
             }
 
             Console.WriteLine("HAS GANADO ERES EL PUTO AMO");
-            rio.Reiniciar();
             pinocho = new Pinocho();
 
 
