@@ -2,6 +2,8 @@ package com.example.controlesconfuncionalidad
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,8 +20,19 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-            val btAceptar = findViewById<Button>(R.id.btAceptar)
-            val btBorrar = findViewById<Button>(R.id.btBorrar)
+        val ptNombre = findViewById<EditText>(R.id.ptNombre)
+        val btAceptar = findViewById<Button>(R.id.btAceptar)
+        val btBorrar = findViewById<Button>(R.id.btBorrar)
+
+        
+
+
+
+
+
+
+
+
 
     }
 }
