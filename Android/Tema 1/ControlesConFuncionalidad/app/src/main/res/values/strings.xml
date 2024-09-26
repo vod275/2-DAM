@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ControlesConFuncionalidad</string>
+    <string name="name">Name</string>
+    <string name="nombre">Nombre</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="borrar">Borrar</string>
+</resources>
