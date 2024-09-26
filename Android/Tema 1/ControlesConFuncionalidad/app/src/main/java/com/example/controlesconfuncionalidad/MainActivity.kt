@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         btAceptar.setOnClickListener{
             println(ptNombre.text.toString())
             Log.i("Victor", "Hola ${ptNombre.text}")
-            Toast.makeText(this, "Hola ${ptNombre.text}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Hola ${ptNombre.text}", Toast.LENGTH_LONG).show()
         }
         btBorrar.setOnClickListener{
             ptNombre.text.clear()
