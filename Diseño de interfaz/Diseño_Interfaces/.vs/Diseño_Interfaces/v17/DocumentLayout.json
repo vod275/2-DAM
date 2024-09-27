@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\proyecto01\\pinocho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|solutionrelative:proyecto01\\pinocho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\tienda\\tienda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|solutionrelative:tienda\\tienda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\proyecto01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|solutionrelative:proyecto01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\tienda\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|solutionrelative:tienda\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\proyecto01\\elementorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|solutionrelative:proyecto01\\elementorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\tienda\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|solutionrelative:tienda\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\proyecto01\\rio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54C40594-E605-4ADA-8E58-F3ED3DCC0C46}|Proyecto01\\Proyecto01.csproj|solutionrelative:proyecto01\\rio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\tienda\\productocomida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|solutionrelative:tienda\\productocomida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\tienda\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|solutionrelative:tienda\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\tienda\\productoelectrico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}|Tienda\\Tienda.csproj|solutionrelative:tienda\\productoelectrico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Rio.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\Rio.cs",
-              "RelativeDocumentMoniker": "Proyecto01\\Rio.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\Rio.cs",
-              "RelativeToolTip": "Proyecto01\\Rio.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAMwDEAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Orden.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\Orden.cs",
+              "RelativeDocumentMoniker": "Tienda\\Orden.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\Orden.cs",
+              "RelativeToolTip": "Tienda\\Orden.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:04:34.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ElementoRio.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\ElementoRio.cs",
-              "RelativeDocumentMoniker": "Proyecto01\\ElementoRio.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\ElementoRio.cs",
-              "RelativeToolTip": "Proyecto01\\ElementoRio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T14:15:01.079Z",
+              "WhenOpened": "2024-09-27T16:40:53.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Pinocho.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\Pinocho.cs",
-              "RelativeDocumentMoniker": "Proyecto01\\Pinocho.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\Pinocho.cs",
-              "RelativeToolTip": "Proyecto01\\Pinocho.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwCQAAAAnAAAAAAAAAA==",
+              "Title": "Tienda.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\Tienda.cs",
+              "RelativeDocumentMoniker": "Tienda\\Tienda.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\Tienda.cs",
+              "RelativeToolTip": "Tienda\\Tienda.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:59:10.588Z",
+              "WhenOpened": "2024-09-27T16:02:28.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\Program.cs",
-              "RelativeDocumentMoniker": "Proyecto01\\Program.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Proyecto01\\Program.cs",
-              "RelativeToolTip": "Proyecto01\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwDwAAAARAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\Cliente.cs",
+              "RelativeDocumentMoniker": "Tienda\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\Cliente.cs",
+              "RelativeToolTip": "Tienda\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:57:11.372Z",
+              "WhenOpened": "2024-09-27T16:01:28.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductoComida.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\ProductoComida.cs",
+              "RelativeDocumentMoniker": "Tienda\\ProductoComida.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\ProductoComida.cs",
+              "RelativeToolTip": "Tienda\\ProductoComida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:01:15.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductoElectrico.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\ProductoElectrico.cs",
+              "RelativeDocumentMoniker": "Tienda\\ProductoElectrico.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\ProductoElectrico.cs",
+              "RelativeToolTip": "Tienda\\ProductoElectrico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:01:00.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\Producto.cs",
+              "RelativeDocumentMoniker": "Tienda\\Producto.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Tienda\\Producto.cs",
+              "RelativeToolTip": "Tienda\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T15:59:56.474Z",
               "EditorCaption": ""
             }
           ]

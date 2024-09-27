@@ -81,6 +81,8 @@ public class Rio
         }
     }
 
+
+    //Obtienes la letra que va a salir por pantalla dependiendo del objeto
     private char ObtenerObjeto(ObjetoRio objeto)
     {
         switch (objeto)

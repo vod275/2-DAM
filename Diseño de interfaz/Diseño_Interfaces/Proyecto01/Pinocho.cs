@@ -19,6 +19,8 @@ namespace Proyecto01
             Posición = (0, 0);
         }
 
+
+        //Condiciones para mover 
         public void Mover(int x, int y, Rio rio)
         {
 
