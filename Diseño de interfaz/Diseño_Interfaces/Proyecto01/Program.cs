@@ -28,7 +28,6 @@ namespace Proyecto01
                 Console.WriteLine("A = Izquierda");
                 Console.WriteLine("D = Derecha");
                 Console.WriteLine("S = Abajo");
-                Console.WriteLine("Reiniciar el juego");
                 Console.WriteLine("Esc = Salir");
                 var key = Console.ReadKey(true).Key;
 
