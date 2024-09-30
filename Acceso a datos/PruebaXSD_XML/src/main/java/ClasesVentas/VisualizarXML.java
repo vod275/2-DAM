@@ -15,7 +15,9 @@ public class VisualizarXML {
 
 	public static void main(String[] args) {
 		
+		//insertarventa(26, "Victor", 5, "27/05/1997");
 		visualizarxml();
+		//borrarventa(26);
 
 	}
 
@@ -127,5 +129,48 @@ public class VisualizarXML {
 	  System.out.println(ioe.getMessage());} 
 	 
 	} 
+	
+	
+	private static void borrarventa (int numeventa) {
+		
+		System.out.println("---------------------------- "); 
+	    System.out.println("-------BORRAR VENTA--------- "); 
+	    System.out.println("---------------------------- "); 
+	    try { 
+	        JAXBContext jaxbContext = JAXBContext.newInstance(ObjectFactory.class); 
+	        Unmarshaller u = jaxbContext.createUnmarshaller(); 
+	        JAXBElement jaxbElement = (JAXBElement) u.unmarshal(new FileInputStream("./ventasarticulos.xml")); 
+	        VentasType miventa = (VentasType) jaxbElement.getValue(); 
+	        Ventas vent = miventa.getVentas(); 
+	        List<Ventas.Venta> listaVentas = vent.getVenta(); 
+
+	        boolean found = false;
+	        for (int i = 0; i < listaVentas.size(); i++) {
+	            Ventas.Venta ve = listaVentas.get(i);
+	            if (ve.getNumventa().intValue() == numeventa) {
+	                listaVentas.remove(i);
+	                found = true;
+	                break;
+	            }
+	        }
+
+	        if (found) {
+	            // Save the updated list back to the XML
+	            Marshaller m = jaxbContext.createMarshaller(); 
+	            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);  
+	            m.marshal(jaxbElement, new FileOutputStream("./ventasarticulos.xml")); 
+	            System.out.println("Venta borrada: " + numeventa); 
+	        } else {
+	            System.out.println("Número de venta no encontrado: " + numeventa);
+	        }
+	    } catch (JAXBException je) { 
+	        System.out.println(je.getCause()); 
+	    } catch (IOException ioe) { 
+	        System.out.println(ioe.getMessage());
+	    } 
+		
+	}
+	
+	
 
 }
