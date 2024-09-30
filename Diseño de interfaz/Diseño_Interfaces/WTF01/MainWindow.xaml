@@ -1,0 +1,17 @@
+﻿<Window x:Class="WTF01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WTF01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="texto1" HorizontalAlignment="Left" Margin="322,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" Height="33"/>
+        <TextBox x:Name="resultado" HorizontalAlignment="Left" Margin="322,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="resultado_TextChanged"/>
+        <Button x:Name="btSumar" Content="+" HorizontalAlignment="Left" Margin="322,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.05,0.834" Height="37" Click="btRestar_Click" Width="41" FontSize="22"/>
+        <Button x:Name="btRestar1" Content="-" HorizontalAlignment="Left" Margin="394,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.232,0.102" Height="37" Width="40" FontSize="20" Click="btSumar_Click"/>
+        <Label Content="Resultado:" HorizontalAlignment="Left" Margin="252,105,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="texto2" HorizontalAlignment="Left" Margin="394,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" Height="33"/>
+    </Grid>
+</Window>
