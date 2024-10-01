@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Form</string>
+    <string name="nombre">Name</string>
+    <string name="apellido1">First Surname</string>
+    <string name="apellido2">Second Surname</string>
+    <string name="telefono">Phone</string>
+    <string name="fecha_nacimiento">Date of Birth</string>
+    <string name="email">Email</string>
+    <string name="contraseña">Password</string>
+    <string name="confirma_contraseña">Confirm Password</string>
+    <string name="observaciones">Observations</string>
+    <string name="validar">Validate</string>
+    <string name="limpiar">Clean</string>
+</resources>
