@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF01\\WTF01.csproj",
-      "projectName": "WTF01",
-      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF01\\WTF01.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF01\\WPF01.csproj",
+      "projectName": "WPF01",
+      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF01\\WPF01.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF01\\obj\\",
       "projectStyle": "PackageReference",

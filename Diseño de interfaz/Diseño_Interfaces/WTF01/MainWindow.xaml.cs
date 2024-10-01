@@ -25,16 +25,23 @@ namespace WTF01
         {
             double.TryParse(texto1.Text, out double num1);
             double.TryParse(texto2.Text, out double num2);
-            double resultado = num1 - num2;
+           
+            double resultadoResta = num1 - num2;
+
+           
+            resultado.Text = resultadoResta.ToString();
         }
 
         private void btSumar_Click(object sender, RoutedEventArgs e)
         {
             double.TryParse(texto1.Text, out double num1);
             double.TryParse(texto2.Text, out double num2);
-            double resultado = num1 + num2;
+            
+            double resultadoSuma = num1 + num2;
 
-            resultado.Text = resultado.ToString();
+         
+            resultado.Text = resultadoSuma.ToString();
+
         }
 
       

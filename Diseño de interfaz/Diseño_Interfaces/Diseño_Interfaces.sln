@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proyecto01", "Proyecto01\Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tienda", "Tienda\Tienda.csproj", "{88CB61C8-5B64-4CAA-9DE0-AC44ED4BBEE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WTF01", "WTF01\WTF01.csproj", "{877A3227-CE94-44B1-9E77-798BCD9AE36B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF01", "WTF01\WPF01.csproj", "{877A3227-CE94-44B1-9E77-798BCD9AE36B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF02", "WPF02\WPF02.csproj", "{314C40E2-32DF-4032-9F60-EBAE7EAF5F36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{877A3227-CE94-44B1-9E77-798BCD9AE36B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{877A3227-CE94-44B1-9E77-798BCD9AE36B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{877A3227-CE94-44B1-9E77-798BCD9AE36B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{314C40E2-32DF-4032-9F60-EBAE7EAF5F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{314C40E2-32DF-4032-9F60-EBAE7EAF5F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{314C40E2-32DF-4032-9F60-EBAE7EAF5F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{314C40E2-32DF-4032-9F60-EBAE7EAF5F36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
