@@ -14,7 +14,7 @@
         android:layout_width="101dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="Imagen de muestra"
+        android:contentDescription="Imagen"
         android:scaleType="centerInside"
         android:src="@drawable/imagen1"
         app:layout_constraintEnd_toEndOf="parent"
