@@ -155,14 +155,12 @@
         android:id="@+id/etObservaciones"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginTop="20dp"
         android:hint="@string/observaciones"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/etContraseña"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/etContraseña"
-        app:layout_constraintTop_toBottomOf="@+id/etConfirmaContraseña"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/etConfirmaContraseña" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
