@@ -18,6 +18,7 @@ public class VisualizarXML {
 		//insertarventa(26, "Victor", 5, "27/05/1997");
 		visualizarxml();
 		//borrarventa(26);
+		//modificarVenta(26, 10);
 
 	}
 
@@ -144,18 +145,18 @@ public class VisualizarXML {
 	        Ventas vent = miventa.getVentas(); 
 	        List<Ventas.Venta> listaVentas = vent.getVenta(); 
 
-	        boolean found = false;
+	        boolean borrado = false;
 	        for (int i = 0; i < listaVentas.size(); i++) {
 	            Ventas.Venta ve = listaVentas.get(i);
 	            if (ve.getNumventa().intValue() == numeventa) {
 	                listaVentas.remove(i);
-	                found = true;
+	                borrado = true;
 	                break;
 	            }
 	        }
 
-	        if (found) {
-	            // Save the updated list back to the XML
+	        if (borrado) {
+	            // guardamos la actualizacion de la lista xml
 	            Marshaller m = jaxbContext.createMarshaller(); 
 	            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);  
 	            m.marshal(jaxbElement, new FileOutputStream("./ventasarticulos.xml")); 
@@ -171,6 +172,56 @@ public class VisualizarXML {
 		
 	}
 	
+	private static void modificarVenta (int numeventa, int unidades) {
+		
+		 System.out.println("---------------------------- "); 
+		    System.out.println("-------MODIFICAR VENTA------ "); 
+		    System.out.println("---------------------------- "); 
+		    try {
+		        // Cargar el contexto JAXB y leer el archivo XML
+		        JAXBContext jaxbContext = JAXBContext.newInstance(ObjectFactory.class);
+		        Unmarshaller u = jaxbContext.createUnmarshaller();
+		        JAXBElement jaxbElement = (JAXBElement) u.unmarshal(new FileInputStream("./ventasarticulos.xml"));
+
+		        // Obtener la lista de ventas
+		        VentasType miventa = (VentasType) jaxbElement.getValue();
+		        Ventas vent = miventa.getVentas();
+		        List<Ventas.Venta> listaVentas = vent.getVenta();
+
+		        boolean modificado = false;
+
+		        // Buscar la venta por el número de venta
+		        for (int i = 0; i < listaVentas.size(); i++) {
+		            Ventas.Venta ve = listaVentas.get(i);
+		            if (ve.getNumventa().intValue() == numeventa) {
+		                // Modificar las unidades de la venta encontrada
+		                ve.setUnidades(unidades);
+		                modificado = true;
+		                break;
+		            }
+		        }
+
+		        if (modificado) {
+		            // Guardar los cambios en el archivo XML
+		            Marshaller m = jaxbContext.createMarshaller();
+		            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+		            m.marshal(jaxbElement, new FileOutputStream("./ventasarticulos.xml"));
+		            System.out.println("Venta modificada: Número de venta " + numeventa + ", Nuevas unidades: " + unidades);
+		        } else {
+		            System.out.println("Número de venta no encontrado: " + numeventa);
+		        }
+
+		    } catch (JAXBException je) {
+		        System.out.println(je.getCause());
+		    } catch (IOException ioe) {
+		        System.out.println(ioe.getMessage());
+		    }
+		
+		
+		
+	}
+}
+	
 	
 
-}
+
