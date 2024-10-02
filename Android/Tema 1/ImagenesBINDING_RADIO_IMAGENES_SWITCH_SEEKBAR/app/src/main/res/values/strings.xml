@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImagenesBINDING_RADIO_IMAGENES_SWITCH_SEEKBAR</string>
+
+    <string name="name">Name</string>
+    <string name="nombre">Nombre</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="borrar">Borrar</string>
+</resources>
