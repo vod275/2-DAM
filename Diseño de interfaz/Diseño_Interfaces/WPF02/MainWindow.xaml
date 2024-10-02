@@ -8,8 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <ComboBox x:Name="BoxPersonas" HorizontalAlignment="Left" Margin="83,97,0,0" VerticalAlignment="Top" Width="667" Height="35" SelectionChanged="ComboBox_SelectionChanged"/>
-        <Label x:Name="Nombre" Content="Label" HorizontalAlignment="Left" Margin="109,217,0,0" VerticalAlignment="Top" Height="112" Width="192"/>
-        <Label x:Name="Apellidos" Content="Label" HorizontalAlignment="Left" Margin="468,217,0,0" VerticalAlignment="Top" Height="100" Width="188" FontFamily="Calibri" Cursor="Help"/>
+        <Label x:Name="Nombre" Content="Label" HorizontalAlignment="Left" Margin="109,217,0,0" VerticalAlignment="Top" Height="112" Width="192" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="Apellidos" Content="Label" HorizontalAlignment="Left" Margin="468,217,0,0" VerticalAlignment="Top" Height="100" Width="188" FontFamily="Calibri" Cursor="Help" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
     </Grid>
 </Window>
