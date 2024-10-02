@@ -1,39 +1,51 @@
 package Tema1;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.stream.Collectors;
 
 public class LanzarSumador {
-    public void LanzarSumadorM(Integer n1, Integer n2, String fichResul) throws IOException {
     
-    	String clase1 = "Tema1.Sumador.java";
+	
+	public void LanzarSumadorM(Integer n1, Integer n2, String fichResul) throws IOException {
     
-       ProcessBuilder pb;
-       //File path = new File("C:\\Users\\Alumno\\Desktop\\2-DAM\\Programacion de servicios y procesos\\PSYP\\bin\\Tema1");
+		
+      	
+    	  
+	}
+    	   
+    
+    
+    public static void main(String[] args) throws IOException, InterruptedException {
+    	int n1 = 10;
+		int n2 = 10;
+		Process p;
+    	String clase1 = "Tema1.Sumador";
+    
+        ProcessBuilder pb;
+        // File path = new File("C:\\Users\\Alumno\\Desktop\\2-DAM\\Programacion de servicios y procesos\\PSYP\\bin\\Tema1");
+        File directorioSumador = new File(".\\bin");
 	   
-       try {
-    	   pb = new ProcessBuilder("java", clase1, n1.toString(), n2.toString());
-    	   pb.redirectErrorStream(true);
-    	   pb.redirectOutput(new File(fichResul));
-    	   pb.start();
-    	   
-       }catch (Exception e) {
-    	   e.printStackTrace();
-    	   
-    	   
-       }
- 
-    }
-    
-    public static void main(String[] args) throws IOException {
-    	LanzarSumador lanzar = new LanzarSumador();
-    	lanzar.LanzarSumadorM(1, 51, "res.txt");
-    	lanzar.LanzarSumadorM(51, 100, "res2.txt");
-    	System.out.println("OK");
+       
+        pb = new ProcessBuilder("java", clase1, String.valueOf(n1),String.valueOf(n2));
+        pb.directory(directorioSumador);
+        p = pb.redirectErrorStream(true).start();
+    	 
+        System.out.println("Suma lanzada....");
+    	  
+        Thread.sleep(5000);
+        InputStream inputStream = p.getInputStream();
+    	  
+    	BufferedReader br = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+    	  
+    	var lines = br.lines();
+    	  
+    	String sumaTotal = lines.collect(Collectors.joining("\n"));
+    	System.out.println("La suma total es" + sumaTotal);
     	
-    	
-    	InputStream inputStream1 = lanzar.getInputStream();
     	
     }
 }
