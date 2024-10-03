@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">ImagenesBINDING_RADIO_IMAGENES_SWITCH_SEEKBAR</string>
-
-    <string name="name">Name</string>
     <string name="nombre">Nombre</string>
     <string name="aceptar">Aceptar</string>
     <string name="borrar">Borrar</string>
+    <string name="borde_grueso">Borde Grueso</string>
+    <string name="borde_fino">Borde Fino</string>
+    <string name="extra_de_queso">Extra de Queso</string>
+    <string name="bacon">Bacon</string>
+    <string name="cebolla">Cebolla</string>
+    <string name="licencia">Licencia</string>
+    <string name="Es obligatorio aceptar las licencias">Es obligatorio aceptar las licencias</string>
 </resources>

@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.imagenesbinding_radio_imagenes_switch_seekbar.databinding.ActivityMainBinding
+import modelo.PedidoPizzeria
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -37,15 +38,64 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        binding.btAceptar.setOnClickListener {
+            var mensaje: String = "" // Declaramos la variable mensaje
 
-        binding.btAceptar.setOnClickListener{
-            println(binding.ptNombre.text.toString())
-            Log.i("Victor", "Hola ${binding.ptNombre.text}")
-            Toast.makeText(this, "Hola ${binding.ptNombre.text}", Toast.LENGTH_LONG).show()
+            if (binding.sLicencia.isChecked) {
+                // Construimos la base del mensaje
+                mensaje = "Hola ${binding.ptNombre.text.toString()}, has pedido una pizza con "
+
+                // Añadiendo el tipo de borde seleccionado
+                val bordes = when (binding.rgBordes.checkedRadioButtonId) {
+                    R.id.rbBordeFino -> "borde delgado"
+                    R.id.rbBordeGrueso -> "borde grueso"
+                    else -> "sin borde"
+                }
+
+                mensaje += "$bordes"
+
+                // Añadiendo los ingredientes adicionales seleccionados
+                val extras = mutableListOf<String>()
+                if (binding.cbExtraQueso.isChecked) extras.add("extra de queso")
+                if (binding.cbBacon.isChecked) extras.add("bacon")
+                if (binding.cbCebolla.isChecked) extras.add("cebolla")
+
+                // Si hay ingredientes adicionales, los concatenamos al mensaje
+                if (extras.isNotEmpty()) {
+                    mensaje += " con " + extras.joinToString(", ")
+                }
+            } else {
+                mensaje = "Es obligatorio aceptar las licencias"
+            }
+
+            Log.i("Victor", mensaje)  // Imprimir en el log
+            Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()  // Mostrar el Toast
+
+            // Solo crear el objeto PedidoPizzeria si la licencia está aceptada
+            if (binding.sLicencia.isChecked) {
+                val order = PedidoPizzeria(
+                    binding.ptNombre.text.toString(),
+                    IMAGE_ONE,
+                    binding.rgBordes.checkedRadioButtonId.toString(),
+                    binding.cbExtraQueso.isChecked,
+                    binding.cbBacon.isChecked,
+                    binding.cbCebolla.isChecked,
+                    binding.sLicencia.isChecked
+                )
+                // Aquí puedes procesar el pedido (por ejemplo, enviarlo a la base de datos o mostrarlo en la interfaz)
+            }
         }
+
 
         binding.btBorrar.setOnClickListener{
             binding.ptNombre.text.clear()
+            binding.cbBacon.isChecked = false
+            binding.cbCebolla.isChecked = false
+            binding.rgBordes.clearCheck()
+            binding.sLicencia.isChecked = false
+            binding.cbExtraQueso.isChecked = false
+
+
         }
 
 

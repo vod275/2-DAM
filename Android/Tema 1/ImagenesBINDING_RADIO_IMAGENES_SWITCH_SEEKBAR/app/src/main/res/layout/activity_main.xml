@@ -17,7 +17,7 @@
         android:ems="10"
         android:inputType="text"
         android:minHeight="48dp"
-        android:text="@string/nombre"
+        android:hint="@string/nombre"
         app:layout_constraintBottom_toBottomOf="@+id/tvNombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -106,28 +106,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/cbExtraQueso"
         app:layout_constraintVertical_bias="0.19">
 
         <RadioButton
             android:id="@+id/rbBordeGrueso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Borde Grueso" />
+            android:text="@string/borde_grueso" />
 
         <RadioButton
             android:id="@+id/rbBordeFino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Borde Fino" />
+            android:text="@string/borde_fino" />
     </RadioGroup>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbExtraQueso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Extra de Queso"
+        android:text="@string/extra_de_queso"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btAceptar"
@@ -138,11 +138,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="Bacon"
+        android:text="@string/bacon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/cbExtraQueso"
         app:layout_constraintTop_toBottomOf="@+id/btBorrar"
         app:layout_constraintVertical_bias="0.079" />
 
@@ -150,7 +150,7 @@
         android:id="@+id/cbCebolla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cebolla"
+        android:text="@string/cebolla"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.22"
@@ -164,12 +164,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="44dp"
         android:minHeight="48dp"
-        android:text="Licencia"
+        android:text="@string/licencia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toEndOf="@+id/rgBordes"
         app:layout_constraintTop_toBottomOf="@+id/cbCebolla"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.146"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
