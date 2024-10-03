@@ -16,6 +16,10 @@ import com.example.imagenesbinding_radio_imagenes_switch_seekbar.databinding.Act
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
 
+    private val IMAGE_ONE = R.drawable.ic_comida_foreground
+    private val IMAGE_TWO = R.drawable.pizza3
+    private var currentImage = IMAGE_ONE
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -43,5 +47,41 @@ class MainActivity : AppCompatActivity() {
         binding.btBorrar.setOnClickListener{
             binding.ptNombre.text.clear()
         }
+
+
+
+
+        // Asigna la acción al pulsar el ImageButton
+        binding.ibPlay.setOnClickListener {
+            // Cambia la imagen de la ImageView
+
+            if(IMAGE_ONE == currentImage)
+            {
+                binding.ivFotoPizza.setImageResource(IMAGE_TWO)
+                currentImage = IMAGE_TWO
+            }
+            else
+            {
+                binding.ivFotoPizza.setImageResource(IMAGE_ONE)
+                currentImage = IMAGE_ONE
+            }
+        }
+
+        binding.ivFotoPizza.setOnClickListener{
+
+
+            if(IMAGE_ONE == currentImage)
+            {
+                binding.ivFotoPizza.setImageResource(IMAGE_TWO)
+                currentImage = IMAGE_TWO
+            }
+            else
+            {
+                binding.ivFotoPizza.setImageResource(IMAGE_ONE)
+                currentImage = IMAGE_ONE
+            }
+
+        }
+
     }
 }

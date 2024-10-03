@@ -26,7 +26,7 @@
 
     <Button
         android:id="@+id/btBorrar"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="108dp"
         android:text="@string/borrar"
@@ -35,12 +35,12 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btAceptar"
         app:layout_constraintTop_toBottomOf="@+id/tvNombre"
-        app:layout_constraintVertical_bias="0.046"
+        app:layout_constraintVertical_bias="0.044"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btAceptar"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,16 +67,16 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivFotoPizza"
         android:layout_width="93dp"
         android:layout_height="91dp"
         android:layout_marginTop="28dp"
         app:layout_constraintBottom_toTopOf="@+id/tvNombre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintVertical_bias="0.04"
         app:srcCompat="@drawable/ic_comida_foreground" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -85,5 +85,77 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="16dp" />
+
+    <ImageButton
+        android:id="@+id/ibPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/ptNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toEndOf="@+id/ivFotoPizza"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <RadioGroup
+        android:id="@+id/rgBordes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.19">
+
+        <RadioButton
+            android:id="@+id/rbBordeGrueso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borde Grueso" />
+
+        <RadioButton
+            android:id="@+id/rbBordeFino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borde Fino" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Extra de Queso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAceptar"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <CheckBox
+        android:id="@+id/cbBacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Bacon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/btBorrar"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <CheckBox
+        android:id="@+id/cbCebolla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cebolla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toEndOf="@+id/cbBacon"
+        app:layout_constraintTop_toBottomOf="@+id/btBorrar"
+        app:layout_constraintVertical_bias="0.079" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
