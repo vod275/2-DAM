@@ -11,13 +11,13 @@ public class GestorAlumnos {
 	    File fichero = new File(rutaFichero);
 	    RandomAccessFile file = new RandomAccessFile(fichero, "r");
 
-	    int posicion = 0; // Para situarnos al principio
+	    
 
 	    // Imprimir encabezados
 	    System.out.printf("%-10s %-20s %-20s %-10s %-10s%n", "NUMALUM", "NOMBRE", "LOCALIDAD", "NUMASIG", "NOTA MEDIA");
 	    System.out.println("--------------------------------------------------------------");
 
-	    for (;;) {
+	    for (int posicion = 0; posicion<file.length(); posicion+=92 ) {
 	        file.seek(posicion); // Nos posicionamos en la posición
 	        int codAlumno = file.readInt(); // Obtengo el código de alumno
 

@@ -5,49 +5,49 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestorNotas {
-	private static final String FICHERO_NOTAS = "C:/Users/Alumno/Desktop/2-DAM/Acceso a datos/Ejercicio_Tipo_Examen/src/main/resources/Notas.dat";
+	
+	public static void listarNotas(String rutaFichero) throws IOException {
+		
+		  File fichero = new File(rutaFichero);
+		    RandomAccessFile file = new RandomAccessFile(fichero, "r");
+		    int codigoAlumno = 1;
+		    
+		    
+		    // Imprimir encabezados
+		    System.out.printf("%-10s %-20s %-20s %-10s%n","REGIS", "NUMALUM",  "ASIGNATURA", "NOTA");
+		    System.out.println("--------------------------------------------------------------");
+		    
+		    for (int posicion = 0; posicion<file.length(); posicion+=48 ) {
+		        file.seek(posicion); // Nos posicionamos en la posición
+		        int numAlumno = file.readInt();
+		        
+		        char[] nombreAsignatura  = new char[20];
+		        for (int i = 0; i < nombreAsignatura.length; i++) {
+		        	nombreAsignatura[i] = file.readChar(); // Leo carácter por carácter
+		        }
+		        String asignatura = new String(nombreAsignatura).trim(); // Convertir a String y eliminar espacios
 
+		        
+		        
+		        
+		        float notaMedia = file.readFloat(); // Obtengo la nota media
 
-    // Leer todas las notas del fichero Notas.dat
-    public List<Nota> leerNotas() {
-        List<Nota> notas = new ArrayList<>();
-        File fichero = new File(FICHERO_NOTAS);
+		        // Mostrar los datos formateados
+		        System.out.printf("%-10s %-20s %-20s %-10s%n", 
+		        		codigoAlumno ,numAlumno, asignatura, notaMedia);
 
-        try (RandomAccessFile file = new RandomAccessFile(fichero, "r")) {
-            while (file.getFilePointer() < file.length()) {
-                int codAlumno = file.readInt();
-                int numAlumno = file.readInt();
-                // Leer el nombre de la asignatura (20 caracteres)
-                char[] nombreAsignaturaChars = new char[20];
-                for (int i = 0; i < nombreAsignaturaChars.length; i++) {
-                    nombreAsignaturaChars[i] = file.readChar();
-                }
-                String nombreAsignatura = new String(nombreAsignaturaChars).trim(); 
+		        posicion += 48; // 48
 
-                float nota = file.readFloat(); // Leer la nota
-
-                // Crear una nueva nota y añadirla a la lista
-                notas.add(new Nota(codAlumno, numAlumno, nombreAsignatura, nota));
-            }
-        } catch (IOException e) {
-            System.out.println("Error al leer el fichero: " + e.getMessage());
-        }
-
-        // Mostrar informe de notas
-        mostrarInformeNotas(notas);
-        return notas;
-    }
-
-    private void mostrarInformeNotas(List<Nota> notas) {
-        System.out.printf("%-6s %-10s %-20s %-5s%n", "REGIS", "NUMALUM", "ASIGNATURA", "NOTA");
-        System.out.println("------------------------------------------");
-        for (Nota nota : notas) {
-            System.out.printf("%-6d %-10d %-20s %-5.1f%n", 
-                nota.getCodAlumno(), 
-                nota.getNumAlumno(), 
-                nota.getNombreAsignatura(), 
-                nota.getNotaAsignatura());
-        }
-        System.out.println("------------------------------------------");
-    }
+		        // Si he recorrido todos los bytes salgo del for
+		        if (file.getFilePointer() >= file.length()) {
+		            break;
+		        }
+		        codigoAlumno++;
+		    }
+		    
+		    file.close();
+		
+		
+	}
+	
 }

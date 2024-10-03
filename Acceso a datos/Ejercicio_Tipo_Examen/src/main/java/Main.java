@@ -18,10 +18,10 @@ public class Main {
                 	GestorAlumnos.listarAlumnos("C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso a datos\\Ejercicio_Tipo_Examen\\src\\main\\resources\\Alumnos.dat");
                     break;
                 case 2:
-                    //GestorNotas.listarNotas();
+                    GestorNotas.listarNotas("C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso a datos\\Ejercicio_Tipo_Examen\\src\\main\\resources\\Notas.dat");
                     break;
                 case 3:
-                    //actualizarAlumnos(gestorAlumnos, gestorNotas);
+                	GestorAlumnosYNotas.actualizarAlumnos();
                     break;
                 case 4:
                     System.out.println("Generar el fichero Alumnos.xml no implementado.");
