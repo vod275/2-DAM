@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Cambio"   HorizontalAlignment="Left" Margin="370,90,0,0" VerticalAlignment="Top" Height="43" Width="109" Click="Button_Click"/>
+        <Button Content="Cambio"   HorizontalAlignment="Left" Margin="369,21,0,0" VerticalAlignment="Top" Height="43" Width="109" Click="Button_Click"/>
         <ComboBox x:Name="BoxUnidadesEntrada" ItemsSource="{Binding Path=unidades}" HorizontalAlignment="Left" Margin="107,90,0,0" VerticalAlignment="Top" Width="159" Height="43"/>
         <TextBox x:Name="Unidad" HorizontalAlignment="Left" Margin="134,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Height="51"/>
         <TextBox x:Name="Resultado" HorizontalAlignment="Left" Margin="602,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109" Height="51"/>
         <ComboBox x:Name="BoxUnidadesSalida" ItemsSource="{Binding Path=unidades}" HorizontalAlignment="Left" Margin="573,90,0,0" VerticalAlignment="Top" Width="167" Height="43"/>
-        <Button Content="Añadir" HorizontalAlignment="Left" Margin="394,22,0,0" VerticalAlignment="Top" Height="49" Width="62" RenderTransformOrigin="0.078,0.319" Click="Button_Click_1"/>
-        <Button Content="Borrar" HorizontalAlignment="Left" Margin="303,22,0,0" VerticalAlignment="Top" Height="44" Width="70" Click="Button_Click_2"/>
+        <Button Content="Añadir" HorizontalAlignment="Left" Margin="505,20,0,0" VerticalAlignment="Top" Height="48" Width="62" RenderTransformOrigin="0.078,0.319" Click="Button_Click_1"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="271,20,0,0" VerticalAlignment="Top" Height="44" Width="70" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

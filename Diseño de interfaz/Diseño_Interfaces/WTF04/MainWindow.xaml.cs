@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections.ObjectModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -17,18 +18,64 @@ namespace WTF04
     public partial class MainWindow : Window
     {
 
-        List<string> list = new List<string>();
+        public ObservableCollection<string> unidades { get; set; } = new ObservableCollection<string>();
         public MainWindow()
         {
             InitializeComponent();
-            list.Add("kg");
-            list.Add("gr");
-            list.Add("Mlgr");
+
+            unidades.Add(new string("Kg"));
+            unidades.Add(new string("Gramos"));
+            unidades.Add(new string("MlGramos"));
+
+            this.DataContext = this;
+
         }
 
-        private void Text2_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
+
+        public void btCalcular_Click(object sender, RoutedEventArgs e)
+        {
+            double peso = Convert.ToDouble(tbPeso.Text);
+            double altura = Convert.ToDouble(tbAltura.Text);
+            double imc = peso / (altura * altura);
+
+            string unidadEntrada = cbUnidades.SelectedItem as string;
+            
+
+            string resultado;
+            if (imc < 18.5)
+            {
+                resultado = imc.ToString("F2");
+
+                lbMensaje.Content = "Estás muy delgado.";
+                lbMensaje.Foreground = Brushes.Yellow;
+                lbMensaje.Visibility = Visibility.Visible;
+            }
+            else if (imc >= 18.5 && imc <= 24.9)
+            {
+                resultado = imc.ToString("F2");
+
+                lbMensaje.Content = "Estás en tu peso ideal.";
+                lbMensaje.Foreground = Brushes.Green;
+                lbMensaje.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                resultado = imc.ToString("F2");
+
+                lbMensaje.Content = "Estas Obeso";
+                lbMensaje.Foreground = Brushes.Red;
+                lbMensaje.Visibility = Visibility.Visible;
+            }
+
+
+
+
+            tbResultado.Text = "Tu IMC es: " +resultado;
+        }
+
+
+       
         }
     }
 }

@@ -7,8 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="Text1" HorizontalAlignment="Left" Margin="362,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="Text2_TextChanged"/>
-        <Label x:Name="boxBiding" Content="{Binding ElementName=Text1, Path=Text}" HorizontalAlignment="Left" Margin="362,149,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbPeso" HorizontalAlignment="Left" Margin="194,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Height="51"/>
+        <TextBox x:Name="tbAltura" HorizontalAlignment="Left" Margin="458,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" RenderTransformOrigin="0.166,-3.096" Height="51"/>
+        <TextBox x:Name="tbResultado" HorizontalAlignment="Center" Margin="0,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="58"/>
+        <Button x:Name="btCalcular" Content="Calcular" HorizontalAlignment="Center" Margin="0,166,0,0" VerticalAlignment="Top" Height="51" Width="110" Click="btCalcular_Click"/>
+        <ComboBox x:Name="cbUnidades" ItemsSource="{Binding Path=unidades}" HorizontalAlignment="Left" Margin="194,166,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbMensaje" Content="" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" Height="59" Width="244" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
     </Grid>
 </Window>
