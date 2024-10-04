@@ -1,0 +1,16 @@
+﻿<Window x:Class="WTF05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WTF05"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="tbMonedaOrigen" HorizontalAlignment="Left" Margin="173,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="28"/>
+        <TextBox x:Name="tbMonedaDestino" HorizontalAlignment="Left" Margin="488,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" RenderTransformOrigin="-0.486,-0.684" Height="28"/>
+        <ComboBox x:Name="cbMonedas" ItemsSource="{Binding Path=monedas}" HorizontalAlignment="Center" Margin="0,96,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btConversion" Content="Conversion" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="31" Width="96" Click="btConversion_Click"/>
+
+    </Grid>
+</Window>

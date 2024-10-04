@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98305FEE-BDC1-4485-B6DD-762BDACFE327}|WTF04\\WTF04.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf04\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98305FEE-BDC1-4485-B6DD-762BDACFE327}|WTF04\\WTF04.csproj|solutionrelative:wtf04\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3FEE79E-ED7F-44F7-8C30-BF8A96E2A81A}|WTF05\\WTF05.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf05\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3FEE79E-ED7F-44F7-8C30-BF8A96E2A81A}|WTF05\\WTF05.csproj|solutionrelative:wtf05\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98305FEE-BDC1-4485-B6DD-762BDACFE327}|WTF04\\WTF04.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf04\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{98305FEE-BDC1-4485-B6DD-762BDACFE327}|WTF04\\WTF04.csproj|solutionrelative:wtf04\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D3FEE79E-ED7F-44F7-8C30-BF8A96E2A81A}|WTF05\\WTF05.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf05\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D3FEE79E-ED7F-44F7-8C30-BF8A96E2A81A}|WTF05\\WTF05.csproj|solutionrelative:wtf05\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,25 +24,25 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF04\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WTF04\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF04\\MainWindow.xaml",
-              "RelativeToolTip": "WTF04\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF05\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WTF05\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF05\\MainWindow.xaml",
+              "RelativeToolTip": "WTF05\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-03T13:43:22.253Z",
+              "WhenOpened": "2024-10-04T15:35:48.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF04\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WTF04\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF04\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WTF04\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA9wCQAAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF05\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WTF05\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF05\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WTF05\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T13:43:21.867Z",
+              "WhenOpened": "2024-10-04T15:35:48.301Z",
               "EditorCaption": ""
             }
           ]
