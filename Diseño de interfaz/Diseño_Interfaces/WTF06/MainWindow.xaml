@@ -7,14 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <RadioButton x:Name="rbCirculo" Content="Circulo" HorizontalAlignment="Left" Margin="179,197,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbCuadrado" Content="Cuadrado" HorizontalAlignment="Left" Margin="386,193,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbTrIangulo" Content="Triangulo" HorizontalAlignment="Left" Margin="587,193,0,0" VerticalAlignment="Top"/>
-        <Image Margin="158,31,516,282" Source="/circulo.png" Stretch="Fill"/>
-        <Image Margin="345,12,289,263" Source="/cuadrado.jpg" Stretch="Fill" RenderTransformOrigin="-0.755,-0.872"/>
-        <Image Margin="550,22,92,273" Source="/triangulo.jpg" Stretch="Fill"/>
-        <TextBox x:Name="tbResultado" HorizontalAlignment="Left" Margin="587,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Height="35"/>
-        <Button x:Name="btCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="345,302,0,0" VerticalAlignment="Top" Height="35" Width="205"/>
+        <RadioButton x:Name="rbCirculo" Content="Circulo" HorizontalAlignment="Left" Margin="179,197,0,0" VerticalAlignment="Top" Checked="Figura_Checked"/>
+        <RadioButton x:Name="rbCuadrado" Content="Cuadrado" HorizontalAlignment="Left" Margin="386,193,0,0" VerticalAlignment="Top" Checked="Figura_Checked"/>
+        <RadioButton x:Name="rbTriangulo" Content="Triangulo" HorizontalAlignment="Left" Margin="587,193,0,0" VerticalAlignment="Top" Checked="Figura_Checked"/>
 
+        <Image x:Name="iCirculo" Margin="100,2,524,273" Source="/circulo.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image x:Name="iCuadrado" Margin="345,12,289,263" Source="/cuadrado.jpg" RenderTransformOrigin="-0.755,-0.872"/>
+        <Image x:Name="iTriangulo" Margin="550,22,87,273" Source="/triangulo.jpg" />
+
+        <TextBox x:Name="tbRadio" HorizontalAlignment="Left" Margin="137,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="38" Visibility="Collapsed"/>
+        <TextBlock x:Name="tblRadio" HorizontalAlignment="Left" Margin="92,289,0,0" TextWrapping="Wrap" Text="Radio" VerticalAlignment="Top" Visibility="Collapsed"/>
+
+     
+        <TextBox x:Name="tbLado" HorizontalAlignment="Left" Margin="137,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="36" Visibility="Collapsed"/>
+        <TextBlock x:Name="tblLado" HorizontalAlignment="Left" Margin="92,353,0,0" TextWrapping="Wrap" Text="Lado" VerticalAlignment="Top" Visibility="Collapsed"/>
+
+        <TextBox x:Name="tbAltura" HorizontalAlignment="Left" Margin="621,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Height="35" Visibility="Collapsed"/>
+        <TextBlock x:Name="tblAltura" HorizontalAlignment="Left" Margin="584,312,0,0" TextWrapping="Wrap" Text="Altura" VerticalAlignment="Top" Visibility="Collapsed"/>
+
+        <Button x:Name="btCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="345,302,0,0" VerticalAlignment="Top" Height="35" Width="205" Click="btCalcular_Click"/>
+
+    
+        <TextBox x:Name="tbResultado" HorizontalAlignment="Left" Margin="446,383,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="36"/>
+        <TextBlock x:Name="tblResultado" HorizontalAlignment="Left" Margin="379,393,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top"/>
+        <WrapPanel/>
     </Grid>
 </Window>
