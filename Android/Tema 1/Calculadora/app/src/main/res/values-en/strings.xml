@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="primer_numero">First Number</string>
+    <string name="div">Div</string>
+    <string name="multip">Multip</string>
+    <string name="restar">Rest</string>
+    <string name="sumar">Add</string>
+    <string name="segundo_numero">Second Number</string>
+    <string name="resto">Rest</string>
+    <string name="resultado">Result</string>
+    <string name="calculadora">CALCULATOR</string>
+    <string name="limpiar">Clean</string>
+</resources>

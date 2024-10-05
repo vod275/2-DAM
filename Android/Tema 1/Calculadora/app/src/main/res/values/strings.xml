@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Calculadora</string>
+    <string name="primer_numero">Primer Numero</string>
+    <string name="div">Div</string>
+    <string name="multip">Multip</string>
+    <string name="restar">Restar</string>
+    <string name="sumar">Sumar</string>
+    <string name="segundo_numero">Segundo Numero</string>
+    <string name="resto">Resto</string>
+    <string name="resultado">Resultado</string>
+    <string name="calculadora">CALCULADORA</string>
+    <string name="limpiar">Limpiar</string>
 </resources>
