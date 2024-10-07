@@ -139,7 +139,7 @@ class MainActivity : AppCompatActivity() {
         binding.imageView.setImageResource(R.drawable.dados_interrogacion)
         binding.imageView3.setImageResource(R.drawable.dados_interrogacion)
 
-        // Reactivar los botones para que los jugadores puedan seguir jugando
+
         binding.btJugador.isEnabled = true
         binding.btMaquina.isEnabled = true
 
