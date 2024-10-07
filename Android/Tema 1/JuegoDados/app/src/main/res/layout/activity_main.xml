@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondopantalla"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dados_interrogacion" />
+
+    <TextView
+        android:id="@+id/tvPuntosJugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="@string/puntos2"
+        app:layout_constraintBottom_toTopOf="@+id/tvTiradasJugador2"
+        app:layout_constraintStart_toStartOf="@+id/tvTiradasJugador2" />
+
+    <TextView
+        android:id="@+id/tvTiradasJugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="66dp"
+        android:text="@string/tiradas2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/tvTiradasResultado2" />
+
+    <TextView
+        android:id="@+id/tvGanadasJugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="51dp"
+        android:text="@string/ganadas2"
+        app:layout_constraintBottom_toTopOf="@+id/tvPuntosJugador2"
+        app:layout_constraintEnd_toStartOf="@+id/tvGanadasResultado2"
+        app:layout_constraintStart_toEndOf="@+id/tvGanadasResultado1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/tvGanadasJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="9dp"
+        android:text="@string/ganadas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvGanadasResultado1"
+        app:layout_constraintEnd_toStartOf="@+id/tvGanadasResultado1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPuntosJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/puntos"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvPuntosResultado1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTiradasJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/tiradas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvTiradasResultado1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="127dp"
+        android:text="@string/jugador_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btMaquina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btMaquina"
+        android:layout_width="121dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="190dp"
+        android:text="@string/maquina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btJugador"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <Button
+        android:id="@+id/btReiniciarPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="29dp"
+        android:text="@string/reiniciar_partida"
+        app:layout_constraintEnd_toEndOf="@+id/tvTiradasJugador2"
+        app:layout_constraintStart_toEndOf="@+id/tvGanadasJugador"
+        app:layout_constraintTop_toBottomOf="@+id/btJugador" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="129dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dados_interrogacion" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="321dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/juego_de_los_dados"
+        android:textAlignment="center"
+        android:textColor="#FD0303"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvGanadasResultado2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvGanadasResultado1"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="70dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPuntosResultado1"
+        app:layout_constraintEnd_toStartOf="@+id/tvGanadasJugador2"
+        app:layout_constraintStart_toEndOf="@+id/tvGanadasJugador"
+        app:layout_constraintTop_toTopOf="@+id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvPuntosResultado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPuntosJugador2"
+        app:layout_constraintStart_toEndOf="@+id/tvPuntosJugador"
+        app:layout_constraintTop_toTopOf="@+id/tvPuntosJugador2" />
+
+    <TextView
+        android:id="@+id/tvTiradasResultado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="23dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/tvTiradasJugador"
+        app:layout_constraintTop_toBottomOf="@+id/tvPuntosResultado1" />
+
+    <TextView
+        android:id="@+id/tvGanadasResultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvGanadasJugador2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvGanadasJugador2" />
+
+    <TextView
+        android:id="@+id/tvPuntosResultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvPuntosJugador2"
+        app:layout_constraintEnd_toEndOf="@+id/tvGanadasResultado2"
+        app:layout_constraintStart_toStartOf="@+id/tvGanadasResultado2" />
+
+    <TextView
+        android:id="@+id/tvTiradasResultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvTiradasJugador2"
+        app:layout_constraintStart_toStartOf="@+id/tvPuntosResultado2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

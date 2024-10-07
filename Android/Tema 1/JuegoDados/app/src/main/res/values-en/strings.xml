@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JuegoDados</string>
+    <string name="tiradas2">Spins:</string>
+    <string name="ganadas">Wins:</string>
+    <string name="ganadas2">Wins:</string>
+    <string name="puntos">Points:</string>
+    <string name="tiradas">Spins:</string>
+    <string name="jugador_1">"Player "</string>
+    <string name="puntos2">Points:</string>
+    <string name="juego_de_los_dados">Dice Game</string>
+    <string name="maquina">Machine</string>
+    <string name="reiniciar_partida">Reset</string>
+</resources>
