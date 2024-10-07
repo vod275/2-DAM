@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        // Inicializar con imagen de interrogación
+
         binding.imageView.setImageResource(R.drawable.dados_interrogacion)
         binding.imageView3.setImageResource(R.drawable.dados_interrogacion)
 
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Botón del Jugador 2
-        binding.btMaquina.setOnClickListener {
+        binding.btJugador2.setOnClickListener {
             if (tiradasJugador2 < 5) {
                 val dado = lanzarDado()
                 binding.imageView3.setImageResource(getImagenDado(dado))
@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
         binding.tvPuntosResultado2.text = puntosJugador2.toString()
     }
 
-    // Verificar si ambos jugadores han terminado sus tiradas y determinar el ganador
+    // Verificar si ambos jugadores han terminado sus tiradas y decipir el ganador
     private fun verificarGanador() {
         if (tiradasJugador1 == 5 && tiradasJugador2 == 5) {
             val ganador = when {
@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity() {
 
 
             binding.btJugador.isEnabled = false
-            binding.btMaquina.isEnabled = false
+            binding.btJugador2.isEnabled = false
         }
     }
 
@@ -141,7 +141,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.btJugador.isEnabled = true
-        binding.btMaquina.isEnabled = true
+        binding.btJugador2.isEnabled = true
 
         actualizarMarcadores()
     }
