@@ -4,60 +4,90 @@ import java.io.RandomAccessFile;
 
 public class GestorAlumnosYNotas {
 
-	
-	public static void actualizarAlumnos() throws IOException {
-		String rutaAlumnos = "C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso a datos\\Ejercicio_Tipo_Examen\\src\\main\\resources\\Alumnos.dat";
+    public static void actualizarAlumnos() throws IOException {
+        String rutaAlumnos = "C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso a datos\\Ejercicio_Tipo_Examen\\src\\main\\resources\\Alumnos.dat";
         String rutaNotas = "C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso a datos\\Ejercicio_Tipo_Examen\\src\\main\\resources\\Notas.dat";
 
         File ficheroAlumnos = new File(rutaAlumnos);
         File ficheroNotas = new File(rutaNotas);
 
-        RandomAccessFile file = new RandomAccessFile(ficheroAlumnos, "r");
-        RandomAccessFile file1= new RandomAccessFile(ficheroNotas, "r");
+        RandomAccessFile fileAlumnos = new RandomAccessFile(ficheroAlumnos, "rw");
+        RandomAccessFile fileNotas = new RandomAccessFile(ficheroNotas, "r");
 
-		   
+        int cod, num_asig, cont;
+        double suma;
+        char aux;
+        float media;
 
-		    // Imprimir encabezados
-		    System.out.printf("%-10s %-20s %-20s %-10s %-10s%n", "NUMALUM", "NOMBRE", "LOCALIDAD", "NUMASIG", "NOTA MEDIA");
-		    System.out.println("--------------------------------------------------------------");
+        // Imprimir encabezados
+        System.out.printf("%-10s %-20s %-20s %-10s %-10s%n", "NUMALUM", "NOMBRE", "LOCALIDAD", "NUMASIG", "NOTA MEDIA");
+        System.out.println("--------------------------------------------------------------");
 
-		    for (int posicion = 0; posicion<file.length(); posicion+=92 ) {
-		        file.seek(posicion); // Nos posicionamos en la posición
-		        int codAlumno = file.readInt(); // Obtengo el código de alumno
+        // Recorremos el archivo de alumnos
+        for (int pos = 0; pos < fileAlumnos.length(); pos += 92) {
+            fileAlumnos.seek(pos);
+            cod = fileAlumnos.readInt(); // Leer código de alumno
 
-		        char[] nombreChars = new char[20];
-		        for (int i = 0; i < nombreChars.length; i++) {
-		            nombreChars[i] = file.readChar(); // Leo carácter por carácter
-		        }
-		        String nombre = new String(nombreChars).trim(); // Convertir a String y eliminar espacios
+            // Leer el nombre del alumno
+            char[] nombreChars = new char[20];
+            for (int i = 0; i < nombreChars.length; i++) {
+                nombreChars[i] = fileAlumnos.readChar();
+            }
+            String nombre = new String(nombreChars).trim();
 
-		        
-		        
-		        char[] localidadChars = new char[20];
-		        for (int i = 0; i < localidadChars.length; i++) {
-		            localidadChars[i] = file.readChar(); // Leo carácter por carácter
-		        }
-		        String localidad = new String(localidadChars).trim(); // Convertir a String y eliminar espacios
+            // Leer la localidad del alumno
+            char[] localidadChars = new char[20];
+            for (int i = 0; i < localidadChars.length; i++) {
+                localidadChars[i] = fileAlumnos.readChar();
+            }
+            String localidad = new String(localidadChars).trim();
 
-		        //Segundo For
-		        
-		        
-		        int numAsignaturas = file.readInt(); // Obtengo el número de asignaturas
-		        float notaMedia = file.readFloat(); // Obtengo la nota media
+            // Inicializamos contadores
+            cont = 0;
+            suma = 0.0;
 
-		        // Mostrar los datos formateados
-		        System.out.printf("%-10d %-20s %-20s %-10d %-10.2f%n", 
-		                          codAlumno, nombre, localidad, numAsignaturas, notaMedia);
+            // Recorremos el archivo de notas para el alumno actual
+            for (int posNotas = 0; posNotas < fileNotas.length(); posNotas += 48) {
+                fileNotas.seek(posNotas);
+                int codNota = fileNotas.readInt(); // Leer código de alumno en las notas
 
-		        posicion += 92; // 92
+                // Leer la asignatura (no es necesario para el cálculo, pero seguimos el formato)
+                char[] asignaturaChars = new char[20];
+                for (int i = 0; i < asignaturaChars.length; i++) {
+                    aux = fileNotas.readChar();
+                    asignaturaChars[i] = aux;
+                }
 
-		        // Si he recorrido todos los bytes salgo del for
-		        if (file.getFilePointer() >= file.length()) {
-		            break;
-		        }
-		    }
-		    
-		    file.close(); // Cerrar fichero
-		}
+                float notaAsignatura = fileNotas.readFloat(); // Leer la nota
+
+                // Si el código de la nota coincide con el código del alumno, acumulamos
+                if (codNota == cod) {
+                    cont++;
+                    suma += notaAsignatura;
+                }
+            }
+
+            // Calcular número de asignaturas y la media
+            if (cont == 0) {
+                num_asig = 0;
+                media = 0;
+            } else {
+                num_asig = cont;
+                media = (float) (suma / cont);
+            }
+
+            // Mostrar los datos del alumno con la nota media calculada
+            System.out.printf("%-10d %-20s %-20s %-10d %-10.2f%n", cod, nombre, localidad, num_asig, media);
+
+            // Volvemos a posicionar el puntero para actualizar la nota media en el fichero de alumnos
+            fileAlumnos.seek(pos + 84); // Nos posicionamos justo en donde se guarda la nota media
+            fileAlumnos.writeInt(num_asig); // Actualizamos el número de asignaturas
+            fileAlumnos.writeFloat(media); // Actualizamos la nota media
+        }
+
+        // Cerramos los ficheros
+        fileAlumnos.close();
+        fileNotas.close();
+    }
 }
 

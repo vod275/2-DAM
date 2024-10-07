@@ -1,9 +1,12 @@
 import java.io.IOException;
 import java.util.Scanner;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
+
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ParserConfigurationException, TransformerException {
         Scanner scanner = new Scanner(System.in);
         GestorAlumnos gestorAlumnos = new GestorAlumnos();
         GestorNotas gestorNotas = new GestorNotas();
@@ -24,7 +27,7 @@ public class Main {
                 	GestorAlumnosYNotas.actualizarAlumnos();
                     break;
                 case 4:
-                    System.out.println("Generar el fichero Alumnos.xml no implementado.");
+                	GenerarAlumnosXML.generarXMLAlumnos("C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso a datos\\Ejercicio_Tipo_Examen\\src\\main\\resources\\Alumnos.dat", "C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso a datos\\Ejercicio_Tipo_Examen\\src\\main\\resources\\Notas.dat", "C:\\Users\\Alumno\\Documents\\Alumnos.xml");
                     break;
                 case 5:
                     System.out.println("Saliendo del programa...");
