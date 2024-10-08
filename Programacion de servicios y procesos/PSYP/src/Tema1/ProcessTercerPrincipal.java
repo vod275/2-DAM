@@ -11,8 +11,8 @@ import java.nio.charset.Charset;
 public class ProcessTercerPrincipal {
 
 	// ruta a los .class porque los vamos a invocar
-	static File path = new File("C:\\Users\\Alumno\\eclipse-workspace");
-	private final static File FILE = new File("exportT.txt");
+	static File path = new File("C:\\Users\\Alumno\\Desktop\\2-DAM\\Programacion de servicios y procesos\\PSYP\\bin");
+	private final static File FILE = new File(".\\src\\exportT.txt");
 	private final static String ENTER = "\n";
 
 	public static void main(String[] args) throws IOException, InterruptedException {

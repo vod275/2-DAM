@@ -1,30 +1,29 @@
 package ventaAriculos2;
 
 import java.util.ArrayList;
+
+
 import javax.xml.bind.annotation.XmlElement;
 
-
-
 public class Ventas {
-	
-	
-	private ArrayList<Venta> listaVentas;
 
-    public Ventas(ArrayList<Venta> listaVentas) {
+	private ArrayList<Venta> listaVenta;
+
+	public Ventas(ArrayList<Venta> listaVenta) {
 		super();
-		this.listaVentas = listaVentas;
+		this.listaVenta = listaVenta;
 	}
 
-	
-    public Ventas() {
-    }
 
-    
-    public ArrayList<Venta> getListaVentas() {
-        return listaVentas;
-    }
+	public ArrayList<Venta> getListaVenta() {
+		return listaVenta;
+	}
 
-    public void setListaVentas(ArrayList<Venta> listaVentas) {
-        this.listaVentas = listaVentas;
-    }
+	public void setListaVenta(ArrayList<Venta> listaVenta) {
+		this.listaVenta = listaVenta;
+	}
+
+	public Ventas() {
+	}
+
 }

@@ -1,16 +1,17 @@
 package ventaAriculos2;
 
+import javax.xml.bind.annotation.XmlElement;
 
 public class Artic {
 
-	String Denominacion;
-	int stock;
-	float precio;
-	String codigo;
+	private String denominacion;
+	private int stock;
+	private float precio;
+	private String codigo;
 
 	public Artic(String denominacion, int stock, float precio, String codigo) {
 		super();
-		Denominacion = denominacion;
+		this.denominacion = denominacion;
 		this.stock = stock;
 		this.precio = precio;
 		this.codigo = codigo;
@@ -19,7 +20,7 @@ public class Artic {
 		
 	}
 
-
+	@XmlElement(name = "codigo") 
 	public String getCodigo() {
 		return codigo;
 	}
@@ -28,14 +29,16 @@ public class Artic {
 		this.codigo = codigo;
 	}
 
+	@XmlElement(name = "denominacion") 
 	public String getDenominacion() {
-		return Denominacion;
+		return denominacion;
 	}
 
 	public void setDenominacion(String denominacion) {
-		Denominacion = denominacion;
+		this.denominacion = denominacion;
 	}
 
+	@XmlElement(name = "stock") 
 	public int getStock() {
 		return stock;
 	}
@@ -44,6 +47,7 @@ public class Artic {
 		this.stock = stock;
 	}
 
+	@XmlElement(name = "precio") 
 	public float getPrecio() {
 		return precio;
 	}

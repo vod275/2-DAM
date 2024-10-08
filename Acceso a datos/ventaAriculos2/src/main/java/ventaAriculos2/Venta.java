@@ -1,16 +1,16 @@
 package ventaAriculos2;
 
-import java.sql.Date;
+
 import javax.xml.bind.annotation.XmlElement;
 
 public class Venta {
 
-    int unidades;
-    String nombrecliente;
-    Date fecha;
-    int numventa;
+	private int unidades;
+    private String nombrecliente;
+    private String fecha;
+    private int numventa;
 
-    public Venta(int numventa, int unidades, String nombrecliente, Date fecha) {
+    public Venta(int numventa, int unidades, String nombrecliente, String fecha) {
         super();
         this.numventa = numventa;
         this.unidades = unidades;
@@ -49,11 +49,11 @@ public class Venta {
     }
 
     @XmlElement(name = "fecha")
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 }
