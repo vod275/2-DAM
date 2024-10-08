@@ -1,28 +1,18 @@
 package ventaAriculos2;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 
 
 
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Articulo {
-    @XmlElement(name = "artic")
-    private Artic artic;
-    
-    @XmlElement(name = "ventas")
-    private Ventas ventas;
-    
-    public Articulo(Artic artic, Ventas ventas) {
-		super();
-		this.artic = artic;
-		this.ventas = ventas;
-	}
-    public Articulo() {
-		;
-	}
 
+    private Artic artic;  // Este campo corresponde a <artic>
+    private Ventas ventas;  // Este campo corresponde a <ventas>
+
+    public Articulo() {
+    }
+
+    @XmlElement(name = "artic")  // Mapea el elemento <artic> en el XML
     public Artic getArtic() {
         return artic;
     }
@@ -31,6 +21,7 @@ public class Articulo {
         this.artic = artic;
     }
 
+    @XmlElement(name = "ventas")  // Mapea el elemento <ventas> en el XML
     public Ventas getVentas() {
         return ventas;
     }

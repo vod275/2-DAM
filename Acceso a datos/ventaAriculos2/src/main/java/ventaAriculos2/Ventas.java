@@ -1,33 +1,30 @@
 package ventaAriculos2;
 
-import java.util.List;
-
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+import java.util.ArrayList;
 import javax.xml.bind.annotation.XmlElement;
 
-@XmlAccessorType(XmlAccessType.FIELD)
+
+
 public class Ventas {
+	
+	
+	private ArrayList<Venta> listaVentas;
 
-	@XmlElement(name = "venta")
-	private List<Venta> listaVentas;
-
-	public Ventas(List<Venta> listaVentas) {
+    public Ventas(ArrayList<Venta> listaVentas) {
 		super();
 		this.listaVentas = listaVentas;
 	}
+
 	
-	public Ventas() {
-		
-	}
+    public Ventas() {
+    }
 
+    
+    public ArrayList<Venta> getListaVentas() {
+        return listaVentas;
+    }
 
-	public List<Venta> getListaVentas() {
-		return listaVentas;
-	}
-
-	public void setListaVentas(List<Venta> listaVentas) {
-		this.listaVentas = listaVentas;
-	}
-
+    public void setListaVentas(ArrayList<Venta> listaVentas) {
+        this.listaVentas = listaVentas;
+    }
 }

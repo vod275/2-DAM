@@ -1,59 +1,59 @@
 package ventaAriculos2;
 
 import java.sql.Date;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Venta {
 
-	int unidades;
-	String nombrecliente;
-	Date fecha;
-	int numventa;
+    int unidades;
+    String nombrecliente;
+    Date fecha;
+    int numventa;
 
-	public Venta(int numventa, int unidades, String nombrecliente, Date fecha) {
-		super();
-		this.numventa = numventa;
-		this.unidades = unidades;
-		this.nombrecliente = nombrecliente;
-		this.fecha = fecha;
-	}
-	
-	public Venta() {
-		
-	}
+    public Venta(int numventa, int unidades, String nombrecliente, Date fecha) {
+        super();
+        this.numventa = numventa;
+        this.unidades = unidades;
+        this.nombrecliente = nombrecliente;
+        this.fecha = fecha;
+    }
 
-	public int getNumventa() {
-		return numventa;
-	}
+    public Venta() {
+    }
 
-	public void setNumventa(int numventa) {
-		this.numventa = numventa;
-	}
+    @XmlElement(name = "numventa")
+    public int getNumventa() {
+        return numventa;
+    }
 
-	public int getUnidades() {
-		return unidades;
-	}
+    public void setNumventa(int numventa) {
+        this.numventa = numventa;
+    }
 
-	public void setUnidades(int unidades) {
-		this.unidades = unidades;
-	}
+    @XmlElement(name = "unidades")
+    public int getUnidades() {
+        return unidades;
+    }
 
-	public String getNombrecliente() {
-		return nombrecliente;
-	}
+    public void setUnidades(int unidades) {
+        this.unidades = unidades;
+    }
 
-	public void setNombrecliente(String nombrecliente) {
-		this.nombrecliente = nombrecliente;
-	}
+    @XmlElement(name = "nombrecliente")
+    public String getNombrecliente() {
+        return nombrecliente;
+    }
 
-	public Date getFecha() {
-		return fecha;
-	}
+    public void setNombrecliente(String nombrecliente) {
+        this.nombrecliente = nombrecliente;
+    }
 
-	public void setFecha(Date fecha) {
-		this.fecha = fecha;
-	}
+    @XmlElement(name = "fecha")
+    public Date getFecha() {
+        return fecha;
+    }
 
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
 }
