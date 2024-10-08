@@ -19,3 +19,5 @@ C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF08\obj\D
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF08\obj\Debug\net8.0-windows\WTF08.pdb
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF08\obj\Debug\net8.0-windows\WTF08.genruntimeconfig.cache
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF08\obj\Debug\net8.0-windows\ref\WTF08.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF08\obj\Debug\net8.0-windows\Window1.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF08\obj\Debug\net8.0-windows\Window1.baml

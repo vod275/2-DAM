@@ -35,9 +35,9 @@ public class Main {
 				int totalUnidades = 0;
 				double totalImporte = 0.0;
 
-				ArrayList<Venta> Ventas = articulo.getVentas().getListaVenta();
+				ArrayList<Venta> listaVentas = articulo.getVentas().getListaVenta();
 
-				for (Venta venta : Ventas) {
+				for (Venta venta : listaVentas) {
 					int unidades = venta.getUnidades();
 					double importe = unidades * precio;
 					totalUnidades += unidades;
