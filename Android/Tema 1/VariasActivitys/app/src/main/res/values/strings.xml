@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VariasActivitys</string>
+    <string name="pasar_a_la_segunda">Pasar a la segunda</string>
+    <string name="edad">Edad</string>
+    <string name="nombre">Nombre</string>
+    <string name="dime_tu_edad">Dime tu Edad</string>
+    <string name="dime_tu_nombre">Dime tu Nombre</string>
+</resources>
