@@ -1,0 +1,38 @@
+﻿<Window x:Class="WTF10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WTF10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="33*"/>
+
+        </Grid.ColumnDefinitions>
+
+
+        <Image x:Name="imgFotoPerfil" HorizontalAlignment="Left" Height="266" Grid.RowSpan="3" VerticalAlignment="Center" Width="217" Source="/istockphoto-466167557-612x612.jpg" />
+
+
+        <Label x:Name="lbNombre" Content="Nombre" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0" Grid.Column="1" Height="26" Width="54"/>
+        <TextBox x:Name="tbNombre" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="0" Grid.Column="1" Margin="0,20,0,0" Height="18"/>
+
+        <Label x:Name="lbApellidos" Content="Apellidos" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" Margin="0,60,0,0" Height="26" Width="58"/>
+        <TextBox x:Name="tbApellidos" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" Grid.Column="1" Margin="0,80,0,0" Height="18"/>
+
+        <Label x:Name="lbEdad" Content="Edad" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" Margin="0,120,0,0" Height="26" Width="36"/>
+        <TextBox x:Name="tbEdad" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="2" Grid.Column="1" Margin="0,140,0,0" Height="18"/>
+
+    </Grid>
+</Window>
