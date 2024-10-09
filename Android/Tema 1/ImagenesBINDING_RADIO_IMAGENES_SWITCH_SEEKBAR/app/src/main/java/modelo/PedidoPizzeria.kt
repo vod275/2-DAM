@@ -8,6 +8,7 @@ data class PedidoPizzeria(
     val extraQueso: Boolean,
     val bacon: Boolean,
     val cebolla: Boolean,
-    val licencia: Boolean
+    val licencia: Boolean,
+    val satisfacion: Int
 )
 

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.SeekBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
 
 
 
@@ -68,10 +70,16 @@ class MainActivity : AppCompatActivity() {
                 mensaje = "Es obligatorio aceptar las licencias"
             }
 
-            Log.i("Victor", mensaje)  // Imprimir en el log
-            Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()  // Mostrar el Toast
+            if(binding.sbSatisfaccion.progress == 0){
+                mensaje = "Es obligatorio calificar la experiencia"
+        }else{
+            mensaje+=" con una puntuación de ${binding.sbSatisfaccion.progress}"
+        }
 
-            // Solo crear el objeto PedidoPizzeria si la licencia está aceptada
+            Log.i("Victor", mensaje)
+            Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show()
+
+
             if (binding.sLicencia.isChecked) {
                 val order = PedidoPizzeria(
                     binding.ptNombre.text.toString(),
@@ -80,11 +88,13 @@ class MainActivity : AppCompatActivity() {
                     binding.cbExtraQueso.isChecked,
                     binding.cbBacon.isChecked,
                     binding.cbCebolla.isChecked,
-                    binding.sLicencia.isChecked
+                    binding.sLicencia.isChecked,
+                    binding.sbSatisfaccion.progress
                 )
-                // Aquí puedes procesar el pedido (por ejemplo, enviarlo a la base de datos o mostrarlo en la interfaz)
+
             }
         }
+
 
 
         binding.btBorrar.setOnClickListener{
@@ -94,6 +104,8 @@ class MainActivity : AppCompatActivity() {
             binding.rgBordes.clearCheck()
             binding.sLicencia.isChecked = false
             binding.cbExtraQueso.isChecked = false
+            binding.sbSatisfaccion.progress = 5
+            binding.ivFotoPizza.setImageResource(IMAGE_ONE)
 
 
         }
@@ -132,6 +144,21 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+        binding.sbSatisfaccion.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+            override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
+
+                Log.i("Victor", "Progress: $progress")
+            }
+
+            override fun onStartTrackingTouch(seekBar: SeekBar) {
+                Log.i("Victor", "Start ${binding.sbSatisfaccion.progress}")
+            }
+
+            override fun onStopTrackingTouch(seekBar: SeekBar) {
+                Log.i("Victor", "Stop ${binding.sbSatisfaccion.progress}")
+            }
+        })
 
     }
 }
