@@ -1,16 +1,14 @@
 package Tema1;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class SumarIntervalos {
+public class SumarIntervalosConProcesos  {
 
 	public static void main(String[] args) {
 		
 		
-		  Scanner scanner = new Scanner(System.in);
+	        Scanner scanner = new Scanner(System.in);
 
-	    
 	        System.out.print("Introduce el número mínimo del rango: ");
 	        int min = IntroduceNumeroValido(scanner);
 
@@ -21,7 +19,6 @@ public class SumarIntervalos {
 	            max = IntroduceNumeroValido(scanner);
 	        }
 
-	     
 	        System.out.print("Introduce el número de intervalos: ");
 	        int numIntervals = IntroduceNumeroValido(scanner);
 	        while (numIntervals <= 0 || numIntervals > (max - min)) {
@@ -29,7 +26,6 @@ public class SumarIntervalos {
 	            numIntervals = IntroduceNumeroValido(scanner);
 	        }
 
-	        
 	        int intervalSize = (max - min + 1) / numIntervals;
 	        int remainder = (max - min + 1) % numIntervals;
 
@@ -38,20 +34,11 @@ public class SumarIntervalos {
 	        for (int i = 1; i <= numIntervals; i++) {
 	            int numMax = numMin + intervalSize - 1;
 	            if (i == numIntervals) { 
-	            	numMax += remainder;
+	                numMax += remainder;
 	            }
 
-	            
-	            int sum = 0;
-	            for (int j = numMin; j <= numMax; j++) {
-	                sum += j;
-	            }
-
-	            
-	            String fileName = "fich" + i + ".txt";
-	            GuardarArchivo(fileName, sum);
-
-	            System.out.println("Intervalo " + i + ": " + numMin + " - " + numMax + " | Suma: " + sum);
+	           
+	            crearProceso(numMin, numMax, i);
 
 	            numMin = numMax + 1;
 	        }
@@ -59,7 +46,6 @@ public class SumarIntervalos {
 	        scanner.close();
 	    }
 
-	    
 	    private static int IntroduceNumeroValido(Scanner scanner) {
 	        while (!scanner.hasNextInt()) {
 	            System.out.println("Por favor, introduce un número válido.");
@@ -68,16 +54,23 @@ public class SumarIntervalos {
 	        return scanner.nextInt();
 	    }
 
-	  
-	    private static void GuardarArchivo(String fileNombre, int sum) {
-	        try (FileWriter writer = new FileWriter(fileNombre)) {
-	            writer.write("Suma del intervalo: " + sum);
-	            System.out.println("Resultado guardado en " + fileNombre);
-	        } catch (IOException e) {
-	            System.out.println("Error al guardar el archivo " + fileNombre);
+	    private static void crearProceso(int numMin, int numMax, int intervalId) {
+	        ProcessBuilder pb = new ProcessBuilder(
+	                "java", "-cp", "C:\\Users\\Alumno\\Desktop\\2-DAM\\Programacion de servicios y procesos\\PSYP\\src", 
+	                "Tema1.SumarIntervaloProceso", // Nombre completo de la clase
+	                String.valueOf(numMin), 
+	                String.valueOf(numMax), 
+	                String.valueOf(intervalId)
+	        );
+	        pb.inheritIO(); // Para que el proceso hijo herede la salida del proceso padre
+
+	        try {
+	            Process process = pb.start();
+	            process.waitFor(); // Esperar a que el proceso termine
+	        } catch (IOException | InterruptedException e) {
 	            e.printStackTrace();
 	        }
+	    }
 
-	}
 
 }
