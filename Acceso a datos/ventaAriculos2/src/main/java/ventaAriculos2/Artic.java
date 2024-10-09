@@ -4,56 +4,46 @@ import javax.xml.bind.annotation.XmlElement;
 
 public class Artic {
 
+	private String codigo;
 	private String denominacion;
 	private int stock;
-	private float precio;
-	private String codigo;
-
-	public Artic(String denominacion, int stock, float precio, String codigo) {
+	private double precio;
+	public Artic(String codigo, String denominacion, int stock, double precio) {
 		super();
+		this.codigo = codigo;
 		this.denominacion = denominacion;
 		this.stock = stock;
 		this.precio = precio;
-		this.codigo = codigo;
 	}
 	public Artic() {
 		
 	}
-
-	@XmlElement(name = "codigo") 
+	@XmlElement(name="codigo")
 	public String getCodigo() {
 		return codigo;
 	}
-
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
-
-	@XmlElement(name = "denominacion") 
+	@XmlElement(name="denominacion")
 	public String getDenominacion() {
 		return denominacion;
 	}
-
 	public void setDenominacion(String denominacion) {
 		this.denominacion = denominacion;
 	}
-
-	@XmlElement(name = "stock") 
+	@XmlElement(name="stock")
 	public int getStock() {
 		return stock;
 	}
-
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
-
-	@XmlElement(name = "precio") 
-	public float getPrecio() {
+	@XmlElement(name="precio")
+	public double getPrecio() {
 		return precio;
 	}
-
-	public void setPrecio(float precio) {
+	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-
 }

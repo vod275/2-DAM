@@ -1,59 +1,58 @@
 package ventaAriculos2;
 
-
 import javax.xml.bind.annotation.XmlElement;
 
 public class Venta {
-
+	private int numventa;
 	private int unidades;
-    private String nombrecliente;
-    private String fecha;
-    private int numventa;
+	private String nombre;
+	private String fecha;
 
-    public Venta(int numventa, int unidades, String nombrecliente, String fecha) {
-        super();
-        this.numventa = numventa;
-        this.unidades = unidades;
-        this.nombrecliente = nombrecliente;
-        this.fecha = fecha;
-    }
+	public Venta(int numventa, int unidades, String nombre, String fecha) {
+		super();
+		this.numventa = numventa;
+		this.unidades = unidades;
+		this.nombre = nombre;
+		this.fecha = fecha;
+	}
 
-    public Venta() {
-    }
+	public Venta() {
 
-    @XmlElement(name = "numventa")
-    public int getNumventa() {
-        return numventa;
-    }
+	}
 
-    public void setNumventa(int numventa) {
-        this.numventa = numventa;
-    }
+	@XmlElement(name = "numventa")
+	public int getNumventa() {
+		return numventa;
+	}
 
-    @XmlElement(name = "unidades")
-    public int getUnidades() {
-        return unidades;
-    }
+	public void setNumventa(int numventa) {
+		this.numventa = numventa;
+	}
 
-    public void setUnidades(int unidades) {
-        this.unidades = unidades;
-    }
+	@XmlElement(name = "unidades")
+	public int getUnidades() {
+		return unidades;
+	}
 
-    @XmlElement(name = "nombrecliente")
-    public String getNombrecliente() {
-        return nombrecliente;
-    }
+	public void setUnidades(int unidades) {
+		this.unidades = unidades;
+	}
 
-    public void setNombrecliente(String nombrecliente) {
-        this.nombrecliente = nombrecliente;
-    }
+	@XmlElement(name = "nombrecliente")
+	public String getNombre() {
+		return nombre;
+	}
 
-    @XmlElement(name = "fecha")
-    public String getFecha() {
-        return fecha;
-    }
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
-    }
+	@XmlElement(name = "fecha")
+	public String getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
+	}
 }

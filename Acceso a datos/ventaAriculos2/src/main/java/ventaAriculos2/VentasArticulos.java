@@ -2,30 +2,28 @@ package ventaAriculos2;
 
 import java.util.ArrayList;
 
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+
 
 @XmlRootElement(name = "ventasarticulos")
 public class VentasArticulos {
 
-	
-	private ArrayList<Articulo> articulos;
+	private ArrayList<Articulo> articulo;
 
-	public VentasArticulos(ArrayList<Articulo> articulos) {
+	public VentasArticulos(ArrayList<Articulo> articulo) {
 		super();
-		this.articulos = articulos;
+		this.articulo = articulo;
 	}
-	
+
 	public VentasArticulos() {
-		
+
 	}
 
-	@XmlElement(name = "articulo")
-	public ArrayList<Articulo> getArticulos() {
-		return articulos;
+	public ArrayList<Articulo> getArticulo() {
+		return articulo;
 	}
 
-	public void setArticulos(ArrayList<Articulo> articulos) {
-		this.articulos = articulos;
+	public void setArticulo(ArrayList<Articulo> articulo) {
+		this.articulo = articulo;
 	}
 }
