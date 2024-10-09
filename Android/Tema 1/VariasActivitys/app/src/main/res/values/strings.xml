@@ -5,4 +5,5 @@
     <string name="nombre">Nombre</string>
     <string name="dime_tu_edad">Dime tu Edad</string>
     <string name="dime_tu_nombre">Dime tu Nombre</string>
+    <string name="volver">Volver</string>
 </resources>

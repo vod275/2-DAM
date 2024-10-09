@@ -28,22 +28,23 @@ class MainActivity : AppCompatActivity() {
 
         binding.btVentana2.setOnClickListener {
             //de forma intent
-
             val intent: Intent = Intent(this, VentanaDos::class.java)
-            //intent.putExtra("nombre", binding.etNombre.text.toString())
-            //intent.putExtra("edad", binding.etEdadTexto.text.toString())
-            var persona = Persona(binding.etNombre.text.toString(), binding.etEdadTexto.text.toString().toInt())
-            //intent.putExtra("persona", persona)
-            //startActivity(intent)
+            intent.putExtra("nombre", binding.etNombre.text.toString())
+            intent.putExtra("edad", binding.etEdadTexto.text.toString())
+            val persona = Persona(binding.etNombre.text.toString(), binding.etEdadTexto.text.toString().toInt())
+            intent.putExtra("persona", persona)
+            startActivity(intent)
 
 
             //bundle tipo
-            val bundle = Bundle()
-            bundle.putString("nombre", binding.etNombre.text.toString())
-            bundle.putString("edad", binding.etEdadTexto.text.toString())
-            bundle.putSerializable("persona", persona)
-            intent.putExtras(bundle)
-            startActivity(intent)
+            //val bundle = Bundle()
+            //bundle.putString("nombre", binding.etNombre.text.toString())
+            //bundle.putString("edad", binding.etEdadTexto.text.toString())
+            //bundle.putSerializable("persona", persona)
+            //intent.putExtra("objeto", bundle)
+
+
+
 
 
         }

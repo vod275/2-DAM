@@ -19,8 +19,6 @@ class VentanaDos : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-
-
         binding = ActivityVentanaDosBinding.inflate(layoutInflater)
         setContentView(binding.root)
         //setContentView(R.layout.activity_main)
@@ -30,21 +28,19 @@ class VentanaDos : AppCompatActivity() {
             insets
         }
 
-       //Con intent
-       // var nombre = intent.getStringExtra("nombre")
-        //var edad = intent.getStringExtra("edad")
-        //binding.tvDatos.text = "Hola" + nombre + " " +"tienes " + edad
-        //val persona = intent.getSerializableExtra("persona") as Persona
-        //binding.tvDatos.text = persona.toString()
-
-        //Con bundle
-        val bundle = intent.getBundleExtra("objeto")
-        val nombre = bundle!!.getString("nombre")
-        val edad = bundle!!.getString("edad")
-        val persona = bundle!!.getSerializable("persona")
+        //Con intent
+        val nombre = intent.getStringExtra("nombre")
+        val edad = intent.getStringExtra("edad")
+        //binding.tvDatos.text = "nombre: $nombre edad: $edad"
+        val persona = intent.getSerializableExtra("persona") as Persona
         binding.tvDatos.text = persona.toString()
 
-
+        //Con bundle
+        //val bundle = intent.getBundleExtra("objeto")
+        //val nombre = bundle?.getString("nombre")
+        //val edad = bundle?.getString("edad")
+        //val persona = bundle?.getSerializable("persona") as Persona
+        //binding.tvDatos.text = persona.toString()
 
 
         binding.btVolver.setOnClickListener {
