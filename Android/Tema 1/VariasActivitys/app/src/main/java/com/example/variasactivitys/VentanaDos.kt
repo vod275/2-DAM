@@ -1,6 +1,8 @@
 package com.example.variasactivitys
 
+import Modelo.Almacen
 import Modelo.Persona
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -36,18 +38,47 @@ class VentanaDos : AppCompatActivity() {
         //binding.tvDatos.text =  "Con intent el objeto es: " + persona.toString()
 
         //Con bundle
-        val bundle = intent.getBundleExtra("objeto")
+        //val bundle = intent.getBundleExtra("objeto")
         //val nombre = bundle!!.getString("nombre")
         //val edad = bundle!!.getString("edad")
-        val persona = bundle!!.getSerializable("persona")
-        binding.tvDatos.text = "Con bundle el objeto es: " + persona.toString()
+        //val persona = bundle!!.getSerializable("persona")
+        //binding.tvDatos.text = "Con bundle el objeto es: " + persona.toString()
         //binding.tvDatos.text = "nombre: $nombre edad: $edad"
+
+
+
 
 
         binding.btVolver.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+
+        //Devolver datos a la ventana 1 de forma deprecated.
+        binding.btDevolverDeprecated.setOnClickListener {
+            // Get the text from the EditText
+            val stringToPassBack = binding.ptDevolverValor.text.toString()
+            // Put the String to pass back into an Intent and close this activity
+            val intent = Intent()
+            intent.putExtra("keyName", stringToPassBack)
+            setResult(Activity.RESULT_OK, intent)
+            finish()
+        }
+
+        binding.btDevolverValorVentana1Actual.setOnClickListener {
+            // Get the text from the EditText
+            val stringToPassBack = binding.ptDevolverValor.text.toString()
+            // Put the String to pass back into an Intent and close this activity
+            val intent = Intent()
+            intent.putExtra("valorEdicionV2", stringToPassBack)
+            setResult(Activity.RESULT_OK, intent)
+            finish()
+
+            //val p:Persona = Persona(editText.text.toString())
+        }
+
+        binding.tvDatos.text = Almacen.getPersonas().toString()
 
     }
 }

@@ -12,23 +12,58 @@
         android:id="@+id/btVolver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="171dp"
         android:text="@string/volver"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDatos"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintBottom_toTopOf="@+id/ptDevolverValor"
+        app:layout_constraintStart_toStartOf="@+id/tvDatos"
+        app:layout_constraintTop_toBottomOf="@+id/tvDatos" />
 
     <TextView
         android:id="@+id/tvDatos"
         android:layout_width="194dp"
-        android:layout_height="53dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/btVolver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btDevolverDeprecated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="261dp"
+        android:text="Devolver Valor a la Ventana 1 Deprecated"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintTop_toBottomOf="@+id/ptDevolverValor" />
+
+    <EditText
+        android:id="@+id/ptDevolverValor"
+        android:layout_width="284dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Valor a devolver a la ventana 1"
+        app:layout_constraintBottom_toTopOf="@+id/btDevolverDeprecated"
+        app:layout_constraintStart_toStartOf="@+id/btDevolverDeprecated"
+        app:layout_constraintTop_toBottomOf="@+id/btVolver" />
+
+    <Button
+        android:id="@+id/btDevolverValorVentana1Actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devolver Valor Ventana 1 Actual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintTop_toBottomOf="@+id/btDevolverDeprecated"
+        app:layout_constraintVertical_bias="0.225" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
