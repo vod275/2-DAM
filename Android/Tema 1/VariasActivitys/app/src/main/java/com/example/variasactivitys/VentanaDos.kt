@@ -29,18 +29,19 @@ class VentanaDos : AppCompatActivity() {
         }
 
         //Con intent
-        val nombre = intent.getStringExtra("nombre")
-        val edad = intent.getStringExtra("edad")
+        //val nombre = intent.getStringExtra("nombre")
+        //val edad = intent.getStringExtra("edad")
         //binding.tvDatos.text = "nombre: $nombre edad: $edad"
-        val persona = intent.getSerializableExtra("persona") as Persona
-        binding.tvDatos.text = persona.toString()
+        //val persona = intent.getSerializableExtra("persona") as Persona
+        //binding.tvDatos.text =  "Con intent el objeto es: " + persona.toString()
 
         //Con bundle
-        //val bundle = intent.getBundleExtra("objeto")
-        //val nombre = bundle?.getString("nombre")
-        //val edad = bundle?.getString("edad")
-        //val persona = bundle?.getSerializable("persona") as Persona
-        //binding.tvDatos.text = persona.toString()
+        val bundle = intent.getBundleExtra("objeto")
+        //val nombre = bundle!!.getString("nombre")
+        //val edad = bundle!!.getString("edad")
+        val persona = bundle!!.getSerializable("persona")
+        binding.tvDatos.text = "Con bundle el objeto es: " + persona.toString()
+        //binding.tvDatos.text = "nombre: $nombre edad: $edad"
 
 
         binding.btVolver.setOnClickListener {
