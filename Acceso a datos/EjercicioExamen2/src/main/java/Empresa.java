@@ -1,5 +1,5 @@
 
-public class empresa {
+public class Empresa {
 
 	private String direccion;
 	private int codempre;

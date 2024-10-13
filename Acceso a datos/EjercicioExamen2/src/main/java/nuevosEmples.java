@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class nuevosEmples {
 
-	ArrayList<emple> emple;
+	ArrayList<Emple> emple;
 
-	public nuevosEmples(ArrayList<emple> emple) {
+	public nuevosEmples(ArrayList<Emple> emple) {
 		super();
 		this.emple = emple;
 	}
@@ -13,11 +13,11 @@ public class nuevosEmples {
 	}
 
 
-	public ArrayList<emple> getEmple() {
+	public ArrayList<Emple> getEmple() {
 		return emple;
 	}
 
-	public void setEmple(ArrayList<emple> emple) {
+	public void setEmple(ArrayList<Emple> emple) {
 		this.emple = emple;
 	}
 	

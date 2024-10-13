@@ -1,18 +1,18 @@
 
-public class emple {
+public class Emple {
 
 	private String nombre;
-	private double salario;
+	private float salario;
 	private String puesto;
 
-	public emple(String nombre, double salario, String puesto) {
+	public Emple(String nombre, float salario, String puesto) {
 		super();
 		this.nombre = nombre;
 		this.salario = salario;
 		this.puesto = puesto;
 	}
 
-	public emple() {
+	public Emple() {
 
 	}
 
@@ -24,11 +24,11 @@ public class emple {
 		this.nombre = nombre;
 	}
 
-	public double getSalario() {
+	public float getSalario() {
 		return salario;
 	}
 
-	public void setSalario(double salario) {
+	public void setSalario(float salario) {
 		this.salario = salario;
 	}
 
