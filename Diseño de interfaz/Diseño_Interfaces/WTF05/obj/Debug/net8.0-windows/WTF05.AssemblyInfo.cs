@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WTF05")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1b7ba7c3a245d2e56a4e59d88f44ce3bef03a06")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+366ef2aaec6d03654df5b0b940b0f67a11abbd3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("WTF05")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WTF05")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
