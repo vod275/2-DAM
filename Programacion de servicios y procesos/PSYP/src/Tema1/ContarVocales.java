@@ -6,15 +6,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class ContarVocales {
-	
+
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		
+
 		String letra = args[0];
 		char letraChar = letra.charAt(0);
 		String fichero = args[1];
 		String nuevo = "..\\" + args[2];
 		int suma = 0;
-		
+
 		try (FileReader fr = new FileReader(fichero)) {
 			int caracter;
 			while ((caracter = fr.read()) != -1) {

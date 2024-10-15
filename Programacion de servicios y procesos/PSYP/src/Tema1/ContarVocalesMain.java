@@ -9,16 +9,18 @@ public class ContarVocalesMain {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		char letra;
-		File path = new File(".\\bin\\");
+		char letra = 'a';
+		File path = new File("..\\bin\\");
 		System.out.println(path.getAbsolutePath());
 
-		do {
-			letra = Teclado.leerCaracter("Introduce la vocal a buscar: ");
-			Character.toLowerCase(letra);
-		} while (letra != 'a' && letra != 'e' && letra != 'i' && letra != 'o' && letra != 'u');
-		ProcessBuilder pb = new ProcessBuilder("java", "conteovocales.SecundarioVocales", String.valueOf(letra),
-				"..\\Conteo.txt", "NumVocales.txt");
+		//do {
+		//letra = Teclado.leerCaracter("Introduce la vocal a buscar: ");
+		//Character.toLowerCase(letra);
+		//} while (letra != 'a' && letra != 'e' && letra != 'i' && letra != 'o' && letra != 'u');
+		
+		
+		ProcessBuilder pb = new ProcessBuilder("java", "Tema1.ContarVocales", String.valueOf(letra),
+				"..\\ContarVocales.txt", "Resultado.txt");
 		
 		
 		pb.redirectErrorStream(true);
