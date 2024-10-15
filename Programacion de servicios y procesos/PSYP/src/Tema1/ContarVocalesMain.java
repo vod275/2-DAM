@@ -1,28 +1,32 @@
 package Tema1;
+
+import java.io.File;
 import java.io.IOException;
+
+import utilidades.Teclado;
 
 public class ContarVocalesMain {
 
-	 public static void main(String[] args) {
-	        
-	        String archivoTexto = ".\\ContarVocales.txt";
-	        String vocal = "a"; 
-	        String archivoResultado = "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Programacion de servicios y procesos\\PSYP\\resultado.txt";
+	public static void main(String[] args) throws IOException, InterruptedException {
+		// TODO Auto-generated method stub
+		char letra;
+		File path = new File(".\\bin\\");
+		System.out.println(path.getAbsolutePath());
 
-	        
-	        ProcessBuilder pb = new ProcessBuilder("java", "ContarVocales", archivoTexto, vocal, archivoResultado);
-	        
-	        try {
-	           
-	            Process proceso = pb.start();
-	            proceso.waitFor(); 
-	            System.out.println("Proceso completado, revisa el archivo " + archivoResultado);
-	        } catch (IOException | InterruptedException e) {
-	            e.printStackTrace();
-	        }
-	    }
+		do {
+			letra = Teclado.leerCaracter("Introduce la vocal a buscar: ");
+			Character.toLowerCase(letra);
+		} while (letra != 'a' && letra != 'e' && letra != 'i' && letra != 'o' && letra != 'u');
+		ProcessBuilder pb = new ProcessBuilder("java", "conteovocales.SecundarioVocales", String.valueOf(letra),
+				"..\\Conteo.txt", "NumVocales.txt");
+		
+		
+		pb.redirectErrorStream(true);
+		pb.directory(path);
+		Process proceso = pb.start();
+		proceso.waitFor();
+		System.out.println("El proceso ha terminado");
+		proceso.destroy();
+	}
 
 }
-
-
-

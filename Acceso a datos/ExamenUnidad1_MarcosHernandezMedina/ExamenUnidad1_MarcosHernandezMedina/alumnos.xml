@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<listaviajes>
+    <lista>
+        <codviaje>4259948</codviaje>
+        <nombre>R</nombre>
+        <numplazas>0</numplazas>
+        <numreservas>0</numreservas>
+        <pvp>5373952</pvp>
+        <totalimporte>0</totalimporte>
+    </lista>
+</listaviajes>
