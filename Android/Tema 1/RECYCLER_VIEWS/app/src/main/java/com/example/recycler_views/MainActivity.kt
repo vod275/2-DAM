@@ -1,13 +1,20 @@
 package com.example.recycler_views
 
+import adaptador.AdaptadorCantantes
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.recycler_views.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: AdaptadorCantantes
+    private lateinit var cantantes: ArrayList<String>
+
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +30,24 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        // Inicializamos la lista de cantantes
+        cantantes = arrayListOf(
+            "Billie Eilish",
+            "Dua Lipa",
+            "Harry Styles",
+            "Olivia Rodrigo",
+            "The Weeknd",
+            "Doja Cat",
+            "Bad Bunny",
+            "Taylor Swift",
+            "Rosalía",
+            "Ariana Grande"
+        )
 
+        // Configuramos el RecyclerView
+        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = AdaptadorCantantes(cantantes)
 
     }
 }
