@@ -26,15 +26,15 @@
 
 
         <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="0" Grid.Column="0">
-            <TextBlock Text="Profesión" VerticalAlignment="Center" Width="100"/>
-            <TextBox Width="204" Height="16" />
+            <TextBlock x:Name="tbNombre1" Text="Profesión" VerticalAlignment="Center" Width="100"/>
+            <TextBox x:Name="tbNombre" Width="204" Height="16" />
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="1" Grid.Column="0">
-            <TextBlock Text="Nº hermanos" VerticalAlignment="Center" Width="100"/>
-            <TextBox Width="36" Height="15" />
+            <TextBlock x:Name="tbNºHermanos" Text="Nº hermanos" VerticalAlignment="Center" Width="100"/>
+            <TextBox x:Name="tbHermanos" Width="36" Height="15" />
             <TextBlock Text="Edad" VerticalAlignment="Center" Width="50" Margin="10,0,0,0"/>
-            <ComboBox Width="99" Height="21">
+            <ComboBox x:Name="cbEdad" Width="99" Height="21" SelectedIndex="0">
                 <ComboBoxItem Content="De 15 a 18"/>
                 <ComboBoxItem Content="De 19 a 25"/>
                 <ComboBoxItem Content="De 26 a 35"/>
@@ -43,43 +43,45 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="5" Grid.Row="2" Grid.Column="0">
-            <TextBlock Text="Sexo" VerticalAlignment="Center" Width="100"/>
-            <RadioButton Content="Masculino" GroupName="Sexo" Margin="5,0" Height="16" Width="80"/>
-            <RadioButton Content="Femenino" GroupName="Sexo" Margin="5,0" Height="15" Width="81"/>
+            <TextBlock x:Name="tbSexo" Text="Sexo" VerticalAlignment="Center" Width="100"/>
+            <RadioButton x:Name="rbMasculino" Content="Masculino" GroupName="Sexo" Margin="5,0" Height="16" Width="80"/>
+            <RadioButton x:Name="rbFemenino" Content="Femenino" GroupName="Sexo" Margin="5,0" Height="15" Width="81"/>
         </StackPanel>
 
         <StackPanel Orientation="Vertical" Margin="5" Grid.Row="3">
-            <CheckBox Content="Practica algún deporte" />
-            <TextBlock Text="¿Cuál?" Margin="10,0,0,0"/>
-            <ListBox Height="100">
-                <ListBoxItem Content="Fútbol"/>
-                <ListBoxItem Content="Tenis"/>
-                <ListBoxItem Content="Piragüismo"/>
-                <ListBoxItem Content="Baloncesto"/>
+            <CheckBox x:Name="cbPractica" Content="Practica algún deporte" />
+            <TextBlock x:Name="tbCual" Text="¿Cuál?" Margin="10,0,0,0"/>
+            <ListBox x:Name="lbDeporte" Height="100">
+                <ListBoxItem x:Name="lbIFutbol" Content="Fútbol"/>
+                <ListBoxItem x:Name="lbITenis" Content="Tenis"/>
+                <ListBoxItem x:Name="lbIPriagüismo" Content="Piragüismo"/>
+                <ListBoxItem x:Name="lbIBaloncesto" Content="Baloncesto"/>
             </ListBox>
         </StackPanel>
 
-        <Button Content="Registrar" Width="84" HorizontalAlignment="Center" Margin="0,17,0,17" Grid.Row="4"/>
+        <Button x:Name="btRegistrar" Content="Registrar" Width="84" HorizontalAlignment="Center" Margin="0,17,0,17" Grid.Row="4" Click="Button_Click_1"/>
 
 
 
         <TextBlock Text="Marque del 1 al 10 su grado de afición a:" Grid.Row="0" Grid.Column="1" Margin="87,15,87,15"/>
 
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" Margin="10,0,0,0">
-            <TextBlock Text="Compras" Height="23" Width="55" />
-            <Slider Minimum="1" Maximum="10" TickFrequency="1" Width="200"/>
+            <TextBlock x:Name="tbCompras" Text="Compras" Height="23" Width="55" />
+            <Slider x:Name="slCompras" Minimum="1" Maximum="10" TickFrequency="1" Width="200"/>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Vertical" Margin="10,0,0,0">
-            <TextBlock Text="Ir al cine" Margin="0,10,0,0" Height="19" Width="46"/>
-            <Slider Minimum="1" Maximum="10" TickFrequency="1" Width="200"/>
+            <TextBlock x:Name="tbTelevision" Text="Ver Television
+                       " Margin="0,10,0,0" Height="22" Width="81"/>
+            <Slider x:Name="slTelevision" Minimum="1" Maximum="10" TickFrequency="1" Width="200"/>
         </StackPanel>
 
         <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Vertical" Margin="10,0,0,0">
-            <TextBlock Text="Ir al cine" Margin="0,10,0,0" Height="19" Width="46"/>
-            <Slider Minimum="1" Maximum="10" TickFrequency="1" Width="200"/>
+            <TextBlock x:Name="tbCine" Text="Ir al cine" Margin="0,10,0,0" Height="19" Width="46"/>
+            <Slider x:Name="slCine" Minimum="1" Maximum="10" TickFrequency="1" Width="200"/>
         </StackPanel>
-        <Button Content="Salir" Width="84" HorizontalAlignment="Center" Margin="0,17,0,17" Grid.Row="4" Grid.Column="1" Click="Button_Click"/>
+        <Button x:Name="btSalir" Content="Salir" Width="84" HorizontalAlignment="Center" Margin="0,17,0,17" Grid.Row="4" Grid.Column="1" Click="Button_Click"/>
+        <ListBox Grid.Column="2" Grid.RowSpan="6"  Margin="0,0,43,10"/>
 
 
     </Grid>
