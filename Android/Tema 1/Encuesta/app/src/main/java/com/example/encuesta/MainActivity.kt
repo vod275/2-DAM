@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        // Enlazar el layout con el binding
+        // Para enlazar el layout con el binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         encuestas.add(encuesta)
         Toast.makeText(this, "Encuesta guardada", Toast.LENGTH_SHORT).show()
 
-        // Aquí puedes abrir un segundo activity para mostrar la encuesta
+        // Abriendo un segundo activity para mostrar la encuesta
 
         val intent = Intent(this, DetalleEncuesta::class.java)
         intent.putExtra("ENCUESTA_DETALLE", encuesta)
