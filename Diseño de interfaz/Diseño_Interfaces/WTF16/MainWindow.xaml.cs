@@ -1,24 +1,18 @@
-﻿using System.Text;
+﻿using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WTF16
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        // Inicializamos la lista observable
+        ObservableCollection<Persona> personas = new ObservableCollection<Persona>();
+
         public MainWindow()
         {
             InitializeComponent();
+            lbPersonas.ItemsSource = personas; 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -28,7 +22,7 @@ namespace WTF16
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+          
             if (string.IsNullOrWhiteSpace(tbNombre.Text))
             {
                 MessageBox.Show("Debe ingresar una profesión.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -53,30 +47,38 @@ namespace WTF16
                 return;
             }
 
-
-
+            // Crear una nueva persona
             var nuevaPersona = new Persona
             {
                 Profesion = tbNombre.Text,
                 NumeroHermanos = numeroHermanos,
                 Edad = ((ComboBoxItem)cbEdad.SelectedItem).Content.ToString(),
                 Sexo = rbMasculino.IsChecked == true ? "Masculino" : "Femenino",
-                if( cbPractica.IsChecked == true)
-                 {
-                    DeporteQuePractica = lbDeporte.SelectedItem != null ? ((ListBoxItem)lbDeporte.SelectedItem).Content.ToString();
-
-                 }
-                else
-                {
-                    DeporteQuePractica  = Console.WriteLine("No hace deporte");
-                };
-
-                ,
-                AficionCompras = (int)slCompras.Value,
-                AficionTelevision = (int)slTelevision.Value,
-                AficionCine = (int)slCine.Value
+                DeporteQuePractica = lbDeporte.SelectedItem != null ? ((ListBoxItem)lbDeporte.SelectedItem).Content.ToString() : "No hace deporte",
+                Compra = (int)slCompras.Value,
+                Tele = (int)slTelevision.Value,
+                Cine = (int)slCine.Value
             };
 
+
+            personas.Add(nuevaPersona);
+
+            LimpiarFormulario();
         }
+
+        private void LimpiarFormulario()
+        {
+            tbNombre.Clear();
+            tbHermanos.Clear();
+            cbEdad.SelectedIndex = 0;
+            rbMasculino.IsChecked = false;
+            rbFemenino.IsChecked = false;
+            cbPractica.IsChecked = false;
+            lbDeporte.SelectedIndex = -1;
+            slCompras.Value = 1;
+            slTelevision.Value = 1;
+            slCine.Value = 1;
+        }
+
     }
 }

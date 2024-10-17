@@ -81,7 +81,7 @@
             <Slider x:Name="slCine" Minimum="1" Maximum="10" TickFrequency="1" Width="200"/>
         </StackPanel>
         <Button x:Name="btSalir" Content="Salir" Width="84" HorizontalAlignment="Center" Margin="0,17,0,17" Grid.Row="4" Grid.Column="1" Click="Button_Click"/>
-        <ListBox Grid.Column="2" Grid.RowSpan="6"  Margin="0,0,43,10"/>
+        <ListBox x:Name="lbPersonas" Grid.Column="2" Grid.RowSpan="6"  Margin="0,0,43,10"/>
 
 
     </Grid>

@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
+  "WorkspaceRootPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf16\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|d:\\usuario\\documents\\github\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf16\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|solutionrelative:wtf16\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf16\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|solutionrelative:wtf16\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|d:\\usuario\\documents\\github\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf16\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|solutionrelative:wtf16\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf16\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|solutionrelative:wtf16\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|d:\\usuario\\documents\\github\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf16\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WTF16.csproj|solutionrelative:wtf16\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,38 +28,38 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WTF16\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml*",
-              "RelativeToolTip": "WTF16\\MainWindow.xaml*",
+              "ToolTip": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml",
+              "RelativeToolTip": "WTF16\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-16T15:54:16.893Z",
+              "WhenOpened": "2024-10-17T10:31:55.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WTF16\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WTF16\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAAAUAAAAAAAAAA==",
+              "Title": "Persona.cs",
+              "DocumentMoniker": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\Persona.cs",
+              "RelativeDocumentMoniker": "WTF16\\Persona.cs",
+              "ToolTip": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\Persona.cs",
+              "RelativeToolTip": "WTF16\\Persona.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwCoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T15:34:53.162Z",
+              "WhenOpened": "2024-10-17T10:13:08.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\Persona.cs",
-              "RelativeDocumentMoniker": "WTF16\\Persona.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\Persona.cs",
-              "RelativeToolTip": "WTF16\\Persona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAYAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WTF16\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WTF16\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T15:46:46.4Z",
+              "WhenOpened": "2024-10-17T10:12:46.164Z",
               "EditorCaption": ""
             }
           ]
