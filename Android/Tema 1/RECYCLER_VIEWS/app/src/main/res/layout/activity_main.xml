@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/rvCantantes"
         android:layout_width="341dp"
         android:layout_height="386dp"
         android:background="#4CAF50"
@@ -24,8 +24,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cantantes"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/rvCantantes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rvCantantes"
+        app:srcCompat="@drawable/ic_arrow_up" />
+
+    <ImageView
+        android:id="@+id/imDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rvCantantes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_arrow_down" />
+
+    <!-- Flecha hacia abajo (inicialmente oculta) -->
 </androidx.constraintlayout.widget.ConstraintLayout>
