@@ -35,7 +35,7 @@ namespace WTF16
             Cine = cine;
         }
 
-        // Sobrescribir el método ToString
+      
         public override string ToString()
         {
             return $"Profesión: {Profesion}, Hermanos: {NumeroHermanos}, Sexo: {Sexo}, Edad: {Edad}, " +

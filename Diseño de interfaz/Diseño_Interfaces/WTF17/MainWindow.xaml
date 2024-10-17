@@ -1,0 +1,17 @@
+﻿<Window x:Class="WTF17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WTF17"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lbPalabras" FontFamily="{Binding ElementName=lbFuente, Path=SelectedItem}" Content="Hola buenas soy víctor&#xD;&#xA;" HorizontalAlignment="Left" Margin="121,274,0,0" VerticalAlignment="Top" Height="75" Width="296"/>
+        <Slider x:Name="sl" HorizontalAlignment="Left" Margin="139,158,0,0" VerticalAlignment="Top" Width="354" Height="59"/>
+
+        <ListBox x:Name="lbFuente" Margin="493,217,50,44" ItemsSource="{x:Static Fonts.SystemFontFamilies}"/>
+
+
+    </Grid>
+</Window>

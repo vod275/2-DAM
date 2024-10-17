@@ -6,7 +6,7 @@ namespace WTF16
 {
     public partial class MainWindow : Window
     {
-        // Inicializamos la lista observable
+        
         ObservableCollection<Persona> personas = new ObservableCollection<Persona>();
 
         public MainWindow()
