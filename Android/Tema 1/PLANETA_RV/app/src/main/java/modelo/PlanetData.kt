@@ -1,4 +1,4 @@
-package Model
+package modelo
 
 object PlanetData {
     private val planets = mutableListOf(
