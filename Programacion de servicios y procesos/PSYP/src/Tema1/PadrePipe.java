@@ -107,6 +107,7 @@ public class PadrePipe {
 
 	    // Verifica la existencia del archivo y lo crea si no existe
 	    private static void verificarArchivo(String nombreArchivo) {
+	    	nombreArchivo = ".\\miLista.txt";
 	        File archivo = new File(nombreArchivo);
 
 	        if (!archivo.exists()) {
@@ -114,8 +115,8 @@ public class PadrePipe {
 	            try {
 	                if (archivo.createNewFile()) {
 	                    System.out.println("Archivo " + nombreArchivo + " creado exitosamente.");
-	                    // Opcional: agregar contenido predeterminado al archivo
-	                    agregarContenidoPredeterminado(archivo);
+	                   
+	                   
 	                } else {
 	                    System.out.println("No se pudo crear el archivo " + nombreArchivo);
 	                }
@@ -128,18 +129,7 @@ public class PadrePipe {
 	        }
 	    }
 
-	    // Método para agregar contenido predeterminado al archivo (opcional)
-	    private static void agregarContenidoPredeterminado(File archivo) {
-	        try (BufferedWriter writer = new BufferedWriter(new FileWriter(archivo))) {
-	            // Escribe el contenido predeterminado aquí, si es necesario
-	            writer.write("Contenido de ejemplo en el archivo.\n");
-	            writer.write("Modifícalo como desees.\n");
-	            System.out.println("Contenido predeterminado agregado al archivo.");
-	        } catch (IOException e) {
-	            System.out.println("Error al escribir en el archivo: " + e.getMessage());
-	            e.printStackTrace();
-	        }
-	    }
+	   
 
 	    // Método para detectar si el sistema operativo es Windows
 	    private static boolean esSistemaWindows() {
