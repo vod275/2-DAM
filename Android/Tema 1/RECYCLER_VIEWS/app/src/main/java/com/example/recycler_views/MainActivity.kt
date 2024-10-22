@@ -51,15 +51,30 @@ class MainActivity : AppCompatActivity() {
 
         arrowUp = findViewById(R.id.imUp)
         arrowDown = findViewById(R.id.imDown)
+
+
+
         // Configuramos el RecyclerView
         recyclerView = findViewById(R.id.rvCantantes)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = AdaptadorCantantes(cantantes)
+
+
+
         // Crear un DividerItemDecoration y agregarlo al RecyclerView
         val dividerItemDecoration = DividerItemDecoration(recyclerView.context, (recyclerView.layoutManager as LinearLayoutManager).orientation)
         recyclerView.addItemDecoration(dividerItemDecoration)
+
+
+
+
         // Agregar un ScrollListener al RecyclerView para mostrar/ocultar las flechas
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+
+
+
+
+
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 val layoutManager = recyclerView.layoutManager as LinearLayoutManager
                 val totalItemCount = layoutManager.itemCount

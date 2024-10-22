@@ -8,22 +8,6 @@
     android:background="#03A9F4"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="337dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="26dp"
-        android:hint="@string/ejemplo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btValidad"
-        app:layout_constraintVertical_bias="1.0" />
-
     <Button
         android:id="@+id/btValidad"
         android:layout_width="wrap_content"
@@ -129,7 +113,7 @@
     <EditText
         android:id="@+id/etTuNombre"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="21dp"
         android:layout_marginEnd="22dp"
@@ -148,6 +132,7 @@
         android:id="@+id/swAnonimo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:text="@string/anonimo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -214,12 +199,15 @@
         app:layout_constraintStart_toStartOf="@+id/cbASIR"
         app:layout_constraintTop_toBottomOf="@+id/cbASIR" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="570dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvResumenPersonas"
+        android:layout_width="376dp"
+        android:layout_height="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btValidad"
+        app:layout_constraintVertical_bias="0.7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

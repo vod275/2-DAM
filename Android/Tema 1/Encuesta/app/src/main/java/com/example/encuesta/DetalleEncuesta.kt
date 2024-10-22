@@ -15,7 +15,11 @@ class DetalleEncuesta : AppCompatActivity() {
 
         // Obtener la encuesta desde el Intent
         val detalleEncuesta = intent.getStringExtra("ENCUESTA_DETALLE")
-        binding.tvEncuestaDetalle.text = detalleEncuesta
+        if (detalleEncuesta != null) {
+            binding.tvEncuestaDetalle.text = detalleEncuesta
+        } else {
+            binding.tvEncuestaDetalle.text = "No hay detalles disponibles"
+        }
 
         // Volver al MainActivity al pulsar el botón "Volver"
         binding.btVolver.setOnClickListener {
