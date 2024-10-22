@@ -17,7 +17,7 @@ namespace WTF16
 
        
 
-        public Persona() { }
+  
 
         public Persona(string nombre, string apellidos, int edad)
         {
