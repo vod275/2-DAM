@@ -29,7 +29,7 @@ public class PrimosPadre {
 
         try {
 
-            ProcessBuilder pb = new ProcessBuilder("java", "Tema1.PrimosHijo");
+            ProcessBuilder pb = new ProcessBuilder("java", "Tema1.PrimosHijo", String.valueOf(N), String.valueOf(M));
             pb.redirectErrorStream(true);
             pb.directory(rutaEjecutableHijo);
             Process procesoHijo = pb.start();
