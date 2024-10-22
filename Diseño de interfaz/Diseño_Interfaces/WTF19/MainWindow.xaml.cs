@@ -18,10 +18,11 @@ namespace WTF19
     /// </summary>
     public partial class MainWindow : Window
     {
-        ObservableCollection<Persona> Personas {  get; set; }
+        public ObservableCollection<Persona> Personas {  get; set; }
         public MainWindow()
         {
             InitializeComponent();
+           Personas = new ObservableCollection<Persona>();
             this.DataContext = this;
         }
 

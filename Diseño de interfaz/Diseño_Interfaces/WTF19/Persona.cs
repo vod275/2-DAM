@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WTF16
 {
-    internal class Persona
+    public class Persona
     {
         
 
