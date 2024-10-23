@@ -22,13 +22,14 @@ class AdaptadorPersonas(private val encuestas: MutableList<String>) :
 
 
     override fun onBindViewHolder(holder: ResumenPersonaViewHolder, position: Int) {
-        // Inicializamos la lista de cantantes
-        val cantante = encuestas[position]
-        holder.tvPersona.text = cantante
+
+        val encuesta = encuestas[position]
+        holder.tvPersona.text = encuesta
 
 
 
     }
+
 
 
 }

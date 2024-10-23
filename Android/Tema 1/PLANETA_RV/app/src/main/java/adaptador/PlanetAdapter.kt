@@ -57,10 +57,10 @@ class PlanetAdapter(private val planets: MutableList<Planet>) : RecyclerView.Ada
             }
             Toast.makeText(holder.itemView.context, "Clicked: ${planet.name}", Toast.LENGTH_SHORT).show()
             Log.d("ACSCO", "Clicked: ${selectedItems.joinToString(", ")}")
-            notifyItemChanged(position) // Avisas que ha habido un cambio en la posición y así pasa por el onBindViewHolder de nuevo y en el último if repinta.
+            notifyItemChanged(position)
         }
 
-        //definimos el evento long click para cada elemento de la lista
+        //evento long click
         holder.itemView.setOnLongClickListener {
             val removedPosition = holder.adapterPosition
             Toast.makeText(holder.itemView.context, "Clicked: ${planet.name}", Toast.LENGTH_SHORT).show()
@@ -69,10 +69,8 @@ class PlanetAdapter(private val planets: MutableList<Planet>) : RecyclerView.Ada
                 .setTitle("Borrar Planeta")
                 .setMessage("¿Estás seguro de quieres  eliminar el planeta?")
                 .setPositiveButton("Borrar") { dialog, _ ->
-                    val removedItem = planets.removeAt(removedPosition) // Remove from data list
-                    notifyItemRemoved(removedPosition) // Notify adapter
-                    // Update selected items positions
-                    // Update indices from removed position to the end
+                    val removedItem = planets.removeAt(removedPosition)
+                    notifyItemRemoved(removedPosition)
                     notifyItemRangeChanged(removedPosition, planets.size - removedPosition)
                     dialog.dismiss()
                 }
@@ -81,10 +79,10 @@ class PlanetAdapter(private val planets: MutableList<Planet>) : RecyclerView.Ada
                 }
                 .show()
 
-            true // Indicar que el evento ha sido consumido
+            true
         }
 
-        //Si está o no seleccionado, cambiamos el color del fondo
+        //Cambiamo el color al seleccionar
         if (selectedItems.contains(position)) {
             holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, R.color.item_seleccionado))
         } else {

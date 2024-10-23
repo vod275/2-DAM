@@ -1,6 +1,7 @@
 package com.example.encuesta
 
 import adaptador.AdaptadorPersonas
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Configurar el RecyclerView
-        recyclerView = binding.rvResumenPersonas // Usa el binding para obtener el RecyclerView
+        recyclerView = binding.rvResumenPersonas
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         // Inicializa el adaptador
@@ -68,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun validarEncuesta() {
-        // Validar datos de la encuesta
+
         val nombre = if (binding.swAnonimo.isChecked) "Anónimo" else binding.etTuNombre.text.toString()
         val horasEstudio = binding.sbHorasDeEstudio.progress
         val especialidad = getEspecialidadSeleccionada()
@@ -79,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        // Guardar la encuesta en la lista
+        adaptador.notifyDataSetChanged()
         val encuesta = "Nombre: $nombre, Horas: $horasEstudio, Especialidad: $especialidad, SO: $sistemaOperativo"
         encuestas.add(encuesta)
         Toast.makeText(this, "Encuesta guardada", Toast.LENGTH_SHORT).show()
@@ -87,7 +88,7 @@ class MainActivity : AppCompatActivity() {
         // Abrir el segundo activity para mostrar la encuesta
         val intent = Intent(this, DetalleEncuesta::class.java)
         intent.putExtra("ENCUESTA_DETALLE", encuesta) // Asegúrate de que esto no sea null
-        startActivity(intent) // Esto debería funcionar
+        startActivity(intent)
     }
 
 
@@ -101,9 +102,9 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "Total encuestas: ${encuestas.size}", Toast.LENGTH_SHORT).show()
     }
 
+
     private fun mostrarResumenEncuestas() {
-        // Notificar al adaptador que los datos han cambiado
-        adaptador.notifyDataSetChanged() // Esto es necesario para actualizar la lista en el RecyclerView
+
     }
 
     private fun getEspecialidadSeleccionada(): String? {
