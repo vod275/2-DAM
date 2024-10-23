@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WTF16
+namespace WTF19_Data_Grid
 {
     public class Persona
     {

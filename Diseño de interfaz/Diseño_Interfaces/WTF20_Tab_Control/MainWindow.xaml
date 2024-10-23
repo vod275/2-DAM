@@ -1,0 +1,51 @@
+﻿<Window x:Class="WTF20_Tab_Control.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WTF20_Tab_Control"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <TabControl TabStripPlacement="Bottom">
+
+        <TabItem Header="Main">
+            <Grid Margin="0,0,0,-22" >
+
+
+                <DataGrid x:Name="dgPersona" Margin="402,40,10,143" RenderTransformOrigin="0.37,0.158" ItemsSource="{Binding Path=personas}" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"/>
+                        <DataGridTextColumn Header="Apellidos" Binding="{Binding Apellidos}"/>
+                        <DataGridTextColumn Header="Edad" Binding="{Binding Edad}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Label Name="lbNombre" Content="Nombre" HorizontalAlignment="Left" Margin="158,73,0,0" VerticalAlignment="Top" Height="26" Width="54" Grid.ColumnSpan="2"/>
+                <TextBox Name="tbNombre" HorizontalAlignment="Left" Margin="134,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" Grid.ColumnSpan="2"/>
+                <Label Name="lbApellidos" Content="Apellidos&#xD;&#xA;" HorizontalAlignment="Left" Margin="174,160,0,0" VerticalAlignment="Top" Height="42" Width="59" Grid.ColumnSpan="2"/>
+                <TextBox Name="tbApellidos" HorizontalAlignment="Left" Margin="134,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.11,-3.322" Height="18" Grid.ColumnSpan="2"/>
+                <Label Name="lbEdad" Content="Edad" HorizontalAlignment="Left" Margin="176,259,0,0" VerticalAlignment="Top" Height="26" Width="36"/>
+                <TextBox Name="tbEdad1" HorizontalAlignment="Left" Margin="125,306,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Height="34" Grid.ColumnSpan="2"/>
+
+                <Button Name="btModificar" Content="Modificar" HorizontalAlignment="Left" Click="btModificar_Click" Margin="402,365,0,0" Width="64" VerticalAlignment="Top" />
+                <Button Name="btEliminar" Content="Eliminar&#xD;&#xA;" HorizontalAlignment="Left"  VerticalAlignment="Top" RenderTransformOrigin="0.486,-0.133" Height="18" Width="54"  Click="btEliminar_Click" Margin="539,315,0,0"/>
+
+
+
+            </Grid>
+        </TabItem>
+        <TabItem Header="Persona">
+            <Grid>
+                <Label x:Name="lbNombre2" Content="Nombre" HorizontalAlignment="Left" Margin="336,46,0,0" VerticalAlignment="Top" Height="26" Width="54"/>
+                <TextBox x:Name="tbNombre2" HorizontalAlignment="Left" Margin="312,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+                <Label x:Name="lbApellidos2" Content="Apellidos&#xA;" HorizontalAlignment="Left" Margin="352,133,0,0" VerticalAlignment="Top" Height="42" Width="59"/>
+                <TextBox x:Name="tbApellidos2" HorizontalAlignment="Left" Margin="312,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.11,-3.322" Height="18"/>
+                <Label x:Name="lbEdad2" Content="Edad" HorizontalAlignment="Left" Margin="354,232,0,0" VerticalAlignment="Top" Height="26" Width="36"/>
+                <TextBox x:Name="tbEdad2" HorizontalAlignment="Left" Margin="303,279,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="120" Height="34"/>
+                <Button x:Name="btAgragarPersona" Content="Agregar Persona" HorizontalAlignment="Left" Margin="340,354,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.116,0.543" Height="20" Width="92" Click="btAgragarPersona_Click"/>
+
+            </Grid>
+
+        </TabItem>
+
+    </TabControl>
+</Window>

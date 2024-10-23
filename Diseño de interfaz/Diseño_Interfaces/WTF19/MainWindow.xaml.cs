@@ -1,37 +1,41 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows;
+using System.Windows.Documents;
 using WTF16;
+using WTF19_Data_Grid;
 
 namespace WTF19
 {
     public partial class MainWindow : Window
     {
-        public ObservableCollection<Persona> Personas { get; set; }
+        public ObservableCollection<Persona> personas { get; set; }
+
         bool editando;
         int indice;
         public MainWindow()
         {
             InitializeComponent();
-            Personas = new ObservableCollection<Persona>();
+            personas = new ObservableCollection<Persona>(); 
             editando = false;
             indice = 0;
             this.DataContext = this;
+
         }
 
         private void btAgragarPersona_Click(object sender, RoutedEventArgs e)
         {
-            if (!editando) 
+            if (!editando)
             {
-                Personas.Add(new Persona(tbNombre.Text, tbApellidos.Text, int.Parse(tbEdad1.Text)));
+                personas.Add(new Persona(tbNombre.Text, tbApellidos.Text, int.Parse(tbEdad1.Text)));
                 dgPersona.Items.Refresh();
             }
             else
             {
-               
-                Personas[indice] = new Persona(tbNombre.Text, tbApellidos.Text, int.Parse(tbEdad1.Text));
+
+                personas[indice] = new Persona(tbNombre.Text, tbApellidos.Text, int.Parse(tbEdad1.Text));
                 indice = -1;
                 editando = false;
-             
+
                 LimpiarFormulario();
             }
         }
@@ -40,7 +44,7 @@ namespace WTF19
         {
             if (dgPersona.SelectedItem != null)
             {
-                Personas.Remove((Persona)dgPersona.SelectedItem);
+                personas.Remove((Persona)dgPersona.SelectedItem);
                 dgPersona.Items.Refresh();
             }
             else
@@ -54,13 +58,13 @@ namespace WTF19
             if (dgPersona.SelectedItem != null)
             {
                 editando = true;
-                
+
                 indice = dgPersona.SelectedIndex;
 
-                
+
                 Persona persElegida = (Persona)dgPersona.SelectedItem;
 
-                
+
                 tbNombre.Text = persElegida.Nombre;
                 tbApellidos.Text = persElegida.Apellidos;
                 tbEdad1.Text = persElegida.Edad.ToString();
@@ -77,5 +81,12 @@ namespace WTF19
             tbApellidos.Clear();
             tbEdad1.Clear();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AddPersona addPersona = new AddPersona(personas); 
+            addPersona.ShowDialog();
+        }
+
     }
 }

@@ -9,7 +9,7 @@
     <Grid Margin="0,0,10,9" >
 
 
-        <DataGrid x:Name="dgPersona" Margin="402,108,10,75" Grid.ColumnSpan="2" RenderTransformOrigin="0.37,0.158" ItemsSource="{Binding Path=Personas}" AutoGenerateColumns="False">
+        <DataGrid x:Name="dgPersona" Margin="402,108,10,75" Grid.ColumnSpan="2" RenderTransformOrigin="0.37,0.158" ItemsSource="{Binding Path=personas}" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"/>
                 <DataGridTextColumn Header="Apellidos" Binding="{Binding Apellidos}"/>
@@ -25,6 +25,7 @@
         <Button x:Name="btAgragarPersona" Content="Agregar Persona" HorizontalAlignment="Left" Margin="130,390,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.116,0.543" Height="20" Width="92" Click="btAgragarPersona_Click" Grid.ColumnSpan="2"/>
         <Button x:Name="btModificar" Content="Modificar" HorizontalAlignment="Left" Margin="311,419,0,22" Width="127" Click="btModificar_Click" />
         <Button x:Name="btEliminar" Content="Eliminar&#xD;&#xA;" HorizontalAlignment="Left" Margin="582,432,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.486,-0.133" Height="18" Width="54"  Click="btEliminar_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="158,450,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
 
     </Grid>

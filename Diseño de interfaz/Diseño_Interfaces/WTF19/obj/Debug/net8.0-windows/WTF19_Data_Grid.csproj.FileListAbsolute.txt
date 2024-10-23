@@ -40,3 +40,5 @@ D:\Usuario\Documents\GitHub\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\o
 D:\Usuario\Documents\GitHub\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\WTF19_Data_Grid.pdb
 D:\Usuario\Documents\GitHub\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\WTF19_Data_Grid.genruntimeconfig.cache
 D:\Usuario\Documents\GitHub\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\ref\WTF19_Data_Grid.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\AddPersona.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\AddPersona.baml
