@@ -15,10 +15,6 @@ namespace WTF16
         public int edad { get; set; }
 
 
-       
-
-  
-
         public Persona(string nombre, string apellidos, int edad)
         {
             this.nombre = nombre;
