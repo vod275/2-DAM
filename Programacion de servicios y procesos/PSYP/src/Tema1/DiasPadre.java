@@ -10,7 +10,7 @@ public class DiasPadre {
     public static void main(String[] args) {
 
      
-        String rutaArchivoFecha = "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Programacion de servicios y procesos\\PSYP\\Fecha.txt";
+        String rutaArchivoFecha = ".\\Fecha.txt";
 
         String fecha = null;
 
@@ -30,7 +30,7 @@ public class DiasPadre {
 
         try {
 
-            String rutaEjecutableHijo = "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Programacion de servicios y procesos\\PSYP\\bin";
+            String rutaEjecutableHijo = ".\\bin\\";
 
 
             ProcessBuilder pb = new ProcessBuilder("java", "-cp", rutaEjecutableHijo, "Tema1.DiasHijo");
