@@ -25,8 +25,8 @@ public class EjerBasesDeDatosConexion {
         System.out.println("----------------MySQL-----------------");
         mySQL();
         
-        System.out.println("----------------oracle-----------------");
-        mySQL();
+        System.out.println("----------------ascces-----------------");
+        ascces();
     }
 
     public static void sqlite() throws SQLException {
@@ -124,6 +124,45 @@ public class EjerBasesDeDatosConexion {
         sentencia.close();
         conexion.close();
     }
+    
+    public static void oracle() throws SQLException {
+
+
+        Connection conexion = DriverManager.getConnection("jdbc:oracle://localhost:3306/ejemplo", "root", "");
+        Statement sentencia = conexion.createStatement();
+        
+
+        String sql = "SELECT * FROM departamentos";
+        ResultSet resul = sentencia.executeQuery(sql);
+        
+
+        lislistardepartamentos(resul);
+        
+        // Cerrar ResultSet y Statement
+        resul.close();
+        sentencia.close();
+        conexion.close();
+    }
+    
+    public static void ascces() throws SQLException {
+
+
+        Connection conexion = DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\Basesdatos\\ejemplo.accdb");
+        Statement sentencia = conexion.createStatement();
+        
+
+        String sql = "SELECT * FROM departamentos";
+        ResultSet resul = sentencia.executeQuery(sql);
+        
+
+        lislistardepartamentos(resul);
+        
+        // Cerrar ResultSet y Statement
+        resul.close();
+        sentencia.close();
+        conexion.close();
+    }
+
 
     // Método para listar los departamentos
     public static void lislistardepartamentos(ResultSet resul) throws SQLException {
