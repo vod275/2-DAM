@@ -1,0 +1,38 @@
+﻿<Window x:Class="WTF21_Personaje_Rol.CrearPersonaje"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Agregar Personaje" Height="400" Width="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Nombre" />
+            <TextBox x:Name="NameTextBox" />
+
+            <TextBlock Text="Género" Margin="0,10,0,0"/>
+            <ComboBox x:Name="GeneroComboBox">
+                <ComboBoxItem Content="Masculino"/>
+                <ComboBoxItem Content="Femenino"/>
+                <ComboBoxItem Content="Otros"/>
+            </ComboBox>
+
+            <TextBlock Text="Clase" Margin="0,10,0,0"/>
+            <ComboBox x:Name="ClaseComboBox" SelectionChanged="ClassComboBox_SelectionChanged">
+                <ComboBoxItem Content="Mago"/>
+                <ComboBoxItem Content="Picaro"/>
+                <ComboBoxItem Content="Espadachin"/>
+                <ComboBoxItem Content="Barbaro"/>
+                <ComboBoxItem Content="Guerrero"/>
+                <ComboBoxItem Content="Ladron"/>
+                <ComboBoxItem Content="Curandero"/>
+
+            </ComboBox>
+
+            <TextBlock Text="Atributos Predefinidos" Margin="0,10,0,0"/>
+            <TextBlock x:Name="AttributesTextBlock" Text="Selecciona una clase" />
+
+            <TextBlock Text="Imagen" Margin="0,10,0,0"/>
+            <TextBox x:Name="ImagePathTextBox" />
+
+            <Button Content="Aceptar" HorizontalAlignment="Center" Margin="10,20,10,10" Click="AceptarButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

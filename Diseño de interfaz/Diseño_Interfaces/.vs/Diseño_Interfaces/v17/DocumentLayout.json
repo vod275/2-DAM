@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{008F4445-401B-452E-844B-17D5E45EEBE3}|WTF20_Tab_Control\\WTF20_Tab_Control.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf20_tab_control\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{008F4445-401B-452E-844B-17D5E45EEBE3}|WTF20_Tab_Control\\WTF20_Tab_Control.csproj|solutionrelative:wtf20_tab_control\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3BBF1A0B-9EDF-48E2-B766-65F366416188}|WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf21_personaje_rol\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3BBF1A0B-9EDF-48E2-B766-65F366416188}|WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj|solutionrelative:wtf21_personaje_rol\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{008F4445-401B-452E-844B-17D5E45EEBE3}|WTF20_Tab_Control\\WTF20_Tab_Control.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf20_tab_control\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{008F4445-401B-452E-844B-17D5E45EEBE3}|WTF20_Tab_Control\\WTF20_Tab_Control.csproj|solutionrelative:wtf20_tab_control\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BBF1A0B-9EDF-48E2-B766-65F366416188}|WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf21_personaje_rol\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BBF1A0B-9EDF-48E2-B766-65F366416188}|WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj|solutionrelative:wtf21_personaje_rol\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BBF1A0B-9EDF-48E2-B766-65F366416188}|WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf21_personaje_rol\\crearpersonaje.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3BBF1A0B-9EDF-48E2-B766-65F366416188}|WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj|solutionrelative:wtf21_personaje_rol\\crearpersonaje.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BBF1A0B-9EDF-48E2-B766-65F366416188}|WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf21_personaje_rol\\crearpersonaje.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BBF1A0B-9EDF-48E2-B766-65F366416188}|WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj|solutionrelative:wtf21_personaje_rol\\crearpersonaje.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CrearPersonaje.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF21_Personaje_Rol\\CrearPersonaje.xaml.cs",
+              "RelativeDocumentMoniker": "WTF21_Personaje_Rol\\CrearPersonaje.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF21_Personaje_Rol\\CrearPersonaje.xaml.cs",
+              "RelativeToolTip": "WTF21_Personaje_Rol\\CrearPersonaje.xaml.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAwwFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T14:32:44.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CrearPersonaje.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF21_Personaje_Rol\\CrearPersonaje.xaml",
+              "RelativeDocumentMoniker": "WTF21_Personaje_Rol\\CrearPersonaje.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF21_Personaje_Rol\\CrearPersonaje.xaml",
+              "RelativeToolTip": "WTF21_Personaje_Rol\\CrearPersonaje.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-24T13:57:17.746Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF20_Tab_Control\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WTF20_Tab_Control\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF20_Tab_Control\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WTF20_Tab_Control\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF21_Personaje_Rol\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WTF21_Personaje_Rol\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF21_Personaje_Rol\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WTF21_Personaje_Rol\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCoAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T16:00:22.985Z",
+              "WhenOpened": "2024-10-24T13:58:54.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF20_Tab_Control\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WTF20_Tab_Control\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF20_Tab_Control\\MainWindow.xaml",
-              "RelativeToolTip": "WTF20_Tab_Control\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF21_Personaje_Rol\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WTF21_Personaje_Rol\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF21_Personaje_Rol\\MainWindow.xaml",
+              "RelativeToolTip": "WTF21_Personaje_Rol\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-23T16:00:22.044Z",
+              "WhenOpened": "2024-10-24T13:45:06.426Z",
               "EditorCaption": ""
             }
           ]

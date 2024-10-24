@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WTF21_Personaje_Rol/1.0.0": {
+        "runtime": {
+          "WTF21_Personaje_Rol.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WTF21_Personaje_Rol/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
