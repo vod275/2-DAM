@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_comida_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ImagenesBINDING_RADIO_IMAGENES_SWITCH_SEEKBAR"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"

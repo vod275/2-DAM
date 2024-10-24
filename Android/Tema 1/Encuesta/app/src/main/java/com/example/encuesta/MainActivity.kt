@@ -80,14 +80,14 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        adaptador.notifyDataSetChanged()
+
         val encuesta = "Nombre: $nombre, Horas: $horasEstudio, Especialidad: $especialidad, SO: $sistemaOperativo"
         encuestas.add(encuesta)
         Toast.makeText(this, "Encuesta guardada", Toast.LENGTH_SHORT).show()
 
         // Abrir el segundo activity para mostrar la encuesta
         val intent = Intent(this, DetalleEncuesta::class.java)
-        intent.putExtra("ENCUESTA_DETALLE", encuesta) // Asegúrate de que esto no sea null
+        intent.putExtra("ENCUESTA_DETALLE", encuesta)
         startActivity(intent)
     }
 
@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun mostrarResumenEncuestas() {
-
+        adaptador.notifyDataSetChanged()
     }
 
     private fun getEspecialidadSeleccionada(): String? {
