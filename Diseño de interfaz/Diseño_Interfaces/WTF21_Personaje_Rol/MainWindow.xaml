@@ -4,8 +4,8 @@
         Title="Lista de Personajes" Height="400" Width="600">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="49*"/>
-            <RowDefinition Height="79*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="80*"/>
         </Grid.RowDefinitions>
 
         <ListBox x:Name="CharacterListBox" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="400" Margin="10,10,0,0" SelectionChanged="CharacterListBox_SelectionChanged" Grid.RowSpan="2">
@@ -15,6 +15,7 @@
                         <TextBlock Text="{Binding Nombre}" FontWeight="Bold"/>
                         <TextBlock Text="{Binding Clase}"/>
                         <TextBlock Text="{Binding Genero}"/>
+                        <Button Content="Inventario" Margin="10,0,0,0" Click="AbrirInventario_Click"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

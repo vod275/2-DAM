@@ -20,3 +20,5 @@ C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Perso
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WTF21_Personaje_Rol.pdb
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WTF21_Personaje_Rol.genruntimeconfig.cache
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\ref\WTF21_Personaje_Rol.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\InventarioWindow.baml
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\InventarioWindow.g.cs
