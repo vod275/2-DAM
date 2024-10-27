@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="640dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="91dp">
+
+        <TextView
+            android:id="@+id/tvVictoria"
+            android:layout_width="199dp"
+            android:layout_height="45dp"
+            android:fontFamily="cursive"
+            android:text="Ganasteee ;)"
+            android:textAlignment="center"
+            android:textColor="#750808"
+            android:textSize="24sp"
+            android:typeface="normal"
+            android:visibility="gone" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <!-- ImageButtons del tablero -->
+            <ImageButton
+                android:id="@+id/bt1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button1"
+                android:onClick="@{() -> activity.onBoardButtonClick(0)}"
+                android:scaleType="centerInside"
+                android:src="@drawable/fondo" />
+
+            <ImageButton
+                android:id="@+id/bt2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/imagebutton2"
+                android:onClick="@{() -> activity.onBoardButtonClick(1)}"
+                android:scaleType="centerInside"
+                android:src="@drawable/fondo" />
+
+            <ImageButton
+                android:id="@+id/bt3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/imagebutton3"
+                android:onClick="@{() -> activity.onBoardButtonClick(2)}"
+                android:scaleType="centerInside"
+                android:src="@drawable/fondo" />
+
+            <ImageButton
+                android:id="@+id/bt4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/imagebutton4"
+                android:onClick="@{() -> activity.onBoardButtonClick()}"
+                android:scaleType="centerInside"
+                android:src="@drawable/fondo" />
+
+            <ImageButton
+                android:id="@+id/bt5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/imagebutton5"
+                android:onClick="@{() -> activity.onBoardButtonClick(5)}"
+                android:scaleType="centerInside"
+                android:src="@drawable/fondo" />
+
+            <ImageButton
+                android:id="@+id/bt6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/imagebutton6"
+                android:onClick="@{() -> activity.onBoardButtonClick(6)}"
+                android:scaleType="centerInside"
+                android:src="@drawable/fondo" />
+
+            <ImageButton
+                android:id="@+id/bt7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/imagebutton7"
+                android:onClick="@{() -> activity.onBoardButtonClick(7)}"
+                android:scaleType="centerInside"
+                android:src="@drawable/fondo" />
+
+            <ImageButton
+                android:id="@+id/bt8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/imagebutton8"
+                android:onClick="@{() -> activity.onBoardButtonClick(8)}"
+                android:scaleType="centerInside"
+                android:src="@drawable/fondo" />
+
+            <ImageButton
+                android:id="@+id/bt9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/imagebutton9"
+                android:onClick="@{() -> activity.onBoardButtonClick(9)}"
+                android:scaleType="centerInside"
+                android:src="@drawable/fondo" />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#750808"
+            android:fontFamily="cursive"
+            android:onClick="@{() -> activity.resetGame()}"
+            android:text="Reiniciar"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="206dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="3 EN RAYA"
+        android:textAlignment="center"
+        android:textColor="#750808"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
