@@ -15,8 +15,8 @@
         android:background="#FFFFFF"
         android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="91dp">
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="75dp">
 
         <TextView
             android:id="@+id/tvVictoria"
