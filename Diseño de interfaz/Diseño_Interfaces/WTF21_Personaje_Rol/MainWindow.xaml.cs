@@ -10,12 +10,19 @@ namespace WTF21_Personaje_Rol
     public partial class MainWindow : Window
     {
         public ObservableCollection<Personaje> Personajes { get; set; }
+        public ObservableCollection<Inventario> ObjetosDisponibles { get; private set; }
 
         public MainWindow()
         {
             InitializeComponent();
             Personajes = new ObservableCollection<Personaje>();
             CharacterListBox.ItemsSource = Personajes;
+            ObjetosDisponibles = new ObservableCollection<Inventario>
+            {
+                new Inventario("Espada", 5, 3, 2, 0, 0, 0),
+                new Inventario("Escudo", 0, 0, 5, 0, 0, 0),
+                new Inventario("Poción de Salud", 0, 0, 0, 0, 0, 2)
+            };
         }
 
         private void AddCharacterButton_Click(object sender, RoutedEventArgs e)
@@ -53,7 +60,7 @@ namespace WTF21_Personaje_Rol
             if (CharacterListBox.SelectedItem is Personaje selectedCharacter) 
             {
                 
-                InventarioWindow inventarioWindow = new InventarioWindow(objetosDisponibles);
+                InventarioWindow inventarioWindow = new InventarioWindow(ObjetosDisponibles);
 
                 if (inventarioWindow.ShowDialog() == true)
                 {

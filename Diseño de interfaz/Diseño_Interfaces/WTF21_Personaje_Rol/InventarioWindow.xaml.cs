@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace WTF21_Personaje_Rol
 {
@@ -12,30 +13,28 @@ namespace WTF21_Personaje_Rol
         public InventarioWindow(ObservableCollection<Inventario> objetosDisponibles)
         {
             InitializeComponent();
+
+            // Usa objetosDisponibles para llenar el ListBox
             ObjetosListBox.ItemsSource = objetosDisponibles;
-            ObjetosSeleccionados = new ObservableCollection<Inventario>
-            {
-                new Inventario("Espada", 5, 3, 2, 0, 0, 0),
-                new Inventario("Escudo", 0, 0, 5, 0, 0, 0),
-                new Inventario("Poción de Salud", 0, 0, 0, 0, 0, 2)
-            };
 
-
-
+            // Inicializa la lista de ObjetosSeleccionados vacía
+            ObjetosSeleccionados = new ObservableCollection<Inventario>();
         }
 
         private void AceptarButton_Click(object sender, RoutedEventArgs e)
         {
-
             foreach (var item in ObjetosListBox.Items)
             {
                 var container = ObjetosListBox.ItemContainerGenerator.ContainerFromItem(item) as ListBoxItem;
                 if (container != null)
                 {
-                    var checkBox = container.ContentTemplate.FindName("Content", container) as CheckBox;
+                    var checkBox = GetCheckBoxFromListBoxItem(container);
                     if (checkBox != null && checkBox.IsChecked == true)
                     {
-                        ObjetosSeleccionados.Add(item as Inventario); 
+                        if (!ObjetosSeleccionados.Contains(item as Inventario))
+                        {
+                            ObjetosSeleccionados.Add(item as Inventario);
+                        }
                     }
                 }
             }
@@ -43,5 +42,29 @@ namespace WTF21_Personaje_Rol
             DialogResult = true;
             Close();
         }
+
+
+        private CheckBox GetCheckBoxFromListBoxItem(ListBoxItem item)
+        {
+            // Usamos VisualTreeHelper para buscar el CheckBox en el item
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(item); i++)
+            {
+                var child = VisualTreeHelper.GetChild(item, i);
+                if (child is StackPanel stackPanel)
+                {
+                    for (int j = 0; j < VisualTreeHelper.GetChildrenCount(stackPanel); j++)
+                    {
+                        var innerChild = VisualTreeHelper.GetChild(stackPanel, j);
+                        if (innerChild is CheckBox checkBox)
+                        {
+                            return checkBox;
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+
+
     }
 }
