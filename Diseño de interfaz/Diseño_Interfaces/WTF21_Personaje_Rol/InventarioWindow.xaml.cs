@@ -13,11 +13,7 @@ namespace WTF21_Personaje_Rol
         public InventarioWindow(ObservableCollection<Inventario> objetosDisponibles)
         {
             InitializeComponent();
-
-            // Usa objetosDisponibles para llenar el ListBox
             ObjetosListBox.ItemsSource = objetosDisponibles;
-
-            // Inicializa la lista de ObjetosSeleccionados vacía
             ObjetosSeleccionados = new ObservableCollection<Inventario>();
         }
 
@@ -46,7 +42,7 @@ namespace WTF21_Personaje_Rol
 
         private CheckBox GetCheckBoxFromListBoxItem(ListBoxItem item)
         {
-            // Usamos VisualTreeHelper para buscar el CheckBox en el item
+
             for (int i = 0; i < VisualTreeHelper.GetChildrenCount(item); i++)
             {
                 var child = VisualTreeHelper.GetChild(item, i);
