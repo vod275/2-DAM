@@ -32,7 +32,7 @@ public class EjerBasesDeDatosConexion {
     public static void sqlite() throws SQLException {
 
 
-        Connection conexion = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\Basesdatos\\sqlite\\ejemplo.db");
+        Connection conexion = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\BBDDEjercicios\\Basesdatos\\sqlite\\ejemplo.db");
         Statement sentencia = conexion.createStatement();
         
 
@@ -52,7 +52,7 @@ public class EjerBasesDeDatosConexion {
     public static void derby() throws SQLException {
 
 
-        Connection conexion = DriverManager.getConnection("jdbc:derby:C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\Basesdatos\\derby\\ejemplo");
+        Connection conexion = DriverManager.getConnection("jdbc:derby:C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\BBDDEjercicios\\Basesdatos\\derby\\ejemplo");
         Statement sentencia = conexion.createStatement();
         
 
@@ -71,7 +71,7 @@ public class EjerBasesDeDatosConexion {
     public static void hsqldb() throws SQLException {
 
 
-        Connection conexion = DriverManager.getConnection("jdbc:hsqldb:file:C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\Basesdatos\\hsqldb\\ejemplo\\ejemplo");
+        Connection conexion = DriverManager.getConnection("jdbc:hsqldb:file:C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\BBDDEjercicios\\Basesdatos\\hsqldb\\ejemplo\\ejemplo");
         Statement sentencia = conexion.createStatement();
         
 
@@ -90,7 +90,7 @@ public class EjerBasesDeDatosConexion {
     public static void h2() throws SQLException {
 
 
-        Connection conexion = DriverManager.getConnection("jdbc:h2:file:C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\Basesdatos\\h2\\ejemplo", "sa","");
+        Connection conexion = DriverManager.getConnection("jdbc:h2:file:C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\BBDDEjercicios\\Basesdatos\\h2\\ejemplo", "sa","");
         Statement sentencia = conexion.createStatement();
         
 
@@ -147,7 +147,7 @@ public class EjerBasesDeDatosConexion {
     public static void ascces() throws SQLException {
 
 
-        Connection conexion = DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\Basesdatos\\ejemplo.accdb");
+        Connection conexion = DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\Alumno\\Desktop\\2-DAM\\Acceso_a_datos\\BBDDEjercicios\\Basesdatos\\ejemplo.accdb");
         Statement sentencia = conexion.createStatement();
         
 
