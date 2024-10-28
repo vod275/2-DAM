@@ -27,6 +27,9 @@ public class EjerBasesDeDatosConexion {
         
         System.out.println("----------------ascces-----------------");
         ascces();
+        
+        System.out.println("----------------oracle-----------------");
+        oracle();
     }
 
     public static void sqlite() throws SQLException {
@@ -128,7 +131,7 @@ public class EjerBasesDeDatosConexion {
     public static void oracle() throws SQLException {
 
 
-        Connection conexion = DriverManager.getConnection("jdbc:oracle://localhost:3306/ejemplo", "root", "");
+        Connection conexion = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##VICTOR","Ora1234");
         Statement sentencia = conexion.createStatement();
         
 
