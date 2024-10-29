@@ -16,9 +16,9 @@ namespace WTF21_Personaje_Rol
         public string Clase { get; set; }
         public int Fuerza { get; set; }
         public int Destreza { get; set; }
-        public int Constitución { get; set; }
+        public int Constitucion { get; set; }
         public int Inteligencia { get; set; }
-        public int Sabiduría { get; set; }
+        public int Sabiduria { get; set; }
         public int Carisma {  get; set; }
         public ObservableCollection<Inventario> Objetos { get; set; }
 
@@ -30,9 +30,9 @@ namespace WTF21_Personaje_Rol
             Clase = clase;
             Fuerza = fuerza;
             Destreza = destreza;
-            Constitución = constitucion;
+            Constitucion = constitucion;
             Inteligencia = inteligencia;
-            Sabiduría = sabiduria;
+            Sabiduria = sabiduria;
             Carisma = carisma;
             ImagenRuta = imagenRuta;
             Objetos = new ObservableCollection<Inventario>();

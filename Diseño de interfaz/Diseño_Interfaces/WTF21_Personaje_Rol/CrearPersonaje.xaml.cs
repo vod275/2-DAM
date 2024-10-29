@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,7 +62,8 @@ namespace WTF21_Personaje_Rol
 
         private void AceptarButton_Click(object sender, RoutedEventArgs e)
         {
-       
+            string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
+
             NuevoPersonaje = new Personaje
             {
                 Nombre = NameTextBox.Text,
@@ -68,12 +71,34 @@ namespace WTF21_Personaje_Rol
                 Clase = (ClaseComboBox.SelectedItem as ComboBoxItem).Content.ToString(),
                 Fuerza = ObtenerAtributoDeTexto("Fuerza"),
                 Destreza = ObtenerAtributoDeTexto("Destreza"),
-                Constitución = ObtenerAtributoDeTexto("Constitución"),
+                Constitucion = ObtenerAtributoDeTexto("Constitución"),
                 Inteligencia = ObtenerAtributoDeTexto("Inteligencia"),
-                Sabiduría = ObtenerAtributoDeTexto("Sabiduría"),
+                Sabiduria = ObtenerAtributoDeTexto("Sabiduría"),
                 Carisma = ObtenerAtributoDeTexto("Carisma"),
                 ImagenRuta = ImagePathTextBox.Text
             };
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "INSERT into personaje (Nombre, Clase, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma, Objetos) VALUES (@Nombre, @Clase, @Fuerza, @Destreza, @Constitucion, @Inteligencia, @Sabiduria, @Carisma, @Objetos)";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Nombre", NuevoPersonaje.Nombre );
+                    command.Parameters.AddWithValue("@Apellidos", NuevoPersonaje.Clase);
+                    command.Parameters.AddWithValue("@Fuerza", NuevoPersonaje.Fuerza);
+                    command.Parameters.AddWithValue("@Destreza", NuevoPersonaje.Destreza);
+                    command.Parameters.AddWithValue("@Constitucion", NuevoPersonaje.Constitucion);
+                    command.Parameters.AddWithValue("@Inteligencia", NuevoPersonaje.Inteligencia);
+                    command.Parameters.AddWithValue("@Sabiduria", NuevoPersonaje.Sabiduria);
+                    command.Parameters.AddWithValue("@Carisma", NuevoPersonaje.Carisma);
+                    command.Parameters.AddWithValue("@Objetos", NuevoPersonaje.Objetos);
+                    command.ExecuteNonQuery();
+
+                }
+
+            }
 
             DialogResult = true;
             Close();

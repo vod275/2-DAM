@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using MySql.Data.MySqlClient;
+using System.Collections.ObjectModel;
+using System.Configuration;
 using System.Windows;
 using System.Windows.Media.Imaging;
 
@@ -37,6 +39,7 @@ namespace WTF21_Personaje_Rol
 
         private void CharacterListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
+           
 
             if (CharacterListBox.SelectedItem is Personaje selectedCharacter)
             {
@@ -47,11 +50,13 @@ namespace WTF21_Personaje_Rol
                                         $"Constitución: {selectedCharacter.Constitución}\n" +
                                         $"Inteligencia: {selectedCharacter.Inteligencia}\n" +
                                         $"Sabiduría: {selectedCharacter.Sabiduría}\n" +
-                                        $"Sabiduría: {selectedCharacter.Carisma}\n" +
+                                        $"Carisma: {selectedCharacter.Carisma}\n" +
                                         $"Inventario: {selectedCharacter.Objetos}\n";
 
                 CharacterImage.Source = new BitmapImage(new Uri(selectedCharacter.ImagenRuta, UriKind.RelativeOrAbsolute));
             }
+
+           
         }
 
 
