@@ -81,11 +81,11 @@ class MainActivity : AppCompatActivity() {
             if (button != null) {
                 // Cambia el fondo del botón dependiendo del jugador
                 if (jugadorMomentaneo == "X") {
-                    button.setImageResource(R.drawable.x) // Cambia la imagen a X
+                    button.setImageResource(R.drawable.pacmanrojo) // Cambia la imagen a X
                     jugadorMomentaneo = "O"
                     statusText.set("Turno: O")
                 } else {
-                    button.setImageResource(R.drawable.o) // Cambia la imagen a O
+                    button.setImageResource(R.drawable.pacmannegro) // Cambia la imagen a O
                     jugadorMomentaneo = "X"
                     statusText.set("Turno: X")
                 }
