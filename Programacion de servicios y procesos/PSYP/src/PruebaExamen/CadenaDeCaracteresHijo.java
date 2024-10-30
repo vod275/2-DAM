@@ -1,15 +1,18 @@
 package PruebaExamen;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 
 public class CadenaDeCaracteresHijo {
 	
 	public static void main(String[] args){
+		//Scanner sc = new Scanner(System.in);
+		String cadena = "";
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		Scanner scanner = new Scanner(System.in);
-		
-		
-		String cadena= args[0];
+		//cadena = sc.nextLine();
+		//cadena = br.readLine();
 		
 		 
 		 if(cadena.isEmpty()) {

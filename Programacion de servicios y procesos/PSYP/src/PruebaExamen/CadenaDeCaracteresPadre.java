@@ -1,45 +1,54 @@
 package PruebaExamen;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 
 public class CadenaDeCaracteresPadre {
+	    
+    public static void main(String[] args) throws IOException {
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Introduzca una cadena: ");
-        String cadena = scanner.nextLine(); 
+        File path = new File(".\\bin\\");
+        String cadena = "";
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("Introduce  una cadena por teclado: ");
+		cadena = br.readLine();
 
 
         try {
 
             ProcessBuilder pb = new ProcessBuilder("java", "PruebaExamen.CadenaDeCaracteresHijo");
+            pb.directory(path);
             pb.redirectErrorStream(true); 
             Process procesoHijo = pb.start();
+            
+            
+            OutputStream os = procesoHijo.getOutputStream();
+            OutputStreamWriter osw = new OutputStreamWriter(os);
+			BufferedWriter bw = new BufferedWriter(osw);
+			bw.write(cadena);
+			bw.flush();
+            
             
           //BufferedReader reader = new BufferedReader(new InputStreamReader(procesoHijo.getInputStream()));
             //String linea;
             //while ((linea = reader.readLine()) != null) {
               //  System.out.println(linea);
             //}
-            
-            int exitCode = procesoHijo.waitFor();
-            switch (exitCode) {
-                case 0:
-                    System.out.println("La longitud es 0");
-                    break;
-                case 1:
-                    System.out.println("La cadena del hijo no es un palíndromo");
-                    break;
-                case 2:
-                    System.out.println("Es un palíndromo");
-                    break;
-                default:
-                    System.out.println("Error Raro");
-                    break;
-            }
-        } catch (IOException | InterruptedException e) {
+            int exitValue = -1;
+			if (exitValue == 1) 
+				System.out.println("La cadena estaba vacía");
+			else if (exitValue == 2) 
+				System.out.println("La cadena es palíndroma");
+			else if (exitValue == 3) 
+				System.out.println("La cadena no es palíndroma");
+			
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
