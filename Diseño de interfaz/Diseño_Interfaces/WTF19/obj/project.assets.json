@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF19\\WTF19_Data_Grid.csproj",
-      "projectName": "WTF19_Data_Grid",
-      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF19\\WTF19_Data_Grid.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF19\\WPF19_Data_Grid.csproj",
+      "projectName": "WPF19_Data_Grid",
+      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF19\\WPF19_Data_Grid.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF19\\obj\\",
       "projectStyle": "PackageReference",

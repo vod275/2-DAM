@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
+  "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB58E39D-2493-406F-BFB4-2EE3B9D6820B}|WTF13\\WTF13.csproj|d:\\usuario\\documents\\github\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf13\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB58E39D-2493-406F-BFB4-2EE3B9D6820B}|WTF13\\WTF13.csproj|solutionrelative:wtf13\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf22_mini_ito\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|solutionrelative:wpf22_mini_ito\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB58E39D-2493-406F-BFB4-2EE3B9D6820B}|WTF13\\WTF13.csproj|d:\\usuario\\documents\\github\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf13\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AB58E39D-2493-406F-BFB4-2EE3B9D6820B}|WTF13\\WTF13.csproj|solutionrelative:wtf13\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WPF16_Formulario_Persona.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wtf16\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E8A6B3D-09BD-41F7-BB9C-0CA77192786A}|WTF16\\WPF16_Formulario_Persona.csproj|solutionrelative:wtf16\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf22_mini_ito\\datosiniciales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|solutionrelative:wpf22_mini_ito\\datosiniciales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf22_mini_ito\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|solutionrelative:wpf22_mini_ito\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf22_mini_ito\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|solutionrelative:wpf22_mini_ito\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF13\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WTF13\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF13\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WTF13\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T10:50:17.98Z",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\App.xaml",
+              "RelativeDocumentMoniker": "WPF22_MINI_ITO\\App.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\App.xaml",
+              "RelativeToolTip": "WPF22_MINI_ITO\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-30T16:38:14.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WTF16\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF16\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WTF16\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwBgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T16:26:06.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF13\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WTF13\\MainWindow.xaml",
-              "ToolTip": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WTF13\\MainWindow.xaml",
-              "RelativeToolTip": "WTF13\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPF22_MINI_ITO\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\MainWindow.xaml",
+              "RelativeToolTip": "WPF22_MINI_ITO\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T10:49:30.451Z",
+              "WhenOpened": "2024-10-30T16:18:32.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatosIniciales.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\DatosIniciales.cs",
+              "RelativeDocumentMoniker": "WPF22_MINI_ITO\\DatosIniciales.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\DatosIniciales.cs",
+              "RelativeToolTip": "WPF22_MINI_ITO\\DatosIniciales.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA9wBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T15:51:11.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPF22_MINI_ITO\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WPF22_MINI_ITO\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA0wCkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T15:36:09.236Z",
               "EditorCaption": ""
             }
           ]

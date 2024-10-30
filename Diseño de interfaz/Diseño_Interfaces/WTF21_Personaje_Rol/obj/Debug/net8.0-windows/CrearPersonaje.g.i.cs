@@ -92,7 +92,7 @@ namespace WTF21_Personaje_Rol {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WTF21_Personaje_Rol;V1.0.0.0;component/crearpersonaje.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF21_Personaje_Rol;V1.0.0.0;component/crearpersonaje.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CrearPersonaje.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

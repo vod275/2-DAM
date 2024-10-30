@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF20_Tab_Control\\WTF20_Tab_Control.csproj",
-      "projectName": "WTF20_Tab_Control",
-      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF20_Tab_Control\\WTF20_Tab_Control.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF20_Tab_Control\\WPF20_Tab_Control.csproj",
+      "projectName": "WPF20_Tab_Control",
+      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF20_Tab_Control\\WPF20_Tab_Control.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF20_Tab_Control\\obj\\",
       "projectStyle": "PackageReference",

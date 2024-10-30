@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF18\\WTF18_Binding_Espejo.csproj",
-      "projectName": "WTF18_Binding_Espejo",
-      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF18\\WTF18_Binding_Espejo.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF18\\WPF18_Binding_Espejo.csproj",
+      "projectName": "WPF18_Binding_Espejo",
+      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF18\\WPF18_Binding_Espejo.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF18\\obj\\",
       "projectStyle": "PackageReference",
