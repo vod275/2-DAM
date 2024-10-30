@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF16\\WTF16.csproj",
-      "projectName": "WTF16",
-      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF16\\WTF16.csproj",
+      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF16\\WPF16_Formulario_Persona.csproj",
+      "projectName": "WPF16_Formulario_Persona",
+      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF16\\WPF16_Formulario_Persona.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF16\\obj\\",
       "projectStyle": "PackageReference",

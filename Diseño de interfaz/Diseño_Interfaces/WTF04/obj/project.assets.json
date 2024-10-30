@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF04\\WPF04_Coversion_Peso.csproj",
-      "projectName": "WPF04_Coversion_Peso",
-      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF04\\WPF04_Coversion_Peso.csproj",
+      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF04\\WPF04_IMC.csproj",
+      "projectName": "WPF04_IMC",
+      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF04\\WPF04_IMC.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF04\\obj\\",
       "projectStyle": "PackageReference",

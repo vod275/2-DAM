@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF14\\WTF14.csproj",
-      "projectName": "WTF14",
-      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF14\\WTF14.csproj",
+      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF14\\WPF14_WrapPanel.csproj",
+      "projectName": "WPF14_WrapPanel",
+      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF14\\WPF14_WrapPanel.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF14\\obj\\",
       "projectStyle": "PackageReference",

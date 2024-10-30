@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF06\\WTF06.csproj",
-      "projectName": "WTF06",
-      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF06\\WTF06.csproj",
+      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF06\\WPF06_Areas.csproj",
+      "projectName": "WPF06_Areas",
+      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF06\\WPF06_Areas.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF06\\obj\\",
       "projectStyle": "PackageReference",

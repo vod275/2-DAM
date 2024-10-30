@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF11\\WTF11.csproj",
-      "projectName": "WTF11",
-      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF11\\WTF11.csproj",
+      "projectUniqueName": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF11\\WPF11_Porcentajes_Colums_Rows.csproj",
+      "projectName": "WPF11_Porcentajes_Colums_Rows",
+      "projectPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF11\\WPF11_Porcentajes_Colums_Rows.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
       "outputPath": "D:\\Usuario\\Documents\\GitHub\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF11\\obj\\",
       "projectStyle": "PackageReference",
