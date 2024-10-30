@@ -1615,9 +1615,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF21_Personaje_Rol\\WPF21_Personaje_Rol.csproj",
-      "projectName": "WPF21_Personaje_Rol",
-      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF21_Personaje_Rol\\WPF21_Personaje_Rol.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj",
+      "projectName": "WTF21_Personaje_Rol",
+      "projectPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF21_Personaje_Rol\\WTF21_Personaje_Rol.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Diseño de interfaz\\Diseño_Interfaces\\WTF21_Personaje_Rol\\obj\\",
       "projectStyle": "PackageReference",

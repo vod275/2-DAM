@@ -1,0 +1,15 @@
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WPF21_Personaje_Rol.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\CrearPersonaje.baml
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\InventarioWindow.baml
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\CrearPersonaje.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\InventarioWindow.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WPF21_Personaje_Rol_MarkupCompile.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WPF21_Personaje_Rol.g.resources
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WPF21_Personaje_Rol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WPF21_Personaje_Rol.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WPF21_Personaje_Rol.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WPF21_Personaje_Rol.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF21_Personaje_Rol\obj\Debug\net8.0-windows\WPF21_Personaje_Rol.sourcelink.json

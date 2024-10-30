@@ -71,9 +71,9 @@ namespace WTF21_Personaje_Rol
                 Clase = (ClaseComboBox.SelectedItem as ComboBoxItem).Content.ToString(),
                 Fuerza = ObtenerAtributoDeTexto("Fuerza"),
                 Destreza = ObtenerAtributoDeTexto("Destreza"),
-                Constitucion = ObtenerAtributoDeTexto("Constitución"),
+                Constitucion = ObtenerAtributoDeTexto("Constitucion"),
                 Inteligencia = ObtenerAtributoDeTexto("Inteligencia"),
-                Sabiduria = ObtenerAtributoDeTexto("Sabiduría"),
+                Sabiduria = ObtenerAtributoDeTexto("Sabiduria"),
                 Carisma = ObtenerAtributoDeTexto("Carisma"),
                 ImagenRuta = ImagePathTextBox.Text
             };
@@ -81,7 +81,7 @@ namespace WTF21_Personaje_Rol
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "INSERT into personaje (Nombre, Clase, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma, Objetos) VALUES (@Nombre, @Clase, @Fuerza, @Destreza, @Constitucion, @Inteligencia, @Sabiduria, @Carisma, @Objetos)";
+                string query = "INSERT into personaje (Nombre, Clase, Fuerza, Destreza, Constitucion, Inteligencia, Sabiduria, Carisma) VALUES (@Nombre, @Clase, @Fuerza, @Destreza, @Constitucion, @Inteligencia, @Sabiduria, @Carisma)";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
@@ -93,7 +93,6 @@ namespace WTF21_Personaje_Rol
                     command.Parameters.AddWithValue("@Inteligencia", NuevoPersonaje.Inteligencia);
                     command.Parameters.AddWithValue("@Sabiduria", NuevoPersonaje.Sabiduria);
                     command.Parameters.AddWithValue("@Carisma", NuevoPersonaje.Carisma);
-                    command.Parameters.AddWithValue("@Objetos", NuevoPersonaje.Objetos);
                     command.ExecuteNonQuery();
 
                 }
