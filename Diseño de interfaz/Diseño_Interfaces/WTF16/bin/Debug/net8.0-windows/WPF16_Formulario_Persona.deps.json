@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WPF16_Formulario_Persona/1.0.0": {
+        "runtime": {
+          "WPF16_Formulario_Persona.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF16_Formulario_Persona/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

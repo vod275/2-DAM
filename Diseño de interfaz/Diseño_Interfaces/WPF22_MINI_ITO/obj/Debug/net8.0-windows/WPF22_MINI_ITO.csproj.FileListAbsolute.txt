@@ -1,12 +1,12 @@
-C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\WPF22_MINI_ITO_MarkupCompile.cache
-C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\WPF22_MINI_ITO_MarkupCompile.lref
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\bin\Debug\net8.0-windows\WPF22_MINI_ITO.exe
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\bin\Debug\net8.0-windows\WPF22_MINI_ITO.deps.json
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\bin\Debug\net8.0-windows\WPF22_MINI_ITO.runtimeconfig.json
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\bin\Debug\net8.0-windows\WPF22_MINI_ITO.dll
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\bin\Debug\net8.0-windows\WPF22_MINI_ITO.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\WPF22_MINI_ITO_MarkupCompile.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\WPF22_MINI_ITO_MarkupCompile.lref
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\WPF22_MINI_ITO.g.resources
 C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WPF22_MINI_ITO\obj\Debug\net8.0-windows\WPF22_MINI_ITO.GeneratedMSBuildEditorConfig.editorconfig

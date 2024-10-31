@@ -1,0 +1,10 @@
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\WPF15_SatckPanel_MarkupCompile.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\WPF15_SatckPanel.g.resources
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\WPF15_SatckPanel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\WPF15_SatckPanel.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\WPF15_SatckPanel.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\WPF15_SatckPanel.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF15\obj\Debug\net8.0-windows\WPF15_SatckPanel.sourcelink.json

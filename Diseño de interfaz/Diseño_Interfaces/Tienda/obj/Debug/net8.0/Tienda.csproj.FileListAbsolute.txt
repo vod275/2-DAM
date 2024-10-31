@@ -1,0 +1,5 @@
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Tienda\obj\Debug\net8.0\Tienda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Tienda\obj\Debug\net8.0\Tienda.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Tienda\obj\Debug\net8.0\Tienda.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Tienda\obj\Debug\net8.0\Tienda.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Tienda\obj\Debug\net8.0\Tienda.sourcelink.json

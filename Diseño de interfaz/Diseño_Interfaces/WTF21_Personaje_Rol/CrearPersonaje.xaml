@@ -30,7 +30,6 @@
             <TextBlock x:Name="AttributesTextBlock" Text="Selecciona una clase" />
 
             <TextBlock Text="Imagen" Margin="0,10,0,0"/>
-            <TextBox x:Name="ImagePathTextBox" />
 
             <Button Content="Aceptar" HorizontalAlignment="Center" Margin="10,20,10,10" Click="AceptarButton_Click"/>
         </StackPanel>

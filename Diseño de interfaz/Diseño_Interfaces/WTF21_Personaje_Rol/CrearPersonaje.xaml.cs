@@ -75,7 +75,6 @@ namespace WTF21_Personaje_Rol
                 Inteligencia = ObtenerAtributoDeTexto("Inteligencia"),
                 Sabiduria = ObtenerAtributoDeTexto("Sabiduria"),
                 Carisma = ObtenerAtributoDeTexto("Carisma"),
-                ImagenRuta = ImagePathTextBox.Text
             };
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -86,7 +85,7 @@ namespace WTF21_Personaje_Rol
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Nombre", NuevoPersonaje.Nombre );
-                    command.Parameters.AddWithValue("@Apellidos", NuevoPersonaje.Clase);
+                    command.Parameters.AddWithValue("@Clase", NuevoPersonaje.Clase);
                     command.Parameters.AddWithValue("@Fuerza", NuevoPersonaje.Fuerza);
                     command.Parameters.AddWithValue("@Destreza", NuevoPersonaje.Destreza);
                     command.Parameters.AddWithValue("@Constitucion", NuevoPersonaje.Constitucion);

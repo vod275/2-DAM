@@ -47,13 +47,11 @@ namespace WTF21_Personaje_Rol
                                         $"Clase: {selectedCharacter.Clase}\n" +
                                         $"Fuerza: {selectedCharacter.Fuerza}\n" +
                                         $"Destreza: {selectedCharacter.Destreza}\n" +
-                                        $"Constitución: {selectedCharacter.Constitución}\n" +
+                                        $"Constitución: {selectedCharacter.Constitucion}\n" +
                                         $"Inteligencia: {selectedCharacter.Inteligencia}\n" +
-                                        $"Sabiduría: {selectedCharacter.Sabiduría}\n" +
+                                        $"Sabiduría: {selectedCharacter.Sabiduria}\n" +
                                         $"Carisma: {selectedCharacter.Carisma}\n" +
                                         $"Inventario: {selectedCharacter.Objetos}\n";
-
-                CharacterImage.Source = new BitmapImage(new Uri(selectedCharacter.ImagenRuta, UriKind.RelativeOrAbsolute));
             }
 
            

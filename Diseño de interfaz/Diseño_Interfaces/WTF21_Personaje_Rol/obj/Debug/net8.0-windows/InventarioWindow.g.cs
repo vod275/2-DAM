@@ -60,7 +60,7 @@ namespace WTF21_Personaje_Rol {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF21_Personaje_Rol;component/inventariowindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WTF21_Personaje_Rol;component/inventariowindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\InventarioWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

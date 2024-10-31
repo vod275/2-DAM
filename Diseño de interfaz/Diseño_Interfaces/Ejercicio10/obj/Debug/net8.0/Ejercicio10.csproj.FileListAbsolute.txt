@@ -12,3 +12,18 @@ C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfa
 C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.pdb
 C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.genruntimeconfig.cache
 C:\Users\Alumno\Desktop\Victor Oliver Donoso\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\ref\Ejercicio10.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\bin\Debug\net8.0\Ejercicio10.exe
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\bin\Debug\net8.0\Ejercicio10.deps.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\bin\Debug\net8.0\Ejercicio10.runtimeconfig.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\bin\Debug\net8.0\Ejercicio10.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\bin\Debug\net8.0\Ejercicio10.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.sourcelink.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\refint\Ejercicio10.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\Ejercicio10.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\Ejercicio10\obj\Debug\net8.0\ref\Ejercicio10.dll

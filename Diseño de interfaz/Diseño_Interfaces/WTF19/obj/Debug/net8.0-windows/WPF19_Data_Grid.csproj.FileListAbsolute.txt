@@ -1,0 +1,5 @@
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\AddPersona.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\WPF19_Data_Grid_MarkupCompile.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\WTF19\obj\Debug\net8.0-windows\WPF19_Data_Grid_MarkupCompile.lref

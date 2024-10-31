@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WPF05_Coversion_Monedas/1.0.0": {
+        "runtime": {
+          "WPF05_Coversion_Monedas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF05_Coversion_Monedas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
