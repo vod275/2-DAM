@@ -35,11 +35,6 @@ public class CadenaDeCaracteresPadre {
 			bw.flush();
             
             
-          //BufferedReader reader = new BufferedReader(new InputStreamReader(procesoHijo.getInputStream()));
-            //String linea;
-            //while ((linea = reader.readLine()) != null) {
-              //  System.out.println(linea);
-            //}
             int exitValue = -1;
 			if (exitValue == 1) 
 				System.out.println("La cadena estaba vacía");
