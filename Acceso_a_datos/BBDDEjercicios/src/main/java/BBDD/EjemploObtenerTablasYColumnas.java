@@ -78,6 +78,50 @@ public class EjemploObtenerTablasYColumnas {
 			 String tamCol = columnas.getString("COLUMN_SIZE"); //getString(7)
 			 String nula = columnas.getString("IS_NULLABLE"); //getString(18)
 			 System.out.printf("Columna: %s, Tipo: %s, Tamaño: %s, ¿Puede ser Nula:? %s %n", nombCol, tipoCol, tamCol, nula);
+			 
+			 
+			 //ClavePrimaria
+			 ResultSet pk = dbmd.getPrimaryKeys("ejemplo", null,  "departamentos");
+			 String pkDep="", separador="";
+			 while (pk.next()) {
+			  pkDep = pkDep + separador +
+			  pk.getString("COLUMN_NAME");//getString(4)
+			  separador="+";
+			 }
+			 System.out.println("Clave Primaria: " + pkDep);
+			 
+			 
+			 //ClaveForanea
+			 ResultSet fk = dbmd.getExportedKeys( "ejemplo", null, "departamentos");
+			 while (fk.next()) {
+			  String fk_name = fk.getString("FKCOLUMN_NAME");
+			  String pk_name = fk.getString("PKCOLUMN_NAME");
+			  String pk_tablename = fk.getString("PKTABLE_NAME");
+			  String fk_tablename = fk.getString("FKTABLE_NAME");
+			  System.out.printf("Tabla PK: %s, Clave Primaria: %s %n", pk_tablename, pk_name);
+			  System.out.printf("Tabla FK: %s, Clave Ajena: %s %n", fk_tablename, fk_name);
+			 }
+
+			 //ImportedKeys
+			 ResultSet ik = dbmd.getImportedKeys( "ejemplo", null, "departamentos");
+			 while (ik.next()) {
+			  String fk_name = ik.getString("FKCOLUMN_NAME");
+			  String pk_name = ik.getString("PKCOLUMN_NAME");
+			  String pk_tablename = ik.getString("PKTABLE_NAME");
+			  String fk_tablename = ik.getString("FKTABLE_NAME");
+			  System.out.printf("Tabla PK: %s, Clave Primaria: %s %n", pk_tablename, pk_name);
+			  System.out.printf("Tabla FK: %s, Clave Ajena: %s %n", fk_tablename, fk_name);
+			 }
+
+			 //Procedures
+			 ResultSet proc = dbmd.getProcedures( "ejemplo", null, null);
+			 while (proc.next()) {
+			  String proc_name = proc.getString("PROCEDURE_NAME");
+			  String proc_type = proc.getString("PROCEDURE_TYPE");
+			  System.out.printf("Nombre Procedimiento: %s - Tipo: %s %n",proc_name, proc_type);
+			 }
+
+
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
