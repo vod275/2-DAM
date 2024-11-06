@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WTF21_Personaje_Rol")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa187879c41f5d2373863f4726f275d757cceb9d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06467ea1ac6d91bc5e5d6ba79ca10e60fa406874")]
 [assembly: System.Reflection.AssemblyProductAttribute("WTF21_Personaje_Rol")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WTF21_Personaje_Rol")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

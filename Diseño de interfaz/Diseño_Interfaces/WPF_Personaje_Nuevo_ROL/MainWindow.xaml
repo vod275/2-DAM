@@ -1,0 +1,100 @@
+﻿<Window x:Class="WPF_Personaje_Nuevo_ROL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Personaje_Nuevo_ROL"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <!-- Tab para Creación de Personajes -->
+            <TabItem Header="Creación de Personajes">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Nombre del Personaje:" FontWeight="Bold"/>
+                    <TextBox Name="txtNombrePersonaje" Width="200" Margin="0,5"/>
+
+                    <TextBlock Text="Clase:" FontWeight="Bold" Margin="0,10,0,0"/>
+                    <ComboBox Name="cbClasePersonaje" Width="200" Margin="0,5">
+                        <ComboBoxItem Content="Guerrero"/>
+                        <ComboBoxItem Content="Mago"/>
+                        <ComboBoxItem Content="Arquero"/>
+                    </ComboBox>
+
+                    <TextBlock Text="Género:" FontWeight="Bold" Margin="0,10,0,0"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <RadioButton Content="Masculino" GroupName="Genero" Margin="0,0,10,0"/>
+                        <RadioButton Content="Femenino" GroupName="Genero"/>
+                    </StackPanel>
+
+                    <!-- Atributos con Sliders -->
+                    <TextBlock Text="Atributos:" FontWeight="Bold" FontSize="16" Margin="0,10,0,5"/>
+
+                    <TextBlock Text="Fuerza" Margin="0,5"/>
+                    <Slider Name="sldFuerza" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True"/>
+
+                    <TextBlock Text="Inteligencia" Margin="0,5"/>
+                    <Slider Name="sldInteligencia" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True"/>
+
+                    <TextBlock Text="Destreza" Margin="0,5"/>
+                    <Slider Name="sldDestreza" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True"/>
+
+                    <TextBlock Text="Resistencia" Margin="0,5"/>
+                    <Slider Name="sldResistencia" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True"/>
+
+                    <!-- Foto del Personaje -->
+                    <TextBlock Text="Foto del Personaje:" FontWeight="Bold" Margin="0,10,0,0"/>
+                    <Button Content="Cargar Foto" Width="100" Click="CargarFoto_Click"/>
+                    <Image Name="imgFotoPersonaje" Width="150" Height="150" Margin="0,10" Stretch="Uniform"/>
+
+                    <!-- Botón Crear Personaje -->
+                    <Button Content="Crear Personaje" Width="150" Margin="0,15,0,0" Click="CrearPersonaje_Click"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Tab para Lista y Detalles de Personaje -->
+            <TabItem Header="Lista y Detalles de Personaje">
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- ListBox de Personajes -->
+                    <ListBox Name="lbPersonajes" Grid.Column="0" Margin="0,0,10,0">
+                    </ListBox>
+
+                    <!-- Detalles del Personaje -->
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="Detalles del Personaje" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+
+                        <TextBlock Text="Nombre:" FontWeight="Bold"/>
+                        <TextBlock Name="tbNombreDetalle" Margin="0,5,0,10"/>
+
+                        <TextBlock Text="Clase:" FontWeight="Bold"/>
+                        <TextBlock Name="tbClaseDetalle" Margin="0,5,0,10"/>
+
+                        <TextBlock Text="Habilidades:" FontWeight="Bold"/>
+                        <ListBox Name="lbHabilidadesDetalle" Margin="0,5,0,10"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <!-- Tab para Inventario -->
+            <TabItem Header="Inventario">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Inventario" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+                    <ListBox Name="lbObjetosInventario" Width="300" Height="200">
+                        <!-- Aquí se listarán los objetos del inventario -->
+                    </ListBox>
+
+                    <TextBlock Text="Objeto Seleccionado:" FontWeight="Bold" Margin="0,10,0,0"/>
+                    <TextBlock Name="tbObjetoSeleccionado" Margin="0,5"/>
+
+                    <Button Content="Equipar" Width="100" Margin="0,10,0,0"/>
+                    <Button Content="Desequipar" Width="100" Margin="0,5,0,0"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
