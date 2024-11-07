@@ -9,17 +9,16 @@ namespace WPF23_Personaje_Nuevo_ROL
 {
     public class Personaje
     {
-
         public string NombrePersonaje { get; set; }
         public string Clase { get; set; }
-        public string Genero { get; set; }
+        public bool Genero { get; set; }
         public int Fuerza { get; set; }
         public int Inteligencia { get; set; }
         public int Destreza { get; set; }
         public int Resistencia { get; set; }
         public string Foto { get; set; }
 
-        public Personaje(string nombrePersonaje, string clase, string genero, int fuerza, int inteligencia, int destreza, int resistencia, string foto)
+        public Personaje( string nombrePersonaje, string clase, bool genero, int fuerza, int inteligencia, int destreza, int resistencia, string foto)
         {
             NombrePersonaje = nombrePersonaje;
             Clase = clase;

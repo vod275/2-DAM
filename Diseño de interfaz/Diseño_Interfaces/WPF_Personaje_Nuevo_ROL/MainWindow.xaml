@@ -8,49 +8,74 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl>
-            <!-- Tab para Creación de Personajes -->
             <TabItem Header="Creación de Personajes">
-                <StackPanel Margin="10">
-                    <TextBlock Text="Nombre del Personaje:" FontWeight="Bold"/>
-                    <TextBox Name="txtNombrePersonaje" Width="200" Margin="0,5"/>
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="200"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
-                    <TextBlock Text="Clase:" FontWeight="Bold" Margin="0,10,0,0"/>
-                    <ComboBox Name="cbClasePersonaje" Width="200" Margin="0,5">
+                    <!-- Nombre del Personaje -->
+                    <TextBlock Text="Nombre del Personaje:" FontWeight="Bold" Grid.Row="0" Grid.Column="0" Margin="0,0,10,0"/>
+                    <TextBox Name="txtNombrePersonaje" Width="200" Grid.Row="0" Grid.Column="1" Margin="0,5"/>
+
+                    <!-- Clase del Personaje -->
+                    <TextBlock Text="Clase:" FontWeight="Bold" Grid.Row="1" Grid.Column="0" Margin="0,10,10,0"/>
+                    <ComboBox Name="cbClasePersonaje" Width="200" Grid.Row="1" Grid.Column="1" Margin="0,5">
                         <ComboBoxItem Content="Guerrero"/>
                         <ComboBoxItem Content="Mago"/>
                         <ComboBoxItem Content="Arquero"/>
                     </ComboBox>
 
-                    <TextBlock Text="Género:" FontWeight="Bold" Margin="0,10,0,0"/>
-                    <StackPanel Orientation="Horizontal" Margin="0,5">
-                        <RadioButton Content="Masculino" GroupName="Genero" Margin="0,0,10,0"/>
-                        <RadioButton Content="Femenino" GroupName="Genero"/>
+                    <!-- Género del Personaje -->
+                    <TextBlock Text="Género:" FontWeight="Bold" Grid.Row="2" Grid.Column="0" Margin="0,10,10,0"/>
+                    <StackPanel x:Name="Genero" Orientation="Horizontal" Grid.Row="2" Grid.Column="1" Margin="0,5">
+                        <RadioButton x:Name="GeneroMasculino" Content="Masculino" GroupName="Genero" Margin="0,0,10,0"/>
+                        <RadioButton x:Name="GeneroFemenino" Content="Femenino" GroupName="Genero"/>
                     </StackPanel>
 
+                    <!-- Título Atributos -->
+                    <TextBlock Text="Atributos:" FontWeight="Bold" FontSize="16" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,10,0,5"/>
+
                     <!-- Atributos con Sliders -->
-                    <TextBlock Text="Atributos:" FontWeight="Bold" FontSize="16" Margin="0,10,0,5"/>
+                    <TextBlock Text="Fuerza" Grid.Row="4" Grid.Column="0" Margin="0,5"/>
+                    <Slider Name="sldFuerza" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True" Grid.Row="4" Grid.Column="1"/>
 
-                    <TextBlock Text="Fuerza" Margin="0,5"/>
-                    <Slider Name="sldFuerza" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True"/>
+                    <TextBlock Text="Inteligencia" Grid.Row="5" Grid.Column="0" Margin="0,5"/>
+                    <Slider Name="sldInteligencia" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True" Grid.Row="5" Grid.Column="1"/>
 
-                    <TextBlock Text="Inteligencia" Margin="0,5"/>
-                    <Slider Name="sldInteligencia" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True"/>
+                    <TextBlock Text="Destreza" Grid.Row="6" Grid.Column="0" Margin="0,5"/>
+                    <Slider Name="sldDestreza" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True" Grid.Row="6" Grid.Column="1"/>
 
-                    <TextBlock Text="Destreza" Margin="0,5"/>
-                    <Slider Name="sldDestreza" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True"/>
-
-                    <TextBlock Text="Resistencia" Margin="0,5"/>
-                    <Slider Name="sldResistencia" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True"/>
+                    <TextBlock Text="Resistencia" Grid.Row="7" Grid.Column="0" Margin="0,5"/>
+                    <Slider Name="sldResistencia" Minimum="1" Maximum="100" Width="200" TickFrequency="10" IsSnapToTickEnabled="True" Grid.Row="7" Grid.Column="1"/>
 
                     <!-- Foto del Personaje -->
-                    <TextBlock Text="Foto del Personaje:" FontWeight="Bold" Margin="0,10,0,0"/>
-                    <Button Content="Cargar Foto" Width="100" Click="CargarFoto_Click"/>
-                    <Image Name="imgFotoPersonaje" Width="150" Height="150" Margin="0,10" Stretch="Uniform"/>
+                    <TextBlock Text="Foto del Personaje:" FontWeight="Bold" Grid.Row="8" Grid.Column="0" Margin="0,10,10,0"/>
+
 
                     <!-- Botón Crear Personaje -->
-                    <Button Content="Crear Personaje" Width="150" Margin="0,15,0,0" Click="CrearPersonaje_Click"/>
-                </StackPanel>
+                    <Button Content="Crear Personaje" Width="100" Grid.Row="9" Margin="0,90,0,70" Click="CrearPersonaje_Click" HorizontalAlignment="Center" Grid.Column="1"/>
+                    <Image x:Name="Foto" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="21,0,0,0" Grid.Row="8" VerticalAlignment="Top" Width="100" Grid.RowSpan="2"/>
+                </Grid>
             </TabItem>
+
 
             <!-- Tab para Lista y Detalles de Personaje -->
             <TabItem Header="Lista y Detalles de Personaje">
