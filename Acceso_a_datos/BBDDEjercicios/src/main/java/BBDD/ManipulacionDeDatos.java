@@ -28,8 +28,7 @@ public class ManipulacionDeDatos {
 			 if(valor){
 			 ResultSet rs = sentencia.getResultSet();
 			 while (rs.next())
-			 System.out.printf("%d, %s, %s %n",
-			 rs.getInt(1), rs.getString(2), rs.getString(3));
+			 System.out.printf("%d, %s, %s %n", rs.getInt(1), rs.getString(2), rs.getString(3)); 
 			 rs.close();
 			 } else {
 			 int f = sentencia.getUpdateCount();
