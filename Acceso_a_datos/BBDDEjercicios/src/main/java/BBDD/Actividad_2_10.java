@@ -10,15 +10,12 @@ import java.sql.Types;
 public class Actividad_2_10 {
 
 	 public static void main(String[] args) {
-	        String url = "jdbc:mysql://localhost/ejemplo";
-	        String usuario = "root";
-	        String clave = "";
-
-	        try (Connection conexion = DriverManager.getConnection(url, usuario, clave)) {
-	            String resultado = insertarEmpleado(conexion, 101, "Pérez", "Analista", 100, 3000.0, 500.0, 10);
+	      
+	        try (Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo","root", "")) {
+	            String resultado = insertarEmpleado(conexion, 555, "Oliver", "Crack", 7788, 3000.0, 500.0, 10);
 	            System.out.println(resultado);
 	        } catch (SQLException e) {
-	            System.out.println("Error de conexión: " + e.getMessage());
+	            System.out.println("Error de al conectarse bb: " + e.getMessage());
 	        }
 	    }
 
@@ -28,27 +25,27 @@ public class Actividad_2_10 {
 	
 	 public static String insertarEmpleado(Connection conexion, int empNo, String apellido, String oficio, Integer dir, double salario, Double comision, int deptNo) {
 	        try {
-	            // Comprobar que el número del empleado no existe
+	            
 	            if (existeEmpleado(conexion, empNo)) {
-	                return "El número de empleado ya existe, error al insertar.";
+	                return "El numero de empleado ya existe, como tu suspenso en psp.";
 	            }
 
-	            // Comprobar que el departamento existe
+	           
 	            if (!existeDepartamento(conexion, deptNo)) {
-	                return "El número de departamento no existe en la tabla departamentos.";
+	                return "El departamento  no existe como los reyes magos.";
 	            }
 
-	            // Comprobar que el salario es mayor que 0
+	       
 	            if (salario <= 0) {
-	                return "El salario es negativo, error: no puede ser negativo.";
+	                return "El salario es negativo, si es negativo para que trabajas?.";
 	            }
 
-	            // Comprobar que el director (DIR) existe en empleados, si dir no es nulo
+
 	            if (dir != null && !existeEmpleado(conexion, dir)) {
-	                return "El director (DIR) no existe en empleados, error al insertar.";
+	                return "El director (dir) no existe en empleados, revisa el codigo coÃ±o.";
 	            }
 
-	            // Comprobar que apellido y oficio no sean nulos
+
 	            if (apellido == null || apellido.isEmpty()) {
 	                return "El apellido no puede ser nulo.";
 	            }
@@ -56,9 +53,9 @@ public class Actividad_2_10 {
 	                return "El oficio no puede ser nulo.";
 	            }
 
-	            // Preparar y ejecutar la inserción
-	            String sql = "INSERT INTO empleados (emp_no, apellido, oficio, dir, salario, comision, dept_no, fecha_alta) " +
-	                         "VALUES (?, ?, ?, ?, ?, ?, ?, CURDATE())";
+	
+	            String sql = "INSERT INTO empleados (emp_no, apellido, oficio, dir, salario, comision, dept_no, fecha_alt) " +
+	                    "VALUES (?, ?, ?, ?, ?, ?, ?, CURDATE())";
 	            PreparedStatement stmt = conexion.prepareStatement(sql);
 	            stmt.setInt(1, empNo);
 	            stmt.setString(2, apellido);
@@ -78,13 +75,13 @@ public class Actividad_2_10 {
 
 	            int filasAfectadas = stmt.executeUpdate();
 	            if (filasAfectadas > 0) {
-	                return "Se ha insertado correctamente el empleado.";
+	                return "Se inserto bien, en 500 aÃ±os estas en la nasa.";
 	            } else {
-	                return "Error desconocido al intentar insertar el empleado.";
+	                return "eres tan tonto que lo insertaste mal.";
 	            }
 
 	        } catch (SQLException e) {
-	            return "Error en la operación: " + e.getMessage();
+	            return "Error en la operaciï¿½n: " + e.getMessage();
 	        }
 	    }
 	 
