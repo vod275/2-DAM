@@ -1,5 +1,6 @@
 package com.example.encuesta
-
+import Auxiliar.Conexion
+import Modelo.Persona
 import adaptador.AdaptadorPersonas
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -70,26 +71,40 @@ class MainActivity : AppCompatActivity() {
 
     private fun validarEncuesta() {
 
+        // Obtener los datos del formulario
         val nombre = if (binding.swAnonimo.isChecked) "Anónimo" else binding.etTuNombre.text.toString()
         val horasEstudio = binding.sbHorasDeEstudio.progress
         val especialidad = getEspecialidadSeleccionada()
         val sistemaOperativo = getSistemaOperativoSeleccionado()
 
+        // Verificar que todos los campos estén completos
         if (especialidad == null || sistemaOperativo == null) {
             Toast.makeText(this, "Faltan datos por completar", Toast.LENGTH_SHORT).show()
             return
         }
 
+        // Crear el objeto Persona
+        val persona = Persona(nombre, sistemaOperativo, arrayListOf(especialidad), horasEstudio)
 
-        val encuesta = "Nombre: $nombre, Horas: $horasEstudio, Especialidad: $especialidad, SO: $sistemaOperativo"
-        encuestas.add(encuesta)
-        Toast.makeText(this, "Encuesta guardada", Toast.LENGTH_SHORT).show()
+        // Guardar la persona en la base de datos
+        val codigo = Conexion.addPersona(this, persona)
 
-        // Abrir el segundo activity para mostrar la encuesta
-        val intent = Intent(this, DetalleEncuesta::class.java)
-        intent.putExtra("ENCUESTA_DETALLE", encuesta)
-        startActivity(intent)
+        if (codigo != -1L) {
+            Toast.makeText(this, "Encuesta guardada en la base de datos", Toast.LENGTH_SHORT).show()
+
+            // Crear un resumen de la encuesta para mostrar en el siguiente Activity
+            val encuesta = "Nombre: $nombre, Horas: $horasEstudio, Especialidad: $especialidad, SO: $sistemaOperativo"
+            encuestas.add(encuesta)
+
+            // Abrir el segundo Activity para mostrar la encuesta
+            val intent = Intent(this, DetalleEncuesta::class.java)
+            intent.putExtra("ENCUESTA_DETALLE", encuesta)
+            startActivity(intent)
+        } else {
+            Toast.makeText(this, "Error al guardar la encuesta", Toast.LENGTH_SHORT).show()
+        }
     }
+
 
 
 
