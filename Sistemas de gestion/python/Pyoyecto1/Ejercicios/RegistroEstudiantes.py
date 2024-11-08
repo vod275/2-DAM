@@ -42,9 +42,14 @@ class Metodos:
 
 
 
-estudiante1 = Estudiante("Juan", "Pérez", 20, "Matemáticas")
-estudiante2 = Estudiante("Ana", "García", 22, "Física")
-estudiante3 = Estudiante("Luis", "Rodríguez", 21, "Biología")
+
+
+
+estudiante1 = Estudiante("Juan", "Pérez", 20, "Matematicas")
+estudiante2 = Estudiante("Ana", "García", 22, "Fisica")
+estudiante3 = Estudiante("Luis", "Rodríguez", 21, "Biologua")
+
+
 
 
 metodos = Metodos()
