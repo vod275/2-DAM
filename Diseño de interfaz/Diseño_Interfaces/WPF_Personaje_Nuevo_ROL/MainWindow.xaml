@@ -72,7 +72,7 @@
 
                     <!-- Botón Crear Personaje -->
                     <Button Content="Crear Personaje" Width="100" Grid.Row="9" Margin="0,90,0,70" Click="CrearPersonaje_Click" HorizontalAlignment="Center" Grid.Column="1"/>
-                    <Image x:Name="Foto" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="21,0,0,0" Grid.Row="8" VerticalAlignment="Top" Width="100" Grid.RowSpan="2"/>
+                    <TextBox x:Name="RutaFoto" HorizontalAlignment="Left" Margin="138,8,0,0" Grid.Row="8" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.RowSpan="2" Height="18"/>
                 </Grid>
             </TabItem>
 
@@ -81,16 +81,26 @@
             <TabItem Header="Lista y Detalles de Personaje">
                 <Grid Margin="10">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="5*"/>
                         <ColumnDefinition Width="3*"/>
                     </Grid.ColumnDefinitions>
 
                     <!-- ListBox de Personajes -->
-                    <ListBox Name="lbPersonajes" Grid.Column="0" Margin="0,0,10,0">
-                    </ListBox>
+                    <DataGrid x:Name="dgPersona" RenderTransformOrigin="0.37,0.158" ItemsSource="{Binding Path=lista}" AutoGenerateColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding NombrePersonaje}"/>
+                            <DataGridTextColumn Header="Clase" Binding="{Binding Clase}"/>
+                            <DataGridTextColumn Header="Genero" Binding="{Binding Genero}"/>
+                            <DataGridTextColumn Header="Fuerza" Binding="{Binding Fuerza}"/>
+                            <DataGridTextColumn Header="Inteligencia" Binding="{Binding Inteligencia}"/>
+                            <DataGridTextColumn Header="Destreza" Binding="{Binding Destreza}"/>
+                            <DataGridTextColumn Header="Resistencia" Binding="{Binding Resistencia}"/>
+                            <DataGridTextColumn Header="Foto" Binding="{Binding Foto}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
 
                     <!-- Detalles del Personaje -->
-                    <StackPanel Grid.Column="1">
+                    <StackPanel Grid.Column="1" Margin="10,0,0,0">
                         <TextBlock Text="Detalles del Personaje" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
 
                         <TextBlock Text="Nombre:" FontWeight="Bold"/>
@@ -99,8 +109,9 @@
                         <TextBlock Text="Clase:" FontWeight="Bold"/>
                         <TextBlock Name="tbClaseDetalle" Margin="0,5,0,10"/>
 
-                        <TextBlock Text="Habilidades:" FontWeight="Bold"/>
-                        <ListBox Name="lbHabilidadesDetalle" Margin="0,5,0,10"/>
+                        <TextBlock Text="Foto:" FontWeight="Bold"/>
+                        <Image Height="197" Width="215"/>
+
                     </StackPanel>
                 </Grid>
             </TabItem>

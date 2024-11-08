@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF23_Personaje_Nuevo_ROL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0f330d291179539fd505e5aaa75e26170d30832")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d050e2d4e0aed67787dc13a15a86e8b56807da6")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF23_Personaje_Nuevo_ROL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF23_Personaje_Nuevo_ROL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Collections.ObjectModel;
 using System.Configuration;
 
 
@@ -11,7 +12,7 @@ namespace WPF23_Personaje_Nuevo_ROL
 
  
         // Método para agregar un personaje
-        public static void AgregarPersonaje(string nombrePersonaje, string clase, bool genero, int fuerza, int inteligencia, int destreza, int resistencia, string foto)
+        public static void AgregarPersonaje(string nombrePersonaje, string clase, string genero, int fuerza, int inteligencia, int destreza, int resistencia, string foto)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
 
@@ -37,5 +38,47 @@ namespace WPF23_Personaje_Nuevo_ROL
 
             }
         }
+
+
+        public static ObservableCollection<Personaje> CargarPersonajes()
+        {
+            ObservableCollection<Personaje> lista = new ObservableCollection<Personaje>();
+            string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT nombre, clase, genero, fuerza, inteligencia, destreza, resistencia, foto FROM personaje";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+ 
+                            Personaje personaje = new Personaje
+                            {
+                                NombrePersonaje = reader.GetString("nombre"),
+                                Clase = reader.GetString("clase"),
+                                Genero = reader.GetString("genero"),
+                                Fuerza = reader.GetInt32("fuerza"),
+                                Inteligencia = reader.GetInt32("inteligencia"),
+                                Destreza = reader.GetInt32("destreza"),
+                                Resistencia = reader.GetInt32("resistencia"),
+                                Foto = reader.GetString("foto")
+                            };
+
+                      
+                            lista.Add(personaje);
+                        }
+                    }
+                }
+            }
+
+            return lista;
+        }
+
+
     }
 }
