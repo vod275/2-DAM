@@ -42,7 +42,7 @@ public class OperacionesEmple {
 	            if (!comprobaremple(conexion, empno)) {
 	                return "El empleado no existe.";
 	            }
-	            String sql = "UPDATE empleados SET apellido = ?, oficio = ?, salario = ?, comision = ?, fecha_alt = ?, dept_no = ?, dir = ? WHERE emp_no = ?";
+	            String sql = "UPDATE empleados SET apellido = ?, oficio = ?, salario = ?, comision = ?, dept_no = ?, dir = ? WHERE emp_no = ?";
 	            try (PreparedStatement stmt = conexion.prepareStatement(sql)) {
 	                stmt.setString(1, ape);
 	                stmt.setString(2, ofi);
