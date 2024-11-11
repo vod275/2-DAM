@@ -2,6 +2,7 @@ package Auxiliar
 
 import Conexion.AdminSQLIteConexion
 import Modelo.Persona
+import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 
@@ -33,6 +34,7 @@ object Conexion {
     }
 
     // Método para obtener todas las personas desde la base de datos
+    @SuppressLint("Range")
     fun obtenerPersonas(context: Context): List<Persona> {
         val admin = AdminSQLIteConexion(context, DATABASE_NAME, null, DATABASE_VERSION)
         val bd = admin.readableDatabase
@@ -56,4 +58,14 @@ object Conexion {
 
         return personas
     }
+
+    fun eliminarEncuesta(context: Context, encuestaId: Int): Boolean {
+        val admin = AdminSQLIteConexion(context, DATABASE_NAME, null, DATABASE_VERSION)
+        val db = admin.writableDatabase
+        val rowsDeleted = db.delete("personas", "Id=?", arrayOf(encuestaId.toString()))
+        db.close()
+        return rowsDeleted > 0
+
+    }
+
 }

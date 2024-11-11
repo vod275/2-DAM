@@ -1,8 +1,8 @@
 package com.example.encuesta
 
 import Auxiliar.Conexion
+import Conexion.AdminSQLIteConexion
 import Modelo.Persona
-import adaptador.AdaptadorPersonas
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -12,7 +12,6 @@ import com.example.encuesta.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val encuestas = mutableListOf<String>() // Lista de encuestas en memoria
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +30,9 @@ class MainActivity : AppCompatActivity() {
             mostrarCantidadEncuestas()
         }
 
-
+        binding.btResumen.setOnClickListener {
+            verResumenEncuestas()
+        }
     }
 
     private fun validarEncuesta() {
@@ -51,11 +52,14 @@ class MainActivity : AppCompatActivity() {
 
         if (codigo != -1L) {
             Toast.makeText(this, "Encuesta guardada en la base de datos", Toast.LENGTH_SHORT).show()
-            val encuesta = "Nombre: $nombre, Horas: $horasEstudio, Especialidad: $especialidad, SO: $sistemaOperativo"
-            encuestas.add(encuesta)
+
+            // Recuperar las encuestas validadas de la base de datos
+            val encuestasValidadas = Conexion.obtenerPersonas(this).map {
+                "Nombre: ${it.nombre}, Horas: ${it.horasEstudio}, Especialidad: ${it.especializacion.joinToString(", ")}, SO: ${it.sistemaOperativo}"
+            }
 
             val intent = Intent(this, DetalleEncuesta::class.java)
-            intent.putStringArrayListExtra("ENCUESTAS_VALIDADAS", ArrayList(encuestas))
+            intent.putStringArrayListExtra("ENCUESTAS_VALIDADAS", ArrayList(encuestasValidadas))
             startActivity(intent)
         } else {
             Toast.makeText(this, "Error al guardar la encuesta", Toast.LENGTH_SHORT).show()
@@ -63,14 +67,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun reiniciarEncuestas() {
-        encuestas.clear()
+        // Si decides reiniciar las encuestas, deberías eliminar los registros de la base de datos también.
+        val admin = AdminSQLIteConexion(this, "Encuesta.db3", null, 1)
+        val db = admin.writableDatabase
+        db.execSQL("DELETE FROM personas")  // Eliminar todas las encuestas
+        db.close()
         Toast.makeText(this, "Encuestas reiniciadas", Toast.LENGTH_SHORT).show()
     }
 
     private fun mostrarCantidadEncuestas() {
+        // Mostrar la cantidad de encuestas almacenadas en la base de datos
+        val encuestas = Conexion.obtenerPersonas(this)
         Toast.makeText(this, "Total encuestas: ${encuestas.size}", Toast.LENGTH_SHORT).show()
     }
-
 
     private fun getEspecialidadSeleccionada(): String? {
         return when {
@@ -91,6 +100,22 @@ class MainActivity : AppCompatActivity() {
             R.id.rbMac -> "Mac"
             R.id.rbLinux -> "Linux"
             else -> null // Si no hay ninguno seleccionado
+        }
+    }
+
+    private fun verResumenEncuestas() {
+        // Recuperar las encuestas almacenadas en la base de datos
+        val encuestasValidadas = Conexion.obtenerPersonas(this).map {
+            "Nombre: ${it.nombre}, Horas: ${it.horasEstudio}, Especialidad: ${it.especializacion.joinToString(", ")}, SO: ${it.sistemaOperativo}"
+        }
+
+        // Si hay encuestas validadas, navegar a DetalleEncuesta
+        if (encuestasValidadas.isNotEmpty()) {
+            val intent = Intent(this, DetalleEncuesta::class.java)
+            intent.putStringArrayListExtra("ENCUESTAS_VALIDADAS", ArrayList(encuestasValidadas))
+            startActivity(intent)
+        } else {
+            Toast.makeText(this, "No hay encuestas validadas", Toast.LENGTH_SHORT).show()
         }
     }
 }

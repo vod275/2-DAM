@@ -62,15 +62,6 @@
         app:layout_constraintStart_toEndOf="@+id/btReiniciar" />
 
     <Button
-        android:id="@+id/btReiniciar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="77dp"
-        android:text="@string/reiniciar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btValidad" />
-
-    <Button
         android:id="@+id/btValidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -79,7 +70,17 @@
         android:text="@string/validar"
         app:layout_constraintBaseline_toBaselineOf="@+id/btReiniciar"
         app:layout_constraintEnd_toEndOf="@+id/cbASIR"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/tv0" />
+
+    <Button
+        android:id="@+id/btReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="@string/reiniciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btValidad" />
 
     <TextView
         android:id="@+id/tvEspecialidad"
@@ -188,6 +189,18 @@
             android:layout_height="wrap_content"
             android:text="Linux" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/btResumen"
+        android:layout_width="118dp"
+        android:layout_height="54dp"
+        android:text="@string/resumen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

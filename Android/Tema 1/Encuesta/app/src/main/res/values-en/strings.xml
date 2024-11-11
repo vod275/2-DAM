@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Survey</string>
+    <string name="ejemplo">EXAMPLE</string>
+    <string name="validar">Validate</string>
+    <string name="reiniciar">Restart</string>
+    <string name="cuantas">How many</string>
+    <string name="resumen">Summary</string>
+    <string name="horas_de_estudio">Study Hours</string>
+    <string name="especialidad">Specialization</string>
+    <string name="sistema_operativo_preferido">Preferred Operating System</string>
+    <string name="_4">4</string>
+    <string name="tu_nombre">Your name...</string>
+    <string name="anonimo">Anonymous</string>
+    <string name="mac">Mac</string>
+    <string name="windows">Windows</string>
+    <string name="linux">Linux</string>
+    <string name="dam">DAM</string>
+    <string name="asir">ASIR</string>
+    <string name="daw">DAW</string>
+    <string name="volver">Back</string>
+    <string name="_5" />
+</resources>
