@@ -1,60 +1,121 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media.Imaging;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.ComponentModel;
 
-namespace WPF23_Personaje_Nuevo_ROL 
+namespace WPF23_Personaje_Nuevo_ROL
 {
-
-
-     
-public class Personaje : INotifyPropertyChanged
+    public class Personaje : INotifyPropertyChanged
     {
+        private string nombrePersonaje, clase, genero, foto;
+        private int fuerza, inteligencia, destreza, resistencia;
 
-  
-
-    private string nombrePersonaje, clase, genero, foto;
-    private int fuerza, inteligencia, destreza, resistencia;
-
- 
-    public string NombrePersonaje { get => nombrePersonaje; set { nombrePersonaje = value; PropertyChanged(this, new PropertyChangedEventArgs("NombrePersonaje")); } }
-
-
-    public string Clase { get => clase; set { clase = value; PropertyChanged(this, new PropertyChangedEventArgs("Clase")); } }
-
-    public string Genero { get => genero; set { genero = value; PropertyChanged(this, new PropertyChangedEventArgs("Genero")); } }
- 
-    public int Fuerza { get => fuerza; set { fuerza = value; PropertyChanged(this, new PropertyChangedEventArgs("Fuerza")); } }
-
-    public int Inteligencia { get => inteligencia; set { inteligencia = value; PropertyChanged(this, new PropertyChangedEventArgs("Fuerza")); } }
-
-     public int Destreza { get => destreza; set { destreza = value; PropertyChanged(this, new PropertyChangedEventArgs("Fuerza")); } }
-    public int Resistencia { get => resistencia; set { resistencia = value; PropertyChanged(this, new PropertyChangedEventArgs("Fuerza")); } }
-
-    public string Foto { get => foto; set { foto = value; PropertyChanged(this, new PropertyChangedEventArgs("Foto")); } }
-
-
-
-
-    public Personaje( string nombrePersonaje, string clase, string genero, int fuerza, int inteligencia, int destreza, int resistencia, string foto)
+        public string NombrePersonaje
         {
-            this.nombrePersonaje = nombrePersonaje;
-            this.clase = clase;
-            this.genero = genero;
-            this.fuerza = fuerza;
-            this.inteligencia = inteligencia;
-            this.destreza = destreza;
-            this.resistencia = resistencia;
-            this.foto = foto;
+            get => nombrePersonaje;
+            set
+            {
+                if (nombrePersonaje != value)
+                {
+                    nombrePersonaje = value;
+                    OnPropertyChanged(nameof(NombrePersonaje));
+                }
+            }
         }
 
-        public Personaje() { }
+        public string Clase
+        {
+            get => clase;
+            set
+            {
+                if (clase != value)
+                {
+                    clase = value;
+                    OnPropertyChanged(nameof(Clase));
+                }
+            }
+        }
 
+        public string Genero
+        {
+            get => genero;
+            set
+            {
+                if (genero != value)
+                {
+                    genero = value;
+                    OnPropertyChanged(nameof(Genero));
+                }
+            }
+        }
 
-    public event PropertyChangedEventHandler PropertyChanged = delegate { };
+        public int Fuerza
+        {
+            get => fuerza;
+            set
+            {
+                if (fuerza != value)
+                {
+                    fuerza = value;
+                    OnPropertyChanged(nameof(Fuerza));
+                }
+            }
+        }
+
+        public int Inteligencia
+        {
+            get => inteligencia;
+            set
+            {
+                if (inteligencia != value)
+                {
+                    inteligencia = value;
+                    OnPropertyChanged(nameof(Inteligencia));
+                }
+            }
+        }
+
+        public int Destreza
+        {
+            get => destreza;
+            set
+            {
+                if (destreza != value)
+                {
+                    destreza = value;
+                    OnPropertyChanged(nameof(Destreza));
+                }
+            }
+        }
+
+        public int Resistencia
+        {
+            get => resistencia;
+            set
+            {
+                if (resistencia != value)
+                {
+                    resistencia = value;
+                    OnPropertyChanged(nameof(Resistencia));
+                }
+            }
+        }
+
+        public string Foto
+        {
+            get => foto;
+            set
+            {
+                if (foto != value)
+                {
+                    foto = value;
+                    OnPropertyChanged(nameof(Foto));
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }

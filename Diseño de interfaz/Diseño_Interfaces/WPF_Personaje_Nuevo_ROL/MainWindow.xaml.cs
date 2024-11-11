@@ -20,11 +20,13 @@ namespace WPF_Personaje_Nuevo_ROL
     public partial class MainWindow : Window
     {
         ObservableCollection<Personaje> lista { get; set; } = new ObservableCollection<Personaje>();
+        public Personaje SelectedPersonaje { get; set; }
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = this;
             lista = Repositorio.CargarPersonajes();
+            dgPersona.ItemsSource = lista;
+            DataContext = this;
         }
 
         private void CrearPersonaje_Click(object sender, RoutedEventArgs e)
@@ -50,6 +52,14 @@ namespace WPF_Personaje_Nuevo_ROL
 
 
 
+        }
+
+
+        private void dgPersona_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+            SelectedPersonaje = dgPersona.SelectedItem as Personaje;
+            
         }
 
     }
