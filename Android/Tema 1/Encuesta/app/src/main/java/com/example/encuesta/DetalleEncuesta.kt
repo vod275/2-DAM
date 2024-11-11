@@ -2,7 +2,9 @@ package com.example.encuesta
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.encuesta.databinding.ActivityDetalleEncuestaBinding
+import adaptador.AdaptadorPersonas
 
 class DetalleEncuesta : AppCompatActivity() {
 
@@ -13,17 +15,17 @@ class DetalleEncuesta : AppCompatActivity() {
         binding = ActivityDetalleEncuestaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Obtener la encuesta desde el Intent
-        val detalleEncuesta = intent.getStringExtra("ENCUESTA_DETALLE")
-        if (detalleEncuesta != null) {
-            binding.tvEncuestaDetalle.text = detalleEncuesta
-        } else {
-            binding.tvEncuestaDetalle.text = "No hay detalles disponibles"
-        }
+        // Recuperar la lista de encuestas validadas
+        val encuestasValidadas = intent.getStringArrayListExtra("ENCUESTAS_VALIDADAS") ?: arrayListOf()
 
-        // Volver al MainActivity al pulsar el botón "Volver"
+        // Inicializar el adaptador con los datos y el contexto
+        val adaptador = AdaptadorPersonas(encuestasValidadas, this)
+        binding.rvResumenPersonas.layoutManager = LinearLayoutManager(this)
+        binding.rvResumenPersonas.adapter = adaptador
+
+        // Configurar el botón de volver
         binding.btVolver.setOnClickListener {
-            finish() // Cierra el segundo activity y regresa al MainActivity
+            finish()
         }
     }
 }

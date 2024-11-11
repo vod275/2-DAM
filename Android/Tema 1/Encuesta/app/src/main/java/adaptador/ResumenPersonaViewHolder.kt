@@ -5,8 +5,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.encuesta.R
 
-class ResumenPersonaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)   {
+class ResumenPersonaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val tvPersona: TextView = itemView.findViewById(R.id.txPersona)
-    var isBackgroundColorChanged = false // Flag to track color state
-
+    var isBackgroundColorChanged = false // Bandera para el estado del color de fondo
 }

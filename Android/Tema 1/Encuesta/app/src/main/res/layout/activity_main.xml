@@ -8,107 +8,127 @@
     android:background="@color/md_theme_inversePrimary_mediumContrast"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btValidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="@string/validar"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btReiniciar"
-        app:layout_constraintEnd_toStartOf="@+id/btReiniciar"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tvHorasDeEstudio"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/horas_de_estudio"
+        app:layout_constraintBottom_toBottomOf="@+id/sbHorasDeEstudio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbDAM" />
 
-    <Button
-        android:id="@+id/btReiniciar"
+    <TextView
+        android:id="@+id/tv0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="2dp"
-        android:text="@string/reiniciar"
-        app:layout_constraintEnd_toStartOf="@+id/btCuantas"
-        app:layout_constraintStart_toEndOf="@+id/btValidad"
-        app:layout_constraintTop_toTopOf="@+id/sbHorasDeEstudio" />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHorasDeEstudio" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/_4"
+        app:layout_constraintBottom_toBottomOf="@+id/sbHorasDeEstudio"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sbHorasDeEstudio"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="189dp"
+        android:max="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv4"
+        app:layout_constraintStart_toEndOf="@+id/tv0"
+        app:layout_constraintTop_toTopOf="@+id/tvEspecialidad" />
 
     <Button
         android:id="@+id/btCuantas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cuantas"
-        app:layout_constraintEnd_toStartOf="@+id/btResumen"
-        app:layout_constraintStart_toEndOf="@+id/btReiniciar"
-        app:layout_constraintTop_toTopOf="@+id/btReiniciar" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btReiniciar"
+        app:layout_constraintStart_toEndOf="@+id/btReiniciar" />
 
     <Button
-        android:id="@+id/btResumen"
+        android:id="@+id/btReiniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/resumen"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btCuantas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btCuantas" />
-
-    <TextView
-        android:id="@+id/tvHorasDeEstudio"
-        android:layout_width="114dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/horas_de_estudio"
-        app:layout_constraintBottom_toTopOf="@+id/sbHorasDeEstudio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbDAW"
-        app:layout_constraintVertical_bias="0.789" />
-
-    <SeekBar
-        android:id="@+id/sbHorasDeEstudio"
-        android:layout_width="280dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="205dp"
-        android:max="4"
+        android:layout_marginBottom="77dp"
+        android:text="@string/reiniciar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cbDAM"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/btValidad" />
+
+    <Button
+        android:id="@+id/btValidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        android:text="@string/validar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btReiniciar"
+        app:layout_constraintEnd_toEndOf="@+id/cbASIR"
+        app:layout_constraintStart_toEndOf="@+id/tv0" />
 
     <TextView
         android:id="@+id/tvEspecialidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="331dp"
         android:text="@string/especialidad"
-        app:layout_constraintBottom_toTopOf="@+id/cbDAM"
-        app:layout_constraintStart_toStartOf="@+id/cbDAM" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbDAW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="@string/daw"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cbASIR"
+        app:layout_constraintStart_toEndOf="@+id/cbASIR" />
+
+    <CheckBox
+        android:id="@+id/cbASIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/asir"
+        app:layout_constraintStart_toEndOf="@+id/cbDAM"
+        app:layout_constraintTop_toBottomOf="@+id/tvEspecialidad" />
+
+    <CheckBox
+        android:id="@+id/cbDAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="@string/dam"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cbASIR"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="125dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="7dp"
+        android:layout_width="176dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
         android:text="@string/sistema_operativo_preferido"
-        app:layout_constraintBottom_toTopOf="@+id/rbMac"
-        app:layout_constraintStart_toStartOf="@+id/etTuNombre"
-        app:layout_constraintTop_toBottomOf="@+id/etTuNombre" />
-
-    <TextView
-        android:id="@+id/tv4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/_4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sbHorasDeEstudio"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etTuNombre"
@@ -117,109 +137,57 @@
         android:layout_marginStart="17dp"
         android:layout_marginTop="21dp"
         android:layout_marginEnd="22dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="40dp"
         android:ems="10"
         android:hint="@string/tu_nombre"
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@+id/swAnonimo"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toStartOf="@+id/swAnonimo"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/swAnonimo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
         android:minHeight="48dp"
         android:text="@string/anonimo"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etTuNombre"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-    <RadioButton
-        android:id="@+id/rbMac"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginBottom="44dp"
-        android:text="@string/mac"
-        app:layout_constraintBottom_toTopOf="@+id/rbLinux"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etTuNombre" />
-
-    <RadioButton
-        android:id="@+id/rbWindows"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:text="@string/windows"
-        app:layout_constraintStart_toStartOf="@+id/rbMac"
-        app:layout_constraintTop_toBottomOf="@+id/rbMac" />
-
-    <RadioButton
-        android:id="@+id/rbLinux"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="@string/linux"
-        app:layout_constraintBottom_toTopOf="@+id/tvEspecialidad"
-        app:layout_constraintStart_toStartOf="@+id/rbWindows" />
-
-    <CheckBox
-        android:id="@+id/cbDAM"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="278dp"
-        android:text="@string/dam"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/cbASIR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:text="@string/asir"
-        app:layout_constraintStart_toStartOf="@+id/cbDAM"
-        app:layout_constraintTop_toBottomOf="@+id/cbDAM" />
-
-    <CheckBox
-        android:id="@+id/cbDAW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/daw"
-        app:layout_constraintStart_toStartOf="@+id/cbASIR"
-        app:layout_constraintTop_toBottomOf="@+id/cbASIR" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvResumenPersonas"
-        android:layout_width="376dp"
-        android:layout_height="116dp"
+    <RadioGroup
+        android:id="@+id/rgSistemaOperativo"
+        android:layout_width="103dp"
+        android:layout_height="146dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btValidad"
-        app:layout_constraintVertical_bias="0.7" />
-
-    <TextView
-        android:id="@+id/tv0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.678" />
+        app:layout_constraintVertical_bias="0.208">
+
+        <RadioButton
+            android:id="@+id/rbWindows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows" />
+
+        <RadioButton
+            android:id="@+id/rbMac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mac" />
+
+        <RadioButton
+            android:id="@+id/rbLinux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linux" />
+    </RadioGroup>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
