@@ -59,13 +59,12 @@ object Conexion {
         return personas
     }
 
-    fun eliminarEncuesta(context: Context, encuestaId: Int): Boolean {
+    fun eliminarEncuesta(context: Context, encuestaId: Int): Int {
         val admin = AdminSQLIteConexion(context, DATABASE_NAME, null, DATABASE_VERSION)
         val db = admin.writableDatabase
         val rowsDeleted = db.delete("personas", "Id=?", arrayOf(encuestaId.toString()))
         db.close()
-        return rowsDeleted > 0
-
+        return rowsDeleted
     }
 
 }

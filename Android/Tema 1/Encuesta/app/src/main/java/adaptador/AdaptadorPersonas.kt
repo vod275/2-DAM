@@ -37,16 +37,18 @@ class AdaptadorPersonas(
                 setTitle("Confirmación")
                 setMessage("¿Seguro que desea eliminar esta encuesta?")
                 setPositiveButton("Sí") { _, _ ->
-                    // Eliminar de la base de datos
+                    // Intentar eliminar de la base de datos
                     try {
-                        // Eliminar de la base de datos
                         val exito = Conexion.eliminarEncuesta(context, encuestaId)
 
-                        if (exito) {
+                        if (exito > 0) {
                             // Si la eliminación fue exitosa, eliminar de la lista
                             encuestas.removeAt(position)
                             notifyItemRemoved(position)
                             notifyItemRangeChanged(position, encuestas.size)
+
+                            // Mostrar un mensaje de éxito
+                            Toast.makeText(context, "Encuesta eliminada", Toast.LENGTH_SHORT).show()
                         } else {
                             // Mostrar mensaje de error si no se pudo eliminar de la base de datos
                             Toast.makeText(context, "Error al eliminar de la base de datos", Toast.LENGTH_SHORT).show()
