@@ -56,7 +56,6 @@ namespace WPF23_Personaje_Nuevo_ROL
                     {
                         while (reader.Read())
                         {
- 
                             Personaje personaje = new Personaje
                             {
                                 NombrePersonaje = reader.GetString("nombre"),
@@ -69,7 +68,6 @@ namespace WPF23_Personaje_Nuevo_ROL
                                 Foto = reader.GetString("foto")
                             };
 
-                      
                             lista.Add(personaje);
                         }
                     }
@@ -78,6 +76,7 @@ namespace WPF23_Personaje_Nuevo_ROL
 
             return lista;
         }
+
 
 
     }
