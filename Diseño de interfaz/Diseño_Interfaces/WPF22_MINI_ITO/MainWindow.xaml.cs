@@ -19,11 +19,16 @@ namespace WPF22_MINI_ITO
     public partial class MainWindow : Window     
     {
         Random random = new Random();
-        ObservableCollection<DatosIniciales> datosInicilaes = new ObservableCollection<DatosIniciales>();
+        ObservableCollection<DatosIniciales> datosInicilaes { get; set; } = new ObservableCollection<DatosIniciales>();
+        ObservableCollection<Empleado> listaEmpleados { get; set; } = new ObservableCollection<Empleado>();
         public MainWindow()
         {
             InitializeComponent();
-            lbProyectos.ItemsSource = datosInicilaes;
+            DataContext = this;
+            listaEmpleados = Repositorio.CargarEmpleados();
+            datosInicilaes = Repositorio.CargarProyecto();
+            dgEmpleado.ItemsSource = listaEmpleados;
+            dgProyectos.ItemsSource = datosInicilaes;
 
         }
 
@@ -46,21 +51,31 @@ namespace WPF22_MINI_ITO
 
 
 
-            int id = random.Next(1, 10000000);
-            var nuevoProyecto = new DatosIniciales
-            {
-                
-                NombreProyecto = tbNombreProyecto.Text,
-                IDProyecto = id,//Se que esta mal pero no estoy sembrado hoy perdon :( no se me va a mostrar el numero aleatorio
-                PresupuestoInicial = tbPresupuestoInicial.Text,
+            
+            string nuevoProyecto = tbNombreProyecto.Text;
+            float presupuestoIniicial = float.Parse(tbPresupuestoInicial.Text);
+            Repositorio.AgregarProyecto(nuevoProyecto, presupuestoIniicial);
+            Repositorio.CargarProyecto();
 
-            };
-            
-            
-            datosInicilaes.Add(nuevoProyecto);
         }
 
-        
+        private void btAgregarEmpleado_Click(object sender, RoutedEventArgs e)
+        {
+            
+                 string nombreEmpleado = tbNombre.Text;
+
+                 string rol = tbRol.Text;
+
+
+                float coste_Por_Hora = float.Parse(tbCoste_Por_Hora.Text);
+
+
+                 Repositorio.AgregarEmpleado(nombreEmpleado, rol, coste_Por_Hora);
+
+                 Repositorio.CargarEmpleados();
+                
+           
+        }
     }
    
 }

@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-        <TabControl TabStripPlacement="Left" Margin="41,123,0,28">
+        <TabControl TabStripPlacement="Left" Margin="41,123,0,0">
 
             <TabItem   Header="DatosIniciales" Margin="-2,0,-2,-2">
                 <Grid Margin="0,0,0,-22" >
@@ -24,9 +24,23 @@
 
                 </Grid>
             </TabItem>
-            <TabItem Header="Clientes">
-                <Grid Margin="0,0,0,3">
-
+            
+            <TabItem x:Name="btEliminarEmpleado" Header="Empleados">
+                <Grid Margin="0,0,0,-2" Width="664">
+                    <DataGrid x:Name="dgEmpleado" ItemsSource="{Binding Path=listaEmpleados}"   AutoGenerateColumns="False"  Margin="36,0,56,124">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre" Width="*" Binding="{Binding NombreEmpleado}"  />
+                            <DataGridTextColumn Header="Rol"  Width="*" Binding="{Binding Rol}"  />
+                            <DataGridTextColumn Header="Coste por Hora"  Width="*" Binding="{Binding Coste_por_Hora}"  />
+                            
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label x:Name="lbDatosEmpleado" Content="Datos Empleado" HorizontalAlignment="Left" Margin="36,202,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Margin="36,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tbRol" HorizontalAlignment="Left" Margin="184,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tbCoste_Por_Hora" HorizontalAlignment="Left" Margin="351,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="btAgregarEmpleado" Content="Agregar" HorizontalAlignment="Left" Margin="65,277,0,0" VerticalAlignment="Top" Click="btAgregarEmpleado_Click"/>
+                    <Button Content="Eliminar" HorizontalAlignment="Left" Margin="224,277,0,0" VerticalAlignment="Top"/>
 
                 </Grid>
 
@@ -36,7 +50,18 @@
 
             <TabItem Header="Proyectos">
                 <Grid>
-                    <ListBox x:Name="lbProyectos" Grid.Column="2" Grid.RowSpan="6"  Margin="0,0,43,10"/>
+                    <DataGrid x:Name="dgProyectos" ItemsSource="{Binding Path=datosInicilaes}"  AutoGenerateColumns="False"  Margin="36,0,56,124">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre del Proyecto" Width="*" Binding="{Binding NombreProyecto}" />
+                            <DataGridTextColumn Header="Presupuesto Inicial"  Width="*" Binding="{Binding PresupuestoInicial}" />
+                            <DataGridTextColumn Header="Coste Total"  Width="*" />
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button x:Name="btEliminarProyecto" Content="Eliminar Proyecto" HorizontalAlignment="Left" Margin="36,203,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbAsignarEmpleado" Content="Asignar Empleados" HorizontalAlignment="Left" Margin="36,242,0,0" VerticalAlignment="Top"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="289,242,0,0" VerticalAlignment="Top" Width="120"  ItemsSource="{Binding Path=listaEmpleados}"/>
+                    <Button x:Name="btAsignarEmpleado" Content="Asignar Empleado" HorizontalAlignment="Left" Margin="289,269,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
 
                 </Grid>
 
