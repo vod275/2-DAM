@@ -1,8 +1,9 @@
 #hacer un menu con Cargar recetas JSON, Añadir receta, Exportar recetas a JSON
 
 import json
+import os
 
-from PracticaExamen import Pasos
+from PracticaExamen.Pasos import Pasos
 from PracticaExamen.Ingrediente import Ingrediente
 from PracticaExamen.Receta import Receta
 
@@ -12,20 +13,20 @@ def añadirIngrediente():
     cantidad = input("Cantidad: ")
     descripcion = input("Descripción: ")
     ing = Ingrediente(nombre_ingrediente, cantidad, descripcion)
-    return ing.to_dict()
+    return ing
 
 
-def añadir_pasos():
-    numero_Paso = input("Numero del paso: ")
+def añadirPasos():
+    numero = input("Numero del paso: ")
     duracion = input("Duración (en minutos): ")
-    descripcion = input("Descripcion del paso")
-    pas = Pasos(numero_Paso, descripcion, duracion)
-    return pas.to_dict()
+    descripcion = input("Descripcion del paso: ")
+    pas = Pasos(numero, descripcion, duracion)
+    return pas
 
 
 def anadir_receta(recetas, filename):
     nombre = input("Ingrese el nombre de la receta: ")
-    ingrediente = []
+    ingredientes = []
     pasos = []
 
     # Añadir ingredientes
@@ -33,21 +34,21 @@ def anadir_receta(recetas, filename):
         aviso = input("Para dejar de añadir ingredientes dejalo en blanco: ")
         if aviso.strip() == "":
             break
-        ingrediente.append(añadirIngrediente())
+        ingredientes.append(añadirIngrediente())
 
     # Añadir pasos
-    paso_num = 1
+
     while True:
-        descripcion_paso = input(f"Descripción del paso {paso_num} (deje en blanco para terminar): ")
+        descripcion_paso = input(f"Descripción del paso (deje en blanco para terminar): ")
         if descripcion_paso.strip() == "":
             break
-        pasos.append(añadir_pasos())
+        pasos.append(añadirPasos())
 
-    recetaNueva = Receta(nombre, ingrediente, pasos)
+    recetaNueva = Receta(nombre, ingredientes, pasos)
 
     recetas.append(recetaNueva.to_dict())
-    with open(filename, 'w'):
-        json.dump(recetas, filename)
+    with open(filename, 'w') as f:
+        json.dump(recetas, f)
     print(f"Receta '{nombre}' añadida exitosamente.")
 
 
@@ -59,10 +60,27 @@ def exportar_recetas(filename, recetas):
     except Exception as e:
         print(f"Error al exportar las recetas: {e}")
 
+def cargar_recetas(filename):
+    recetas = []
+    if os.path.exists(filename):
+        with open(filename, 'r') as f:
+            try:
+                data = json.load(f)
+                for item in data:
+                    receta = Receta(item['nombre'], item['ingredientes'], item['pasos'])
+                    recetas.append(receta)
+                print("Recetas cargadas exitosamente.")
+            except json.JSONDecodeError:
+                print("El archivo de recetas está vacío o contiene datos inválidos.")
+    else:
+        print("El archivo de recetas no existe.")
+    return recetas
+
 
 def menu():
     recetas = []
     filename = "recetas.json"
+    filename2 = "recetasCargadas.json"
     while True:
         print("\nMenu:")
         print("1. Cargar recetas JSON")
@@ -73,7 +91,7 @@ def menu():
         opcion = input("Seleccione una opción: ")
 
         if opcion == '1':
-            #recetas = cargar_recetas(filename)
+            recetas =  cargar_recetas(filename2)
             break
         elif opcion == '2':
             anadir_receta(recetas, filename)
