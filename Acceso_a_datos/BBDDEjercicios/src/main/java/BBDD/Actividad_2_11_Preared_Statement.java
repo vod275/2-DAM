@@ -21,12 +21,12 @@ public class Actividad_2_11_Preared_Statement {
 	
 	
 	 public static void mostrarInformacionDepartamento(int deptNo) {
-	        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo","root", "")) {
+	        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/ejemplo","root", "")) {
 
 	            
 	            String nombreDepartamento = obtenerNombreDepartamento(connection, deptNo);
 	            if (nombreDepartamento == null) {
-	                System.out.println("El departamento con número " + deptNo + " no existe.");
+	                System.out.println("El departamento con nï¿½mero " + deptNo + " no existe.");
 	                return;
 	            }
 	            System.out.println("EMPLEADOS DEL DEPARTAMENTO: " + nombreDepartamento);

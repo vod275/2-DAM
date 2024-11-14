@@ -14,7 +14,7 @@ public class GestionarEmpleados {
              
             int opcion;
             do {
-                System.out.println("\n--- Menú de Gestión de Empleados ---");
+                System.out.println("\n--- Menï¿½ de Gestiï¿½n de Empleados ---");
                 System.out.println("1. Comprobar empleado");
                 System.out.println("2. Borrar empleado");
                 System.out.println("3. Modificar empleado");
@@ -22,12 +22,12 @@ public class GestionarEmpleados {
                 System.out.println("5. Ver todos los empleados");
                 System.out.println("6. Ver un empleado");
                 System.out.println("0. Salir");
-                System.out.print("Seleccione una opción: ");
+                System.out.print("Seleccione una opciï¿½n: ");
                 opcion = scanner.nextInt();
 
                 switch (opcion) {
                     case 1:
-                        System.out.print("Ingrese el número del empleado: ");
+                        System.out.print("Ingrese el nï¿½mero del empleado: ");
                         int empNo = scanner.nextInt();
                         //System.out.println(OperacionesEmple.comprobaremple(conexion, empNo) ? "El empleado existe." : "El empleado no existe.");
                         		if(OperacionesEmple.comprobaremple(conexion, empNo)) {
@@ -39,13 +39,13 @@ public class GestionarEmpleados {
                         break;
 
                     case 2:
-                        System.out.print("Ingrese el número del empleado a borrar: ");
+                        System.out.print("Ingrese el nï¿½mero del empleado a borrar: ");
                         empNo = scanner.nextInt();
                         System.out.println(OperacionesEmple.borraremple(conexion, empNo));
                         break;
 
                     case 3:
-                        System.out.print("Ingrese los datos del empleado (número, apellido, oficio, salario, comisión, dept_no, dir): ");
+                        System.out.print("Ingrese los datos del empleado (nï¿½mero, apellido, oficio, salario, comisiï¿½n, dept_no, dir): ");
                         empNo = scanner.nextInt();
                         String ape = scanner.next();
                         String ofi = scanner.next();
@@ -57,7 +57,7 @@ public class GestionarEmpleados {
                         break;
 
                     case 4:
-                        System.out.print("Ingrese los datos del nuevo empleado (número, apellido, oficio, salario, comisión, dept_no, dir): ");
+                        System.out.print("Ingrese los datos del nuevo empleado (nï¿½mero, apellido, oficio, salario, comisiï¿½n, dept_no, dir): ");
                         empNo = scanner.nextInt();
                         ape = scanner.next();
                         ofi = scanner.next();
@@ -73,7 +73,7 @@ public class GestionarEmpleados {
                         break;
 
                     case 6:
-                        System.out.print("Ingrese el número del empleado: ");
+                        System.out.print("Ingrese el nï¿½mero del empleado: ");
                         empNo = scanner.nextInt();
                         OperacionesEmple.verunempleado(conexion, empNo);
                         break;
@@ -83,12 +83,12 @@ public class GestionarEmpleados {
                         break;
 
                     default:
-                        System.out.println("Opción no válida.");
+                        System.out.println("Opciï¿½n no vï¿½lida.");
                 }
             } while (opcion != 0);
 
         } catch (SQLException e) {
-            System.out.println("Error de conexión: " + e.getMessage());
+            System.out.println("Error de conexiï¿½n: " + e.getMessage());
         }
     }
 }
