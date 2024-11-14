@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF22_MINI_ITO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+670306768741fa67d6f1f8b5d9ac05dc352f13f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+363a28c468a020baec48eea62e1547aced31f859")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF22_MINI_ITO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF22_MINI_ITO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

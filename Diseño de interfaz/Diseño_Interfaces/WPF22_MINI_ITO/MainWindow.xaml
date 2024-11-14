@@ -40,7 +40,8 @@
                     <TextBox x:Name="tbRol" HorizontalAlignment="Left" Margin="184,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="tbCoste_Por_Hora" HorizontalAlignment="Left" Margin="351,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
                     <Button x:Name="btAgregarEmpleado" Content="Agregar" HorizontalAlignment="Left" Margin="65,277,0,0" VerticalAlignment="Top" Click="btAgregarEmpleado_Click"/>
-                    <Button Content="Eliminar" HorizontalAlignment="Left" Margin="224,277,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Eliminar" HorizontalAlignment="Left" Margin="224,277,0,0" VerticalAlignment="Top" Click="btEliminarEmpleado_Click"/>
+
 
                 </Grid>
 

@@ -18,7 +18,7 @@ namespace WPF22_MINI_ITO
     /// </summary>
     public partial class MainWindow : Window     
     {
-        Random random = new Random();
+
         ObservableCollection<DatosIniciales> datosInicilaes { get; set; } = new ObservableCollection<DatosIniciales>();
         ObservableCollection<Empleado> listaEmpleados { get; set; } = new ObservableCollection<Empleado>();
         public MainWindow()
@@ -75,6 +75,24 @@ namespace WPF22_MINI_ITO
                  Repositorio.CargarEmpleados();
                 
            
+        }
+
+        private void btEliminarEmpleado_Click(object sender, RoutedEventArgs e)
+        {
+            Empleado empleadoSeleccionado = dgEmpleado.SelectedItem as Empleado;
+
+            if (empleadoSeleccionado != null)
+            {
+                // Eliminar el empleado de la base de datos
+                Repositorio.EliminarEmpleado(empleadoSeleccionado.NombreEmpleado);
+
+                // Eliminar el empleado de la lista ObservableCollection
+                listaEmpleados.Remove(empleadoSeleccionado);
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona un empleado para eliminar.");
+            }
         }
     }
    

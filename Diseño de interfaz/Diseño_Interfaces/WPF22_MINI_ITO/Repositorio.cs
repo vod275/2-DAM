@@ -70,6 +70,23 @@ namespace WPF22_MINI_ITO
             return listaEmpleados;
         }
 
+        public static void EliminarEmpleado(string nombreEmpleado)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "DELETE FROM empleado WHERE nombre = @nombre";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@nombre", nombreEmpleado);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
 
 
         public static void AgregarProyecto(string nombreProyecto, float presupuestoInicial)
