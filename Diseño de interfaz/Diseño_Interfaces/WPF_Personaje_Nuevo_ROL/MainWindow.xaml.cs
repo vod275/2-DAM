@@ -62,7 +62,7 @@ namespace WPF_Personaje_Nuevo_ROL
         {
             if (dgPersona.SelectedItem is Personaje selectedCharacter)
             {
-                // Mostrar los detalles en el TextBlock
+               
                 DetailsTextBlock.Text = $"Nombre: {selectedCharacter.NombrePersonaje}\n" +
                                         $"Clase: {selectedCharacter.Clase}\n" +
                                         $"Fuerza: {selectedCharacter.Fuerza}\n" +
