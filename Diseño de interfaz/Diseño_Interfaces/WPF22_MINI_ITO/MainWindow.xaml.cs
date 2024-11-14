@@ -96,7 +96,7 @@ namespace WPF22_MINI_ITO
 
         private void btEliminarProyecto_Click(object sender, RoutedEventArgs e)
         {
-            // Obtener el proyecto seleccionado en el DataGrid
+            
             DatosIniciales proyectoSeleccionado = dgProyectos.SelectedItem as DatosIniciales;
 
             if (proyectoSeleccionado != null)

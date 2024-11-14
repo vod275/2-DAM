@@ -20,12 +20,15 @@ namespace WPF_Personaje_Nuevo_ROL
     public partial class MainWindow : Window
     {
         ObservableCollection<Personaje> lista { get; set; } = new ObservableCollection<Personaje>();
+        ObservableCollection<Objeto> listaObjetos { get; set; } = new ObservableCollection<Objeto>();
         public Personaje SelectedPersonaje { get; set; }
         public MainWindow()
         {
             InitializeComponent();
             lista = Repositorio.CargarPersonajes();
+            listaObjetos = Repositorio.CargarObjetos();
             dgPersona.ItemsSource = lista;
+            lbObjetos.ItemsSource = listaObjetos;
             DataContext = this;
         }
 
@@ -57,9 +60,40 @@ namespace WPF_Personaje_Nuevo_ROL
 
         private void dgPersona_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
-            SelectedPersonaje = dgPersona.SelectedItem as Personaje;
-            
+            if (dgPersona.SelectedItem is Personaje selectedCharacter)
+            {
+                // Mostrar los detalles en el TextBlock
+                DetailsTextBlock.Text = $"Nombre: {selectedCharacter.NombrePersonaje}\n" +
+                                        $"Clase: {selectedCharacter.Clase}\n" +
+                                        $"Fuerza: {selectedCharacter.Fuerza}\n" +
+                                        $"Destreza: {selectedCharacter.Destreza}\n" +
+                                        $"Inteligencia: {selectedCharacter.Inteligencia}\n";
+
+                // Cargar y mostrar la imagen desde la ruta en Foto
+                if (!string.IsNullOrEmpty(selectedCharacter.Foto))
+                {
+                    
+                        // Crear una nueva instancia de BitmapImage con la ruta
+                        BitmapImage bitmap = new BitmapImage();
+                        bitmap.BeginInit();
+                        bitmap.UriSource = new Uri(selectedCharacter.Foto, UriKind.RelativeOrAbsolute);
+                        bitmap.EndInit();
+
+                        // Asignar la imagen al control Image
+                        CharacterImage.Source = bitmap; 
+                }
+                else
+                {
+                    // Si no hay ruta, limpiar la imagen
+                    CharacterImage.Source = null;
+                }
+            }
+            else
+            {
+                // Si no hay personaje seleccionado, limpiar los detalles y la imagen
+                DetailsTextBlock.Text = string.Empty;
+                CharacterImage.Source = null;
+            }
         }
 
     }

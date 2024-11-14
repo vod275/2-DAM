@@ -77,6 +77,42 @@ namespace WPF23_Personaje_Nuevo_ROL
             return lista;
         }
 
+        public static ObservableCollection<Objeto> CargarObjetos()
+        {
+            ObservableCollection<Objeto> listaObjetos = new ObservableCollection<Objeto>();
+            string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT  nombre, tipo, fuerza, inteligencia, destreza, resistencia FROM objeto";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Objeto objeto = new Objeto
+                            {
+
+                                NombreObjeto = reader.GetString("nombre"),
+                                TipoObjeto = reader.GetString("tipo"),
+                                FuerzaObjeto = reader.GetInt16("fuerza"),
+                                InteligenciaObjeto = reader.GetInt16("inteligencia"),
+                                DestrezaObjeto = reader.GetInt16("destreza"),
+                                ResistenciaObjeto = reader.GetInt16("resistencia")
+                             
+                            };
+
+                            listaObjetos.Add(objeto);
+                        }
+                    }
+                }
+            }
+
+            return listaObjetos;
+        }
 
 
     }

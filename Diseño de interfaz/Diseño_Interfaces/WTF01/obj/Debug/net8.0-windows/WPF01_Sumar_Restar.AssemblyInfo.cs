@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF01_Sumar_Restar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16c6a76fec83cefb4e36866e467f4b106be00e4c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f53b9282539e13abea9e57d12197f03962e51e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF01_Sumar_Restar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF01_Sumar_Restar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
