@@ -9,10 +9,23 @@ namespace WPF22_MINI_ITO
 {
     public class Empleado : INotifyPropertyChanged
     {
-
+        private int idEmpleado;
         private string nombreEmpleado, rol;
         private float coste_por_hora;
 
+
+        public int IdEmpleado
+        {
+            get => idEmpleado;
+            set
+            {
+                if (idEmpleado != value)
+                {
+                    idEmpleado = value;
+                    OnPropertyChanged(nameof(idEmpleado));
+                }
+            }
+        }
         public string NombreEmpleado
         {
             get => nombreEmpleado;
@@ -53,8 +66,9 @@ namespace WPF22_MINI_ITO
         }
 
 
-        public Empleado(string nombreEmpleado, string rol, float coste_por_Hora)
+        public Empleado(string nombreEmpleado, string rol, float coste_por_Hora, int idEmpleado)
         {
+            IdEmpleado = idEmpleado;
             NombreEmpleado = nombreEmpleado;
             Rol = rol;
             Coste_por_Hora = coste_por_Hora;
@@ -69,7 +83,7 @@ namespace WPF22_MINI_ITO
 
         public override string ToString()
         {
-            return $"Nombre Empleado: {NombreEmpleado}, Rol: {Rol}, Coste por Hora: {Coste_por_Hora}";
+            return $"id: {idEmpleado} Nombre Empleado: {NombreEmpleado}, Rol: {Rol}, Coste por Hora: {Coste_por_Hora}";
         }
 
 

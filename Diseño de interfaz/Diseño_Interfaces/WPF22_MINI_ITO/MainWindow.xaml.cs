@@ -83,15 +83,51 @@ namespace WPF22_MINI_ITO
 
             if (empleadoSeleccionado != null)
             {
-                // Eliminar el empleado de la base de datos
+
                 Repositorio.EliminarEmpleado(empleadoSeleccionado.NombreEmpleado);
 
-                // Eliminar el empleado de la lista ObservableCollection
                 listaEmpleados.Remove(empleadoSeleccionado);
             }
             else
             {
                 MessageBox.Show("Por favor, selecciona un empleado para eliminar.");
+            }
+        }
+
+        private void btEliminarProyecto_Click(object sender, RoutedEventArgs e)
+        {
+            // Obtener el proyecto seleccionado en el DataGrid
+            DatosIniciales proyectoSeleccionado = dgProyectos.SelectedItem as DatosIniciales;
+
+            if (proyectoSeleccionado != null)
+            {
+                
+                Repositorio.EliminarProyecto(proyectoSeleccionado.NombreProyecto);
+
+                
+                datosInicilaes.Remove(proyectoSeleccionado);
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona un proyecto para eliminar.");
+            }
+        }
+
+
+        private void btAsignarEmpleado_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgProyectos.SelectedItem is DatosIniciales proyectoSeleccionado && cbEmpleados.SelectedValue is int empleadoId)
+            {
+                int proyectoId = proyectoSeleccionado.IDProyecto;
+
+                // Llamada al método en Repositorio para asignar el empleado al proyecto
+                Repositorio.AsignarEmpleadoAProyecto(proyectoId, empleadoId);
+
+                MessageBox.Show("Empleado asignado al proyecto correctamente.");
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona un proyecto y un empleado.");
             }
         }
     }

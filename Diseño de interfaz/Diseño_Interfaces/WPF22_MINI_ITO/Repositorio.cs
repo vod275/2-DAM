@@ -110,6 +110,24 @@ namespace WPF22_MINI_ITO
             }
         }
 
+        // Método para eliminar proyecto de la base de datos
+        public static void EliminarProyecto(string nombreProyecto)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "DELETE FROM proyecto WHERE nombre = @nombre";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@nombre", nombreProyecto);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
         public static ObservableCollection<DatosIniciales> CargarProyecto()
         {
             ObservableCollection<DatosIniciales> listaProyectos = new ObservableCollection<DatosIniciales>();
@@ -141,6 +159,25 @@ namespace WPF22_MINI_ITO
             }
 
             return listaProyectos;
+        }
+
+
+        public static void AsignarEmpleadoAProyecto(int proyectoId, int empleadoId)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "INSERT INTO proyecto_empleado (proyecto_id, empleado_id) VALUES (@proyectoId, @empleadoId)";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@proyectoId", proyectoId);
+                    command.Parameters.AddWithValue("@empleadoId", empleadoId);
+                    command.ExecuteNonQuery();
+                }
+            }
         }
 
     }
