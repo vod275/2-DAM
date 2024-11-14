@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF02_ListBox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+363a28c468a020baec48eea62e1547aced31f859")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16c6a76fec83cefb4e36866e467f4b106be00e4c")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF02_ListBox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF02_ListBox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -130,6 +130,7 @@ namespace WPF22_MINI_ITO
                 MessageBox.Show("Por favor, selecciona un proyecto y un empleado.");
             }
         }
+
     }
    
 }
