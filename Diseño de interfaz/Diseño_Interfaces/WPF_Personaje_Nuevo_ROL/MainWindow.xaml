@@ -91,7 +91,7 @@
 
                     <!-- ListBox de Personajes -->
                     <DataGrid x:Name="dgPersona" ItemsSource="{Binding Path=lista}" 
-                               AutoGenerateColumns="False" SelectionChanged="dgPersona_SelectionChanged">
+                               AutoGenerateColumns="False" SelectionChanged="dgPersona_SelectionChanged" Margin="0,0,10,55">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Nombre" Binding="{Binding NombrePersonaje}"/>
                             <DataGridTextColumn Header="Clase" Binding="{Binding Clase}"/>
@@ -108,15 +108,13 @@
                     <!-- Detalles del Personaje -->
                     <StackPanel Grid.Column="1" Margin="10,0,0,0">
                         <TextBlock Text="Detalles del Personaje" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
-
-
-
-
                         <TextBlock x:Name="DetailsTextBlock" Margin="0,5,0,10"/>
 
                         <TextBlock Text="Foto:" FontWeight="Bold"/>
                         <Image x:Name="CharacterImage" Height="197" Width="215" />
+
                     </StackPanel>
+                    <TextBox x:Name="tbFiltro" HorizontalAlignment="Left" Margin="132,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Height="40" TextChanged="tbFiltro_TextChanged"/>
 
                 </Grid>
             </TabItem>
@@ -125,12 +123,12 @@
             <!-- Tab para Inventario -->
             <TabItem Header="Inventario">
                 <StackPanel Margin="10">
-                    <TextBlock Text="Inventario" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+                    <TextBlock Text="Lista de Objetos" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
                     <ListBox Name="lbObjetos" Width="404" Height="103" ItemsSource="{Binding Path=listaObjetos}">
 
                     </ListBox>
 
-                    
+
                     <TextBlock Text="Objeto Seleccionado:" FontWeight="Bold" Margin="0,10,0,0"/>
                     <ListBox Name="lbObjetosInventario" Width="404" Height="103">
 

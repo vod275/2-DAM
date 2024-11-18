@@ -1,13 +1,96 @@
-﻿namespace WPF23_Personaje_Nuevo_ROL
+﻿using System.ComponentModel;
+
+namespace WPF23_Personaje_Nuevo_ROL
 {
-    internal class Objeto
+    public class Objeto : INotifyPropertyChanged
     {
-        public string NombreObjeto { get; set; }
-        public string TipoObjeto { get; set; }
-        public int FuerzaObjeto { get; set; }
-        public int InteligenciaObjeto { get; set; }
-        public int DestrezaObjeto { get; set; }
-        public int ResistenciaObjeto { get; set; }
+        private string nombreObjeto, tipoObjeto;
+        private int fuerzaObjeto, inteligenciaObjeto, destrezaObjeto, resistenciaObjeto;
+
+        public string NombreObjeto
+        {
+            get => nombreObjeto;
+            set
+            {
+                if (nombreObjeto != value)
+                {
+                    nombreObjeto = value;
+                    OnPropertyChanged(nameof(NombreObjeto));
+                }
+            }
+        }
+
+        public string TipoObjeto
+        {
+            get => tipoObjeto;
+            set
+            {
+                if (tipoObjeto != value)
+                {
+                    tipoObjeto = value;
+                    OnPropertyChanged(nameof(TipoObjeto));
+                }
+            }
+        }
+
+        public int FuerzaObjeto
+        {
+            get => fuerzaObjeto;
+            set
+            {
+                if (fuerzaObjeto != value)
+                {
+                    fuerzaObjeto = value;
+                    OnPropertyChanged(nameof(FuerzaObjeto));
+                }
+            }
+        }
+
+        public int InteligenciaObjeto
+        {
+            get => inteligenciaObjeto;
+            set
+            {
+                if (inteligenciaObjeto != value)
+                {
+                    inteligenciaObjeto = value;
+                    OnPropertyChanged(nameof(InteligenciaObjeto));
+                }
+            }
+        }
+
+        public int DestrezaObjeto
+        {
+            get => destrezaObjeto;
+            set
+            {
+                if (destrezaObjeto != value)
+                {
+                    destrezaObjeto = value;
+                    OnPropertyChanged(nameof(DestrezaObjeto));
+                }
+            }
+        }
+
+        public int ResistenciaObjeto
+        {
+            get => resistenciaObjeto;
+            set
+            {
+                if (resistenciaObjeto != value)
+                {
+                    resistenciaObjeto = value;
+                    OnPropertyChanged(nameof(ResistenciaObjeto));
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         // Constructor sin parámetros
         public Objeto() { }
@@ -22,8 +105,6 @@
             DestrezaObjeto = destrezaObjeto;
             ResistenciaObjeto = resistenciaObjeto;
         }
-
-     
 
         public override string ToString()
         {

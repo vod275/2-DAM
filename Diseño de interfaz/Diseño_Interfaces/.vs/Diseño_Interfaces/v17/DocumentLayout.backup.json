@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\objeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,19 +30,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Repositorio.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
               "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
               "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAAG4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAqwEIAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:29:50.19Z"
+              "WhenOpened": "2024-11-14T15:29:50.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,9 +53,10 @@
               "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\Objeto.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Objeto.cs",
               "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\Objeto.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAuwB8AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowGgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:28:31.88Z"
+              "WhenOpened": "2024-11-14T15:28:31.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,33 +66,35 @@
               "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\Personaje.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Personaje.cs",
               "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\Personaje.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAswHEAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:09:56.46Z"
+              "WhenOpened": "2024-11-14T15:09:56.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\MainWindow.xaml.cs",
               "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAiwB0AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwB0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T14:59:44.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\MainWindow.xaml",
               "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-14T14:51:29.116Z"
+              "WhenOpened": "2024-11-14T14:51:29.116Z",
+              "EditorCaption": ""
             }
           ]
         }

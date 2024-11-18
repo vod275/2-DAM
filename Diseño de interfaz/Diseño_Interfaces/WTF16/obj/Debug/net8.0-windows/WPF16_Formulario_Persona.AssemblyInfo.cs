@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF16_Formulario_Persona")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f53b9282539e13abea9e57d12197f03962e51e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29ad90ef7ad74931b4e3a3d2329ecf470b64c814")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF16_Formulario_Persona")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF16_Formulario_Persona")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
