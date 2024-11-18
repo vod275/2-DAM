@@ -7,13 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etFechaNacimiento"
+        android:layout_width="250dp"
+        android:layout_height="66dp"
+        android:hint="@string/fecha_de_nacimiento"
+        app:startIconDrawable="@drawable/baseline_calendar_month_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFechaNacimientoEditText"
+            android:layout_width="match_parent"
+            android:inputType="datetime"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

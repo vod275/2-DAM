@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NoVale</string>
+    <string name="fecha_de_nacimiento" />
 </resources>
