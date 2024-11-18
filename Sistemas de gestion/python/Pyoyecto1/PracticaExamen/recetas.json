@@ -1,0 +1,55 @@
+[
+    {
+        "nombre": "Receta 1",
+        "ingredientes": [
+            {"nombre": "Pasta", "cantidad": "200g", "descripcion": "Pasta seca, tipo espagueti"},
+            {"nombre": "Aceite de oliva", "cantidad": "2 cucharadas", "descripcion": "Aceite de oliva virgen extra"},
+            {"nombre": "Ajo", "cantidad": "2 dientes", "descripcion": "Ajo picado"},
+            {"nombre": "Queso parmesano", "cantidad": "50g", "descripcion": "Rallado"}
+        ],
+        "pasos": [
+            {"numero": 1, "descripcion": "Hervir la pasta", "duracion": 10},
+            {"numero": 2, "descripcion": "Preparar el aceite con ajo", "duracion": 5},
+            {"numero": 3, "descripcion": "Mezclar todo y servir", "duracion": 2}
+        ]
+    },
+    {
+        "nombre": "Receta 2",
+        "ingredientes": [
+            {"nombre": "Pechuga de pollo", "cantidad": "200g", "descripcion": "Cortada en trozos"},
+            {"nombre": "Pimientos", "cantidad": "150g", "descripcion": "Pimientos de colores"},
+            {"nombre": "Salsa de soja", "cantidad": "3 cucharadas", "descripcion": "Para marinar"}
+        ],
+        "pasos": [
+            {"numero": 1, "descripcion": "Marinar el pollo con salsa de soja", "duracion": 15},
+            {"numero": 2, "descripcion": "Cocinar el pollo", "duracion": 10},
+            {"numero": 3, "descripcion": "Añadir pimientos y cocinar juntos", "duracion": 5}
+        ]
+    },
+    {
+        "nombre": "Receta 3",
+        "ingredientes": [
+            {"nombre": "Huevo", "cantidad": "3 unidades", "descripcion": "Frescos"},
+            {"nombre": "Leche", "cantidad": "200ml", "descripcion": "Leche entera"},
+            {"nombre": "Azúcar", "cantidad": "50g", "descripcion": "Azúcar blanco"}
+        ],
+        "pasos": [
+            {"numero": 1, "descripcion": "Batir los huevos con azúcar", "duracion": 5},
+            {"numero": 2, "descripcion": "Añadir la leche y mezclar", "duracion": 2},
+            {"numero": 3, "descripcion": "Cocinar al baño maría", "duracion": 40}
+        ]
+    },
+    {
+        "nombre": "Receta 4",
+        "ingredientes": [
+            {"nombre": "Carne de res", "cantidad": "500g", "descripcion": "Cortada en tiras"},
+            {"nombre": "Cebolla", "cantidad": "1 unidad", "descripcion": "Cortada en tiras"},
+            {"nombre": "Pimienta", "cantidad": "Al gusto", "descripcion": "Molida"}
+        ],
+        "pasos": [
+            {"numero": 1, "descripcion": "Saltear la cebolla", "duracion": 5},
+            {"numero": 2, "descripcion": "Añadir la carne y cocinar", "duracion": 15},
+            {"numero": 3, "descripcion": "Condimentar y servir", "duracion": 2}
+        ]
+    }
+]
