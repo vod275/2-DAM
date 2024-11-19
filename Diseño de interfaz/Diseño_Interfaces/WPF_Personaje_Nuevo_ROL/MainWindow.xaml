@@ -76,7 +76,7 @@
 
                     <!-- Botón Crear Personaje -->
                     <Button Content="Crear Personaje" Width="100" Grid.Row="9" Margin="75,105,0,55" Click="CrearPersonaje_Click" HorizontalAlignment="Left" Grid.Column="1"/>
-                    <Button Content="Seleccionar Imagen" Width="150" Grid.Row="8" Grid.Column="1" Margin="0,5" Click="SeleccionarImagen_Click"/>
+                    <Button Content="Seleccionar Imagen" Width="150" Grid.Row="8" Grid.Column="1" Margin="10,8,40,2" Click="SeleccionarImagen_Click"/>
                     <TextBox x:Name="RutaFoto" IsReadOnly="True" Grid.Row="9" Margin="138,5,100,80" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
