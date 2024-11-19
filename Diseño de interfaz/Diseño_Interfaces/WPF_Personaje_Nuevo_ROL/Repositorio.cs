@@ -12,13 +12,13 @@ namespace WPF23_Personaje_Nuevo_ROL
 
  
         // Método para agregar un personaje
-        public static void AgregarPersonaje(string nombrePersonaje, string clase, string genero, int fuerza, int inteligencia, int destreza, int resistencia, string foto)
+        public static async Task  AgregarPersonaje(string nombrePersonaje, string clase, string genero, int fuerza, int inteligencia, int destreza, int resistencia, string foto)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                connection.Open();
+               await connection.OpenAsync();
                 string query = "INSERT into personaje (nombre, clase, genero, fuerza, inteligencia, destreza, resistencia, foto) VALUES (@nombre, @clase, @genero, @fuerza, @inteligencia, @destreza, @resistencia, @foto)";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
@@ -31,7 +31,7 @@ namespace WPF23_Personaje_Nuevo_ROL
                     command.Parameters.AddWithValue("@destreza", destreza);
                     command.Parameters.AddWithValue("@resistencia", resistencia);
                     command.Parameters.AddWithValue("@foto", foto);
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
 
                 }
 

@@ -24,6 +24,9 @@ namespace WPF_Personaje_Nuevo_ROL
         ObservableCollection<Personaje> lista { get; set; } = new ObservableCollection<Personaje>();
         ObservableCollection<Objeto> listaObjetos { get; set; } = new ObservableCollection<Objeto>();
         private ICollectionView vistaFiltradaPersonaje;
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+
         public Personaje SelectedPersonaje { get; set; }
         public MainWindow()
         {
@@ -36,7 +39,7 @@ namespace WPF_Personaje_Nuevo_ROL
             DataContext = this;
         }
 
-        private void CrearPersonaje_Click(object sender, RoutedEventArgs e)
+        private async void CrearPersonaje_Click(object sender, RoutedEventArgs e)
         {
 
             string nombrePersonaje = txtNombrePersonaje.Text;
@@ -53,9 +56,9 @@ namespace WPF_Personaje_Nuevo_ROL
             int resistencia = (int)sldResistencia.Value;
             string foto = RutaFoto.Text;
 
-            Repositorio.AgregarPersonaje(nombrePersonaje, clasePersonaje, genero, fuerza, inteligencia, destreza, resistencia, foto);
+           await Repositorio.AgregarPersonaje(nombrePersonaje, clasePersonaje, genero, fuerza, inteligencia, destreza, resistencia, foto);
 
-            Repositorio.CargarPersonajes();
+             Repositorio.CargarPersonajes();
 
 
 
@@ -122,7 +125,7 @@ namespace WPF_Personaje_Nuevo_ROL
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
-                Filter = "Imágenes|*.jpg;*.png;*.jpeg"
+                Filter = "Imagenes|*.jpg;*.png;*.jpeg"
             };
 
             if (openFileDialog.ShowDialog() == true)
