@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using Microsoft.Win32;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Configuration;
 using System.Text;
@@ -117,8 +118,33 @@ namespace WPF_Personaje_Nuevo_ROL
             };
             vistaFiltradaPersonaje.Refresh();   
         }
-        //openFileDialog = new OpenFileDialog();
-        //openFileDialog.Filter ="imagenes bonitas|*.jpg;*.png;*.jpeg"
+        private void SeleccionarImagen_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "Imágenes|*.jpg;*.png;*.jpeg"
+            };
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                
+                RutaFoto.Text = openFileDialog.FileName;
+            }
+        }
+
+        private void dgPersona_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            if (e.EditAction == DataGridEditAction.Commit)
+            {
+                
+                var personaje = e.Row.Item as Personaje;
+                if (personaje != null)
+                {
+                   
+                    Repositorio.ActualizarPersonaje(personaje);
+                }
+            }
+        }
     }
 
 }

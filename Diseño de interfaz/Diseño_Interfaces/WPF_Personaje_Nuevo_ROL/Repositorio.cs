@@ -114,6 +114,39 @@ namespace WPF23_Personaje_Nuevo_ROL
             return listaObjetos;
         }
 
+        public static void ActualizarPersonaje(Personaje personaje)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = @"UPDATE personaje 
+                         SET clase = @clase, 
+                             genero = @genero, 
+                             fuerza = @fuerza, 
+                             inteligencia = @inteligencia, 
+                             destreza = @destreza, 
+                             resistencia = @resistencia, 
+                             foto = @foto
+                         WHERE nombre = @nombre";
+
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@nombre", personaje.NombrePersonaje);
+                    command.Parameters.AddWithValue("@clase", personaje.Clase);
+                    command.Parameters.AddWithValue("@genero", personaje.Genero);
+                    command.Parameters.AddWithValue("@fuerza", personaje.Fuerza);
+                    command.Parameters.AddWithValue("@inteligencia", personaje.Inteligencia);
+                    command.Parameters.AddWithValue("@destreza", personaje.Destreza);
+                    command.Parameters.AddWithValue("@resistencia", personaje.Resistencia);
+                    command.Parameters.AddWithValue("@foto", personaje.Foto);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
 
     }
 }

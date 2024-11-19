@@ -9,7 +9,7 @@
     <Grid>
         <TabControl>
             <TabItem Header="Creación de Personajes">
-                <Grid Margin="10">
+                <Grid Margin="10,10,375,10" Height="396">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="200"/>
@@ -75,8 +75,9 @@
 
 
                     <!-- Botón Crear Personaje -->
-                    <Button Content="Crear Personaje" Width="100" Grid.Row="9" Margin="0,90,0,70" Click="CrearPersonaje_Click" HorizontalAlignment="Center" Grid.Column="1"/>
-                    <TextBox x:Name="RutaFoto" HorizontalAlignment="Center" Margin="0,8,0,0" Grid.Row="8" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="200" Grid.RowSpan="2" Height="18" Grid.Column="1"/>
+                    <Button Content="Crear Personaje" Width="100" Grid.Row="9" Margin="75,105,0,55" Click="CrearPersonaje_Click" HorizontalAlignment="Left" Grid.Column="1"/>
+                    <Button Content="Seleccionar Imagen" Width="150" Grid.Row="8" Grid.Column="1" Margin="0,5" Click="SeleccionarImagen_Click"/>
+                    <TextBox x:Name="RutaFoto" IsReadOnly="True" Grid.Row="9" Margin="138,5,100,80" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
 
@@ -90,8 +91,12 @@
                     </Grid.ColumnDefinitions>
 
                     <!-- ListBox de Personajes -->
-                    <DataGrid x:Name="dgPersona" ItemsSource="{Binding Path=lista}" 
-                               AutoGenerateColumns="False" SelectionChanged="dgPersona_SelectionChanged" Margin="0,0,10,55">
+                    <DataGrid x:Name="dgPersona" 
+                              ItemsSource="{Binding Path=lista}" 
+                              AutoGenerateColumns="False" 
+                              SelectionChanged="dgPersona_SelectionChanged" 
+                              CellEditEnding="dgPersona_CellEditEnding" 
+                              Margin="0,0,10,55">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Nombre" Binding="{Binding NombrePersonaje}"/>
                             <DataGridTextColumn Header="Clase" Binding="{Binding Clase}"/>
@@ -103,6 +108,7 @@
                             <DataGridTextColumn Header="Foto" Binding="{Binding Foto}"/>
                         </DataGrid.Columns>
                     </DataGrid>
+
 
 
                     <!-- Detalles del Personaje -->
