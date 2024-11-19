@@ -43,6 +43,21 @@
               "ViewState": "AgIAAG0AAAAAAAAAAAAiwJQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T15:29:50.19Z"
+<<<<<<< Updated upstream
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Objeto.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Objeto.cs",
+              "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\Objeto.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Objeto.cs",
+              "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\Objeto.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowGgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:28:31.88Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -54,7 +69,11 @@
               "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\Objeto.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAowGgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2024-11-14T15:28:31.88Z"
+=======
+              "WhenOpened": "2024-11-14T15:09:56.46Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -78,8 +97,7 @@
               "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\MainWindow.xaml.cs",
               "ViewState": "AgIAAG8AAAAAAAAAAAAUwIoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T14:59:44.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T14:59:44.902Z"
             },
             {
               "$type": "Document",

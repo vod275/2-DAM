@@ -50,10 +50,10 @@ public class Actividad_2_11_Preared_Statement {
         String sqlDepartamento = "SELECT dnombre FROM departamentos WHERE dept_no = ?";
         try (PreparedStatement stmtDept = connection.prepareStatement(sqlDepartamento)) {
         	stmtDept.setInt(1, deptNo);
-            ResultSet rsDeptName = stmtDept.executeQuery();
+            ResultSet rsDept = stmtDept.executeQuery();
 
-            if (rsDeptName.next()) {
-                return rsDeptName.getString("dnombre");
+            if (rsDept.next()) {
+                return rsDept.getString("dnombre");
             } else {
                 return null; 
             }
@@ -69,15 +69,15 @@ public class Actividad_2_11_Preared_Statement {
 		String sqlEmpleados = "SELECT apellido, salario, oficio FROM empleados WHERE dept_no = ?";
         try (PreparedStatement stmtEmpl = conexion.prepareStatement(sqlEmpleados)) {
         	stmtEmpl.setInt(1, deptNo);
-            ResultSet rsEmployees = stmtEmpl.executeQuery();
+            ResultSet rs = stmtEmpl.executeQuery();
 
             System.out.printf("%-20s %-10s %-15s%n", "APELLIDO", "SALARIO", "OFICIO");
             System.out.println("---------------------------------------------");
 
-            while (rsEmployees.next()) {
-                String apellido = rsEmployees.getString("apellido");
-                double salario = rsEmployees.getDouble("salario");
-                String oficio = rsEmployees.getString("oficio");
+            while (rs.next()) {
+                String apellido = rs.getString("apellido");
+                double salario = rs.getDouble("salario");
+                String oficio = rs.getString("oficio");
 
                 System.out.printf("%-20s %-10s %-15s%n", apellido, df.format(salario), oficio);
             }
