@@ -2,14 +2,18 @@ package com.example.aplicacionalarcos
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aplicacionalarcos.databinding.ActivityMainBinding
+import com.example.aplicacionalarcos.databinding.ActivityImcBinding
 
-class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+class ImcActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityImcBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityImcBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
     }
 }
