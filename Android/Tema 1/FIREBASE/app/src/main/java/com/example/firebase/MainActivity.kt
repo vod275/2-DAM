@@ -19,8 +19,11 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
+
     //en esta fariable llevaremos el objeto que nos conecta con los Users de Firebase.
     private lateinit var firebaseauth : FirebaseAuth
     //en esta variable llevamos el binding con el layout.
@@ -29,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var googleSignInClient: GoogleSignInClient
 
     val TAG = "VOD"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -173,4 +177,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+
 }
