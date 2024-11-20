@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF19_Data_Grid")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1982aa8f466005091b76017af1087abe594b082f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6482cdf3ebfe65a126f8b6214359fe3705a4607c")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF19_Data_Grid")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF19_Data_Grid")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

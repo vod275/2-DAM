@@ -19,10 +19,11 @@ namespace WPF_Personaje_Nuevo_ROL
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window 
     {
         ObservableCollection<Personaje> lista { get; set; } = new ObservableCollection<Personaje>();
         ObservableCollection<Objeto> listaObjetos { get; set; } = new ObservableCollection<Objeto>();
+
         private ICollectionView vistaFiltradaPersonaje;
 
         public event PropertyChangedEventHandler? PropertyChanged;
@@ -31,8 +32,7 @@ namespace WPF_Personaje_Nuevo_ROL
         public MainWindow()
         {
             InitializeComponent();
-            lista = Repositorio.CargarPersonajes();
-            listaObjetos = Repositorio.CargarObjetos();
+            _ = InicializarDatos();
             dgPersona.ItemsSource = lista;
             lbObjetos.ItemsSource = listaObjetos;
             vistaFiltradaPersonaje = CollectionViewSource.GetDefaultView(lista);
@@ -56,9 +56,9 @@ namespace WPF_Personaje_Nuevo_ROL
             int resistencia = (int)sldResistencia.Value;
             string foto = RutaFoto.Text;
 
-           await Repositorio.AgregarPersonaje(nombrePersonaje, clasePersonaje, genero, fuerza, inteligencia, destreza, resistencia, foto);
+            await Repositorio.AgregarPersonaje(nombrePersonaje, clasePersonaje, genero, fuerza, inteligencia, destreza, resistencia, foto);
 
-             Repositorio.CargarPersonajes();
+            await Repositorio.CargarPersonajes();
 
 
 
@@ -74,7 +74,8 @@ namespace WPF_Personaje_Nuevo_ROL
                                         $"Clase: {selectedCharacter.Clase}\n" +
                                         $"Fuerza: {selectedCharacter.Fuerza}\n" +
                                         $"Destreza: {selectedCharacter.Destreza}\n" +
-                                        $"Inteligencia: {selectedCharacter.Inteligencia}\n";
+                                        $"Inteligencia: {selectedCharacter.Inteligencia}\n"+
+                                        $"Resistencia: {selectedCharacter.Resistencia}\n";
 
                 // Cargar y mostrar la imagen desde la ruta en Foto
                 if (!string.IsNullOrEmpty(selectedCharacter.Foto))
@@ -148,6 +149,41 @@ namespace WPF_Personaje_Nuevo_ROL
                 }
             }
         }
+
+        private async Task CargarDatosInicialesPersonajes(ObservableCollection<Personaje> lista)
+        {
+            
+            lista.Clear();
+
+            var personajes = await Repositorio.CargarPersonajes();
+
+
+            foreach (var personaje in personajes)
+            {
+                lista.Add(personaje);
+            }
+        }
+
+        private async Task CargarDatosInicialesObjetos(ObservableCollection<Objeto> lista)
+        {
+
+            lista.Clear();
+
+            var objetos = await Repositorio.CargarObjetos();
+
+
+            foreach (var objeto in objetos)
+            {
+                lista.Add(objeto);
+            }
+        }
+
+        public async Task InicializarDatos()
+        {
+            await CargarDatosInicialesPersonajes(lista);
+            await CargarDatosInicialesObjetos(listaObjetos);
+        }
+
     }
 
 }

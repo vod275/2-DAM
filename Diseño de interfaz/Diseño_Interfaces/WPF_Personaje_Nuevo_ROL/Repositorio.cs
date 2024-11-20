@@ -40,32 +40,32 @@ namespace WPF23_Personaje_Nuevo_ROL
         }
 
 
-        public static ObservableCollection<Personaje> CargarPersonajes()
+        public async static Task<ObservableCollection<Personaje>> CargarPersonajes()
         {
             ObservableCollection<Personaje> lista = new ObservableCollection<Personaje>();
             string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 string query = "SELECT nombre, clase, genero, fuerza, inteligencia, destreza, resistencia, foto FROM personaje";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    using (MySqlDataReader reader = command.ExecuteReader())
+                    using (var reader = await command.ExecuteReaderAsync())
                     {
-                        while (reader.Read())
+                        while (await reader.ReadAsync())
                         {
                             Personaje personaje = new Personaje
                             {
-                                NombrePersonaje = reader.GetString("nombre"),
-                                Clase = reader.GetString("clase"),
-                                Genero = reader.GetString("genero"),
-                                Fuerza = reader.GetInt32("fuerza"),
-                                Inteligencia = reader.GetInt32("inteligencia"),
-                                Destreza = reader.GetInt32("destreza"),
-                                Resistencia = reader.GetInt32("resistencia"),
-                                Foto = reader.GetString("foto")
+                                NombrePersonaje = reader.GetString(0),
+                                Clase = reader.GetString(1),
+                                Genero = reader.GetString(2),
+                                Fuerza = reader.GetInt32(3),
+                                Inteligencia = reader.GetInt32(4),
+                                Destreza = reader.GetInt32(5),
+                                Resistencia = reader.GetInt32(6),
+                                Foto = reader.GetString(7)
                             };
 
                             lista.Add(personaje);
@@ -77,31 +77,31 @@ namespace WPF23_Personaje_Nuevo_ROL
             return lista;
         }
 
-        public static ObservableCollection<Objeto> CargarObjetos()
+        public async static Task<ObservableCollection<Objeto>> CargarObjetos()
         {
             ObservableCollection<Objeto> listaObjetos = new ObservableCollection<Objeto>();
             string connectionString = ConfigurationManager.ConnectionStrings["MysqlConnection"].ConnectionString;
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 string query = "SELECT  nombre, tipo, fuerza, inteligencia, destreza, resistencia FROM objeto";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
-                    using (MySqlDataReader reader = command.ExecuteReader())
+                    using (var reader = await command.ExecuteReaderAsync())
                     {
-                        while (reader.Read())
+                        while (await reader.ReadAsync())
                         {
                             Objeto objeto = new Objeto
                             {
 
-                                NombreObjeto = reader.GetString("nombre"),
-                                TipoObjeto = reader.GetString("tipo"),
-                                FuerzaObjeto = reader.GetInt16("fuerza"),
-                                InteligenciaObjeto = reader.GetInt16("inteligencia"),
-                                DestrezaObjeto = reader.GetInt16("destreza"),
-                                ResistenciaObjeto = reader.GetInt16("resistencia")
+                                NombreObjeto = reader.GetString(0),
+                                TipoObjeto = reader.GetString(1),
+                                FuerzaObjeto = reader.GetInt16(2),
+                                InteligenciaObjeto = reader.GetInt16(3),
+                                DestrezaObjeto = reader.GetInt16(4),
+                                ResistenciaObjeto = reader.GetInt16(5)
                              
                             };
 
