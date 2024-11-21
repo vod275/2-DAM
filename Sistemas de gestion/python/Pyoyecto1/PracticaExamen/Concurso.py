@@ -52,7 +52,6 @@ def sortear_robot_de_cocina(espectadores, favorito):
 
 def primera_prueba(aspirantes, jurado, recetas):
 
-    print("\n--- Primera Prueba ---")
     receta_seleccionada = seleccionar_receta(recetas)
     print(f"Receta seleccionada: {receta_seleccionada.nombre}")
     evaluar_aspirantes(jurado, aspirantes, receta_seleccionada)
@@ -70,7 +69,6 @@ def primera_prueba(aspirantes, jurado, recetas):
 
 def segunda_prueba(aspirantes, jurado, recetas):
 
-    print("\n--- Segunda Prueba ---")
     receta_seleccionada = seleccionar_receta(recetas)
     print(f"Receta seleccionada: {receta_seleccionada.nombre}")
     evaluar_aspirantes(jurado, aspirantes, receta_seleccionada)
@@ -88,7 +86,6 @@ def segunda_prueba(aspirantes, jurado, recetas):
 
 def tercera_prueba(aspirantes, jurado, recetas):
 
-    print("\n--- Tercera Prueba ---")
     receta_seleccionada = seleccionar_receta(recetas)
     print(f"Receta seleccionada: {receta_seleccionada.nombre}")
     evaluar_aspirantes(jurado, aspirantes, receta_seleccionada)
@@ -105,19 +102,19 @@ def tercera_prueba(aspirantes, jurado, recetas):
 
 def cuarta_prueba(aspirantes, jurado, recetas):
 
-    # Selección de receta
+
     receta_seleccionada = seleccionar_receta(recetas)
     print(f"Receta seleccionada: {receta_seleccionada.nombre}")
     evaluar_aspirantes(jurado, aspirantes, receta_seleccionada)
 
-    # Elegir al chef: el que tenga la mayor puntuación final
+
     chef = max(aspirantes, key=lambda x: x.puntuacion)
     print(f"\n¡El Chef seleccionado es: {chef.nombre}!")
 
-    # Premiar al chef con un curso de cocina
+
     print(f"{chef.nombre} ha ganado un curso de cocina como premio del jurado.")
 
-    # Sorteo del robot de cocina entre los espectadores que han tenido como favorito al chef
+
     sortear_robot_de_cocina(aspirantes, chef.nombre)
 
     return chef
@@ -126,34 +123,34 @@ def cuarta_prueba(aspirantes, jurado, recetas):
 def main():
 
     
-    filename = "recetas.json"  # Este archivo debe contener las recetas en formato JSON
+    filename = "recetas.json"
     aspirantes = [Aspirante(f"Aspirante {i + 1}") for i in range(15)]
     jurado = [Juez(f"Juez {i + 1}") for i in range(3)]
     recetas = []
-    ListaRecetas.cargar_recetas(filename, recetas)  # Método para cargar recetas desde el archivo JSON
+    ListaRecetas.cargar_recetas(filename, recetas)
 
-    # Primera prueba
+
     print("\n--- Primera Prueba ---")
     supervivientes, espectadores = primera_prueba(aspirantes, jurado, recetas)
 
-    # Segunda prueba
+
     print("\n--- Segunda Prueba ---")
     supervivientes, espectadores = segunda_prueba(supervivientes, jurado, recetas)
 
-    # Tercera prueba
+
     print("\n--- Tercera Prueba ---")
     supervivientes, espectadores = tercera_prueba(supervivientes, jurado, recetas)
 
-    # Cuarta prueba
+
     print("\n--- Cuarta Prueba ---")
     chef = cuarta_prueba(supervivientes, jurado, recetas)
 
-    # Resultados finales
+
     print("\n--- Resultados Finales ---")
     print(f"El chef finalista es: {chef.nombre}")
     print("Fin del concurso")
 
 
-# Llamada a la función principal para ejecutar el concurso
+
 if __name__ == "__main__":
     main()
