@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF10_Colums_Rows")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6482cdf3ebfe65a126f8b6214359fe3705a4607c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87d76613bff6a1f9df2eec65bb514258f9f9c11a")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF10_Colums_Rows")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF10_Colums_Rows")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

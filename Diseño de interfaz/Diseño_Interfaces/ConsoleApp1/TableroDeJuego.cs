@@ -10,14 +10,14 @@ namespace Ejercicio11
     {
 
          static void Main(String[] args)
-        {
+         {
 
             int[,] matriz =  {
                 {1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}
 
-        };
+         };
 
             int suma = 0;
             for (int i = 0; i < matriz.GetLength(0); i++)

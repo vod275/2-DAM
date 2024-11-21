@@ -1,0 +1,15 @@
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\bin\Debug\net8.0\MultiplicarMatrices.exe
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\bin\Debug\net8.0\MultiplicarMatrices.deps.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\bin\Debug\net8.0\MultiplicarMatrices.runtimeconfig.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\bin\Debug\net8.0\MultiplicarMatrices.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\bin\Debug\net8.0\MultiplicarMatrices.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\MultiplicarMatrices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\MultiplicarMatrices.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\MultiplicarMatrices.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\MultiplicarMatrices.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\MultiplicarMatrices.sourcelink.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\MultiplicarMatrices.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\refint\MultiplicarMatrices.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\MultiplicarMatrices.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\MultiplicarMatrices.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\MultiplicarMatrices\obj\Debug\net8.0\ref\MultiplicarMatrices.dll

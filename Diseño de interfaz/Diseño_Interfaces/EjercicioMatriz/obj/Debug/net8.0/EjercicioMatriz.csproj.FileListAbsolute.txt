@@ -1,0 +1,15 @@
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\bin\Debug\net8.0\EjercicioMatriz.exe
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\bin\Debug\net8.0\EjercicioMatriz.deps.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\bin\Debug\net8.0\EjercicioMatriz.runtimeconfig.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\bin\Debug\net8.0\EjercicioMatriz.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\bin\Debug\net8.0\EjercicioMatriz.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\EjercicioMatriz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\EjercicioMatriz.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\EjercicioMatriz.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\EjercicioMatriz.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\EjercicioMatriz.sourcelink.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\EjercicioMatriz.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\refint\EjercicioMatriz.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\EjercicioMatriz.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\EjercicioMatriz.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\Diseño_Interfaces\EjercicioMatriz\obj\Debug\net8.0\ref\EjercicioMatriz.dll

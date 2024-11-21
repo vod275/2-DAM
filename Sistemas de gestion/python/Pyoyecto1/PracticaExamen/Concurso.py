@@ -105,8 +105,6 @@ def tercera_prueba(aspirantes, jurado, recetas):
 
 def cuarta_prueba(aspirantes, jurado, recetas):
 
-    print("\n--- Cuarta Prueba ---")
-
     # Selección de receta
     receta_seleccionada = seleccionar_receta(recetas)
     print(f"Receta seleccionada: {receta_seleccionada.nombre}")
