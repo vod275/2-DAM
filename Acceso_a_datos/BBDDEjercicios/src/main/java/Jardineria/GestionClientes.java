@@ -155,4 +155,64 @@ public class GestionClientes {
         rs.next();
         return rs.getInt(1);
     }
+    
+    
+    public static void eliminarCrearClientesSinPedidos() {
+        try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##VICTOR", "Ora1234")) {
+            
+            // 1. Verificar si la tabla CLIENTESSINPEDIDO existe y si no, crearla
+            String crearTablaQuery = "CREATE TABLE CLIENTESSINPEDIDO AS SELECT * FROM CLIENTES WHERE 1=0";
+            try (PreparedStatement stmt = connection.prepareStatement(crearTablaQuery)) {
+                stmt.executeUpdate();
+                System.out.println("La tabla CLIENTESSINPEDIDO ha sido creada.");
+            } catch (SQLException e) {
+                // Código de error 955 indica que la tabla ya existe en Oracle
+                if (e.getErrorCode() != 955) {
+                    System.err.println("Error al intentar crear la tabla CLIENTESSINPEDIDO: " + e.getMessage());
+                    return;
+                }
+            }
+
+            // 2. Consultar los clientes que no tienen pedidos
+            String consultaClientesSinPedidos = "SELECT c.CODIGOCLIENTE, c.NOMBRE, c.DIRECCION1 "
+                    + "FROM CLIENTES c "
+                    + "LEFT JOIN PEDIDOS p ON c.CODIGOCLIENTE = p.CODIGOCLIENTE "
+                    + "WHERE p.CODIGOPEDIDO IS NULL";
+
+            try (PreparedStatement pstmt = connection.prepareStatement(consultaClientesSinPedidos);
+                 ResultSet rs = pstmt.executeQuery()) {
+
+                // 3. Insertar los clientes sin pedidos en la tabla CLIENTESSINPEDIDO
+                String insertarClienteQuery = "INSERT INTO CLIENTESSINPEDIDO (CODIGOCLIENTE, NOMBRE, DIRECCION1) VALUES (?, ?, ?)";
+                try (PreparedStatement insertStmt = connection.prepareStatement(insertarClienteQuery)) {
+                    while (rs.next()) {
+                        String codigoCliente = rs.getString("CODIGOCLIENTE");
+                        String nombre = rs.getString("NOMBRE");
+                        String direccion = rs.getString("DIRECCION1");
+
+                        insertStmt.setString(1, codigoCliente);
+                        insertStmt.setString(2, nombre);
+                        insertStmt.setString(3, direccion);
+
+                        // Ejecutamos la inserción en CLIENTESSINPEDIDO
+                        insertStmt.executeUpdate();
+                        System.out.printf("Cliente sin pedidos insertado: COD-CLIENTE: %-15s NOMBRE: %-25s DIRECCIÓN: %-30s\n",
+                                codigoCliente, nombre, direccion);
+                    }
+                }
+
+            }
+
+            // 4. Eliminar los clientes que no tienen pedidos de la tabla CLIENTES
+            String eliminarClientesQuery = "DELETE FROM CLIENTES WHERE CODIGOCLIENTE IN (SELECT CODIGOCLIENTE FROM CLIENTESSINPEDIDO)";
+            try (PreparedStatement deleteStmt = connection.prepareStatement(eliminarClientesQuery)) {
+                int filasEliminadas = deleteStmt.executeUpdate();
+                System.out.println("Clientes eliminados de la tabla CLIENTES: " + filasEliminadas);
+            }
+
+        } catch (SQLException e) {
+            System.err.println("Error al procesar la eliminación de clientes sin pedidos: " + e.getMessage());
+        }
+    }
+    
 }

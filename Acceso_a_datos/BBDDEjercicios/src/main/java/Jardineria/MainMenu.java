@@ -32,7 +32,7 @@ public class MainMenu {
                     GestionClientes.visualizarPedidosCliente(codigoCliente);
                     break;
                 case 3:
-                    ClientManager.createClientsWithoutOrders();
+                    GestionClientes.eliminarCrearClientesSinPedidos();
                     break;
                 case 4:
                     EmployeeManager.updateClientsPerEmployee();
