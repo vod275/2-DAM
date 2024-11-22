@@ -77,9 +77,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF22_MINI_ITO", "WPF22_MIN
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF23_Personaje_Nuevo_ROL", "WPF_Personaje_Nuevo_ROL\WPF23_Personaje_Nuevo_ROL.csproj", "{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioMatriz", "EjercicioMatriz\EjercicioMatriz.csproj", "{9378CF54-4DF1-4563-9061-55BEC127B676}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjercicioMatriz", "EjercicioMatriz\EjercicioMatriz.csproj", "{9378CF54-4DF1-4563-9061-55BEC127B676}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplicarMatrices", "MultiplicarMatrices\MultiplicarMatrices.csproj", "{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplicarMatrices", "MultiplicarMatrices\MultiplicarMatrices.csproj", "{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3EnRaya", "3EnRaya\3EnRaya.csproj", "{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,6 +245,10 @@ Global
 		{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

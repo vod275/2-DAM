@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF07_adivinarNumero")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87d76613bff6a1f9df2eec65bb514258f9f9c11a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d0a242b981fd880a2a13470ba22bc40db863334")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF07_adivinarNumero")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF07_adivinarNumero")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
