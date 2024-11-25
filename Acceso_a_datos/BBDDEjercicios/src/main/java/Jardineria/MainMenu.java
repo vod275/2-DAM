@@ -27,10 +27,15 @@ public class MainMenu {
                 	insertarEmpleadoDesdeMenu();
                     break;
                 case 2:
-                	System.out.print("Dime el codigo del cliente que quieras ver su pedido: ");
-                    String codigoCliente = scanner.nextLine();
-                    GestionClientes.visualizarPedidosCliente(codigoCliente);
-                    break;
+                	 System.out.print("Dime el codigo del cliente que quieras ver su pedido: ");
+                     String codigoCliente = scanner.next();
+                     if (codigoCliente.isEmpty()) {
+                         System.out.println("El código del cliente no puede estar vacío. Por favor, ingresa un código válido.");
+                     } else {
+                     
+                         GestionClientes.visualizarPedidosCliente(codigoCliente);
+                     }
+                     break;
                 case 3:
                     GestionClientes.eliminarCrearClientesSinPedidos();
                     break;
@@ -74,8 +79,8 @@ public class MainMenu {
             String apellido2 = "González";
             String extension = "1234";
             String email = "juan.perez@empresa.com";
-            String codigoOficina = "OF001";
-            Integer codigoJefe = 2; // Asumiendo que el jefe tiene código 2, puedes poner null si no tiene jefe.
+            String codigoOficina = "TOK-JP";
+            Integer codigoJefe = 2; 
             String puesto = "Desarrollador";
 
             // Llamar al método de gestión para insertar empleado
