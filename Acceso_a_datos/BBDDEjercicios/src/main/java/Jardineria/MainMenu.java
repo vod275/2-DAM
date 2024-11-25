@@ -24,7 +24,7 @@ public class MainMenu {
 
             switch (option) {
                 case 1:
-                	insertarEmpleadoDesdeMenu(scanner);
+                	insertarEmpleadoDesdeMenu();
                     break;
                 case 2:
                 	System.out.print("Dime el codigo del cliente que quieras ver su pedido: ");
@@ -35,19 +35,22 @@ public class MainMenu {
                     GestionClientes.eliminarCrearClientesSinPedidos();
                     break;
                 case 4:
-                    EmployeeManager.updateClientsPerEmployee();
+                    GestionEmpleados.actualizarClientesPorEmpleado();
                     break;
                 case 5:
-                    ProductManager.createStockUpdated();
+                    GestionProductos.crearYActualizarStock();
                     break;
                 case 6:
-                    OfficeManager.showOfficeDetails("OFFICE_CODE_EXAMPLE");
+                	System.out.println("Introduce un codigo de oficinas: ");
+                	String codigo = scanner.next();
+                    GestionOficinas.verOficina(codigo);
+                    
                     break;
                 case 7:
-                    OrderManager.viewAllOrders();
+                    GestionClientes.visualizarPedidosDeTodosLosClientes();
                     break;
                 case 8:
-                    EmployeeManager.handleNewEmployees();
+                    
                     break;
                 case 0:
                     System.out.println("Saliendo...");
@@ -61,44 +64,27 @@ public class MainMenu {
         
         
     } 
-        private static void insertarEmpleadoDesdeMenu(Scanner scanner) {
-            System.out.println("===== Insertar Nuevo Empleado =====");
+    private static void insertarEmpleadoDesdeMenu() {
+        System.out.println("===== Insertar Nuevo Empleado =====");
 
-            try {
-            	 
-            	
-                System.out.print("Nombre: ");
-                String nombre = scanner.nextLine();
+        try {
+            // Datos inventados
+            String nombre = "Juan";
+            String apellido1 = "Pérez";
+            String apellido2 = "González";
+            String extension = "1234";
+            String email = "juan.perez@empresa.com";
+            String codigoOficina = "OF001";
+            Integer codigoJefe = 2; // Asumiendo que el jefe tiene código 2, puedes poner null si no tiene jefe.
+            String puesto = "Desarrollador";
 
-                System.out.print("Apellido 1: ");
-                String apellido1 = scanner.nextLine();
+            // Llamar al método de gestión para insertar empleado
+            GestionEmpleados.insertarEmpleado(nombre, apellido1, apellido2, extension, email, codigoOficina, codigoJefe, puesto);
 
-                System.out.print("Apellido 2: ");
-                String apellido2 = scanner.nextLine();
-
-                System.out.print("Extensión: ");
-                String extension = scanner.nextLine();
-
-                System.out.print("Email: ");
-                String email = scanner.nextLine();
-
-                System.out.print("Código de Oficina: ");
-                String codigoOficina = scanner.nextLine();
-
-                System.out.print("Código de Jefe (0 si no tiene jefe): ");
-                int codigoJefeInput = scanner.nextInt();
-                scanner.nextLine(); // Limpiar buffer
-                Integer codigoJefe = (codigoJefeInput == 0) ? null : codigoJefeInput;
-
-                System.out.print("Puesto: ");
-                String puesto = scanner.nextLine();
-
-                // Llamar al método de gestión para insertar empleado
-                GestionEmpleados.insertarEmpleado(nombre, apellido1, apellido2, extension, email, codigoOficina, codigoJefe, puesto);
-
-            } catch (Exception e) {
-                System.err.println("Error al insertar empleado: " + e.getMessage());
-            }
+        } catch (Exception e) {
+            System.err.println("Error al insertar empleado: " + e.getMessage());
         }
+    }
+
     
 }

@@ -86,4 +86,54 @@ public class GestionEmpleados {
         }
         return false;
     }
+    
+    
+    public static void actualizarClientesPorEmpleado() {
+        try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##VICTOR", "Ora1234")) {
+
+            // 1. Verificar si la columna NUMCLIENTES existe en la tabla EMPLEADOS, si no, agregarla
+            String verificarColumnaQuery = "SELECT COUNT(*) FROM USER_TAB_COLUMNS WHERE TABLE_NAME = 'EMPLEADOS' AND COLUMN_NAME = 'NUMCLIENTES'";
+            try (PreparedStatement stmt = connection.prepareStatement(verificarColumnaQuery);
+                 ResultSet rs = stmt.executeQuery()) {
+                if (rs.next() && rs.getInt(1) == 0) {
+                    // La columna no existe, la creamos
+                    String agregarColumnaQuery = "ALTER TABLE EMPLEADOS ADD NUMCLIENTES NUMERIC";
+                    try (PreparedStatement alterStmt = connection.prepareStatement(agregarColumnaQuery)) {
+                        alterStmt.executeUpdate();
+                        System.out.println("Columna NUMCLIENTES añadida a la tabla EMPLEADOS.");
+                    }
+                } else {
+                    System.out.println("La columna NUMCLIENTES ya existe en la tabla EMPLEADOS.");
+                }
+            }
+
+            // 2. Consultar el número de clientes asignados a cada empleado
+            String consultaClientesPorEmpleado = "SELECT EMPLEADO_ID, COUNT(CODIGOCLIENTE) AS NUM_CLIENTES " +
+                    "FROM CLIENTES " +
+                    "GROUP BY EMPLEADO_ID";
+
+            try (PreparedStatement pstmt = connection.prepareStatement(consultaClientesPorEmpleado);
+                 ResultSet rs = pstmt.executeQuery()) {
+
+                // 3. Actualizar la columna NUMCLIENTES en la tabla EMPLEADOS
+                String actualizarClientesQuery = "UPDATE EMPLEADOS SET NUMCLIENTES = ? WHERE EMPLEADO_ID = ?";
+                try (PreparedStatement updateStmt = connection.prepareStatement(actualizarClientesQuery)) {
+                    while (rs.next()) {
+                        int empleadoId = rs.getInt("EMPLEADO_ID");
+                        int numClientes = rs.getInt("NUM_CLIENTES");
+
+                        updateStmt.setInt(1, numClientes);
+                        updateStmt.setInt(2, empleadoId);
+
+                        // Ejecutar la actualización en la tabla EMPLEADOS
+                        int filasAfectadas = updateStmt.executeUpdate();
+                        System.out.printf("Empleado ID: %-5d Número de Clientes Actualizado: %-3d\n", empleadoId, numClientes);
+                    }
+                }
+            }
+
+        } catch (SQLException e) {
+            System.err.println("Error al procesar la actualización de clientes por empleado: " + e.getMessage());
+        }
+    }
 }
