@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF12_Generar_Botones_Calculadora")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d0a242b981fd880a2a13470ba22bc40db863334")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b11bcbb1689d74b1312f6a0e98a0e28e1e71eb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF12_Generar_Botones_Calculadora")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF12_Generar_Botones_Calculadora")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -81,7 +81,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjercicioMatriz", "Ejercici
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplicarMatrices", "MultiplicarMatrices\MultiplicarMatrices.csproj", "{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3EnRaya", "3EnRaya\3EnRaya.csproj", "{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3EnRaya", "3EnRaya\3EnRaya.csproj", "{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF22_EntityFrameWork", "WPF_EntityFrameWork\WPF22_EntityFrameWork.csproj", "{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -249,6 +251,10 @@ Global
 		{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
