@@ -184,6 +184,7 @@ namespace WPF_Personaje_Nuevo_ROL
             await CargarDatosInicialesObjetos(listaObjetos);
         }
 
+        
     }
 
 }

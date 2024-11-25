@@ -3,40 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}|MultiplicarMatrices\\MultiplicarMatrices.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\multiplicarmatrices\\multiplicarmatrices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}|MultiplicarMatrices\\MultiplicarMatrices.csproj|solutionrelative:multiplicarmatrices\\multiplicarmatrices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9378CF54-4DF1-4563-9061-55BEC127B676}|EjercicioMatriz\\EjercicioMatriz.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejerciciomatriz\\claseseleccionmatrizmayorymenor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9378CF54-4DF1-4563-9061-55BEC127B676}|EjercicioMatriz\\EjercicioMatriz.csproj|solutionrelative:ejerciciomatriz\\claseseleccionmatrizmayorymenor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F448A838-50E2-49AA-9190-5CEE939B1AC7}|Dise\u00F1o_Interfaces\\Ejercicio01.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\dise\u00F1o_interfaces\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F448A838-50E2-49AA-9190-5CEE939B1AC7}|Dise\u00F1o_Interfaces\\Ejercicio01.csproj|solutionrelative:dise\u00F1o_interfaces\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37CF6758-94A9-46A7-9C6E-1B99FAFD9D5A}|Ejercicio12\\Ejercicio12.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio12\\juego moverse mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37CF6758-94A9-46A7-9C6E-1B99FAFD9D5A}|Ejercicio12\\Ejercicio12.csproj|solutionrelative:ejercicio12\\juego moverse mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9929D476-58E6-4114-87B9-3560350122AA}|ConsoleApp1\\Ejercicio11.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\consoleapp1\\tablerodejuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9929D476-58E6-4114-87B9-3560350122AA}|ConsoleApp1\\Ejercicio11.csproj|solutionrelative:consoleapp1\\tablerodejuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53A53ED0-705A-4064-BE17-98A5F9336A2A}|Ejercicio10\\Ejercicio10.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio10\\juegoadivinar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53A53ED0-705A-4064-BE17-98A5F9336A2A}|Ejercicio10\\Ejercicio10.csproj|solutionrelative:ejercicio10\\juegoadivinar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}|MultiplicarMatrices\\MultiplicarMatrices.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\multiplicarmatrices\\multiplicarmatrices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE93B04-3F30-4E3E-A1CF-D78EE7D99B64}|MultiplicarMatrices\\MultiplicarMatrices.csproj|solutionrelative:multiplicarmatrices\\multiplicarmatrices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2D60047-BE36-4AD4-A893-1050EEFF3AC6}|Ejercicio9\\Ejercicio09.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio9\\dia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2D60047-BE36-4AD4-A893-1050EEFF3AC6}|Ejercicio9\\Ejercicio09.csproj|solutionrelative:ejercicio9\\dia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{600BBAD0-DEB9-47C0-907B-21A3921B6D05}|Ejercicio3\\Ejercicio03.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio3\\numeroimpar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{600BBAD0-DEB9-47C0-907B-21A3921B6D05}|Ejercicio3\\Ejercicio03.csproj|solutionrelative:ejercicio3\\numeroimpar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB83CAA6-E756-42C6-92F6-5EE88A2D3EE8}|Ejercicio2\\Ejercicio02.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\ejercicio2\\ejerciciosumas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB83CAA6-E756-42C6-92F6-5EE88A2D3EE8}|Ejercicio2\\Ejercicio02.csproj|solutionrelative:ejercicio2\\ejerciciosumas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf22_mini_ito\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|solutionrelative:wpf22_mini_ito\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf22_mini_ito\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|solutionrelative:wpf22_mini_ito\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf22_mini_ito\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|solutionrelative:wpf22_mini_ito\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\personaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\objeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\objeto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}|3EnRaya\\3EnRaya.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\3enraya\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CCDF1D5-15E4-4DEF-B466-7C2EBFBE0969}|3EnRaya\\3EnRaya.csproj|solutionrelative:3enraya\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,118 +63,155 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MultiplicarMatrices.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\MultiplicarMatrices\\MultiplicarMatrices.cs",
-              "RelativeDocumentMoniker": "MultiplicarMatrices\\MultiplicarMatrices.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\MultiplicarMatrices\\MultiplicarMatrices.cs",
-              "RelativeToolTip": "MultiplicarMatrices\\MultiplicarMatrices.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCoAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T15:08:39.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClaseSeleccionMatrizMayorYMenor.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\EjercicioMatriz\\ClaseSeleccionMatrizMayorYMenor.cs",
-              "RelativeDocumentMoniker": "EjercicioMatriz\\ClaseSeleccionMatrizMayorYMenor.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\EjercicioMatriz\\ClaseSeleccionMatrizMayorYMenor.cs",
-              "RelativeToolTip": "EjercicioMatriz\\ClaseSeleccionMatrizMayorYMenor.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:52:48.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dia.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio9\\Dia.cs",
-              "RelativeDocumentMoniker": "Ejercicio9\\Dia.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio9\\Dia.cs",
-              "RelativeToolTip": "Ejercicio9\\Dia.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:48:51.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JuegoAdivinar.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio10\\JuegoAdivinar.cs",
-              "RelativeDocumentMoniker": "Ejercicio10\\JuegoAdivinar.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio10\\JuegoAdivinar.cs",
-              "RelativeToolTip": "Ejercicio10\\JuegoAdivinar.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:48:40.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "TableroDeJuego.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ConsoleApp1\\TableroDeJuego.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\TableroDeJuego.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ConsoleApp1\\TableroDeJuego.cs",
               "RelativeToolTip": "ConsoleApp1\\TableroDeJuego.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:45:59.17Z",
+              "WhenOpened": "2024-11-22T18:56:37.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Juego moverse mapa.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio12\\Juego moverse mapa.cs",
-              "RelativeDocumentMoniker": "Ejercicio12\\Juego moverse mapa.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio12\\Juego moverse mapa.cs",
-              "RelativeToolTip": "Ejercicio12\\Juego moverse mapa.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MultiplicarMatrices.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\MultiplicarMatrices\\MultiplicarMatrices.cs",
+              "RelativeDocumentMoniker": "MultiplicarMatrices\\MultiplicarMatrices.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\MultiplicarMatrices\\MultiplicarMatrices.cs",
+              "RelativeToolTip": "MultiplicarMatrices\\MultiplicarMatrices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:45:44.836Z",
+              "WhenOpened": "2024-11-22T18:55:14.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\Repositorio.cs",
+              "RelativeDocumentMoniker": "WPF22_MINI_ITO\\Repositorio.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\Repositorio.cs",
+              "RelativeToolTip": "WPF22_MINI_ITO\\Repositorio.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwFUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:39:30.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPF22_MINI_ITO\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WPF22_MINI_ITO\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowFkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:37:47.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "NumeroImpar.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio3\\NumeroImpar.cs",
-              "RelativeDocumentMoniker": "Ejercicio3\\NumeroImpar.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio3\\NumeroImpar.cs",
-              "RelativeToolTip": "Ejercicio3\\NumeroImpar.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPF22_MINI_ITO\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\MainWindow.xaml",
+              "RelativeToolTip": "WPF22_MINI_ITO\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-22T17:36:18.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Objeto.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Objeto.cs",
+              "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\Objeto.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Objeto.cs",
+              "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\Objeto.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAwwGwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:45:27.703Z",
+              "WhenOpened": "2024-11-22T17:34:35.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
+              "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
+              "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAUwJEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:22:39.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\App.config",
+              "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\App.config",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\App.config",
+              "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-22T17:21:54.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "EjercicioSumas.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio2\\EjercicioSumas.cs",
-              "RelativeDocumentMoniker": "Ejercicio2\\EjercicioSumas.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Ejercicio2\\EjercicioSumas.cs",
-              "RelativeToolTip": "Ejercicio2\\EjercicioSumas.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Title": "Personaje.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Personaje.cs",
+              "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\Personaje.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Personaje.cs",
+              "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\Personaje.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAADwv1gAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:45:13.477Z",
+              "WhenOpened": "2024-11-22T17:08:28.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Dise\u00F1o_Interfaces\\Program.cs",
-              "RelativeDocumentMoniker": "Dise\u00F1o_Interfaces\\Program.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\Dise\u00F1o_Interfaces\\Program.cs",
-              "RelativeToolTip": "Dise\u00F1o_Interfaces\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowE0AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:44:53.907Z",
+              "WhenOpened": "2024-11-22T17:07:17.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\MainWindow.xaml*",
+              "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-22T16:40:51.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\3EnRaya\\Program.cs",
+              "RelativeDocumentMoniker": "3EnRaya\\Program.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\3EnRaya\\Program.cs",
+              "RelativeToolTip": "3EnRaya\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T16:30:37.543Z",
               "EditorCaption": ""
             }
           ]
