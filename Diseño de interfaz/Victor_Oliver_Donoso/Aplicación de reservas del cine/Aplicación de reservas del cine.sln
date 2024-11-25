@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicación de reservas del cine", "Aplicación de reservas del cine\Aplicación de reservas del cine.csproj", "{2064214E-24F9-4394-9BCB-26412A9E98DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservasEnElCine", "ReservasEnElCine\ReservasEnElCine.csproj", "{CA2EB6E1-EDB4-48B5-A409-721CFB132476}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2064214E-24F9-4394-9BCB-26412A9E98DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2064214E-24F9-4394-9BCB-26412A9E98DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2064214E-24F9-4394-9BCB-26412A9E98DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2064214E-24F9-4394-9BCB-26412A9E98DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA2EB6E1-EDB4-48B5-A409-721CFB132476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2EB6E1-EDB4-48B5-A409-721CFB132476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2EB6E1-EDB4-48B5-A409-721CFB132476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2EB6E1-EDB4-48B5-A409-721CFB132476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8E7E522-471A-49BD-BB0E-4E584113D0EF}
+	EndGlobalSection
+EndGlobal

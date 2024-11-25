@@ -1,0 +1,14 @@
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\bin\Debug\net8.0\ReservasEnElCine.exe
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\bin\Debug\net8.0\ReservasEnElCine.deps.json
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\bin\Debug\net8.0\ReservasEnElCine.runtimeconfig.json
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\bin\Debug\net8.0\ReservasEnElCine.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\bin\Debug\net8.0\ReservasEnElCine.pdb
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\obj\Debug\net8.0\ReservasEnElCine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\obj\Debug\net8.0\ReservasEnElCine.AssemblyInfoInputs.cache
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\obj\Debug\net8.0\ReservasEnElCine.AssemblyInfo.cs
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\obj\Debug\net8.0\ReservasEnElCine.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\obj\Debug\net8.0\ReservasEnElCine.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\obj\Debug\net8.0\refint\ReservasEnElCine.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\obj\Debug\net8.0\ReservasEnElCine.pdb
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\obj\Debug\net8.0\ReservasEnElCine.genruntimeconfig.cache
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\ReservasEnElCine\obj\Debug\net8.0\ref\ReservasEnElCine.dll

@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|c:\\users\\alumno\\source\\repos\\aplicaci\u00F3n de reservas del cine\\aplicaci\u00F3n de reservas del cine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|solutionrelative:aplicaci\u00F3n de reservas del cine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|c:\\users\\alumno\\source\\repos\\aplicaci\u00F3n de reservas del cine\\aplicaci\u00F3n de reservas del cine\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|solutionrelative:aplicaci\u00F3n de reservas del cine\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|c:\\users\\alumno\\source\\repos\\aplicaci\u00F3n de reservas del cine\\aplicaci\u00F3n de reservas del cine\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|solutionrelative:aplicaci\u00F3n de reservas del cine\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|c:\\users\\alumno\\source\\repos\\aplicaci\u00F3n de reservas del cine\\aplicaci\u00F3n de reservas del cine\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|solutionrelative:aplicaci\u00F3n de reservas del cine\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|c:\\users\\alumno\\source\\repos\\aplicaci\u00F3n de reservas del cine\\aplicaci\u00F3n de reservas del cine\\asiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2064214E-24F9-4394-9BCB-26412A9E98DE}|Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine.csproj|solutionrelative:aplicaci\u00F3n de reservas del cine\\asiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Aplicaci\u00F3n de reservas del cine\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\MainWindow.xaml",
+              "RelativeToolTip": "Aplicaci\u00F3n de reservas del cine\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-22T19:54:30.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\Repositorio.cs",
+              "RelativeDocumentMoniker": "Aplicaci\u00F3n de reservas del cine\\Repositorio.cs",
+              "ToolTip": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\Repositorio.cs",
+              "RelativeToolTip": "Aplicaci\u00F3n de reservas del cine\\Repositorio.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAWwHQAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:37:09.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Aplicaci\u00F3n de reservas del cine\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Aplicaci\u00F3n de reservas del cine\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAewLQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:01:43.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Asiento.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\Asiento.cs",
+              "RelativeDocumentMoniker": "Aplicaci\u00F3n de reservas del cine\\Asiento.cs",
+              "ToolTip": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\Asiento.cs",
+              "RelativeToolTip": "Aplicaci\u00F3n de reservas del cine\\Asiento.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:11:36.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pelicula.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\Pelicula.cs",
+              "RelativeDocumentMoniker": "Aplicaci\u00F3n de reservas del cine\\Pelicula.cs",
+              "ToolTip": "C:\\Users\\Alumno\\source\\repos\\Aplicaci\u00F3n de reservas del cine\\Aplicaci\u00F3n de reservas del cine\\Pelicula.cs",
+              "RelativeToolTip": "Aplicaci\u00F3n de reservas del cine\\Pelicula.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:08:23.293Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

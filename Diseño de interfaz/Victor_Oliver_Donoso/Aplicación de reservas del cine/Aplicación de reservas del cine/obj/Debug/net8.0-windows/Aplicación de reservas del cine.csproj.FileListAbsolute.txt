@@ -1,0 +1,36 @@
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine_MarkupCompile.cache
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine_MarkupCompile.lref
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\Aplicación de reservas del cine.exe
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\Aplicación de reservas del cine.dll.config
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\Aplicación de reservas del cine.deps.json
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\Aplicación de reservas del cine.runtimeconfig.json
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\Aplicación de reservas del cine.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\Aplicación de reservas del cine.pdb
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine.csproj.AssemblyReference.cache
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine.g.resources
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine.AssemblyInfoInputs.cache
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine.AssemblyInfo.cs
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicaci.3E36D979.Up2Date
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\refint\Aplicación de reservas del cine.dll
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine.pdb
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\Aplicación de reservas del cine.genruntimeconfig.cache
+C:\Users\Alumno\source\repos\Aplicación de reservas del cine\Aplicación de reservas del cine\obj\Debug\net8.0-windows\ref\Aplicación de reservas del cine.dll
