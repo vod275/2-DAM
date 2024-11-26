@@ -21,6 +21,9 @@
                 <DataGridTextColumn Header="Edad" Binding="{Binding Edad}" Width="*" />
             </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Eliminar&#xD;&#xA;" HorizontalAlignment="Left" Margin="380,387,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="20" Width="48" Click="btEliminarPersona_Click"/>
+        <Button Content="Modificar&#xD;&#xA;" HorizontalAlignment="Left" Margin="99,387,0,0" VerticalAlignment="Top" Grid.Column="1" Height="20" Width="56" Click="btModificarPersona_Click"/>
+
 
     </Grid>
 </Window>

@@ -33,7 +33,7 @@ namespace WPF_EntityFrameWork
             try
             {
                 var people = _context.Personas.ToList();
-                dgPersona.ItemsSource = people;
+                dgPersona.ItemsSource = people;s
 
             }
             catch (Exception ex)
@@ -63,7 +63,7 @@ namespace WPF_EntityFrameWork
 
             try
             {
-                var persona = new Persona { Nombre = nombre, Edad = edad }; // Edad como int
+                var persona = new Persona { Nombre = nombre, Edad = edad };
                 _context.Personas.Add(persona);
                 _context.SaveChanges(); // INSERT
                 MessageBox.Show("Persona creada exitosamente.");
@@ -77,5 +77,46 @@ namespace WPF_EntityFrameWork
             }
         }
 
+
+
+        private void btEliminarPersona_Click(object sender, RoutedEventArgs e)
+        {
+            using (var context = new AppDbContext())
+            {
+                Persona personaSeleccionada = dgPersona.SelectedItem as Persona;
+                if (personaSeleccionada != null)
+                {
+
+                    context.Remove(personaSeleccionada);
+                    context.SaveChanges();
+                    Console.WriteLine("Se borro");
+                    LoadPeople();
+
+                }
+
+
+            }
+
+        }
+
+
+        private void btModificarPersona_Click(object sender, RoutedEventArgs e)
+        {
+ 
+            using (var context = new AppDbContext())
+            {
+                Persona personaSeleccionada = dgPersona.SelectedItem as Persona;
+                if (personaSeleccionada != null)
+                {
+                    personaSeleccionada.Nombre = tbNombre.Text;
+                    personaSeleccionada.Edad = int.Parse(tbEdad.Text);
+
+                    context.SaveChanges();
+                    LoadPeople();
+
+                }
+            }
+
+        }
     }
 }
