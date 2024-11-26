@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D14040"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etFrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe una frase"
+            android:inputType="text"
+            android:textColorHint="#FFFCFC" />
+
+        <!-- Botón para agregar frase -->
+        <Button
+            android:id="@+id/btnAgregar"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Agregar frase"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/btnAleatorio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/white" />
+
+        <!-- Botón para mostrar frase aleatoria -->
+        <Button
+            android:id="@+id/btnAleatorio"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="YO NUNCA......"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tvFrase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/white" />
+
+        <!-- TextView para mostrar la frase aleatoria -->
+        <TextView
+            android:id="@+id/tvFrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
