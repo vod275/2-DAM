@@ -12,19 +12,19 @@ public class GestionEmpleados {
 			String email, String codigoOficina, Integer codigoJefe, String puesto) {
 		try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##JARDINERIA", "Ora1234")) {
 
-			// Comprobar si el código de oficina existe
+			
 			if (!existeCodigoOficina(connection, codigoOficina)) {
 				System.err.println("Error: El código de oficina " + codigoOficina + " no existe.");
 				return;
 			}
 
-			// Comprobar si el código de jefe existe (si se proporciona)
+			
 			if (codigoJefe != null && !existeCodigoJefe(connection, codigoJefe)) {
 				System.err.println("Error: El código de jefe " + codigoJefe + " no existe.");
 				return;
 			}
 
-			// Obtener el código de empleado más alto
+			
 			String maxEmployeeQuery = "SELECT MAX(codigoempleado) FROM empleados";
 			try (PreparedStatement ps = connection.prepareStatement(maxEmployeeQuery);
 					ResultSet rs = ps.executeQuery()) {
@@ -33,12 +33,12 @@ public class GestionEmpleados {
 					nuevoCodigoEmpleado = rs.getInt(1) + 1;
 				}
 
-				// Insertar empleado
+				
 				String insertQuery = "INSERT INTO empleados (codigoempleado, nombre, apellido1, apellido2, extension, email, codigooficina, codigojefe, puesto) " +
 						"VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 				try (PreparedStatement insertPs = connection.prepareStatement(insertQuery)) {
 
-					insertPs.setInt(1, nuevoCodigoEmpleado);  // Asignar el valor del código de empleado
+					insertPs.setInt(1, nuevoCodigoEmpleado);  
 					insertPs.setString(2, nombre);
 					insertPs.setString(3, apellido1);
 					insertPs.setString(4, apellido2);
@@ -46,11 +46,11 @@ public class GestionEmpleados {
 					insertPs.setString(6, email);
 					insertPs.setString(7, codigoOficina);
 
-					// Comprobar si el jefe es null, si lo es, se puede pasar a null en la base de datos
+					
 					if (codigoJefe != null) {
 						insertPs.setInt(8, codigoJefe);
 					} else {
-						insertPs.setNull(8, java.sql.Types.INTEGER); // Para asignar un valor NULL
+						insertPs.setNull(8, java.sql.Types.INTEGER);
 					}
 
 					insertPs.setString(9, puesto);
