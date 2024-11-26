@@ -19,7 +19,5 @@ namespace WPF22_EntityFrameWork
                 new MariaDbServerVersion(new Version(11, 5, 2)));
         }
 
-
-
     }
 }

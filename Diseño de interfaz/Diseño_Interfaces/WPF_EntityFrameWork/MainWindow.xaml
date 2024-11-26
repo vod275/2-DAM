@@ -11,15 +11,14 @@
             <ColumnDefinition Width="81*"/>
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Margin="205,52,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Height="34"/>
-        <TextBox x:Name="tbEdad" HorizontalAlignment="Left" Margin="400,52,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Height="34"/>
-        <Button x:Name="btAgregar" Content="Agregar&#xD;&#xA;" HorizontalAlignment="Left" Margin="170,52,0,0" VerticalAlignment="Top" Height="35" Width="83" Grid.Column="1" Click="btAgregar_Click"/>
+        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Margin="205,52,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="117" Height="17"/>
+        <TextBox x:Name="tbEdad" HorizontalAlignment="Left" Margin="400,52,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="117" Grid.ColumnSpan="2" Height="18"/>
+        <Button x:Name="btAgregar" Content="Agregar&#xD;&#xA;" HorizontalAlignment="Left" Margin="170,52,0,0" VerticalAlignment="Top" Height="18" Width="83" Grid.Column="1" Click="btAgregar_Click"/>
         <DataGrid x:Name="dgPersona" AutoGenerateColumns="False"  Margin="46,124,50,69" Grid.ColumnSpan="2">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Width="*" />
-                <DataGridTextColumn Header="Nombre"  Width="*"  />
-                <DataGridTextColumn Header="Edad"  Width="*" />
-
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="*" />
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="*" />
+                <DataGridTextColumn Header="Edad" Binding="{Binding Edad}" Width="*" />
             </DataGrid.Columns>
         </DataGrid>
 

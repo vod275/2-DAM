@@ -10,7 +10,7 @@ namespace WPF22_EntityFrameWork
     {
         public int Id { get; set; }
         public string Nombre { get; set; } = string.Empty;
-        public string Edad { get; set; }
+        public int Edad { get; set; }
 
     }
 }

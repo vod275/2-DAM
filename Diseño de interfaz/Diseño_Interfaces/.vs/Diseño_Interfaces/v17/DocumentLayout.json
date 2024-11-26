@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF_EntityFrameWork.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_entityframework\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF_EntityFrameWork.csproj|solutionrelative:wpf_entityframework\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF22_EntityFrameWork.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_entityframework\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF22_EntityFrameWork.csproj|solutionrelative:wpf_entityframework\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF_EntityFrameWork.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_entityframework\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF_EntityFrameWork.csproj|solutionrelative:wpf_entityframework\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF22_EntityFrameWork.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_entityframework\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF22_EntityFrameWork.csproj|solutionrelative:wpf_entityframework\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18FB8848-147A-4D97-A967-7446B30A4D81}|WPF22_MINI_ITO\\WPF22_MINI_ITO.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf22_mini_ito\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -25,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF22_EntityFrameWork.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_entityframework\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}|WPF_EntityFrameWork\\WPF22_EntityFrameWork.csproj|solutionrelative:wpf_entityframework\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DAE2434-FDF8-4C73-8136-F3EF3BD04E0A}|WPF_Personaje_Nuevo_ROL\\WPF23_Personaje_Nuevo_ROL.csproj|solutionrelative:wpf_personaje_nuevo_rol\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Repositorio.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
               "RelativeDocumentMoniker": "WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
@@ -46,12 +46,11 @@
               "RelativeToolTip": "WPF_Personaje_Nuevo_ROL\\Repositorio.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T20:00:25.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T20:00:25.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF22_MINI_ITO\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WPF22_MINI_ITO\\MainWindow.xaml",
@@ -63,28 +62,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_EntityFrameWork\\AppDbContext.cs",
               "RelativeDocumentMoniker": "WPF_EntityFrameWork\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_EntityFrameWork\\AppDbContext.cs",
               "RelativeToolTip": "WPF_EntityFrameWork\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T19:39:12.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_EntityFrameWork\\Persona.cs",
-              "RelativeDocumentMoniker": "WPF_EntityFrameWork\\Persona.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_EntityFrameWork\\Persona.cs",
-              "RelativeToolTip": "WPF_EntityFrameWork\\Persona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T19:37:40.189Z",
               "EditorCaption": ""
             },
             {
@@ -101,13 +87,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_EntityFrameWork\\Persona.cs",
+              "RelativeDocumentMoniker": "WPF_EntityFrameWork\\Persona.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_EntityFrameWork\\Persona.cs",
+              "RelativeToolTip": "WPF_EntityFrameWork\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T19:37:40.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_EntityFrameWork\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF_EntityFrameWork\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF_EntityFrameWork\\MainWindow.xaml.cs",
               "RelativeToolTip": "WPF_EntityFrameWork\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAWwDUAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T19:33:47.345Z",
               "EditorCaption": ""

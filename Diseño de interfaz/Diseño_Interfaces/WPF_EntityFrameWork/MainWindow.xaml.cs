@@ -36,7 +36,7 @@ namespace WPF_EntityFrameWork
                 dgPersona.ItemsSource = people;
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
 
@@ -48,22 +48,34 @@ namespace WPF_EntityFrameWork
         private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
             string nombre = tbNombre.Text;
-            int edad = int.Parse(tbEdad.Text);
+
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                MessageBox.Show("El nombre no puede estar vacío.");
+                return;
+            }
+
+            if (!int.TryParse(tbEdad.Text, out int edad))
+            {
+                MessageBox.Show("La edad debe ser un número válido.");
+                return;
+            }
+
             try
             {
-                var persona = new Persona { Nombre = nombre, Edad = edad.ToString()};
+                var persona = new Persona { Nombre = nombre, Edad = edad }; // Edad como int
                 _context.Personas.Add(persona);
-                _context.SaveChanges();//INSERT
-                MessageBox.Show("Persona Creada");
+                _context.SaveChanges(); // INSERT
+                MessageBox.Show("Persona creada exitosamente.");
                 tbEdad.Clear();
                 tbNombre.Clear();
                 LoadPeople();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
-
+                MessageBox.Show($"Error al guardar la persona: {ex.Message}");
             }
         }
+
     }
 }
