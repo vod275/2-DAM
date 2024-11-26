@@ -10,7 +10,7 @@ import java.sql.Statement;
 public class GestionClientes {
 
 	public static void visualizarPedidosCliente(String codigoCliente) {
-		try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##VICTOR", "Ora1234")) {
+		try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##JARDINERIA", "Ora1234")) {
 
 			// Verificar si el cliente existe
 			String clienteQuery = "SELECT NOMBRECLIENTE, LINEADIRECCION1 FROM CLIENTES WHERE CODIGOCLIENTE = ?";
@@ -148,7 +148,7 @@ public class GestionClientes {
 
 
 	public static void eliminarCrearClientesSinPedidos() {
-	    try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##VICTOR", "Ora1234")) {
+	    try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##JARDINERIA", "Ora1234")) {
 	    	
 	    	String eliminarTablaQuery = "DROP TABLE CLIENTESSINPEDIDO CASCADE CONSTRAINTS";
 	    	try (PreparedStatement stmt = connection.prepareStatement(eliminarTablaQuery)) {
@@ -244,7 +244,7 @@ public class GestionClientes {
 
 
 	public static void visualizarPedidosDeTodosLosClientes() {
-		try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##VICTOR", "Ora1234")) {
+		try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##JARDINERIA", "Ora1234")) {
 			
 			
 

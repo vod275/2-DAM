@@ -10,7 +10,7 @@ public class GestionEmpleados {
 
 	public static void insertarEmpleado(String nombre, String apellido1, String apellido2, String extension,
 			String email, String codigoOficina, Integer codigoJefe, String puesto) {
-		try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##VICTOR", "Ora1234")) {
+		try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##JARDINERIA", "Ora1234")) {
 
 			// Comprobar si el código de oficina existe
 			if (!existeCodigoOficina(connection, codigoOficina)) {
@@ -98,7 +98,7 @@ public class GestionEmpleados {
 
 
 	public static void actualizarClientesPorEmpleado() {
-		try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##VICTOR", "Ora1234")) {
+		try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##JARDINERIA", "Ora1234")) {
 
 			// 1. Verificar si la columna NUMCLIENTES existe en la tabla EMPLEADOS, si no, agregarla
 			String verificarColumnaQuery = "SELECT COUNT(*) FROM USER_TAB_COLUMNS WHERE TABLE_NAME = 'EMPLEADOS' AND COLUMN_NAME = 'NUMCLIENTES'";

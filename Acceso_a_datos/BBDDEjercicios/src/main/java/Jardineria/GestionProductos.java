@@ -10,7 +10,7 @@ public class GestionProductos {
 	
 	
 	  public static void crearYActualizarStock() {
-	        try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##VICTOR", "Ora1234")) {
+	        try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:free", "C##JARDINERIA", "Ora1234")) {
 
 	            // 1. Verificar si la columna STOCKACTUALIZADO existe en la tabla PRODUCTOS, si no, agregarla
 	            String verificarColumnaQuery = "SELECT COUNT(*) FROM USER_TAB_COLUMNS WHERE TABLE_NAME = 'PRODUCTOS' AND COLUMN_NAME = 'STOCKACTUALIZADO'";
