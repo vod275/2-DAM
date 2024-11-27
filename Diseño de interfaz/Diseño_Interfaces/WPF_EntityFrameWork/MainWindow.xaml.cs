@@ -24,16 +24,18 @@ namespace WPF_EntityFrameWork
             InitializeComponent();
             _context = new AppDbContext();
             _context.Database.EnsureCreated();
-            LoadPeople();
+            LoadPeopleAndMascotas();
         }
 
 
-        public void LoadPeople()
+        public void LoadPeopleAndMascotas()
         {
             try
             {
+                var mascotas = _context.Mascotas.ToList();
                 var people = _context.Personas.ToList();
-                dgPersona.ItemsSource = people;s
+                dgPersona.ItemsSource = people;
+                dgMascota.ItemsSource = mascotas;
 
             }
             catch (Exception ex)
@@ -69,7 +71,7 @@ namespace WPF_EntityFrameWork
                 MessageBox.Show("Persona creada exitosamente.");
                 tbEdad.Clear();
                 tbNombre.Clear();
-                LoadPeople();
+                LoadPeopleAndMascotas();
             }
             catch (Exception ex)
             {
@@ -78,19 +80,80 @@ namespace WPF_EntityFrameWork
         }
 
 
+        private void btAgregarMascota_Click(object sender, RoutedEventArgs e)
+        {
+            string nombre = tbNombreMascota.Text;
+
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                MessageBox.Show("El nombre de la mascota no puede estar vacío.");
+                return;
+            }
+
+             string tipo = tbTipo.Text;
+            if (string.IsNullOrWhiteSpace(tipo))
+            {
+                MessageBox.Show("El nombre de la mascota no puede estar vacío.");
+                return;
+            }
+
+            if (!int.TryParse(tbPersonaID.Text, out int personaid))
+            {
+                MessageBox.Show("La edad debe ser un número válido.");
+                return;
+            }
+
+            try
+            {
+                var mascota = new Mascotas { nombre = nombre, tipo = tipo, personaid = personaid };
+                _context.Mascotas.Add(mascota);
+                _context.SaveChanges();
+                MessageBox.Show("Mascota creada exitosamente.");
+                tbNombreMascota.Clear();
+                tbTipo.Clear();
+                tbPersonaID.Clear();
+                LoadPeopleAndMascotas();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar la persona: {ex.Message}");
+            }
+        }
+
 
         private void btEliminarPersona_Click(object sender, RoutedEventArgs e)
         {
             using (var context = new AppDbContext())
             {
+               
                 Persona personaSeleccionada = dgPersona.SelectedItem as Persona;
                 if (personaSeleccionada != null)
                 {
-
                     context.Remove(personaSeleccionada);
                     context.SaveChanges();
                     Console.WriteLine("Se borro");
-                    LoadPeople();
+                    LoadPeopleAndMascotas();
+
+                }
+
+
+            }
+
+        }
+
+        private void btEliminarMascota_Click(object sender, RoutedEventArgs e)
+        {
+            using (var context = new AppDbContext())
+            {
+                Mascotas mascotaSeleccionada = dgMascota.SelectedItem as Mascotas;
+
+                if (mascotaSeleccionada != null)
+                {
+                    context.Remove(mascotaSeleccionada);
+
+                    context.SaveChanges();
+                    Console.WriteLine("Se borro");
+                    LoadPeopleAndMascotas();
 
                 }
 
@@ -112,11 +175,40 @@ namespace WPF_EntityFrameWork
                     personaSeleccionada.Edad = int.Parse(tbEdad.Text);
 
                     context.SaveChanges();
-                    LoadPeople();
+                    LoadPeopleAndMascotas();
 
                 }
             }
 
+        }
+
+        private void btModificarMascota_Click(object sender, RoutedEventArgs e)
+        {
+
+            using (var context = new AppDbContext())
+            {
+                Mascotas mascotaSeleccionada = dgMascota.SelectedItem as Mascotas;
+                if (mascotaSeleccionada != null)
+                {
+                    mascotaSeleccionada.nombre = tbNombreMascota.Text;
+                    mascotaSeleccionada.tipo = tbTipo.Text;
+                    mascotaSeleccionada.personaid = int.Parse(tbPersonaID.Text);
+
+                    context.SaveChanges();
+                    LoadPeopleAndMascotas();
+
+                }
+            }
+
+        }
+
+
+        private void BuscarPersonaPorId(int id)
+        {
+            using (var context = new AppDbContext())
+            {
+                
+            }
         }
     }
 }

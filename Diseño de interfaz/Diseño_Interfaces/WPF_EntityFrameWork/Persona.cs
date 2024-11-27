@@ -12,5 +12,8 @@ namespace WPF22_EntityFrameWork
         public string Nombre { get; set; } = string.Empty;
         public int Edad { get; set; }
 
+        public ICollection<Mascotas> Mascotas { get;} = new List<Mascotas>();   
+
+
     }
 }

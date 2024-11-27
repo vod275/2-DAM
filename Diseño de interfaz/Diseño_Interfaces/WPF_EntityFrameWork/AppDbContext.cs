@@ -11,6 +11,7 @@ namespace WPF22_EntityFrameWork
     {
 
         public DbSet<Persona> Personas { get; set; }
+        public DbSet<Mascotas> Mascotas { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

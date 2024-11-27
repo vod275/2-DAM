@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF14_WrapPanel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b11bcbb1689d74b1312f6a0e98a0e28e1e71eb9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a5186603c78f725ddaa3b58c55abce13ea60056")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF14_WrapPanel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF14_WrapPanel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
