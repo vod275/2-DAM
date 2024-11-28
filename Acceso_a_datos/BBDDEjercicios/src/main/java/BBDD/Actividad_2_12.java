@@ -18,7 +18,8 @@ public class Actividad_2_12 {
             ResultSet rs = stmt.executeQuery();
 
             System.out.println("DEPARTAMENTO | NOMBRE          | Nº EMPLEADOS          | LOCALIDAD      | SALARIO MEDIO");
-            System.out.println("-------------------------------------------------------------");
+            System.out.println("---------------------------------------------------------------------------------------"
+            		+ " ");
 
             while (rs.next()) {
                 // Obtener datos del departamento
