@@ -1,10 +1,9 @@
 from Dinosaurios.dinosaurio import Dinosaurio
 
 
-class Triceraptor(Dinosaurio):
+class Triceraptors(Dinosaurio):
     def __init__(self, nombre):
-
-        super().__init__(nombre, False, 100)
+        super().__init__(nombre, 100, True)
 
     def desplazarse(self, distancia):
 
