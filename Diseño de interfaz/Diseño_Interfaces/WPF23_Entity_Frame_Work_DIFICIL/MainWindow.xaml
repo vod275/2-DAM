@@ -40,5 +40,20 @@
         </TabItem>
 
 
+        <!-- Tab para Lista y Detalles de Personaje -->
+        <TabItem Header="Mensajes de error">
+            <Grid>
+                <TextBox x:Name="tbNombreValidar" HorizontalAlignment="Left" Margin="235,81,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" 
+                         Validation.Error="Validation_Error" Text="{Binding Name , UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=False, NotifyOnValidationError=True}"/>
+                <TextBox x:Name="tbEmailValidar" HorizontalAlignment="Left" Margin="397,81,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" 
+                         Validation.Error="Validation_Error" Text="{Binding Email , UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=False, NotifyOnValidationError=True}" />
+                <Button Content="Validar" HorizontalAlignment="Left" Margin="611,80,0,0" VerticalAlignment="Top" />
+                <TextBox x:Name="Estado" HorizontalAlignment="Left" Margin="268,217,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
+
+
+            </Grid>
+        </TabItem>
+
+
     </TabControl>
 </Window>

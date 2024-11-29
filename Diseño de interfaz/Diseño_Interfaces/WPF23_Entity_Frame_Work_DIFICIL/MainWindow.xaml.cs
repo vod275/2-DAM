@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics.Eventing.Reader;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WPF23_Entity_Frame_Work_DIFICIL
 {
@@ -17,14 +19,36 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
     public partial class MainWindow : Window
     {
         private AppDbContext _context;
+        private Usuario usuario;
+        int errores;
         public MainWindow()
         {
             InitializeComponent();
             _context = new AppDbContext();
             _context.Database.EnsureCreated();
             LoadPeople();
+            usuario = new Usuario();
+            errores = 0;
         }
 
+
+        private void Validation_Error(object sender, ValidationErrorEventArgs e)
+        {
+            if(e.Action == ValidationErrorEventAction.Added)
+            {
+                errores++;
+
+            }
+            else
+            {
+                errores--;
+            }
+
+            if (errores == 0)
+            {
+                Estado.Text = "";
+            }
+        }
 
         public void LoadPeople()
         {
@@ -74,5 +98,7 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
                 MessageBox.Show($"Error al guardar la persona: {ex.Message}");
             }
         }
+
+      
     }
 }

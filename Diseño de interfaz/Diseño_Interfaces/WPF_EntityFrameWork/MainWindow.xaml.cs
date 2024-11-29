@@ -17,6 +17,8 @@ namespace WPF_EntityFrameWork
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Usuario usuario;
+        int errores;
 
         private AppDbContext _context;
         public MainWindow()
@@ -25,6 +27,8 @@ namespace WPF_EntityFrameWork
             _context = new AppDbContext();
             _context.Database.EnsureCreated();
             LoadPeopleAndMascotas();
+            usuario = new Usuario();
+            errores = 0;
         }
 
 

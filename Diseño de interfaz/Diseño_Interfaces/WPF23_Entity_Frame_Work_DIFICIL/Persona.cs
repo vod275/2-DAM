@@ -14,5 +14,6 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
         public ICollection<Eventos> Eventos { get; } = new List<Eventos>();
         //public ICollection<PersonaEvento> PersonasEventos { get; } = new List<PersonaEvento>();
 
+
     }
 }
