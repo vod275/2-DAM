@@ -33,7 +33,7 @@ def simulacion():
             print(f"{dino.nombre} decidió: {accion}.")
 
             if accion == "desplazarse":
-                dino.desplazarse_hacia(random.choice(vivos))
+                dino.desplazarse(random.choice(vivos))
             elif accion == "comer":
                 dino.comer()
             elif accion == "atacar":
@@ -44,7 +44,7 @@ def simulacion():
                 else:
                     print(f"{dino.nombre} no encuentra presas en rango. Se desplazará hacia la más cercana.")
                     objetivo = min(vivos, key=lambda x: abs(dino.posicion - x.posicion))
-                    dino.desplazarse_hacia(objetivo)
+                    dino.desplazarse(objetivo)
 
         if input("Presiona Enter para continuar o escribe 'q' para salir: ").lower() == "q":
             print("Simulación detenida por el usuario.")
