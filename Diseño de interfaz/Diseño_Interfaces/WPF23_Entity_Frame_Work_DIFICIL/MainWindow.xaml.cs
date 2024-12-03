@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.Eventing.Reader;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.Eventing.Reader;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,6 +21,7 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
     {
         private AppDbContext _context;
         private Usuario usuario;
+        private Persona persona;
         int errores;
         public MainWindow()
         {
@@ -52,16 +54,13 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
 
         public void LoadPeople()
         {
-            try
-            { 
-                var people = _context.Personas.ToList();
-                dgPersona.ItemsSource = people;      
-            }
-            catch (Exception ex)
+            using (var context = new AppDbContext())
             {
-                MessageBox.Show(ex.Message);
-
+                var personas = context.Personas
+                    .Include(p => p.Eventos)
+                    .ToList();
             }
+            
 
 
         }

@@ -1,0 +1,18 @@
+personasCREATE TABLE Personas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    edad INT NOT NULL
+);
+
+CREATE TABLE Eventos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Persona_Evento (
+    personaid INT,
+    eventoid INT,
+    PRIMARY KEY (personaid, eventoid),
+    FOREIGN KEY (personaid) REFERENCES Personas(id) ON DELETE CASCADE,
+    FOREIGN KEY (eventoid) REFERENCES Eventos(id) ON DELETE CASCADE
+);

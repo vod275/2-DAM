@@ -11,8 +11,8 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
         public int Id { get; set; }
         public string Nombre { get; set; } = string.Empty;
         public int Edad { get; set; }
-        public ICollection<Eventos> Eventos { get; } = new List<Eventos>();
-        //public ICollection<PersonaEvento> PersonasEventos { get; } = new List<PersonaEvento>();
+        public List<Eventos> Eventos { get; } = new List<Eventos>();
+        public List<PersonaEvento> PersonasEventos { get; } = new List<PersonaEvento>();
 
 
     }
