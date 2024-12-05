@@ -1,0 +1,73 @@
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.exe
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.deps.json
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.runtimeconfig.json
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.pdb
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\MySqlConnector.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.csproj.AssemblyReference.cache
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2_MarkupCompile.cache
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2_MarkupCompile.lref
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.g.resources
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.AssemblyInfoInputs.cache
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.AssemblyInfo.cs
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.csproj.CoreCompileInputs.cache
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.csproj.CopyComplete
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\refint\BaseDatosPrueba2.dll
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.pdb
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.genruntimeconfig.cache
+C:\Users\Trabajo\source\repos\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\ref\BaseDatosPrueba2.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.exe
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.deps.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.runtimeconfig.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\BaseDatosPrueba2.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\MySqlConnector.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\bin\Debug\net8.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2_MarkupCompile.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2_MarkupCompile.lref
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.g.resources
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.AssemblyInfoInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.AssemblyInfo.cs
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.sourcelink.json
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDato.A8EE3F69.Up2Date
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\refint\BaseDatosPrueba2.dll
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.pdb
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\BaseDatosPrueba2.genruntimeconfig.cache
+C:\Users\Alumno\Desktop\2-DAM\Diseño de interfaz\BaseDatosPrueba2\BaseDatosPrueba2\obj\Debug\net8.0-windows\ref\BaseDatosPrueba2.dll

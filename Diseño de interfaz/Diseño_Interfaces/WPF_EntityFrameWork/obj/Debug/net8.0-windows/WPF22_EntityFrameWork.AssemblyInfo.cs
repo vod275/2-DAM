@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF22_EntityFrameWork")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60568eef5007bb9304c2a404298811ab61863756")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b641a60212ff2e660cc350dfc76895d8bc2f599f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF22_EntityFrameWork")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF22_EntityFrameWork")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

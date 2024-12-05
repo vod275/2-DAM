@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|c:\\repositoriovisualstudio\\desarrollo\\entityframework\\entityframeworkeventos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|solutionrelative:entityframeworkeventos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|c:\\repositoriovisualstudio\\desarrollo\\entityframework\\entityframeworkeventos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|solutionrelative:entityframeworkeventos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|c:\\repositoriovisualstudio\\desarrollo\\entityframework\\entityframeworkeventos\\personaevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|solutionrelative:entityframeworkeventos\\personaevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|c:\\repositoriovisualstudio\\desarrollo\\entityframework\\entityframeworkeventos\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|solutionrelative:entityframeworkeventos\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|c:\\repositoriovisualstudio\\desarrollo\\entityframework\\entityframeworkeventos\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|solutionrelative:entityframeworkeventos\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|c:\\repositoriovisualstudio\\desarrollo\\entityframework\\entityframeworkeventos\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{244FCC25-7B90-42AC-A695-8C850772980D}|EntityFrameWorkEventos\\EntityFrameWorkEventos.csproj|solutionrelative:entityframeworkeventos\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 342,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\Persona.cs",
+              "RelativeDocumentMoniker": "EntityFrameWorkEventos\\Persona.cs",
+              "ToolTip": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\Persona.cs",
+              "RelativeToolTip": "EntityFrameWorkEventos\\Persona.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:52:16.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonaEvento.cs",
+              "DocumentMoniker": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\PersonaEvento.cs",
+              "RelativeDocumentMoniker": "EntityFrameWorkEventos\\PersonaEvento.cs",
+              "ToolTip": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\PersonaEvento.cs",
+              "RelativeToolTip": "EntityFrameWorkEventos\\PersonaEvento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:52:16.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EntityFrameWorkEventos\\AppDbContext.cs",
+              "ToolTip": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\AppDbContext.cs",
+              "RelativeToolTip": "EntityFrameWorkEventos\\AppDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:56:50.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\Evento.cs",
+              "RelativeDocumentMoniker": "EntityFrameWorkEventos\\Evento.cs",
+              "ToolTip": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\Evento.cs",
+              "RelativeToolTip": "EntityFrameWorkEventos\\Evento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:52:15.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EntityFrameWorkEventos\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\MainWindow.xaml.cs",
+              "RelativeToolTip": "EntityFrameWorkEventos\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:52:13.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "EntityFrameWorkEventos\\MainWindow.xaml",
+              "ToolTip": "C:\\RepositorioVisualStudio\\Desarrollo\\EntityFrameWork\\EntityFrameWorkEventos\\MainWindow.xaml",
+              "RelativeToolTip": "EntityFrameWorkEventos\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-27T16:52:11.858Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

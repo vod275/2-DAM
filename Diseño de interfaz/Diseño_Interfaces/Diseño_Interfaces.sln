@@ -85,7 +85,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3EnRaya", "3EnRaya\3EnRaya.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF22_EntityFrameWork", "WPF_EntityFrameWork\WPF22_EntityFrameWork.csproj", "{7F561FE7-8E6A-47E0-8DF1-1B08EE5E51A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF23_Entity_Frame_Work_DIFICIL", "WPF23_Entity_Frame_Work_DIFICIL\WPF23_Entity_Frame_Work_DIFICIL.csproj", "{6E7357F9-7B71-424C-A275-7DE336FCD383}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF23_Entity_Frame_Work_DIFICIL", "WPF23_Entity_Frame_Work_DIFICIL\WPF23_Entity_Frame_Work_DIFICIL.csproj", "{6E7357F9-7B71-424C-A275-7DE336FCD383}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseDatosPrueba2", "..\BaseDatosPrueba2\BaseDatosPrueba2\BaseDatosPrueba2.csproj", "{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -261,6 +263,10 @@ Global
 		{6E7357F9-7B71-424C-A275-7DE336FCD383}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E7357F9-7B71-424C-A275-7DE336FCD383}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E7357F9-7B71-424C-A275-7DE336FCD383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

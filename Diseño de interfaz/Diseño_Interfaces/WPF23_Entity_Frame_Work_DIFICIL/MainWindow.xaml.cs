@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.ObjectModel;
 using System.Diagnostics.Eventing.Reader;
 using System.Text;
 using System.Windows;
@@ -10,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace WPF23_Entity_Frame_Work_DIFICIL
 {
@@ -26,6 +27,8 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
         public MainWindow()
         {
             InitializeComponent();
+            persona = new Persona();
+            DataContext = persona;
             _context = new AppDbContext();
             _context.Database.EnsureCreated();
             LoadPeople();
@@ -52,19 +55,19 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
             }
         }
 
-        public void LoadPeople()
+        private void LoadPeople()
         {
-            using (var context = new AppDbContext())
+            try
             {
-                var personas = context.Personas
-                    .Include(p => p.Eventos)
-                    .ToList();
+                var people = _context.Personas.ToList();
+                dgPersona.ItemsSource = people;
             }
-            
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos" + ex.Message);
+            }
 
         }
-
 
         private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
@@ -84,7 +87,7 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
 
             try
             {
-                var persona = new Persona { Nombre = nombre, Edad = edad };
+                var persona = new Persona { nombre = nombre, edad = edad };
                 _context.Personas.Add(persona);
                 _context.SaveChanges(); // INSERT
                 MessageBox.Show("Persona creada exitosamente.");
@@ -98,6 +101,20 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
             }
         }
 
-      
+
+        private void btnBorrar_Click(object sender, RoutedEventArgs e)
+        {
+            persona = dgPersona.SelectedItem as Persona;
+            if (persona != null)
+            {
+                using (var context = new AppDbContext())
+                {
+                    context.Personas.Remove(persona);
+                    context.SaveChanges();
+                    LoadPeople();
+                }
+            }
+        }
+
     }
 }

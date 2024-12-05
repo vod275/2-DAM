@@ -1,0 +1,25 @@
+﻿<Window x:Class="EntityFrameWorkEventos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntityFrameWorkEventos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="22,19,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Height="28" Width="66" TextAlignment="Center"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="93,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" Height="28" Validation.Error="Validation_Error" Text="{Binding Nombre, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="343,19,0,0" TextWrapping="Wrap" Text="Edad:" VerticalAlignment="Top" Height="28" Width="66" TextAlignment="Center"/>
+        <TextBox x:Name="txtEdad" HorizontalAlignment="Left" Margin="414,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Height="28" Validation.Error="Validation_Error" Text="{Binding Edad, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="513,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.293,-0.088" Height="28" Width="66" Click="btnAgregar_Click"/>
+        <DataGrid x:Name="DataGridEjemplo" Margin="10,151,10,10"/>
+        <Button x:Name="btnEliminar" Content="Borrar" HorizontalAlignment="Left" Margin="594,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.293,-0.088" Height="28" Width="66" Click="btnBorrar_Click"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="678,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.293,-0.088" Height="28" Width="66" Click="btnModificar_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,81,0,0" TextWrapping="Wrap" Text="Evento Nombre" VerticalAlignment="Top" Height="28" Width="102" TextAlignment="Center"/>
+        <TextBox x:Name="txtNombreEvento" HorizontalAlignment="Left" Margin="129,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Height="28"/>
+        <Button x:Name="btnAgregarEvento" Content="Agregar Evento" HorizontalAlignment="Left" Margin="353,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.293,-0.088" Height="28" Width="117" Click="btnAgregarEvento_Click"/>
+        <Button x:Name="btnMostrarEventos" Content="Mostrar Eventos" HorizontalAlignment="Left" Margin="488,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.293,-0.088" Height="28" Width="116" Click="btnMostrarEventos_Click"/>
+        <TextBlock x:Name="Estado" HorizontalAlignment="Center" Margin="0,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="780" TextAlignment="Center"></TextBlock>
+
+    </Grid>
+</Window>

@@ -12,8 +12,9 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
 
 
         public DbSet<Persona> Personas { get; set; }
-        public DbSet<Eventos> Eventos { get; set; }
-        public DbSet<PersonaEvento> PersonasEventos { get; set; }
+        public DbSet<Evento> Eventos { get; set; }
+
+        public DbSet<PersonaEvento> PersonaEventos { get; set; }
 
 
 
@@ -28,13 +29,8 @@ namespace WPF23_Entity_Frame_Work_DIFICIL
             modelBuilder.Entity<Persona>()
                 .HasMany(b => b.Eventos)
                 .WithMany(c => c.Personas)
-                .UsingEntity<Dictionary<string, object>>(
-                    "PersonaEvento",
-                    j => j.HasOne<Eventos>().WithMany().HasForeignKey("id"),
-                    j => j.HasOne<Persona>().WithMany().HasForeignKey("Id")
-                );
+                .UsingEntity(j => j.ToTable("personaevento"));
         }
-
 
     }
 }

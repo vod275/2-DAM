@@ -3,24 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf23_entity_frame_work_dificil\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|solutionrelative:wpf23_entity_frame_work_dificil\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf23_entity_frame_work_dificil\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|solutionrelative:wpf23_entity_frame_work_dificil\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf23_entity_frame_work_dificil\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|solutionrelative:wpf23_entity_frame_work_dificil\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf23_entity_frame_work_dificil\\personaevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|solutionrelative:wpf23_entity_frame_work_dificil\\personaevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf23_entity_frame_work_dificil\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|solutionrelative:wpf23_entity_frame_work_dificil\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf23_entity_frame_work_dificil\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|solutionrelative:wpf23_entity_frame_work_dificil\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf23_entity_frame_work_dificil\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|solutionrelative:wpf23_entity_frame_work_dificil\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\wpf23_entity_frame_work_dificil\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E7357F9-7B71-424C-A275-7DE336FCD383}|WPF23_Entity_Frame_Work_DIFICIL\\WPF23_Entity_Frame_Work_DIFICIL.csproj|solutionrelative:wpf23_entity_frame_work_dificil\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}|..\\BaseDatosPrueba2\\BaseDatosPrueba2\\BaseDatosPrueba2.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\basedatosprueba2\\basedatosprueba2\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +37,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml",
+              "RelativeToolTip": "WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-05T15:42:14.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "personaevento.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\personaevento.cs",
+              "RelativeDocumentMoniker": "WPF23_Entity_Frame_Work_DIFICIL\\personaevento.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\personaevento.cs",
+              "RelativeToolTip": "WPF23_Entity_Frame_Work_DIFICIL\\personaevento.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA6wA8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T15:25:48.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WPF23_Entity_Frame_Work_DIFICIL\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\AppDbContext.cs",
+              "RelativeToolTip": "WPF23_Entity_Frame_Work_DIFICIL\\AppDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T15:22:27.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\BaseDatosPrueba2\\BaseDatosPrueba2\\BookViewModel.cs",
+              "RelativeDocumentMoniker": "..\\BaseDatosPrueba2\\BaseDatosPrueba2\\BookViewModel.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\BaseDatosPrueba2\\BaseDatosPrueba2\\BookViewModel.cs",
+              "RelativeToolTip": "..\\BaseDatosPrueba2\\BaseDatosPrueba2\\BookViewModel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA3wBIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T15:21:54.992Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -40,60 +98,35 @@
               "RelativeDocumentMoniker": "WPF23_Entity_Frame_Work_DIFICIL\\Persona.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\Persona.cs",
               "RelativeToolTip": "WPF23_Entity_Frame_Work_DIFICIL\\Persona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:54:44.496Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonaEvento.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\PersonaEvento.cs",
-              "RelativeDocumentMoniker": "WPF23_Entity_Frame_Work_DIFICIL\\PersonaEvento.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\PersonaEvento.cs",
-              "RelativeToolTip": "WPF23_Entity_Frame_Work_DIFICIL\\PersonaEvento.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwAwAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:30:56.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "WPF23_Entity_Frame_Work_DIFICIL\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\AppDbContext.cs",
-              "RelativeToolTip": "WPF23_Entity_Frame_Work_DIFICIL\\AppDbContext.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwB8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:06:44.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml",
-              "RelativeToolTip": "WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-27T16:50:36.317Z",
+              "WhenOpened": "2024-12-05T15:16:15.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\Evento.cs",
+              "RelativeDocumentMoniker": "WPF23_Entity_Frame_Work_DIFICIL\\Evento.cs",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\Evento.cs",
+              "RelativeToolTip": "WPF23_Entity_Frame_Work_DIFICIL\\Evento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T15:13:27.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml.cs",
               "RelativeToolTip": "WPF23_Entity_Frame_Work_DIFICIL\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwB0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwG8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:50:36.114Z",
+              "WhenOpened": "2024-12-05T15:01:54.141Z",
               "EditorCaption": ""
             }
           ]
