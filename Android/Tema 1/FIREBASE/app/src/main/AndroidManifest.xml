@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FIREBASE"
         tools:targetApi="31">
+        
+
         <activity
             android:name=".Home"
             android:exported="false" />

@@ -2,6 +2,8 @@ package com.example.firebase
 
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -265,6 +267,18 @@ class Home : AppCompatActivity() {
 //            Toast.makeText(this, "Datos cargados, consulta el log con la etiqueta ACSCO",Toast.LENGTH_SHORT).show()
 
         }//Fin del btnRecuperar.Onclick
+
+
+        // Configura el Toolbar
+        val toolbar = binding.toolbar2
+        setSupportActionBar(toolbar)
+// Establece un título personalizado
+        supportActionBar?.title = "Home"
+// Agregar un ícono como logo
+        supportActionBar?.setLogo(R.drawable.pollito)
+        supportActionBar?.setDisplayUseLogoEnabled(true)
+// Habilita la flecha de retroceso
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
 
@@ -404,6 +418,42 @@ class Home : AppCompatActivity() {
                 //Log.e(TAG, al.toString())
                 miArray.add(al)
             }
+        }
+    }
+
+    //infla el menu
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+    // Maneja los clics en el menú
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                // Lleva a otra actividad (simulado)
+                finish()
+                // val intent = Intent(this, MainActivity::class.java)
+                //startActivity(intent)
+                true
+            }
+            R.id.action_camera -> {
+                Toast.makeText(this, "Cámara seleccionada", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_gallery -> {
+                Toast.makeText(this, "Galería seleccionada", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_settings -> {
+                Toast.makeText(this, "Configuración seleccionada",
+                    Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.action_help -> {
+                Toast.makeText(this, "Ayuda seleccionada", Toast.LENGTH_SHORT).show()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }
