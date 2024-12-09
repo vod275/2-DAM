@@ -89,6 +89,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF23_Entity_Frame_Work_DIF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseDatosPrueba2", "..\BaseDatosPrueba2\BaseDatosPrueba2\BaseDatosPrueba2.csproj", "{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{739B0329-81B9-42B4-886C-74C865B3B2C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{739B0329-81B9-42B4-886C-74C865B3B2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739B0329-81B9-42B4-886C-74C865B3B2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739B0329-81B9-42B4-886C-74C865B3B2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739B0329-81B9-42B4-886C-74C865B3B2C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

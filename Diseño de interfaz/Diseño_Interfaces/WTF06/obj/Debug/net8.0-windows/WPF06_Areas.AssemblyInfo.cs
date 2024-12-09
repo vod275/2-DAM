@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF06_Areas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b641a60212ff2e660cc350dfc76895d8bc2f599f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+baa98c1b4e6694214b0b1e3b192f9dd07877ed37")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF06_Areas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF06_Areas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
