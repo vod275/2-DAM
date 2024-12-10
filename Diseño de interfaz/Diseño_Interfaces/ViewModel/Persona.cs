@@ -11,7 +11,12 @@ namespace ViewModel
 
         public string Nombre { get; set; }
         public int Edad { get; set; }
-   
+
+
+        public override string ToString()
+        {
+            return $"{Nombre}: {Edad}";
+        }
 
     }
 }

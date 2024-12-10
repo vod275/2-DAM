@@ -28,9 +28,11 @@ namespace ViewModel
 
         private void AgregarPersona_Click(object sender, RoutedEventArgs e)
         {
-            string nombre = tbnombre.Text;
-            int edad = 
-            viewModel.AgregarPersona(nombre, edad);
+            Persona p = new Persona();
+             p.Nombre = tbNombre.Text;
+             p.Edad = int.Parse(tbEdad.Text);
+            
+            viewModel.AgregarPersona(p);
 
         }
     }

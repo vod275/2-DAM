@@ -8,11 +8,13 @@ using System.Threading.Tasks;
 
 namespace ViewModel
 {
-    internal class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel : INotifyPropertyChanged
     {
         private Persona _personaCreada; 
 
         public event PropertyChangedEventHandler? PropertyChanged;
+
+       public ObservableCollection<Persona> lista { get; set; } = new ObservableCollection<Persona>();
 
         protected void OnPropertyChanged(string propertyName)
         {
@@ -34,12 +36,9 @@ namespace ViewModel
 
         public void AgregarPersona(Persona persona)
         {
-            Persona p = new Persona();
-            listaPersona.Add(p);    
+            
+            lista.Add(persona);    
 
         }
-
-     
-      
     }
 }

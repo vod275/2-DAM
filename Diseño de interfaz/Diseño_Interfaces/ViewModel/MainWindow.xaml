@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Margin="101,70,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbEdad" HorizontalAlignment="Left" Margin="101,128,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120"/>
 
+        <DataGrid x:Name="dgPersona" 
+          ItemsSource="{Binding Path=lista}" 
+          AutoGenerateColumns="False" 
+          Margin="284,75,80,197">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"/>
+                <DataGridTextColumn Header="Edad" Binding="{Binding Edad}"/>
+               
+            </DataGrid.Columns>
+        </DataGrid>
+        <ProgressBar HorizontalAlignment="Left" Minimum="0" Maximum="100" Height="21" Margin="139,16,0,0" VerticalAlignment="Top" Width="453"/>
+        <Button Content="Agregar" HorizontalAlignment="Left" Margin="161,217,0,0" VerticalAlignment="Top" Click="AgregarPersona_Click"/>
     </Grid>
 </Window>
