@@ -89,7 +89,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF23_Entity_Frame_Work_DIF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseDatosPrueba2", "..\BaseDatosPrueba2\BaseDatosPrueba2\BaseDatosPrueba2.csproj", "{FA87B4DC-B0DE-4A21-92C3-21A5453C890A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{739B0329-81B9-42B4-886C-74C865B3B2C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewModel", "ViewModel\ViewModel.csproj", "{739B0329-81B9-42B4-886C-74C865B3B2C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelBarra", "ViewModelBarra\ViewModelBarra.csproj", "{E81CE2B6-35AB-441E-AA43-D6E89ACA3D98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelAdivinar", "ViewModelAdivinar\ViewModelAdivinar.csproj", "{EC8F7672-00E7-4A84-87C9-8A02BD997048}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -273,6 +277,14 @@ Global
 		{739B0329-81B9-42B4-886C-74C865B3B2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{739B0329-81B9-42B4-886C-74C865B3B2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{739B0329-81B9-42B4-886C-74C865B3B2C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81CE2B6-35AB-441E-AA43-D6E89ACA3D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81CE2B6-35AB-441E-AA43-D6E89ACA3D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81CE2B6-35AB-441E-AA43-D6E89ACA3D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81CE2B6-35AB-441E-AA43-D6E89ACA3D98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC8F7672-00E7-4A84-87C9-8A02BD997048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8F7672-00E7-4A84-87C9-8A02BD997048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8F7672-00E7-4A84-87C9-8A02BD997048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8F7672-00E7-4A84-87C9-8A02BD997048}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,6 +23,7 @@ namespace ViewModel
             InitializeComponent();
             viewModel = new MainViewModel();
             this.DataContext = viewModel;
+
         }
 
 
@@ -31,7 +32,7 @@ namespace ViewModel
             Persona p = new Persona();
              p.Nombre = tbNombre.Text;
              p.Edad = int.Parse(tbEdad.Text);
-            
+            viewModel.ProgressValue++;
             viewModel.AgregarPersona(p);
 
         }
