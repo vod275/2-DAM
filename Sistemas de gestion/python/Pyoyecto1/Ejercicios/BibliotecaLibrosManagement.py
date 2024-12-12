@@ -27,7 +27,7 @@ class Biblioteca:
     def guardarLibros(self, archivo='libros.json'):
         try:
             with open(archivo, 'w') as f:
-                json.dump(self.libros, f)
+                json.dump(self.libros, f, indent=4)
             print(f'Libros guardados en {archivo}.')
         except Exception as e:
             print(f'Error al guardar los libros: {e}')

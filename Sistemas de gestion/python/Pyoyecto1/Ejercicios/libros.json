@@ -1,1 +1,7 @@
-[{"titulo": "Cien A\u00f1os de Soledad", "autor": "Gabriel Garcia Marquez", "anio": 1967}, {"titulo": "1984", "autor": "George Orwell", "anio": 1949}]
+[
+    {
+        "titulo": "Cien Anos de Soledad",
+        "autor": "Gabriel Garcia Marquez",
+        "anio": "1992"
+    }
+]
