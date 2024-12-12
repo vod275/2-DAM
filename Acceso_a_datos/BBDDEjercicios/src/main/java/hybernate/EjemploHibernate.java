@@ -22,9 +22,9 @@ public class EjemploHibernate {
 		Transaction tx = sesion.beginTransaction();
 		System.out.println("Inserto una fila en la tabla DEPARTAMENTOS.");
 		Departamentos dep = new Departamentos();
-		dep.setDeptNo((byte) 62);
+		dep.setDeptNo((byte) 65);
 		dep.setDnombre("MARKETING");
-		dep.setLoc("GUADALAJARA");
+		dep.setLoc("PERALVILLO");
 		
 		
 		try {
