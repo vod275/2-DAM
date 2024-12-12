@@ -105,6 +105,11 @@ class MainActivity : AppCompatActivity() {
         binding.btGoogle.setOnClickListener {
             loginEnGoogle()
         }
+
+        binding.btnStorage.setOnClickListener {
+            val storageIntent = Intent(this, UsoStorage::class.java)
+            startActivity(storageIntent)
+        }
     }
 
 
