@@ -1,30 +1,7 @@
-class Biblioteca:
-    def __init__(self):
-        self.libros = []
-
-    def agregarLibros(self, titulo, autor, isbn):
-        libro = {
-            'titulo': titulo,
-            'autor': autor,
-            'isbn': isbn
-        }
-        self.libros.append(libro)
-        print(f'Libro "{titulo}" agregado a la biblioteca.')
-
-
-# Ejemplo de uso
-mi_biblioteca = Biblioteca()
-mi_biblioteca.agregarLibros('Cien Años de Soledad', 'Gabriel García Márquez', '978-84-376-0494-7')
-
-
-
-
-
-
-
-
 import json
 import random
+
+
 
 class Item:
     def __init__(self, nombre, tipo, valor):
@@ -58,24 +35,30 @@ class Personaje:
         with open(filename, "w") as file:
             json.dump(data, file, indent=4)
 
-    @classmethod
-    def cargar_personaje(cls, filename):
+
+
+    def cargar_personaje(self, filename):
         with open(filename, "r") as file:
             data = json.load(file)
-        personaje = cls(data["nombre"], data["nivel"], data["vida"])
+        personaje = Personaje(data["nombre"], data["nivel"], data["vida"])
         personaje.inventario = [Item(**item) for item in data["inventario"]]
         return personaje
+
+
 
     def describir(self, **kwargs):
         descripciones = []
         for key, value in kwargs.items():
             if key == "arma":
-                descripciones.append(f"usa un(a) {value}")
+                descripciones.append(f"usa una {value}")
             elif key == "armadura":
                 descripciones.append(f"lleva una armadura de {value}")
             elif key == "pocion":
                 descripciones.append(f"tiene una poción de {value}")
         print(f"El personaje {', '.join(descripciones)}.")
+
+
+
 
 class Heroe(Personaje):
     def __init__(self, nombre, nivel, vida, clase):
@@ -90,6 +73,8 @@ class Heroe(Personaje):
         self.nivel += 1
         self.vida += 10
 
+
+
 class Enemigo(Personaje):
     def __init__(self, nombre, nivel, vida, dificultad):
         super().__init__(nombre, nivel, vida)
@@ -99,12 +84,16 @@ class Enemigo(Personaje):
         super().mostrar_info()
         print(f"Dificultad: {self.dificultad}")
 
+
+
+
 def generar_heroe():
     return Heroe("Gandalf", 1, 100, "Mago")
 
+
 def generar_enemigos(cantidad):
-    nombres = ["Orco", "Troll", "Goblin", "Esqueleto", "Dragón", "Brujo"]
-    dificultades = ["Fácil", "Normal", "Difícil"]
+    nombres = ["Parshendi", "Troll", "Picaro", "Esqueleto", "Dragon", "Brujo Oscuro"]
+    dificultades = ["Facil", "Normal", "Dificil"]
     enemigos = []
     for _ in range(cantidad):
         nombre = random.choice(nombres)
@@ -114,15 +103,16 @@ def generar_enemigos(cantidad):
         enemigos.append(Enemigo(nombre, nivel, vida, dificultad))
     return enemigos
 
+
 def simular_combate(heroe, enemigo):
     turno = 0
     while heroe.vida > 0 and enemigo.vida > 0:
         atacante = heroe if turno % 2 == 0 else enemigo
         defensor = enemigo if turno % 2 == 0 else heroe
 
-        danio = random.randint(5, 15)
-        defensor.vida -= danio
-        print(f"{atacante.nombre} atacó a {defensor.nombre} causando {danio} de daño. {defensor.nombre} tiene {defensor.vida} de vida.")
+        dano = random.randint(5, 15)
+        defensor.vida -= dano
+        print(f"{atacante.nombre} ataco a {defensor.nombre} causando {dano} de daño. {defensor.nombre} tiene {defensor.vida} de vida.")
 
         if defensor.vida <= 0:
             print(f"{defensor.nombre} ha muerto.")
@@ -132,12 +122,19 @@ def simular_combate(heroe, enemigo):
 
         turno += 1
 
+
+
+
 def main():
     heroe = generar_heroe()
-    heroe.agregar_item(Item("Bastón", "arma", 50))
-    heroe.agregar_item(Item("Poción de vida", "poción", 20))
+    heroe.agregar_item(Item("Baston", "arma", 50))
+    heroe.agregar_item(Item("Pocion de vida", "pocion", 20))
 
     enemigos = generar_enemigos(6)
+
+    heroe.describir(arma="Espada", armadura="Cuero")
+
+
 
     for enemigo in enemigos:
         print("\nIniciando combate:")
@@ -146,13 +143,14 @@ def main():
         simular_combate(heroe, enemigo)
 
         heroe.guardar_personaje("heroe.json")
-        heroe = Heroe.cargar_personaje("heroe.json")
+        # Lo tengo hecho pero no se por que me falla al cargar, si estas leyendo esto, esque no pude resolverlo:(
+        # y aunque no da error, no me carga
+        heroe.cargar_personaje("heroe.json")
 
         if heroe.vida <= 0:
-            print("El héroe ha muerto. Fin del juego.")
             break
     else:
-        print("¡El héroe ha derrotado a todos los enemigos!")
+        print("El heroe ha derrotado a todos los enemigo")
 
 if __name__ == "__main__":
     main()

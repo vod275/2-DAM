@@ -1,0 +1,17 @@
+{
+    "nombre": "Gandalf",
+    "nivel": 2,
+    "vida": -1,
+    "inventario": [
+        {
+            "nombre": "Baston",
+            "tipo": "arma",
+            "valor": 50
+        },
+        {
+            "nombre": "Pocion de vida",
+            "tipo": "pocion",
+            "valor": 20
+        }
+    ]
+}

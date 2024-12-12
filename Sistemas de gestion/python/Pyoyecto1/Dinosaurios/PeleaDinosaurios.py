@@ -1,6 +1,6 @@
 # Simulación
 import random
-import time
+
 
 from Dinosaurios.spinosaurus import Spinosaurus
 from Dinosaurios.triceratops import Triceraptors
