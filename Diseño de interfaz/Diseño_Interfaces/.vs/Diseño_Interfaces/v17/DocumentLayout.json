@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{EC8F7672-00E7-4A84-87C9-8A02BD997048}|ViewModelAdivinar\\ViewModelAdivinar.csproj|solutionrelative:viewmodeladivinar\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC8F7672-00E7-4A84-87C9-8A02BD997048}|ViewModelAdivinar\\ViewModelAdivinar.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\viewmodeladivinar\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC8F7672-00E7-4A84-87C9-8A02BD997048}|ViewModelAdivinar\\ViewModelAdivinar.csproj|solutionrelative:viewmodeladivinar\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EC8F7672-00E7-4A84-87C9-8A02BD997048}|ViewModelAdivinar\\ViewModelAdivinar.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\viewmodeladivinar\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EC8F7672-00E7-4A84-87C9-8A02BD997048}|ViewModelAdivinar\\ViewModelAdivinar.csproj|solutionrelative:viewmodeladivinar\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{739B0329-81B9-42B4-886C-74C865B3B2C0}|ViewModel\\ViewModel.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\viewmodel\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{739B0329-81B9-42B4-886C-74C865B3B2C0}|ViewModel\\ViewModel.csproj|solutionrelative:viewmodel\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8F7672-00E7-4A84-87C9-8A02BD997048}|ViewModelAdivinar\\ViewModelAdivinar.csproj|c:\\users\\alumno\\desktop\\2-dam\\dise\u00F1o de interfaz\\dise\u00F1o_interfaces\\viewmodeladivinar\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8F7672-00E7-4A84-87C9-8A02BD997048}|ViewModelAdivinar\\ViewModelAdivinar.csproj|solutionrelative:viewmodeladivinar\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,38 +30,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ViewModel\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "ViewModel\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ViewModel\\MainWindow.xaml.cs",
               "RelativeToolTip": "ViewModel\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:43:25.733Z"
+              "WhenOpened": "2024-12-11T16:43:25.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ViewModelAdivinar\\MainWindow.xaml",
               "RelativeDocumentMoniker": "ViewModelAdivinar\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ViewModelAdivinar\\MainWindow.xaml",
               "RelativeToolTip": "ViewModelAdivinar\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-11T16:41:54.999Z"
+              "WhenOpened": "2024-12-11T16:41:54.999Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ViewModelAdivinar\\MainViewModel.cs",
               "RelativeDocumentMoniker": "ViewModelAdivinar\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ViewModelAdivinar\\MainViewModel.cs",
               "RelativeToolTip": "ViewModelAdivinar\\MainViewModel.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAYwD8AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwBEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:28:25.316Z"
+              "WhenOpened": "2024-12-11T16:28:25.316Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -71,7 +74,7 @@
               "RelativeDocumentMoniker": "ViewModelAdivinar\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\2-DAM\\Dise\u00F1o de interfaz\\Dise\u00F1o_Interfaces\\ViewModelAdivinar\\MainWindow.xaml.cs",
               "RelativeToolTip": "ViewModelAdivinar\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T16:23:02.598Z",
               "EditorCaption": ""

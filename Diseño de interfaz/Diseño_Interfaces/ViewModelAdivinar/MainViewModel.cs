@@ -15,6 +15,7 @@ namespace ViewModelAdivinar
         private DispatcherTimer _timer;
         private int _timeTemaining;
         private double _progressValue;
+        private int _totalTime;
 
 
 
@@ -52,21 +53,25 @@ namespace ViewModelAdivinar
         }
         public void StartTimer()
         {
-
-            ProgressValue = 100;
+            ProgressValue = 100; 
             _timeTemaining = 60;
+            _totalTime = 60;    
+            _timer.Interval = TimeSpan.FromSeconds(1);
+            _timer.Tick += Timer_Tick;
             _timer.Start();
         }
 
         public void StartTimerDificil()
         {
-
-            ProgressValue = 50;
+            ProgressValue = 100; 
             _timeTemaining = 30;
+            _totalTime = 30;     
+            _timer.Interval = TimeSpan.FromSeconds(1);
+            _timer.Tick += Timer_Tick;
             _timer.Start();
         }
 
-        public void Timer_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
             _timeTemaining--;
             if (_timeTemaining == 0)
@@ -76,9 +81,9 @@ namespace ViewModelAdivinar
             }
             else
             {
-                ProgressValue = (_timeTemaining / 60.0) * 100;
+              
+                ProgressValue = (_timeTemaining / (double)_totalTime) * 100;
             }
         }
-
     }
 }

@@ -27,23 +27,28 @@ namespace ViewModelAdivinar
         private void btFacil_Click(object sender, RoutedEventArgs e)
         {
             viewModel.StartTimer();
-            if (viewModel.ProgressValue == 0)
-            {
-                BitmapImage bitmap = new BitmapImage(new Uri("Descargas\\1-e92dae2b.jpg", UriKind.RelativeOrAbsolute));
+            imagen.Source = new BitmapImage(new Uri("C:\\Users\\Alumno\\Downloads\\2-e92dae2b.jpg", UriKind.RelativeOrAbsolute));
 
-                // Asigna la imagen al control
-                imagen.Source = bitmap;
-            }
+
+
         }
 
         private void btDificil_Click(object sender, RoutedEventArgs e)
         {
             viewModel.StartTimerDificil();
+            imagen.Source = new BitmapImage(new Uri("C:\\Users\\Alumno\\Downloads\\2-e92dae2b.jpg", UriKind.RelativeOrAbsolute));
+
+        }
+
+        private void ProgressBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
             if (viewModel.ProgressValue == 0)
             {
-                BitmapImage bitmap = new BitmapImage(new Uri("Descargas\\1-e92dae2b.jpg", UriKind.RelativeOrAbsolute));
+                BitmapImage bitmap = new BitmapImage(new Uri("C:\\Users\\Alumno\\Downloads\\explosion.jpg", UriKind.RelativeOrAbsolute));
 
-              
+                btDificil.IsEnabled = false;
+                btFacil.IsEnabled = false;
+
                 imagen.Source = bitmap;
             }
         }

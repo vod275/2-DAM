@@ -24,7 +24,7 @@
         <Button x:Name="btDificil" Content="Dificil&#xD;&#xA;" HorizontalAlignment="Left" Margin="528,102,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="20" Width="67" Click="btDificil_Click">
 
         </Button>
-        <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Left" Minimum="0" Maximum="100" Height="42" Margin="104,309,0,0" VerticalAlignment="Top" Width="628" Value="{Binding ProgressValue}"/>
+        <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Left" Minimum="0" Maximum="100" Height="42" Margin="104,309,0,0" VerticalAlignment="Top" Width="628" Value="{Binding ProgressValue}" ValueChanged="ProgressBar_ValueChanged"/>
         <TextBox x:Name="tbRespuesta" HorizontalAlignment="Left" Margin="469,183,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
         <Label x:Name="lbAdivina" Content="Adivina" HorizontalAlignment="Left" Margin="504,217,0,0" VerticalAlignment="Top"/>
 
