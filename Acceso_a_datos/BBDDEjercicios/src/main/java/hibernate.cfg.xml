@@ -12,7 +12,14 @@
         <property name="hibernate.hbm2ddl.auto">none</property>
         <property name="hibernate.search.autoregister_listeners">true</property>
         <property name="hibernate.validator.apply_to_ddl">false</property>
-        <mapping resource="hibernateClases/Empleados.hbm.xml"/>
-        <mapping resource="hibernateClases/Departamentos.hbm.xml"/>
+        <mapping resource="hibernateClases2/Camisetas.hbm.xml"/>
+        <mapping resource="hibernateClases2/Ciclistas.hbm.xml"/>
+        <mapping resource="hibernateClases2/Empleados.hbm.xml"/>
+        <mapping resource="hibernateClases2/Equipos.hbm.xml"/>
+        <mapping resource="hibernateClases2/ResumenCamisetas.hbm.xml"/>
+        <mapping resource="hibernateClases2/Departamentos.hbm.xml"/>
+        <mapping resource="hibernateClases2/Etapas.hbm.xml"/>
+        <mapping resource="hibernateClases2/Lleva.hbm.xml"/>
+        <mapping resource="hibernateClases2/Tramospuertos.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

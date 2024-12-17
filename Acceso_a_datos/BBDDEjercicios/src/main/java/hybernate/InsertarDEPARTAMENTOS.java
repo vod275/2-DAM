@@ -3,7 +3,7 @@ package hybernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import hibernateClases.*;
+import hibernateClases2.Departamentos;
 
 public class InsertarDEPARTAMENTOS {
 

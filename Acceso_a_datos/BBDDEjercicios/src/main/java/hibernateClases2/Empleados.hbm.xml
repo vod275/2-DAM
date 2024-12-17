@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated 10 dic 2024, 17:22:42 by Hibernate Tools 5.6.15.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17 dic 2024, 17:16:19 by Hibernate Tools 5.6.15.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class catalog="ejemplo" name="hibernateClases.Empleados" optimistic-lock="none" table="empleados">
+    <class catalog="ejemplo" name="hibernateClases2.Empleados" optimistic-lock="none" table="empleados">
         <id name="empNo" type="short">
             <column name="emp_no"/>
             <generator class="assigned"/>
         </id>
-        <many-to-one class="hibernateClases.Departamentos" fetch="select" name="departamentos">
+        <many-to-one class="hibernateClases2.Departamentos" fetch="select" name="departamentos">
             <column name="dept_no" not-null="true"/>
         </many-to-one>
         <property name="apellido" type="string">
