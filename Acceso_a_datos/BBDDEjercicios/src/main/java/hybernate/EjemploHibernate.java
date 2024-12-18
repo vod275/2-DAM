@@ -6,7 +6,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import hibernateClases.Departamentos;
+import hibernateClases2.Departamentos;
 
 public class EjemploHibernate {
 

@@ -4,4 +4,13 @@
 <hibernate-reverse-engineering>
 	<table-filter match-name="departamentos" match-catalog="ejemplo"></table-filter>
 	<table-filter match-name="empleados" match-catalog="ejemplo"></table-filter>
+	<table-filter match-name="camisetas" match-catalog="ejemplo"></table-filter>
+	<table-filter match-name="ciclistas" match-catalog="ejemplo"></table-filter>
+	<table-filter match-name="equipos" match-catalog="ejemplo"></table-filter>
+	<table-filter match-name="etapas" match-catalog="ejemplo"></table-filter>
+	<table-filter match-name="lleva" match-catalog="ejemplo"></table-filter>
+	<table-filter match-name="resumen_camisetas"
+		match-catalog="ejemplo">
+	</table-filter>
+	<table-filter match-name="tramospuertos" match-catalog="ejemplo"></table-filter>
 </hibernate-reverse-engineering>
