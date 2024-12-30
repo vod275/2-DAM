@@ -10,7 +10,7 @@ public class InsertarDEPARTAMENTOS {
 	private static SessionFactory sesion;
 
 	public static void main(String[] args) {
-		sesion = Conexion.getSession(); // Creo la sessionFactory una única vez.
+		sesion = Conexion.getSession(); // Creo la sessionFactory una unica vez.
 
 		insertardepartamento();
 
@@ -18,7 +18,7 @@ public class InsertarDEPARTAMENTOS {
 	}
 
 	private static void insertardepartamento() {
-		Session session = sesion.openSession(); // creo una sesión de trabajo
+		Session session = sesion.openSession(); // creo una sesionn de trabajo
 		Transaction tx = session.beginTransaction();
 		Departamentos dep = new Departamentos();
 		dep.setDeptNo((byte) 61);
@@ -29,7 +29,7 @@ public class InsertarDEPARTAMENTOS {
 			tx.commit();
 			System.out.println("Reg INSERTADO.");
 			
-			// } catch (javax.persistence.PersistenceException e) { //Si no se dispara esta
+			
 		} catch (jakarta.persistence.PersistenceException e) {
 			
 			if (e.getMessage().contains("org.hibernate.exception.ConstraintViolationException")) {
@@ -52,6 +52,6 @@ public class InsertarDEPARTAMENTOS {
 			e.printStackTrace();
 			
 		}
-		session.close(); // cierro la sesión de trabajo
+		session.close(); 
 	}
 }
